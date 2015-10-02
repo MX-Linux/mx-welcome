@@ -9,6 +9,6 @@ Vcs-Git: git://github.com/AdrianTM/mx-welcome
 
 Package: mx-welcome
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, mx-viewer
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: MX Welcome
- MX Welcome is a tool used for testing code
+ MX Welcome displays a welcome screen
