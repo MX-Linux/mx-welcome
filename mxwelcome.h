@@ -28,7 +28,6 @@
 
 #include <QMessageBox>
 #include <QProcess>
-#include <QTimer>
 
 namespace Ui {
 class mxwelcome;

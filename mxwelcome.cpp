@@ -70,7 +70,6 @@ Result mxwelcome::runCmd(QString cmd)
 void mxwelcome::disconnectAll()
 {
     disconnect(proc, SIGNAL(started()), 0, 0);
-    disconnect(proc, SIGNAL(readyRead()), 0, 0);
     disconnect(proc, SIGNAL(finished(int)), 0, 0);
 }
 
@@ -85,7 +84,6 @@ QString mxwelcome::getVersion(QString name)
 void mxwelcome::setConnections()
 {
     connect(proc, SIGNAL(started()), SLOT(procStart()));
-    connect(proc, SIGNAL(readyRead()), SLOT(onStdoutAvailable()));
     connect(proc, SIGNAL(finished(int)), SLOT(procDone(int)));
 }
 
