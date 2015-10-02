@@ -1,0 +1,5 @@
+mx-welcome 		usr/bin
+mx-welcome.desktop	usr/share/applications/mx
+translations/*.qm 	usr/share/mx-welcome/locale
+mx-welcome.png		usr/share/pixmaps/mx
+icons/*                 usr/share/mx-welcome/icons
