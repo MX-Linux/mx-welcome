@@ -25,22 +25,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="397"/>
+        <location filename="../mxwelcome.ui" line="390"/>
         <source>About this application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="400"/>
+        <location filename="../mxwelcome.ui" line="393"/>
         <source>About...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="407"/>
+        <location filename="../mxwelcome.ui" line="400"/>
         <source>Alt+B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="349"/>
+        <location filename="../mxwelcome.ui" line="342"/>
         <source>Quit application</source>
         <translation type="unfinished"></translation>
     </message>
@@ -85,12 +85,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="352"/>
+        <location filename="../mxwelcome.ui" line="345"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="359"/>
+        <location filename="../mxwelcome.ui" line="352"/>
         <source>Alt+N</source>
         <translation type="unfinished"></translation>
     </message>
