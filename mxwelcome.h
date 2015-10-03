@@ -66,6 +66,8 @@ private slots:
     void on_buttonAbout_clicked();
     void on_checkBox_clicked(bool checked);
 
+    void on_buttonTools_clicked();
+
 private:
     Ui::mxwelcome *ui;
 };

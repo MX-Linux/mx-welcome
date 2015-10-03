@@ -117,3 +117,11 @@ void mxwelcome::on_checkBox_clicked(bool checked)
         system("rm ~/.config/autostart/mx-welcome.desktop");
     }
 }
+
+// Start MX-Tools
+void mxwelcome::on_buttonTools_clicked()
+{
+    this->hide();
+    system("mx-tools");
+    this->show();
+}
