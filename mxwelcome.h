@@ -4,6 +4,7 @@
  * Copyright (C) 2015 MX Authors
  *
  * Authors: Adrian
+ *          Paul David Callahan
  *          MX & MEPIS Community <http://forum.mepiscommunity.org>
  *
  * This file is part of mx-welcome.
@@ -65,8 +66,11 @@ public slots:
 private slots:
     void on_buttonAbout_clicked();
     void on_checkBox_clicked(bool checked);
-
     void on_buttonTools_clicked();
+    void on_buttonManual_clicked();
+    void on_buttonForum_clicked();
+    void on_buttonWiki_clicked();
+    void on_buttonVideo_clicked();
 
 private:
     Ui::mxwelcome *ui;

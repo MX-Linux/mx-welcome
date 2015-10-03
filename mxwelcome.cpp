@@ -4,6 +4,7 @@
  * Copyright (C) 2015 MX Authors
  *
  * Authors: Adrian
+ *          Paul David Callahan
  *          MX & MEPIS Community <http://forum.mepiscommunity.org>
  *
  * This file is part of mx-welcome.
@@ -50,7 +51,7 @@ void mxwelcome::setup()
     this->setWindowTitle(tr("MX Welcome"));    
     ui->stackedWidget->setCurrentIndex(0);
     ui->buttonCancel->setEnabled(true);
-    system("rm ~/.config/autostart/mx-welcome.desktop");
+    system("rm ~/.config/autostart/mx-welcome.desktop >/dev/null 2>&1");
 }
 
 // Util function for getting bash command output and error code
@@ -114,7 +115,7 @@ void mxwelcome::on_checkBox_clicked(bool checked)
     if (checked) {
         system("cp /usr/share/applications/mx/mx-welcome.desktop ~/.config/autostart");
     } else {
-        system("rm ~/.config/autostart/mx-welcome.desktop");
+        system("rm ~/.config/autostart/mx-welcome.desktop >/dev/null 2>&1");
     }
 }
 
@@ -124,4 +125,28 @@ void mxwelcome::on_buttonTools_clicked()
     this->hide();
     system("mx-tools");
     this->show();
+}
+
+// Launch Manual in browser
+void mxwelcome::on_buttonManual_clicked()
+{
+    system("xdg-open http://www.mepiscommunity.org/manuals");
+}
+
+// Launch Forum in browser
+void mxwelcome::on_buttonForum_clicked()
+{
+    system("xdg-open http://forum.mepiscommunity.org/index.php");
+}
+
+// Launch Wiki in browser
+void mxwelcome::on_buttonWiki_clicked()
+{
+    system("xdg-open http://www.mepiscommunity.org/wiki");
+}
+
+// Launch Video links in browser
+void mxwelcome::on_buttonVideo_clicked()
+{
+    system("xdg-open http://www.mepiscommunity.org/videos/mx14");
 }

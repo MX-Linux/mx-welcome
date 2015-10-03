@@ -4,6 +4,7 @@
  * Copyright (C) 2015 MX Authors
  *
  * Authors: Adrian
+ *          Paul David Callahan
  *          MX & MEPIS Community <http://forum.mepiscommunity.org>
  *
  * This file is part of mx-welcome.

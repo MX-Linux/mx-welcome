@@ -4,7 +4,7 @@
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../main.cpp" line="53"/>
+        <location filename="../main.cpp" line="54"/>
         <source>You must run this program as normal user.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -13,9 +13,9 @@
     <name>mxwelcome</name>
     <message>
         <location filename="../mxwelcome.ui" line="14"/>
-        <location filename="../mxwelcome.cpp" line="50"/>
-        <location filename="../mxwelcome.cpp" line="99"/>
-        <location filename="../mxwelcome.cpp" line="106"/>
+        <location filename="../mxwelcome.cpp" line="51"/>
+        <location filename="../mxwelcome.cpp" line="100"/>
+        <location filename="../mxwelcome.cpp" line="107"/>
         <source>MX Welcome</source>
         <translation type="unfinished"></translation>
     </message>
@@ -95,32 +95,32 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="98"/>
+        <location filename="../mxwelcome.cpp" line="99"/>
         <source>About MX Welcome</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="99"/>
+        <location filename="../mxwelcome.cpp" line="100"/>
         <source>Version: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="100"/>
+        <location filename="../mxwelcome.cpp" line="101"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="102"/>
+        <location filename="../mxwelcome.cpp" line="103"/>
         <source>Copyright (c) MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="103"/>
+        <location filename="../mxwelcome.cpp" line="104"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="104"/>
+        <location filename="../mxwelcome.cpp" line="105"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
