@@ -27,7 +27,8 @@
 #include "ui_mxwelcome.h"
 
 #include <QFileDialog>
-#include <QDebug>
+
+//#include <QDebug>
 
 mxwelcome::mxwelcome(QWidget *parent) :
     QDialog(parent),
@@ -49,6 +50,7 @@ void mxwelcome::setup()
     this->setWindowTitle(tr("MX Welcome"));    
     ui->stackedWidget->setCurrentIndex(0);
     ui->buttonCancel->setEnabled(true);
+    system("rm ~/.config/autostart/mx-welcome.desktop");
 }
 
 // Util function for getting bash command output and error code
@@ -103,5 +105,15 @@ void mxwelcome::on_buttonAbout_clicked()
     if (msgBox.exec() == QMessageBox::RejectRole) {
         QString cmd = QString("mx-viewer http://www.mepiscommunity.org/doc_mx/mx-welcome-license.html '%1'").arg(tr("MX Welcome"));
         system(cmd.toUtf8());
+    }
+}
+
+// Add/remove autostart at login
+void mxwelcome::on_checkBox_clicked(bool checked)
+{
+    if (checked) {
+        system("cp /usr/share/applications/mx/mx-welcome.desktop ~/.config/autostart");
+    } else {
+        system("rm ~/.config/autostart/mx-welcome.desktop");
     }
 }

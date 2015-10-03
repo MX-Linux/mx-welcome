@@ -64,6 +64,7 @@ public slots:
 
 private slots:
     void on_buttonAbout_clicked();
+    void on_checkBox_clicked(bool checked);
 
 private:
     Ui::mxwelcome *ui;
