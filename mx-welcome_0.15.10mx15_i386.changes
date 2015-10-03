@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Fri, 02 Oct 2015 10:00:04 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source i386
+Version: 0.15.10mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (0.15.10mx15) mx; urgency=medium
+ .
+   * initial release
+Checksums-Sha1:
+ 23c4d6824eb2fbbc4929d78736db991f2cbcdd22 632 mx-welcome_0.15.10mx15.dsc
+ 310e063f89741c6e7edb63f73e3d68b11a7995bf 358236 mx-welcome_0.15.10mx15.tar.xz
+ 6b4c9ba9f10abf6aab6e51fdba6314324e1e1bc4 23328 mx-welcome_0.15.10mx15_i386.deb
+Checksums-Sha256:
+ e1baffb925d5dfa58f5935d7a8d0caa09e310b42e9970c9a922ed690e5e12aae 632 mx-welcome_0.15.10mx15.dsc
+ 762353532fb24755304de0bb6ac81a5d17fe6e512c1db5c36efd73f82f9c412d 358236 mx-welcome_0.15.10mx15.tar.xz
+ 19ea5eb2f344f13128e231832149f3317b206a6224ce094e5a37eed543015c85 23328 mx-welcome_0.15.10mx15_i386.deb
+Files:
+ 4e3c0c1c6081a2f7adaf2ac37a454e82 632 admin optional mx-welcome_0.15.10mx15.dsc
+ 75f02fb9cee1a78c113bc958cf6cf536 358236 admin optional mx-welcome_0.15.10mx15.tar.xz
+ 6e2ead77dcb1f48fd6019c4d3b819772 23328 admin optional mx-welcome_0.15.10mx15_i386.deb
