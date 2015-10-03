@@ -26,7 +26,7 @@
     <number>0</number>
    </property>
    <widget class="QWidget" name="selectionPage">
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="buttonManual">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -39,7 +39,9 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset theme="edit-select-all"/>
+      <iconset theme="edit-select-all">
+       <normaloff/>
+      </iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -61,7 +63,7 @@
       <string>Show this dialog at start up</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="labelManual">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -79,7 +81,7 @@
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;User Manual&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="buttonWiki">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -92,7 +94,9 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset theme="document-page-setup"/>
+      <iconset theme="document-page-setup">
+       <normaloff/>
+      </iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -101,7 +105,7 @@
       </size>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="buttonForum">
      <property name="geometry">
       <rect>
        <x>460</x>
@@ -114,7 +118,9 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset theme="mail-send-receive"/>
+      <iconset theme="mail-send-receive">
+       <normaloff/>
+      </iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -123,7 +129,7 @@
       </size>
      </property>
     </widget>
-    <widget class="QLabel" name="label_4">
+    <widget class="QLabel" name="labelVideo">
      <property name="geometry">
       <rect>
        <x>530</x>
@@ -141,7 +147,7 @@
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Videos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_5">
+    <widget class="QLabel" name="labelWiki">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -159,7 +165,7 @@
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Wiki&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_6">
+    <widget class="QLabel" name="labelForum">
      <property name="geometry">
       <rect>
        <x>530</x>
@@ -177,7 +183,7 @@
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Forums&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="buttonVideo">
      <property name="geometry">
       <rect>
        <x>460</x>
@@ -190,7 +196,9 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset theme="media-optical-burn"/>
+      <iconset theme="media-optical-burn">
+       <normaloff/>
+      </iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -199,7 +207,7 @@
       </size>
      </property>
     </widget>
-    <widget class="QLabel" name="label_7">
+    <widget class="QLabel" name="labelTools">
      <property name="geometry">
       <rect>
        <x>370</x>
@@ -217,7 +225,7 @@
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="buttonTools">
      <property name="geometry">
       <rect>
        <x>300</x>
@@ -230,7 +238,9 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset theme="gtk-execute"/>
+      <iconset theme="gtk-execute">
+       <normaloff/>
+      </iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -240,35 +250,8 @@
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="outputPage">
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QTextBrowser" name="outputBox"/>
-     </item>
-     <item>
-      <widget class="QLabel" name="outputLabel">
-       <property name="text">
-        <string/>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QProgressBar" name="progressBar">
-       <property name="value">
-        <number>0</number>
-       </property>
-       <property name="textVisible">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
