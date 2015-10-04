@@ -20,77 +20,77 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="58"/>
+        <location filename="../mxwelcome.ui" line="220"/>
         <source>User Manual</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="110"/>
+        <location filename="../mxwelcome.ui" line="272"/>
         <source>Forums</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="340"/>
+        <location filename="../mxwelcome.ui" line="502"/>
         <source>Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="221"/>
+        <location filename="../mxwelcome.ui" line="383"/>
         <source>Videos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="29"/>
+        <location filename="../mxwelcome.ui" line="191"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-15 &lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#cdcffd;&quot;&gt;&amp;quot;Fusion&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="134"/>
+        <location filename="../mxwelcome.ui" line="296"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Welcome to MX Linux—friendly, fast, and stable—an OS loaded with amazing tools and supported by a great community. Explore the links below to get started.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="290"/>
+        <location filename="../mxwelcome.ui" line="452"/>
         <source>Wiki</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="377"/>
+        <location filename="../mxwelcome.ui" line="539"/>
         <source>Contribute</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="392"/>
+        <location filename="../mxwelcome.ui" line="28"/>
         <source>Show this dialog at start up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="495"/>
+        <location filename="../mxwelcome.ui" line="131"/>
         <source>About this application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="498"/>
+        <location filename="../mxwelcome.ui" line="134"/>
         <source>About...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="505"/>
+        <location filename="../mxwelcome.ui" line="141"/>
         <source>Alt+B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="447"/>
+        <location filename="../mxwelcome.ui" line="83"/>
         <source>Quit application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="450"/>
+        <location filename="../mxwelcome.ui" line="86"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="457"/>
+        <location filename="../mxwelcome.ui" line="93"/>
         <source>Alt+N</source>
         <translation type="unfinished"></translation>
     </message>
