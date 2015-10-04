@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>737</width>
-    <height>505</height>
+    <width>633</width>
+    <height>385</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,298 +19,368 @@
   <property name="modal">
    <bool>false</bool>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
+  <layout class="QGridLayout" name="gridLayout_3">
    <item row="0" column="0">
-    <widget class="QStackedWidget" name="stackedWidget">
-     <property name="currentIndex">
-      <number>0</number>
-     </property>
-     <widget class="QWidget" name="selectionPage">
-      <widget class="QPushButton" name="buttonManual">
-       <property name="geometry">
-        <rect>
-         <x>70</x>
-         <y>200</y>
-         <width>41</width>
-         <height>41</height>
-        </rect>
-       </property>
+    <widget class="QFrame" name="frame">
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="6" column="1">
+       <widget class="FlatButton" name="buttonManual">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>User Manual</string>
+        </property>
+        <property name="icon">
+         <iconset theme="edit-select-all">
+          <normaloff/>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>42</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="6" column="3">
+       <widget class="FlatButton" name="buttonForum">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>141</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Forums</string>
+        </property>
+        <property name="icon">
+         <iconset theme="mail-send-receive">
+          <normaloff/>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>42</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="labelTitle">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;MX-15 &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#000679;&quot;&gt;&amp;quot;Fusion&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="5">
+       <widget class="QLabel" name="labelIntro">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to MX Linux—friendly, fast, and stable—an OS loaded with amazing tools and supported by a great community. Explore the links below to get started.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="4">
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="9" column="0" colspan="5">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="6" column="4">
+       <spacer name="horizontalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="8" column="4">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="8" column="2">
+       <widget class="FlatButton" name="buttonTools">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Tools</string>
+        </property>
+        <property name="icon">
+         <iconset theme="gtk-execute">
+          <normaloff/>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>42</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="6" column="2">
+       <spacer name="horizontalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="7" column="3">
+       <widget class="FlatButton" name="buttonVideo">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>141</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Videos</string>
+        </property>
+        <property name="icon">
+         <iconset theme="media-optical-burn">
+          <normaloff/>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>42</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="6" column="0">
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="7" column="1">
+       <widget class="FlatButton" name="buttonWiki">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Wiki</string>
+        </property>
+        <property name="icon">
+         <iconset theme="document-page-setup">
+          <normaloff/>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>42</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="5" column="0" colspan="5">
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
        <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset theme="edit-select-all">
-         <normaloff/>
-        </iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>42</width>
-         <height>42</height>
-        </size>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Note: Username and password for Live Environment are both 'demo'&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
+     </item>
+     <item row="0" column="1">
       <widget class="QCheckBox" name="checkBox">
-       <property name="geometry">
-        <rect>
-         <x>510</x>
-         <y>400</y>
-         <width>241</width>
-         <height>24</height>
-        </rect>
-       </property>
        <property name="text">
         <string>Show this dialog at start up</string>
        </property>
       </widget>
-      <widget class="QLabel" name="labelManual">
-       <property name="geometry">
-        <rect>
-         <x>120</x>
-         <y>210</y>
-         <width>141</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;User Manual&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="buttonWiki">
-       <property name="geometry">
-        <rect>
-         <x>70</x>
-         <y>260</y>
-         <width>41</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset theme="document-page-setup">
-         <normaloff/>
-        </iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>42</width>
-         <height>42</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="buttonForum">
-       <property name="geometry">
-        <rect>
-         <x>480</x>
-         <y>200</y>
-         <width>41</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset theme="mail-send-receive">
-         <normaloff/>
-        </iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>42</width>
-         <height>42</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QLabel" name="labelVideo">
-       <property name="geometry">
-        <rect>
-         <x>530</x>
-         <y>270</y>
-         <width>101</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Videos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="labelWiki">
-       <property name="geometry">
-        <rect>
-         <x>120</x>
-         <y>270</y>
-         <width>71</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Wiki&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="labelForum">
-       <property name="geometry">
-        <rect>
-         <x>530</x>
-         <y>210</y>
-         <width>111</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Forums&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="buttonVideo">
-       <property name="geometry">
-        <rect>
-         <x>480</x>
-         <y>260</y>
-         <width>41</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset theme="media-optical-burn">
-         <normaloff/>
-        </iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>42</width>
-         <height>42</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QLabel" name="labelTools">
-       <property name="geometry">
-        <rect>
-         <x>350</x>
-         <y>320</y>
-         <width>81</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="buttonTools">
-       <property name="geometry">
-        <rect>
-         <x>300</x>
-         <y>310</y>
-         <width>41</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset theme="gtk-execute">
-         <normaloff/>
-        </iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>42</width>
-         <height>42</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label">
-       <property name="geometry">
-        <rect>
-         <x>330</x>
-         <y>10</y>
-         <width>74</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>../../../../../../usr/local/share/icons/mxfcelogo.png</pixmap>
-       </property>
-       <property name="scaledContents">
-        <bool>false</bool>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_2">
-       <property name="geometry">
-        <rect>
-         <x>300</x>
-         <y>90</y>
-         <width>131</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;MX-15 &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#000679;&quot;&gt;&amp;quot;Fusion&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>120</y>
-         <width>731</width>
-         <height>61</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to MX Linux—friendly, fast, and stable—an OS loaded with amazing tools&lt;br/&gt;and supported by a great community. Explore the links below to get started.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_4">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>400</y>
-         <width>441</width>
-         <height>19</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Note: Username and password for LIve Environment are both 'demo'&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="Line" name="line_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
     </widget>
    </item>
-   <item row="1" column="0">
+   <item row="3" column="0">
     <layout class="QGridLayout" name="buttonBar" columnstretch="0,0,0,0,0,0,0,0,0">
      <property name="sizeConstraint">
       <enum>QLayout::SetDefaultConstraint</enum>
@@ -402,6 +472,9 @@
        <property name="autoDefault">
         <bool>true</bool>
        </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item row="0" column="5">
@@ -440,6 +513,13 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FlatButton</class>
+   <extends>QPushButton</extends>
+   <header>flatbutton.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections>
   <connection>

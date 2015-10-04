@@ -30,9 +30,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mxwelcome.cpp
+        mxwelcome.cpp \
+    flatbutton.cpp
 
-HEADERS  += mxwelcome.h
+HEADERS  += mxwelcome.h \
+    flatbutton.h
 
 FORMS    += mxwelcome.ui
 

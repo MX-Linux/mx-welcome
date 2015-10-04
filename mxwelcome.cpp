@@ -26,8 +26,7 @@
 
 #include "mxwelcome.h"
 #include "ui_mxwelcome.h"
-
-#include <QFileDialog>
+#include "flatbutton.h"
 
 //#include <QDebug>
 
@@ -48,9 +47,7 @@ mxwelcome::~mxwelcome()
 void mxwelcome::setup()
 {
     version = getVersion("mx-welcome");
-    this->setWindowTitle(tr("MX Welcome"));    
-    ui->stackedWidget->setCurrentIndex(0);
-    ui->buttonCancel->setEnabled(true);
+    this->setWindowTitle(tr("MX Welcome"));
     system("rm ~/.config/autostart/mx-welcome.desktop >/dev/null 2>&1");
 }
 
