@@ -188,7 +188,7 @@
       <item row="1" column="2">
        <widget class="QLabel" name="labelTitle">
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-15 &lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#cdcffd;&quot;&gt;&amp;quot;Fusion&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-15 &lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#000000;&quot;&gt;&amp;quot;Fusion&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -383,9 +383,7 @@
          <string>Videos</string>
         </property>
         <property name="icon">
-         <iconset theme="media-optical-burn">
-          <normaloff/>
-         </iconset>
+         <iconset theme="media-optical"/>
         </property>
         <property name="iconSize">
          <size>
@@ -539,7 +537,9 @@
          <string>Contribute</string>
         </property>
         <property name="icon">
-         <iconset theme="add"/>
+         <iconset theme="add">
+          <normaloff/>
+         </iconset>
         </property>
         <property name="iconSize">
          <size>
