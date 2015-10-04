@@ -71,6 +71,7 @@ private slots:
     void on_buttonForum_clicked();
     void on_buttonWiki_clicked();
     void on_buttonVideo_clicked();
+    void on_buttonControbute_clicked();
 
 private:
     Ui::mxwelcome *ui;

@@ -147,3 +147,9 @@ void mxwelcome::on_buttonVideo_clicked()
 {
     system("xdg-open http://www.mepiscommunity.org/videos/mx14");
 }
+
+// Launch Contribution page
+void mxwelcome::on_buttonControbute_clicked()
+{
+    system("xdg-open http://www.mepiscommunity.org/donate");
+}

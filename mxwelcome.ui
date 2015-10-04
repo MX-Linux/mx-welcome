@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>697</width>
-    <height>385</height>
+    <width>672</width>
+    <height>438</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,7 +26,7 @@
       <item row="1" column="2">
        <widget class="QLabel" name="labelTitle">
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;MX-15 &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#cdcffd;&quot;&gt;&amp;quot;Fusion&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-15 &lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#cdcffd;&quot;&gt;&amp;quot;Fusion&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -81,6 +81,9 @@
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
@@ -128,7 +131,7 @@
       <item row="3" column="0" colspan="5">
        <widget class="QLabel" name="labelIntro">
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Welcome to MX Linux—friendly, fast, and stable—an OS loaded with amazing tools and supported by a great community. Explore the links below to get started.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Welcome to MX Linux—friendly, fast, and stable—an OS loaded with amazing tools and supported by a great community. Explore the links below to get started.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -163,6 +166,9 @@
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
@@ -196,36 +202,6 @@
          </size>
         </property>
        </spacer>
-      </item>
-      <item row="9" column="2">
-       <widget class="FlatButton" name="buttonTools">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>Tools</string>
-        </property>
-        <property name="icon">
-         <iconset theme="gtk-execute">
-          <normaloff/>
-         </iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>42</width>
-          <height>42</height>
-         </size>
-        </property>
-        <property name="autoDefault">
-         <bool>false</bool>
-        </property>
-        <property name="flat">
-         <bool>true</bool>
-        </property>
-       </widget>
       </item>
       <item row="8" column="3">
        <widget class="FlatButton" name="buttonVideo">
@@ -351,6 +327,59 @@
          </size>
         </property>
        </spacer>
+      </item>
+      <item row="9" column="1">
+       <widget class="FlatButton" name="buttonTools">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Tools</string>
+        </property>
+        <property name="icon">
+         <iconset theme="gtk-execute">
+          <normaloff/>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>42</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2">
+       <spacer name="horizontalSpacer_10">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="9" column="3">
+       <widget class="FlatButton" name="buttonControbute">
+        <property name="text">
+         <string>Contribute</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>
