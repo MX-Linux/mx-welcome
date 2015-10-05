@@ -383,7 +383,7 @@
          <string>Videos</string>
         </property>
         <property name="icon">
-         <iconset theme="media-optical"/>
+         <iconset theme="multimedia-player"/>
         </property>
         <property name="iconSize">
          <size>
