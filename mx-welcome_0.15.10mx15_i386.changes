@@ -15,14 +15,14 @@ Changes:
  .
    * initial release
 Checksums-Sha1:
- 24b4bf2fe380b62d34d29080313442598355693b 632 mx-welcome_0.15.10mx15.dsc
- 2e61e7cb907cbf0d049f11fe463a64a9077643e9 566908 mx-welcome_0.15.10mx15.tar.xz
- 9d8a0da05f58e122a84aa4bdfdda98e25abb95ca 25130 mx-welcome_0.15.10mx15_i386.deb
+ 57cbdd85e781bff81d7eac9bb70110201563d3d7 632 mx-welcome_0.15.10mx15.dsc
+ ca6e33ffe07e3f6bcfdcf6fe2f6009b233aae075 590568 mx-welcome_0.15.10mx15.tar.xz
+ e4907bc0f8f9e43a63fdd0b2d60685639ec682a7 25026 mx-welcome_0.15.10mx15_i386.deb
 Checksums-Sha256:
- 769756382538e76e2beadb20a84fb23a58ee99e2edbc3b8f32161ce97ca1b130 632 mx-welcome_0.15.10mx15.dsc
- 9ad751e00d9f1929bb408351b42f9f1a5fbb6be960334e4b87852edfb628cf56 566908 mx-welcome_0.15.10mx15.tar.xz
- 4b23d4420489f5d3abae8daaa16a9c3def044f0d33180c4a2654456b519277f2 25130 mx-welcome_0.15.10mx15_i386.deb
+ ef09066e2c99c366c222ad1660ad6bca2258094380422188e2ec575edf5cba75 632 mx-welcome_0.15.10mx15.dsc
+ c5bddbe1ec3670cf360a6af5f4cbf7bb5441e94247d4d21f36f7a5f98dcf23d0 590568 mx-welcome_0.15.10mx15.tar.xz
+ 7ffc76775dbc4a1a49235ba0b90272eb185c4739b959aec4ae1319aa8d5f7163 25026 mx-welcome_0.15.10mx15_i386.deb
 Files:
- b1b928c0ec8c2f66f978c1bc77684285 632 admin optional mx-welcome_0.15.10mx15.dsc
- 8e1d7854748d647dce7abb12ac2b0d26 566908 admin optional mx-welcome_0.15.10mx15.tar.xz
- 58286a5aed6d551c66024ee769e5d2e5 25130 admin optional mx-welcome_0.15.10mx15_i386.deb
+ adcb571edd594dc97c4023ce3042c13b 632 admin optional mx-welcome_0.15.10mx15.dsc
+ fc70ce972c3ec826a165e510f7f57357 590568 admin optional mx-welcome_0.15.10mx15.tar.xz
+ 294c4b887e9c74094bb8dbb1eb5069c8 25026 admin optional mx-welcome_0.15.10mx15_i386.deb
