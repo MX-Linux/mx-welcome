@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>MX Welcome</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>mx-welcome.png</normaloff>mx-welcome.png</iconset>
+  </property>
   <property name="sizeGripEnabled">
    <bool>false</bool>
   </property>
@@ -383,7 +387,9 @@
          <string>Videos</string>
         </property>
         <property name="icon">
-         <iconset theme="multimedia-player"/>
+         <iconset theme="multimedia-player">
+          <normaloff/>
+         </iconset>
         </property>
         <property name="iconSize">
          <size>

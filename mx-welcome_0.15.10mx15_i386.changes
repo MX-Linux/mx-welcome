@@ -8,21 +8,21 @@ Distribution: mx
 Urgency: medium
 Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
 Changed-By: Adrian <adrian@mxlinux.org>
-Description:
+Description: 
  mx-welcome - MX Welcome
-Changes:
+Changes: 
  mx-welcome (0.15.10mx15) mx; urgency=medium
  .
    * initial release
-Checksums-Sha1:
- 57cbdd85e781bff81d7eac9bb70110201563d3d7 632 mx-welcome_0.15.10mx15.dsc
- ca6e33ffe07e3f6bcfdcf6fe2f6009b233aae075 590568 mx-welcome_0.15.10mx15.tar.xz
- e4907bc0f8f9e43a63fdd0b2d60685639ec682a7 25026 mx-welcome_0.15.10mx15_i386.deb
-Checksums-Sha256:
- ef09066e2c99c366c222ad1660ad6bca2258094380422188e2ec575edf5cba75 632 mx-welcome_0.15.10mx15.dsc
- c5bddbe1ec3670cf360a6af5f4cbf7bb5441e94247d4d21f36f7a5f98dcf23d0 590568 mx-welcome_0.15.10mx15.tar.xz
- 7ffc76775dbc4a1a49235ba0b90272eb185c4739b959aec4ae1319aa8d5f7163 25026 mx-welcome_0.15.10mx15_i386.deb
-Files:
- adcb571edd594dc97c4023ce3042c13b 632 admin optional mx-welcome_0.15.10mx15.dsc
- fc70ce972c3ec826a165e510f7f57357 590568 admin optional mx-welcome_0.15.10mx15.tar.xz
- 294c4b887e9c74094bb8dbb1eb5069c8 25026 admin optional mx-welcome_0.15.10mx15_i386.deb
+Checksums-Sha1: 
+ c3ae046c1f14c7ee0e143a36f18f98e8e466e63d 630 mx-welcome_0.15.10mx15.dsc
+ 925834ede5e56162f7fb360385d61e6814ba0de3 3125886 mx-welcome_0.15.10mx15.tar.gz
+ 648aa7d6af4d45da71cff32d387b4ef605aea081 25916 mx-welcome_0.15.10mx15_i386.deb
+Checksums-Sha256: 
+ 9754a6afc799f2dab52f72a61b8a7636d8f25647649455eda679d79c5ba655c8 630 mx-welcome_0.15.10mx15.dsc
+ 9de079cfc6fbe23db16e55fab32ec24dbf424267b120b8bf7feb5be4b1481d9a 3125886 mx-welcome_0.15.10mx15.tar.gz
+ 8236b6014810623885ea2b9c4dd3fbeca478dbbbdf805bc3cee66fa3f0dc6769 25916 mx-welcome_0.15.10mx15_i386.deb
+Files: 
+ 9e3ff712295fcbfdc738be442c496534 630 admin optional mx-welcome_0.15.10mx15.dsc
+ 6d0189a275d5794649441ae9ac01248b 3125886 admin optional mx-welcome_0.15.10mx15.tar.gz
+ 9a2f6173ea46e92c279f87bddce783cd 25916 admin optional mx-welcome_0.15.10mx15_i386.deb

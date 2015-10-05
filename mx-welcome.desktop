@@ -23,6 +23,6 @@ Comment[sv]=
 Exec=mx-welcome
 Terminal=false
 Type=Application
-Icon=system
+Icon=/usr/share/pixmaps/mx/mx-welcome.png
 Categories=GNOME;GTK;System;
 NoDisplay=false
