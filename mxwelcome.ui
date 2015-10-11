@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>mx-welcome.png</normaloff>mx-welcome.png</iconset>
+    <normaloff>../../../../../../../usr/share/pixmaps/mx/mx-welcome.png</normaloff>../../../../../../../usr/share/pixmaps/mx/mx-welcome.png</iconset>
   </property>
   <property name="sizeGripEnabled">
    <bool>false</bool>
@@ -188,6 +188,12 @@
    </item>
    <item row="0" column="0">
     <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>654</width>
+       <height>0</height>
+      </size>
+     </property>
      <layout class="QGridLayout" name="gridLayout_4">
       <item row="1" column="2">
        <widget class="QLabel" name="labelTitle">

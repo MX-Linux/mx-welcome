@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sun, 11 Oct 2015 10:39:17 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source i386
+Version: 0.15.10.1mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (0.15.10.1mx15) mx; urgency=medium
+ .
+   * fixed windows size and icon
+Checksums-Sha1:
+ ff1c752edb256a3590300fb9e0ae8583c1dd0e57 637 mx-welcome_0.15.10.1mx15.dsc
+ 2a29baa2d26dc34fdd3e5e5d812e88a22979b478 45536 mx-welcome_0.15.10.1mx15.tar.xz
+ a97d0c44898c5323c681fd485a1408f342ee5d8e 25762 mx-welcome_0.15.10.1mx15_i386.deb
+Checksums-Sha256:
+ b80632e86baf7525d3984ccd1f77d950f479675a33b87ba03463ab2d58d97df3 637 mx-welcome_0.15.10.1mx15.dsc
+ 29e8d90fd57dfff631764e61e4c7128b1c3e37eb21565dbcf8691bc23ed1b973 45536 mx-welcome_0.15.10.1mx15.tar.xz
+ 513de7482d869186fb4e4063050297cedc47928b148bd5b6148c80d5e2a8fdbd 25762 mx-welcome_0.15.10.1mx15_i386.deb
+Files:
+ 364996b9f8038d3511d2a95a88dde5bc 637 admin optional mx-welcome_0.15.10.1mx15.dsc
+ dd5a5d94f5e963cdb29ef87d00c346c4 45536 admin optional mx-welcome_0.15.10.1mx15.tar.xz
+ 9de03932f394c3beb9fba591b4d399bf 25762 admin optional mx-welcome_0.15.10.1mx15_i386.deb

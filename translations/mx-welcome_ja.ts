@@ -14,48 +14,48 @@
     <message>
         <location filename="../mxwelcome.ui" line="14"/>
         <location filename="../mxwelcome.cpp" line="50"/>
-        <location filename="../mxwelcome.cpp" line="97"/>
-        <location filename="../mxwelcome.cpp" line="104"/>
+        <location filename="../mxwelcome.cpp" line="98"/>
+        <location filename="../mxwelcome.cpp" line="105"/>
         <source>MX Welcome</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="195"/>
+        <location filename="../mxwelcome.ui" line="201"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-15 &lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#000000;&quot;&gt;&amp;quot;Fusion&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="224"/>
+        <location filename="../mxwelcome.ui" line="230"/>
         <source>User Manual</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="276"/>
+        <location filename="../mxwelcome.ui" line="282"/>
         <source>Forums</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="506"/>
+        <location filename="../mxwelcome.ui" line="512"/>
         <source>Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="387"/>
+        <location filename="../mxwelcome.ui" line="393"/>
         <source>Videos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="300"/>
+        <location filename="../mxwelcome.ui" line="306"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Welcome to MX Linux—friendly, fast, and stable—an OS loaded with amazing tools and supported by a great community. Explore the links below to get started.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="456"/>
+        <location filename="../mxwelcome.ui" line="462"/>
         <source>Wiki</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="543"/>
+        <location filename="../mxwelcome.ui" line="549"/>
         <source>Contribute</source>
         <translation type="unfinished"></translation>
     </message>
@@ -95,32 +95,32 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="96"/>
+        <location filename="../mxwelcome.cpp" line="97"/>
         <source>About MX Welcome</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="97"/>
+        <location filename="../mxwelcome.cpp" line="98"/>
         <source>Version: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="98"/>
+        <location filename="../mxwelcome.cpp" line="99"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="100"/>
+        <location filename="../mxwelcome.cpp" line="101"/>
         <source>Copyright (c) MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="101"/>
+        <location filename="../mxwelcome.cpp" line="102"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="102"/>
+        <location filename="../mxwelcome.cpp" line="103"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>

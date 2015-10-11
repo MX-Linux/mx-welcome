@@ -49,6 +49,7 @@ void mxwelcome::setup()
     version = getVersion("mx-welcome");
     this->setWindowTitle(tr("MX Welcome"));
     system("rm ~/.config/autostart/mx-welcome.desktop >/dev/null 2>&1");
+    this->adjustSize();
 }
 
 // Util function for getting bash command output and error code
