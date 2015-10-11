@@ -15,14 +15,14 @@ Changes:
  .
    * text formating
 Checksums-Sha1:
- 8ed84f1c314f68e7cdcc4699c78e3ee31b3adadb 621 mx-welcome_15.10mx15.dsc
- 848b77d03ef2da85457b5be7f0a7598b83db79a9 68972 mx-welcome_15.10mx15.tar.xz
- f9d3e021c7e3d2a8e5da0092e5577b28763487e8 25738 mx-welcome_15.10mx15_i386.deb
+ 5a931cb2f7a299fa0dcda55adfa6b0cbdcb6c04a 621 mx-welcome_15.10mx15.dsc
+ e80525b7a7e5b7db5a850c90ebf31334a40a7dc9 92712 mx-welcome_15.10mx15.tar.xz
+ 9ea97f4bac2d00b8731d4e77a577f9d89fb11763 25714 mx-welcome_15.10mx15_i386.deb
 Checksums-Sha256:
- 8096bceb7acc885a517469c43f688146f3b1def8ad2951923f965b6801a6b268 621 mx-welcome_15.10mx15.dsc
- 180ad48b4eafe6d084e4222379899d01c4fd8961142220cb1ebbb8ae91334d29 68972 mx-welcome_15.10mx15.tar.xz
- e23b6d46299040ab45396c0b6c5e96447f70a8936415e5a8ee07c20adae42d0b 25738 mx-welcome_15.10mx15_i386.deb
+ 809e6c101cec348fda001582241726288ab33c364c639f6b96eabbe38a883108 621 mx-welcome_15.10mx15.dsc
+ add3f580e3e33542cd0e00f5fb2287555a4368d3a896e661a883bd2fbd733f92 92712 mx-welcome_15.10mx15.tar.xz
+ 7b7fae586133331fc926ff1ec5294b069088eab9e44fc5dd1ce5b293885e7ea2 25714 mx-welcome_15.10mx15_i386.deb
 Files:
- 3d6b87b971db6eb32d96cb3efab2b7c9 621 admin optional mx-welcome_15.10mx15.dsc
- 9641a2631086d80a6bf7724631f9a275 68972 admin optional mx-welcome_15.10mx15.tar.xz
- b10a49f5f9926aa16d39d23b4789332f 25738 admin optional mx-welcome_15.10mx15_i386.deb
+ eef89fe2095672a87a7042f16cf1c2f2 621 admin optional mx-welcome_15.10mx15.dsc
+ f485554f36030685384cb71874dac69f 92712 admin optional mx-welcome_15.10mx15.tar.xz
+ 964d1afb51fd3ad8e89db94f854fc4f8 25714 admin optional mx-welcome_15.10mx15_i386.deb
