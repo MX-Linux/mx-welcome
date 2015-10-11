@@ -1,3 +1,9 @@
+mx-welcome (15.10mx15) mx; urgency=medium
+
+  * text formating
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 11 Oct 2015 15:18:50 -0400
+
 mx-welcome (0.15.10.1mx15) mx; urgency=medium
 
   * fixed windows size and icon
