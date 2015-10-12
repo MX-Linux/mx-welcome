@@ -1,3 +1,9 @@
+mx-welcome (15.10.1mx15) mx; urgency=medium
+
+  * hide checkbox if running live
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 12 Oct 2015 08:47:21 -0400
+
 mx-welcome (15.10mx15) mx; urgency=medium
 
   * text formating

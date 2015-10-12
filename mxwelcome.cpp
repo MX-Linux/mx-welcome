@@ -49,6 +49,10 @@ void mxwelcome::setup()
     version = getVersion("mx-welcome");
     this->setWindowTitle(tr("MX Welcome"));
     system("rm ~/.config/autostart/mx-welcome.desktop >/dev/null 2>&1");
+    // if running live
+    if (system("mountpoint -q /live/aufs") == 0 ) {
+        ui->checkBox->hide();
+    }
     this->adjustSize();
 }
 
