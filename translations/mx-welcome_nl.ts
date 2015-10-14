@@ -25,11 +25,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="230"/>
-        <source>User Manual</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mxwelcome.ui" line="295"/>
         <source>Forums</source>
         <translation type="unfinished"></translation>
@@ -37,6 +32,11 @@
     <message>
         <location filename="../mxwelcome.ui" line="270"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Welcome to MX Linux, a fast, friendly, and stable OS loaded with amazing tools and supported by a great community. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxwelcome.ui" line="230"/>
+        <source>Users Manual</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

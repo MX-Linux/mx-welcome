@@ -227,7 +227,7 @@
          </sizepolicy>
         </property>
         <property name="text">
-         <string>User Manual</string>
+         <string>Users Manual</string>
         </property>
         <property name="icon">
          <iconset theme="edit-select-all">

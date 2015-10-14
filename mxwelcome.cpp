@@ -132,7 +132,7 @@ void mxwelcome::on_buttonTools_clicked()
 // Launch Manual in browser
 void mxwelcome::on_buttonManual_clicked()
 {
-    system("xdg-open http://www.mepiscommunity.org/manuals");
+    system("xdg-open /usr/local/share/doc/mxum.html");
 }
 
 // Launch Forum in browser
