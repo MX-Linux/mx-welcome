@@ -158,3 +158,9 @@ void mxwelcome::on_buttonControbute_clicked()
 {
     system("xdg-open http://www.mepiscommunity.org/donate");
 }
+
+// Launch Help in browser
+void mxwelcome::on_buttonLogininfo_clicked()
+{
+    system("xdg-open file:///usr/local/share/doc/mxum.html#toc-Subsection-2.4");
+}
