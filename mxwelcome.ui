@@ -372,7 +372,7 @@
        </widget>
       </item>
       <item row="9" column="3">
-       <widget class="FlatButton" name="buttonControbute">
+       <widget class="FlatButton" name="buttonContribute">
         <property name="text">
          <string>Contribute</string>
         </property>
@@ -430,7 +430,9 @@
       <string>Find Live login/password</string>
      </property>
      <property name="icon">
-      <iconset theme="zoom-fit"/>
+      <iconset theme="zoom-fit">
+       <normaloff/>
+      </iconset>
      </property>
      <property name="autoDefault">
       <bool>false</bool>
