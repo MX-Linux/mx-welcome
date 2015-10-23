@@ -52,6 +52,8 @@ void mxwelcome::setup()
     // if running live
     if (system("mountpoint -q /live/aufs") == 0 ) {
         ui->checkBox->hide();
+    } else {
+        ui->buttonLogininfo->hide();
     }
     this->adjustSize();
 }
@@ -154,7 +156,7 @@ void mxwelcome::on_buttonVideo_clicked()
 }
 
 // Launch Contribution page
-void mxwelcome::on_buttonControbute_clicked()
+void mxwelcome::on_buttonContribute_clicked()
 {
     system("xdg-open http://www.mepiscommunity.org/donate");
 }

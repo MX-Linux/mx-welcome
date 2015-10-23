@@ -71,7 +71,7 @@ private slots:
     void on_buttonForum_clicked();
     void on_buttonWiki_clicked();
     void on_buttonVideo_clicked();
-    void on_buttonControbute_clicked();
+    void on_buttonContribute_clicked();
     void on_buttonLogininfo_clicked();
 
 private:

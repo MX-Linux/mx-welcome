@@ -1,3 +1,9 @@
+mx-welcome (15.10.4mx15) mx; urgency=medium
+
+  * live login info displayed only when running live
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 23 Oct 2015 12:39:50 -0400
+
 mx-welcome (15.10.3mx15) mx; urgency=medium
 
   * added find live login/password
