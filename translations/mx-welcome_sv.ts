@@ -65,11 +65,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="430"/>
-        <source>Find Live login/password</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mxwelcome.ui" line="461"/>
         <source>Show this dialog at start up</source>
         <translation type="unfinished"></translation>
@@ -92,6 +87,11 @@
     <message>
         <location filename="../mxwelcome.ui" line="501"/>
         <source>Quit application</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxwelcome.ui" line="430"/>
+        <source>Login Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

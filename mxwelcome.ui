@@ -427,7 +427,7 @@
       <bool>false</bool>
      </property>
      <property name="text">
-      <string>Find Live login/password</string>
+      <string>Login Info</string>
      </property>
      <property name="icon">
       <iconset theme="zoom-fit">
