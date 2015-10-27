@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 27 Oct 2015 11:17:19 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source i386
+Version: 15.10.5mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-welcome - MX Welcome
+Changes: 
+ mx-welcome (15.10.5mx15) mx; urgency=medium
+ .
+   * replaced icons
+Checksums-Sha1: 
+ 33ce4548b422cc220985520c8a32f3a8f37787bb 624 mx-welcome_15.10.5mx15.dsc
+ fa81fc987b766b76e3e0e99379ee18d68bef11cc 91857 mx-welcome_15.10.5mx15.tar.gz
+ 9a468290fb686eee4b971fbb93d5eb85a643eb96 36662 mx-welcome_15.10.5mx15_i386.deb
+Checksums-Sha256: 
+ 9969fbe963b8e81d71c972a12542ee7845a6e4de1f39d014614f4ac4c2ee9f2c 624 mx-welcome_15.10.5mx15.dsc
+ 8ae65c92f1bc59ac03647aa0642bc3756840d4b805ce5dcbec63e49be4a6311a 91857 mx-welcome_15.10.5mx15.tar.gz
+ 999831440dba4a1333ff0eca0797753b2254b7b941f0faef05e87a667776a739 36662 mx-welcome_15.10.5mx15_i386.deb
+Files: 
+ 778f7283481301d14d2b145854efa2c9 624 admin optional mx-welcome_15.10.5mx15.dsc
+ aa91458f7f53f7f68aa0af9e2a3c735d 91857 admin optional mx-welcome_15.10.5mx15.tar.gz
+ a21f5c9fe49e1aa953bb87c153561837 36662 admin optional mx-welcome_15.10.5mx15_i386.deb

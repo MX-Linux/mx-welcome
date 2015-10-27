@@ -65,27 +65,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="455"/>
+        <location filename="../mxwelcome.ui" line="454"/>
         <source>Show this dialog at start up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="543"/>
+        <location filename="../mxwelcome.ui" line="542"/>
         <source>About this application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="546"/>
+        <location filename="../mxwelcome.ui" line="545"/>
         <source>About...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="553"/>
+        <location filename="../mxwelcome.ui" line="552"/>
         <source>Alt+B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="495"/>
+        <location filename="../mxwelcome.ui" line="494"/>
         <source>Quit application</source>
         <translation type="unfinished"></translation>
     </message>
@@ -95,12 +95,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="498"/>
+        <location filename="../mxwelcome.ui" line="497"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="505"/>
+        <location filename="../mxwelcome.ui" line="504"/>
         <source>Alt+N</source>
         <translation type="unfinished"></translation>
     </message>
