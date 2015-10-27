@@ -10,8 +10,8 @@ Build-Depends: qt5-qmake, debhelper (>= 7.0.50~)
 Package-List: 
  mx-welcome deb admin optional
 Checksums-Sha1: 
- 3a2cad939006649c54d20e33b3523c83315b9a79 36857 mx-welcome_15.10.4mx15.tar.gz
+ e3188f031965a1149276927437635d1efccb3b22 65720 mx-welcome_15.10.4mx15.tar.gz
 Checksums-Sha256: 
- cb2afde55b8c2e1bec882bd1788fdf933c315e31c6923c716819df8b2cf95d25 36857 mx-welcome_15.10.4mx15.tar.gz
+ 3feaa90d157da753c5c61c863802e2ef7ea1ea9e5f8c46a5636bfeee2f3408b7 65720 mx-welcome_15.10.4mx15.tar.gz
 Files: 
- 861d1075bae3e7255f2161c0de1bdd12 36857 mx-welcome_15.10.4mx15.tar.gz
+ 730532aaf5816763c138d1f04c2f9d42 65720 mx-welcome_15.10.4mx15.tar.gz

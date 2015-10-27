@@ -15,14 +15,14 @@ Changes:
  .
    * live login info displayed only when running live
 Checksums-Sha1: 
- 5f7b8bc9b31378ce5f2c78c27d40127c399c34ce 624 mx-welcome_15.10.4mx15.dsc
- 3a2cad939006649c54d20e33b3523c83315b9a79 36857 mx-welcome_15.10.4mx15.tar.gz
- dcc5b73f92deb31c5696d62ad12f9f97d67cbec1 35630 mx-welcome_15.10.4mx15_i386.deb
+ e5a5c873839a347d2b5ec5cd1d5f18723e9e5332 624 mx-welcome_15.10.4mx15.dsc
+ e3188f031965a1149276927437635d1efccb3b22 65720 mx-welcome_15.10.4mx15.tar.gz
+ 568012030176519078949f872a2b319b8aa8fd95 35608 mx-welcome_15.10.4mx15_i386.deb
 Checksums-Sha256: 
- fd713ab99cefda3f2a432ec5b15adeba634d0de10e718b234ecbfe512bd98c87 624 mx-welcome_15.10.4mx15.dsc
- cb2afde55b8c2e1bec882bd1788fdf933c315e31c6923c716819df8b2cf95d25 36857 mx-welcome_15.10.4mx15.tar.gz
- 4138325fea4efc4502d9615315f295b8a288484212dd64ac8dbe0c681048c7aa 35630 mx-welcome_15.10.4mx15_i386.deb
+ 696dacee94f80f6e4da230a528bf19310b44f137d54e60bebd1459e9dfa55125 624 mx-welcome_15.10.4mx15.dsc
+ 3feaa90d157da753c5c61c863802e2ef7ea1ea9e5f8c46a5636bfeee2f3408b7 65720 mx-welcome_15.10.4mx15.tar.gz
+ 5b7d17cb112a6139043ff03478e1d529af3fbaa055f81283ac9f90b945c4e99b 35608 mx-welcome_15.10.4mx15_i386.deb
 Files: 
- e901cad8bb6194959007c2865257cc30 624 admin optional mx-welcome_15.10.4mx15.dsc
- 861d1075bae3e7255f2161c0de1bdd12 36857 admin optional mx-welcome_15.10.4mx15.tar.gz
- a5d32649e859bfc093e6d101b8daea47 35630 admin optional mx-welcome_15.10.4mx15_i386.deb
+ baf72b72b83a4c3ee9747ffec34a27f7 624 admin optional mx-welcome_15.10.4mx15.dsc
+ 730532aaf5816763c138d1f04c2f9d42 65720 admin optional mx-welcome_15.10.4mx15.tar.gz
+ 93d285d0697ed49f8283e21538987632 35608 admin optional mx-welcome_15.10.4mx15_i386.deb
