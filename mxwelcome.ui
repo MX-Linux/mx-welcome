@@ -69,7 +69,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../../../usr/share/mx-welcome/icons/users-manual.png</normaloff>../../../usr/share/mx-welcome/icons/users-manual.png</iconset>
+          <normaloff>../../../../../../../usr/share/mx-welcome/icons/users-manual.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/users-manual.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -133,7 +133,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../../../usr/share/mx-welcome/icons/forums.png</normaloff>../../../usr/share/mx-welcome/icons/forums.png</iconset>
+          <normaloff>../../../../../../../usr/share/mx-welcome/icons/forums.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/forums.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -223,7 +223,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../../../usr/share/mx-welcome/icons/videos.png</normaloff>../../../usr/share/mx-welcome/icons/videos.png</iconset>
+          <normaloff>../../../../../../../usr/share/mx-welcome/icons/videos.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/videos.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -291,7 +291,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../../../usr/share/mx-welcome/icons/wiki.png</normaloff>../../../usr/share/mx-welcome/icons/wiki.png</iconset>
+          <normaloff>../../../../../../../usr/share/mx-welcome/icons/wiki.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/wiki.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -340,7 +340,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../../../usr/share/mx-welcome/icons/tools.png</normaloff>../../../usr/share/mx-welcome/icons/tools.png</iconset>
+          <normaloff>../../../../../../../usr/share/mx-welcome/icons/tools.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/tools.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -373,7 +373,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../../../usr/share/mx-welcome/icons/contribute.png</normaloff>../../../usr/share/mx-welcome/icons/contribute.png</iconset>
+          <normaloff>../../../../../../../usr/share/mx-welcome/icons/contribute.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/contribute.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -424,9 +424,8 @@
       <string>Login Info</string>
      </property>
      <property name="icon">
-      <iconset theme="zoom-fit">
-       <normaloff/>
-      </iconset>
+      <iconset>
+       <normaloff>../../../../../../../usr/share/mx-welcome/icons/zoom-fit.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/zoom-fit.png</iconset>
      </property>
      <property name="autoDefault">
       <bool>false</bool>

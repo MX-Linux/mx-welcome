@@ -1,3 +1,9 @@
+mx-welcome (15.10.5mx15) mx; urgency=medium
+
+  * replaced icons
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 27 Oct 2015 11:17:19 -0400
+
 mx-welcome (15.10.4mx15) mx; urgency=medium
 
   * live login info displayed only when running live
