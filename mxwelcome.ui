@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>674</width>
-    <height>422</height>
+    <height>428</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -68,9 +68,8 @@
          <string>Users Manual</string>
         </property>
         <property name="icon">
-         <iconset theme="edit-select-all">
-          <normaloff/>
-         </iconset>
+         <iconset>
+          <normaloff>../../../usr/share/mx-welcome/icons/users-manual.png</normaloff>../../../usr/share/mx-welcome/icons/users-manual.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -133,9 +132,8 @@
          <string>Forums</string>
         </property>
         <property name="icon">
-         <iconset theme="mail-send-receive">
-          <normaloff/>
-         </iconset>
+         <iconset>
+          <normaloff>../../../usr/share/mx-welcome/icons/forums.png</normaloff>../../../usr/share/mx-welcome/icons/forums.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -224,9 +222,8 @@
          <string>Videos</string>
         </property>
         <property name="icon">
-         <iconset theme="multimedia-player">
-          <normaloff/>
-         </iconset>
+         <iconset>
+          <normaloff>../../../usr/share/mx-welcome/icons/videos.png</normaloff>../../../usr/share/mx-welcome/icons/videos.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -293,9 +290,8 @@
          <string>Wiki</string>
         </property>
         <property name="icon">
-         <iconset theme="document-page-setup">
-          <normaloff/>
-         </iconset>
+         <iconset>
+          <normaloff>../../../usr/share/mx-welcome/icons/wiki.png</normaloff>../../../usr/share/mx-welcome/icons/wiki.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -343,9 +339,8 @@
          <string>Tools</string>
         </property>
         <property name="icon">
-         <iconset theme="gtk-execute">
-          <normaloff/>
-         </iconset>
+         <iconset>
+          <normaloff>../../../usr/share/mx-welcome/icons/tools.png</normaloff>../../../usr/share/mx-welcome/icons/tools.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -377,9 +372,8 @@
          <string>Contribute</string>
         </property>
         <property name="icon">
-         <iconset theme="add">
-          <normaloff/>
-         </iconset>
+         <iconset>
+          <normaloff>../../../usr/share/mx-welcome/icons/contribute.png</normaloff>../../../usr/share/mx-welcome/icons/contribute.png</iconset>
         </property>
         <property name="iconSize">
          <size>
