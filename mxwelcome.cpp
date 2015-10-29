@@ -134,35 +134,35 @@ void mxwelcome::on_buttonTools_clicked()
 // Launch Manual in browser
 void mxwelcome::on_buttonManual_clicked()
 {
-    system("xdg-open /usr/local/share/doc/mxum.html");
+    system("mx-viewer /usr/local/share/doc/mxum.html");
 }
 
 // Launch Forum in browser
 void mxwelcome::on_buttonForum_clicked()
 {
-    system("xdg-open http://forum.mepiscommunity.org/index.php");
+    system("mx-viewer http://forum.mepiscommunity.org/index.php");
 }
 
 // Launch Wiki in browser
 void mxwelcome::on_buttonWiki_clicked()
 {
-    system("xdg-open http://www.mepiscommunity.org/wiki");
+    system("mx-viewer http://www.mepiscommunity.org/wiki");
 }
 
 // Launch Video links in browser
 void mxwelcome::on_buttonVideo_clicked()
 {
-    system("xdg-open http://www.mepiscommunity.org/videos/mx14");
+    system("mx-viewer http://www.mepiscommunity.org/videos/mx14");
 }
 
 // Launch Contribution page
 void mxwelcome::on_buttonContribute_clicked()
 {
-    system("xdg-open http://www.mepiscommunity.org/donate");
+    system("mx-viewer http://www.mepiscommunity.org/donate");
 }
 
 // Launch Help in browser
 void mxwelcome::on_buttonLogininfo_clicked()
 {
-    system("xdg-open file:///usr/local/share/doc/mxum.html#toc-Subsection-2.4");
+    system("mx-viewer file:///usr/local/share/doc/mxum.html#toc-Subsection-2.4");
 }

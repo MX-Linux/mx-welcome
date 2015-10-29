@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 29 Oct 2015 09:08:19 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: i386
+Version: 15.10.6mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (15.10.6mx15) mx; urgency=medium
+ .
+   * use mx-viewer to display pages
+Checksums-Sha1:
+ 8e2db09d14ed951158b8bda40d7e6ad7f54f4675 36160 mx-welcome_15.10.6mx15_i386.deb
+Checksums-Sha256:
+ 28f49b5f78fa319bc8e9f794ed6f310b1dcd9880678b2ca13a3fa96e16502c3d 36160 mx-welcome_15.10.6mx15_i386.deb
+Files:
+ 3334afac7e2bf86b22997add287f1e80 36160 admin optional mx-welcome_15.10.6mx15_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWMhrrAAoJEHCTjHgGee6YKj0IAJM/xMeQLPH4/THRXmsmlcCw
+6STXBzIF8t3YogijHClJ6mTLJwxtuNvDP/66QvpwnPopLg7GaWDVktouZfgJwu2Q
+6d2K8wEkuQHALIYcAEWSinH/pN+xuvNxLXXgHA6ra7b+hc9bD0q4P3+Oz+zqazKw
+KpzWBnVA+XSEROlYg4XRRhfo5ch83RhUCvbpFh4duDtGx1gYIAZSfkzA8Gb+lGm+
+Gri5HHCTAxXzw0AjBLe+ydrQ5XLsLMtgSvBNaNxXkijjfZsLBdbZd658B5rx7bH7
+qyg3W+TbbjPoKX1ByYBgwjLq8Vq8mvcjozXhKCJCyw8j1Lwc8oUydvVLgAzZjBw=
+=SgXd
+-----END PGP SIGNATURE-----
