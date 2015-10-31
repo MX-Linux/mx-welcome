@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ca" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.0">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="54"/>
         <source>You must run this program as normal user.</source>
-        <translation>Cal executar aquest programa com a usuari normal</translation>
+        <translation>Вы должны запустить эту программу как обычный пользователь.</translation>
     </message>
 </context>
 <context>
@@ -15,7 +15,7 @@
         <location filename="../mxwelcome.cpp" line="104"/>
         <location filename="../mxwelcome.cpp" line="111"/>
         <source>MX Welcome</source>
-        <translation>MX Welcome </translation>
+        <translation>MX Приветствие</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="39"/>
@@ -25,62 +25,62 @@
     <message>
         <location filename="../mxwelcome.ui" line="68"/>
         <source>Users Manual</source>
-        <translation>Manual d&apos;usuari </translation>
+        <translation>Руководство пользователя</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="107"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Welcome to MX Linux, a fast, friendly, and stable OS loaded with amazing tools and supported by a great community. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Benvinguts a  MX Linux, un Sistema Operatiu amigable, ràpid i estable carregat d&apos;eines extraordinàries i amb el suport d&apos;una gran comunitat. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Добро пожаловать в MX Linux - быструю, дружественную и стабильную ОС, которая загружается с удивительными инструментами и поддерживается большим сообществом. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="132"/>
         <source>Forums</source>
-        <translation>Fòrums </translation>
+        <translation>Форумы</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="222"/>
         <source>Videos</source>
-        <translation>Vídeos</translation>
+        <translation>Видео</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="290"/>
         <source>Wiki</source>
-        <translation>Wiki </translation>
+        <translation>Wiki</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="339"/>
         <source>Tools</source>
-        <translation>Eines </translation>
+        <translation>Инструменты</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="362"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Explore the links below to get started.&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Exploreu els enllaços de sota per començar.&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Изучите ссылки ниже, чтобы начать работу.&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="372"/>
         <source>Contribute</source>
-        <translation>Contribuïu </translation>
+        <translation>Поддержать</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="424"/>
         <source>Login Info</source>
-        <translation>Informació d&apos;entrada </translation>
+        <translation>Информация о входе</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="454"/>
         <source>Show this dialog at start up</source>
-        <translation>Mostra aquest diàleg en engegar</translation>
+        <translation>Показывать этот диалог при запуске</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="494"/>
         <source>Quit application</source>
-        <translation>Surt del programa</translation>
+        <translation>Выйти из приложения</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="497"/>
         <source>Close</source>
-        <translation>Tanca </translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="504"/>
@@ -90,12 +90,12 @@
     <message>
         <location filename="../mxwelcome.ui" line="542"/>
         <source>About this application</source>
-        <translation>Quant al programa </translation>
+        <translation>Об этом приложении</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="545"/>
         <source>About...</source>
-        <translation>Quant a... </translation>
+        <translation>O...</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="552"/>
@@ -105,32 +105,32 @@
     <message>
         <location filename="../mxwelcome.cpp" line="103"/>
         <source>About MX Welcome</source>
-        <translation>Quant a MX Welcome </translation>
+        <translation>О программе MX Приветствие</translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="104"/>
         <source>Version: </source>
-        <translation>Versió: </translation>
+        <translation>Версия:</translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="105"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation>Programa per mostrar un missatge de benvinguda a MX en pantalla </translation>
+        <translation>Программа для показа экрана приветствия в MX Linux</translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="107"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux </translation>
+        <translation>Авторское право (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="108"/>
         <source>Cancel</source>
-        <translation>Cancel·la </translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="109"/>
         <source>License</source>
-        <translation>Llicència </translation>
+        <translation>Лицензия</translation>
     </message>
 </context>
 </TS>
