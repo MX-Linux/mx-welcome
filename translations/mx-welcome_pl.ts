@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<TS version="2.1" language="pl_PL">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="54"/>
         <source>You must run this program as normal user.</source>
-        <translation>Вы должны запустить эту программу как обычный пользователь.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -17,122 +17,122 @@
         <location filename="../mxwelcome.cpp" line="104"/>
         <location filename="../mxwelcome.cpp" line="111"/>
         <source>MX Welcome</source>
-        <translation>MX Приветствие</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="39"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-15 &lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#000000;&quot;&gt;&amp;quot;Fusion&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-15 &lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#000000;&quot;&gt;&amp;quot;Fusion&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="68"/>
         <source>Users Manual</source>
-        <translation>Руководство пользователя</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="107"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Welcome to MX Linux, a fast, friendly, and stable OS loaded with amazing tools and supported by a great community. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Добро пожаловать в MX Linux - быструю, дружественную и стабильную ОС, которая загружается с удивительными инструментами и поддерживается большим сообществом. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="132"/>
         <source>Forums</source>
-        <translation>Форумы</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="222"/>
         <source>Videos</source>
-        <translation>Видео</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="290"/>
         <source>Wiki</source>
-        <translation>Wiki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="339"/>
         <source>Tools</source>
-        <translation>Инструменты</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="362"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Explore the links below to get started.&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Изучите ссылки ниже, чтобы начать работу.&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="372"/>
         <source>Contribute</source>
-        <translation>Поддержать</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="424"/>
         <source>Login Info</source>
-        <translation>Информация о входе</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="454"/>
         <source>Show this dialog at start up</source>
-        <translation>Показывать этот диалог при запуске</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="494"/>
         <source>Quit application</source>
-        <translation>Выйти из приложения</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="497"/>
         <source>Close</source>
-        <translation>Закрыть</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="504"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="542"/>
         <source>About this application</source>
-        <translation>Об этом приложении</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="545"/>
         <source>About...</source>
-        <translation>O...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="552"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="103"/>
         <source>About MX Welcome</source>
-        <translation>О программе MX Приветствие</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="104"/>
         <source>Version: </source>
-        <translation>Версия:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="105"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation>Программа для показа экрана приветствия в MX Linux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="107"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Авторское право (c) MX Linux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="108"/>
         <source>Cancel</source>
-        <translation>Отмена</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="109"/>
         <source>License</source>
-        <translation>Лицензия</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
