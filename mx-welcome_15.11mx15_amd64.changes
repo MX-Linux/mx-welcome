@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 11 Nov 2015 18:01:28 -0500
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source amd64
+Version: 15.11mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (15.11mx15) mx; urgency=medium
+ .
+   * open videos in browser
+Checksums-Sha1:
+ 2e4703f342c848647e3bb619a570c77d021ab5f9 1145 mx-welcome_15.11mx15.dsc
+ dc2f3360c6aa7336dd5161d3367a7893d9a10dee 255036 mx-welcome_15.11mx15.tar.xz
+ 8601eb5c73791bd63df51fea62dbbf6ae2fcdfd9 40380 mx-welcome_15.11mx15_amd64.deb
+Checksums-Sha256:
+ 7a9c60ed9c3856faafdf3d62e990c5ac6062159e937797888adeae75a922d653 1145 mx-welcome_15.11mx15.dsc
+ 31435392ec6f780b3a8921047a4ba7b9c4e29fb2e317e5733576cd152365fc36 255036 mx-welcome_15.11mx15.tar.xz
+ e2c7f8e41b74065697b4a82467c68b56a86f9e1a02e6d43506bd9f1f770c73bc 40380 mx-welcome_15.11mx15_amd64.deb
+Files:
+ 7173c383f545d07d7ca6fc687ccf4487 1145 admin optional mx-welcome_15.11mx15.dsc
+ 43d0b6ce9be8058798c83788ad403f79 255036 admin optional mx-welcome_15.11mx15.tar.xz
+ 54b3a2c055a04881afb5922f95629760 40380 admin optional mx-welcome_15.11mx15_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWQ8j4AAoJEHCTjHgGee6YNmkH/iC+ykit5wJY29MItDHw4cpK
+Rj34kWeay3qBKDQEMwvY+7Wb0Ehl7R+F3/oZJY0KeZhGSOfw7+qNlthgaUtVk+vH
+Ee/k7cmItfxPe/sWFMRFlb0QOSb8s/NFRBhUX/BzPnzRpf/+Kvbb6Ten0GjtegFv
+nZsvsnxHEJ2uDAwcu5oec5eeo0rq87g8YOMLot/TUppRc2c+gCnerS/CopCv7KMS
+GaGxJJIQvvXSkebGiiaBfoqgnuBoLC6BdrLsC3jZvYfyFqg7Sr4qkvF3Wvzkx5bo
+9iUcvrG+1dI2ovXYRL9q2gLChLKrBEJ3Ba5MGTjWYn2QxnfsgoH9kCP2oPwEzAg=
+=yP3e
+-----END PGP SIGNATURE-----
