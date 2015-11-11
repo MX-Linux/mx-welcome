@@ -15,14 +15,14 @@ Changes:
  .
    * replaced icons
 Checksums-Sha1: 
- 33ce4548b422cc220985520c8a32f3a8f37787bb 624 mx-welcome_15.10.5mx15.dsc
- fa81fc987b766b76e3e0e99379ee18d68bef11cc 91857 mx-welcome_15.10.5mx15.tar.gz
- 9a468290fb686eee4b971fbb93d5eb85a643eb96 36662 mx-welcome_15.10.5mx15_i386.deb
+ 4537aea6f0dcd0f608ac37297e68a3d554bb3eff 624 mx-welcome_15.10.5mx15.dsc
+ a3fa276296a299d08895b8bf6cfaeffa43a1d994 40053 mx-welcome_15.10.5mx15.tar.gz
+ bbfc4f62e33fd7bec06d9b61be476b20a3e19075 36594 mx-welcome_15.10.5mx15_i386.deb
 Checksums-Sha256: 
- 9969fbe963b8e81d71c972a12542ee7845a6e4de1f39d014614f4ac4c2ee9f2c 624 mx-welcome_15.10.5mx15.dsc
- 8ae65c92f1bc59ac03647aa0642bc3756840d4b805ce5dcbec63e49be4a6311a 91857 mx-welcome_15.10.5mx15.tar.gz
- 999831440dba4a1333ff0eca0797753b2254b7b941f0faef05e87a667776a739 36662 mx-welcome_15.10.5mx15_i386.deb
+ 456ee4cb3966c4746adbfd553867a69f3d97f9daf7e83863dcdb6aa95dd77c65 624 mx-welcome_15.10.5mx15.dsc
+ dfa9862c802a9d5610b2ea882d67d6013e33c641eaf626a4b38ffe9d79d86473 40053 mx-welcome_15.10.5mx15.tar.gz
+ 307f358a78d584da734071bddf7d99dcf101503a9a7be97fbfa682293b218ad9 36594 mx-welcome_15.10.5mx15_i386.deb
 Files: 
- 778f7283481301d14d2b145854efa2c9 624 admin optional mx-welcome_15.10.5mx15.dsc
- aa91458f7f53f7f68aa0af9e2a3c735d 91857 admin optional mx-welcome_15.10.5mx15.tar.gz
- a21f5c9fe49e1aa953bb87c153561837 36662 admin optional mx-welcome_15.10.5mx15_i386.deb
+ a0b26449d132fc3586018b19d44f17bc 624 admin optional mx-welcome_15.10.5mx15.dsc
+ 7ae9492371ecdabea19cb269e586bf07 40053 admin optional mx-welcome_15.10.5mx15.tar.gz
+ 661219c786f0996997c3f9a93befbede 36594 admin optional mx-welcome_15.10.5mx15_i386.deb
