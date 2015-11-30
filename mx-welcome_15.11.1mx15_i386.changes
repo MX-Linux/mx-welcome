@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 30 Nov 2015 10:08:32 -0500
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: i386
+Version: 15.11.1mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-welcome - MX Welcome
+Changes: 
+ mx-welcome (15.11.1mx15) mx; urgency=medium
+ .
+   * changed icon location
+Checksums-Sha1: 
+ 884141275f58c0d7af86aa3347fedc07a165263c 41236 mx-welcome_15.11.1mx15_i386.deb
+Checksums-Sha256: 
+ 97dfca98d14d58ca9617518c1bf8f63bc5abcc8f31b005fd4b925d91fe10a4c3 41236 mx-welcome_15.11.1mx15_i386.deb
+Files: 
+ 55f85563b0c66f680ff47c0b931e67dc 41236 admin optional mx-welcome_15.11.1mx15_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJWXGaJAAoJEHCTjHgGee6YFmgIAL7KQrBPiHTbaBR2F83Gv5gn
+TqbxePtMOlZ+bJLv8ll/AEb9DHbDbxJQJZzNA4Agm46pBqsCqg4dD7dgzR0mQkg7
+o3IHgIxE1XWPHFYrU11WVPRXES3xEip6W1KDAbSD/quQObcJb83NdCDYOOCVC6Fz
+Ez1u1VFueiuIufykMFOu49c4Un/Gp5x4nhet8yGpf6AJ1X+6AsnDd/orywL4A7oo
+A09k7baRWS8tyhRwBqTHinyrK+Vyin4NR4On5jIcjiBQYplveShz3dIwueSKjFDa
+YxEaFcPMvDwuKEvA7jvSJ5NyUfDdYeZKlMkz1+KXS2rLcYQ13PmejzFZdPdZtMo=
+=6Hqy
+-----END PGP SIGNATURE-----

@@ -23,6 +23,6 @@ Comment[sv]=Visa välkomstmeddelande
 Exec=mx-welcome
 Terminal=false
 Type=Application
-Icon=/usr/share/pixmaps/mx/mx-welcome.png
+Icon=mx-welcome
 Categories=GNOME;GTK;System;
 NoDisplay=false

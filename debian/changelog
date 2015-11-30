@@ -1,3 +1,9 @@
+mx-welcome (15.11.1mx15) mx; urgency=medium
+
+  * changed icon location
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 30 Nov 2015 10:08:32 -0500
+
 mx-welcome (15.11mx15) mx; urgency=medium
 
   * open videos in browser
