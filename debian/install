@@ -2,6 +2,5 @@ mx-welcome 		usr/bin
 mx-welcome.desktop	usr/share/applications/mx
 mx-welcome.desktop	etc/skel/.config/autostart
 translations/*.qm 	usr/share/mx-welcome/locale
-mx-welcome.png		usr/share/pixmaps/mx
 mx-welcome.png		usr/share/pixmaps
 icons/*                 usr/share/mx-welcome/icons

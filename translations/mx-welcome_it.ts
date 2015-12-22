@@ -14,8 +14,8 @@
     <message>
         <location filename="../mxwelcome.ui" line="14"/>
         <location filename="../mxwelcome.cpp" line="50"/>
-        <location filename="../mxwelcome.cpp" line="104"/>
-        <location filename="../mxwelcome.cpp" line="111"/>
+        <location filename="../mxwelcome.cpp" line="105"/>
+        <location filename="../mxwelcome.cpp" line="112"/>
         <source>MX Welcome</source>
         <translation>MX Benvenuto</translation>
     </message>
@@ -100,32 +100,32 @@
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="103"/>
+        <location filename="../mxwelcome.cpp" line="104"/>
         <source>About MX Welcome</source>
         <translation>Informazioni su MX Benvenuto</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="104"/>
+        <location filename="../mxwelcome.cpp" line="105"/>
         <source>Version: </source>
         <translation>Versione:</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="105"/>
+        <location filename="../mxwelcome.cpp" line="106"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
         <translation>Programma che mostra un messaggio di benvenuto in MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="107"/>
+        <location filename="../mxwelcome.cpp" line="108"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="108"/>
+        <location filename="../mxwelcome.cpp" line="109"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="109"/>
+        <location filename="../mxwelcome.cpp" line="110"/>
         <source>License</source>
         <translation>Licenza</translation>
     </message>

@@ -99,6 +99,7 @@ void mxwelcome::setConnections()
 // About button clicked
 void mxwelcome::on_buttonAbout_clicked()
 {
+    this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Welcome"), "<p align=\"center\"><b><h2>" +
                        tr("MX Welcome") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
@@ -111,6 +112,7 @@ void mxwelcome::on_buttonAbout_clicked()
         QString cmd = QString("mx-viewer http://www.mepiscommunity.org/wiki/licenses/license-mx-welcome '%1'").arg(tr("MX Welcome"));
         system(cmd.toUtf8());
     }
+    this->show();
 }
 
 // Add/remove autostart at login

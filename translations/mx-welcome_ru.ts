@@ -14,8 +14,8 @@
     <message>
         <location filename="../mxwelcome.ui" line="14"/>
         <location filename="../mxwelcome.cpp" line="50"/>
-        <location filename="../mxwelcome.cpp" line="104"/>
-        <location filename="../mxwelcome.cpp" line="111"/>
+        <location filename="../mxwelcome.cpp" line="105"/>
+        <location filename="../mxwelcome.cpp" line="112"/>
         <source>MX Welcome</source>
         <translation>MX Приветствие</translation>
     </message>
@@ -100,32 +100,32 @@
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="103"/>
+        <location filename="../mxwelcome.cpp" line="104"/>
         <source>About MX Welcome</source>
         <translation>О программе MX Приветствие</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="104"/>
+        <location filename="../mxwelcome.cpp" line="105"/>
         <source>Version: </source>
         <translation>Версия:</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="105"/>
+        <location filename="../mxwelcome.cpp" line="106"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
         <translation>Программа для показа экрана приветствия в MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="107"/>
+        <location filename="../mxwelcome.cpp" line="108"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Авторское право (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="108"/>
+        <location filename="../mxwelcome.cpp" line="109"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="109"/>
+        <location filename="../mxwelcome.cpp" line="110"/>
         <source>License</source>
         <translation>Лицензия</translation>
     </message>
