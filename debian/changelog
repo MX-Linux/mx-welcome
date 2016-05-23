@@ -1,3 +1,9 @@
+mx-welcome (16.5mx15) mx; urgency=medium
+
+  * new desktop file
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Mon, 23 May 2016 13:27:00 -0400
+
 mx-welcome (15.12mx15) mx; urgency=medium
 
   * hide GUI when displaying help/license
