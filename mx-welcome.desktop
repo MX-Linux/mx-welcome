@@ -26,5 +26,5 @@ Exec=mx-welcome
 Terminal=false
 Type=Application
 Icon=mx-welcome
-Categories=GNOME;GTK;System;
+Categories=GNOME;GTK;System;MX-Setup;
 NoDisplay=false
