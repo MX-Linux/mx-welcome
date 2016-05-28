@@ -154,7 +154,7 @@ void mxwelcome::on_buttonWiki_clicked()
 // Launch Video links in browser
 void mxwelcome::on_buttonVideo_clicked()
 {
-    system("exo-open --launch WebBrowser http://www.mepiscommunity.org/videos/mx14");
+    system("exo-open --launch WebBrowser http://www.mepiscommunity.org/mx15videos");
 }
 
 // Launch Contribution page
