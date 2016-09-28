@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 28 Sep 2016 08:41:53 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source amd64
+Version: 16.9mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: dolphinoracle <dolphinoracle@gmail.com>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (16.9mx15) mx; urgency=medium
+ .
+   * new options
+Checksums-Sha1:
+ bfa9111eb2e3f2ac0b967daa6427488aad31b124 617 mx-welcome_16.9mx15.dsc
+ d10f856c9aee3319e0b94cd7cf6ecd489f14e4fa 48072 mx-welcome_16.9mx15.tar.xz
+ 9aca3bc12d3ffc6415002dbca74f9760eaf698b5 44482 mx-welcome_16.9mx15_amd64.deb
+Checksums-Sha256:
+ a44786befcf4486ec2548afe52c5a99a32a89aa4935c1796e07af933a8cd26ec 617 mx-welcome_16.9mx15.dsc
+ 610fdabb93c64c2b397bbf58ba80ca97640eb5f14b7ece74ac3ffc0df7fbff4f 48072 mx-welcome_16.9mx15.tar.xz
+ d9f03fdc2094a99456498125d8471e5cfd72feb8466a431304ac88d775801444 44482 mx-welcome_16.9mx15_amd64.deb
+Files:
+ 248b7a97b75eb666cb85c669a2cd9a62 617 admin optional mx-welcome_16.9mx15.dsc
+ 64a9e13a8cb2992ec1d932d9724462e4 48072 admin optional mx-welcome_16.9mx15.tar.xz
+ ff83883f9f20e7cb4354d2acb095dacc 44482 admin optional mx-welcome_16.9mx15_amd64.deb
