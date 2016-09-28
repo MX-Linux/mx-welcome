@@ -154,7 +154,7 @@ void mxwelcome::on_buttonWiki_clicked()
 // Launch Video links in browser
 void mxwelcome::on_buttonVideo_clicked()
 {
-    system("exo-open --launch WebBrowser http://www.mepiscommunity.org/mx15videos");
+    system("exo-open --launch WebBrowser http://www.mepiscommunity.org/videos/mx14");
 }
 
 // Launch Contribution page
@@ -167,4 +167,15 @@ void mxwelcome::on_buttonContribute_clicked()
 void mxwelcome::on_buttonLogininfo_clicked()
 {
     system("mx-viewer file:///usr/local/share/doc/mxum.html#toc-Subsection-2.4");
+}
+
+void mxwelcome::on_buttonPanelOrient_clicked()
+{
+    system("mx-panel-orientation");
+}
+
+void mxwelcome::on_buttonPackageInstall_clicked()
+{
+    system("su-to-root -X -c mx-packageinstaller");
+
 }

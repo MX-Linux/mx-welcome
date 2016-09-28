@@ -1,8 +1,8 @@
-mx-welcome (16.5mx15+1) mx; urgency=medium
+mx-welcome (16.9mx15) mx; urgency=medium
 
-  * fixed video link
+  * new options
 
- -- Adrian <adrian@mxlinux.org>  Fri, 27 May 2016 23:15:13 -0400
+ -- dolphinoracle <dolphinoracle@gmail.com>  Wed, 28 Sep 2016 08:41:53 -0400
 
 mx-welcome (16.5mx15) mx; urgency=medium
 
