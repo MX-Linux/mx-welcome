@@ -74,6 +74,10 @@ private slots:
     void on_buttonContribute_clicked();
     void on_buttonLogininfo_clicked();
 
+    void on_buttonPanelOrient_clicked();
+
+    void on_buttonPackageInstall_clicked();
+
 private:
     Ui::mxwelcome *ui;
 };

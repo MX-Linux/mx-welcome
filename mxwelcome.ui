@@ -460,7 +460,7 @@
       <item row="9" column="4">
        <widget class="FlatButton" name="buttonPackageInstall">
         <property name="text">
-         <string>MX Package Installer</string>
+         <string>Popular Apps</string>
         </property>
         <property name="icon">
          <iconset>
@@ -487,11 +487,6 @@
      <zorder>line_3</zorder>
      <zorder>buttonTools</zorder>
      <zorder>buttonContribute</zorder>
-     <zorder>horizontalSpacer_13</zorder>
-     <zorder>buttonPackageInstall</zorder>
-     <zorder>horizontalSpacer_4</zorder>
-     <zorder>buttonPanelOrient</zorder>
-     <zorder>horizontalSpacer_12</zorder>
      <zorder>horizontalSpacer_13</zorder>
      <zorder>buttonPackageInstall</zorder>
      <zorder>horizontalSpacer_4</zorder>
