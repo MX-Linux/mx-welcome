@@ -5,7 +5,7 @@
  *
  * Authors: Adrian
  *          Paul David Callahan
- *          MX Linux <http://forum.mxlinux.org>
+ *          MX Linux <http://mxlinux.org>
  *
  * This file is part of mx-welcome.
  *
