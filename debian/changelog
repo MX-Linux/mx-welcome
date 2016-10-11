@@ -1,3 +1,10 @@
+mx-welcome (16.10mx16) mx; urgency=medium
+
+  * initial mx16 release.
+  * changed panel-orientation to mx-defaultlook
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Mon, 10 Oct 2016 22:03:41 -0400
+
 mx-welcome (16.9mx15) mx; urgency=medium
 
   * new options
