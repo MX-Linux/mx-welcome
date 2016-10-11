@@ -5,7 +5,8 @@
  *
  * Authors: Adrian
  *          Paul David Callahan
- *          MX & MEPIS Community <http://forum.mepiscommunity.org>
+ *          Dolphin Oracle
+ *          MX Community <http://mxlinux.org>
  *
  * This file is part of mx-welcome.
  *
