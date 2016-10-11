@@ -3,9 +3,10 @@
  **********************************************************************
  * Copyright (C) 2015 MX Authors
  *
- * Authors: Adrian
+ * AAuthors: Adrian
  *          Paul David Callahan
- *          MX & MEPIS Community <http://forum.mepiscommunity.org>
+ *          Dolphin Oracle
+ *          MX Linux <http://forum.linux.org>
  *
  * This file is part of mx-welcome.
  *
@@ -104,12 +105,12 @@ void mxwelcome::on_buttonAbout_clicked()
                        tr("About MX Welcome"), "<p align=\"center\"><b><h2>" +
                        tr("MX Welcome") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
                        tr("Program for displaying a welcome screen in MX Linux") +
-                       "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
+                       "</h3></p><p align=\"center\"><a href=\"http://www.mxlinux.org\">http://www.mxlinux.org</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
     msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
     msgBox.addButton(tr("License"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::RejectRole) {
-        QString cmd = QString("mx-viewer http://www.mepiscommunity.org/wiki/licenses/license-mx-welcome '%1'").arg(tr("MX Welcome"));
+        QString cmd = QString("mx-viewer http://www.mxlinux.org/wiki/licenses/license-mx-welcome '%1'").arg(tr("MX Welcome"));
         system(cmd.toUtf8());
     }
     this->show();
@@ -148,19 +149,19 @@ void mxwelcome::on_buttonForum_clicked()
 // Launch Wiki in browser
 void mxwelcome::on_buttonWiki_clicked()
 {
-    system("mx-viewer http://www.mepiscommunity.org/wiki");
+    system("mx-viewer http://www.mxlinux.org/wiki");
 }
 
 // Launch Video links in browser
 void mxwelcome::on_buttonVideo_clicked()
 {
-    system("exo-open --launch WebBrowser http://www.mepiscommunity.org/videos/mx14");
+    system("exo-open --launch WebBrowser http://www.mxlinux.org/videos/mx14");
 }
 
 // Launch Contribution page
 void mxwelcome::on_buttonContribute_clicked()
 {
-    system("mx-viewer http://www.mepiscommunity.org/donate");
+    system("mx-viewer http://www.mxlinux.org/donate");
 }
 
 // Launch Help in browser

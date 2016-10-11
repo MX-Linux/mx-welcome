@@ -3,7 +3,7 @@
 # *
 # * Authors: Adrian
 # *          Paul David Callahan
-# *          MX & MEPIS Community <http://forum.mepiscommunity.org>
+# *          MX Community <http://forum.mxlinux.org>
 # *
 # * This file is part of mx-welcome.
 # *
