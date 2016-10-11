@@ -172,11 +172,14 @@ void mxwelcome::on_buttonLogininfo_clicked()
 
 void mxwelcome::on_buttonPanelOrient_clicked()
 {
+    this->hide();
     system("mx-panel-orientation");
+    this->show();
 }
 
 void mxwelcome::on_buttonPackageInstall_clicked()
 {
+    this->hide();
     system("su-to-root -X -c mx-packageinstaller");
-
+    this->show();
 }
