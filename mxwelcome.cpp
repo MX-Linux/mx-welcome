@@ -6,7 +6,7 @@
  * AAuthors: Adrian
  *          Paul David Callahan
  *          Dolphin Oracle
- *          MX Linux <http://forum.linux.org>
+ *          MMX Linux <http://mxlinux.org>
  *
  * This file is part of mx-welcome.
  *
