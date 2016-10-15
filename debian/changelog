@@ -1,4 +1,4 @@
-mx-welcome (16.10mx16) mx; urgency=medium
+mx-welcome (16.10mx16+1) mx; urgency=medium
 
   * initial mx16 release.
   * changed panel-orientation to mx-defaultlook

@@ -1,0 +1,23 @@
+Format: 1.8
+Date: Mon, 10 Oct 2016 22:03:41 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: i386
+Version: 16.10mx16+1
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: dolphinoracle <dolphinoracle@gmail.com>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (16.10mx16+1) mx; urgency=medium
+ .
+   * initial mx16 release.
+   * changed panel-orientation to mx-defaultlook
+Checksums-Sha1:
+ 799b67fe8a10471db6ebbd4d2f816394b1168b7d 44888 mx-welcome_16.10mx16+1_i386.deb
+Checksums-Sha256:
+ 20148226e0bd27c7eeb43f62bfd4d7a7f2b1549c603b9749383d773cc14f8466 44888 mx-welcome_16.10mx16+1_i386.deb
+Files:
+ baa941d7fae23cf3b544d974fbf7fd03 44888 admin optional mx-welcome_16.10mx16+1_i386.deb
