@@ -29,7 +29,7 @@
 #include "ui_mxwelcome.h"
 #include "flatbutton.h"
 
-//#include <QDebug>
+#include <QDebug>
 
 mxwelcome::mxwelcome(QWidget *parent) :
     QDialog(parent),
@@ -51,7 +51,9 @@ void mxwelcome::setup()
     this->setWindowTitle(tr("MX Welcome"));
     system("rm ~/.config/autostart/mx-welcome.desktop >/dev/null 2>&1");
     // if running live
-    if (system("mountpoint -q /live/aufs") == 0 ) {
+    QString test = runCmd("df -T / |tail -n1 |awk '{print $2}'").output;
+    qDebug() << test;
+    if ( test == "aufs" || test == "overlay" ) {
         ui->checkBox->hide();
     } else {
         ui->buttonLogininfo->hide();
