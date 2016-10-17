@@ -1,0 +1,22 @@
+Format: 1.8
+Date: Sun, 16 Oct 2016 20:03:41 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: i386
+Version: 16.10mx16+2
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: dolphinoracle <dolphinoracle@gmail.com>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (16.10mx16+2) mx; urgency=medium
+ .
+   * fixed live detection
+Checksums-Sha1:
+ 304162af386da15bfe0ad74790f1472c333f6a8d 45728 mx-welcome_16.10mx16+2_i386.deb
+Checksums-Sha256:
+ fa8b5f343ee5bedc19790143d199f820aab8e9043884f5b6e1b97d5bdde2418b 45728 mx-welcome_16.10mx16+2_i386.deb
+Files:
+ a3059cdf0bb0d7502344e4df6eea32ad 45728 admin optional mx-welcome_16.10mx16+2_i386.deb
