@@ -137,19 +137,25 @@ void mxwelcome::on_buttonTools_clicked()
 // Launch Manual in browser
 void mxwelcome::on_buttonManual_clicked()
 {
+    this->hide();
     system("mx-viewer /usr/local/share/doc/mxum.html");
+    this->show();
 }
 
 // Launch Forum in browser
 void mxwelcome::on_buttonForum_clicked()
 {
+    this->hide();
     system("mx-viewer http://forum.mepiscommunity.org/index.php");
+    this->show();
 }
 
 // Launch Wiki in browser
 void mxwelcome::on_buttonWiki_clicked()
 {
+    this->hide();
     system("mx-viewer http://www.mxlinux.org/wiki");
+    this->show();
 }
 
 // Launch Video links in browser
@@ -161,13 +167,17 @@ void mxwelcome::on_buttonVideo_clicked()
 // Launch Contribution page
 void mxwelcome::on_buttonContribute_clicked()
 {
+    this->hide();
     system("mx-viewer http://www.mxlinux.org/donate");
+    this->show();
 }
 
 // Launch Help in browser
 void mxwelcome::on_buttonLogininfo_clicked()
 {
+    this->hide();
     system("mx-viewer file:///usr/local/share/doc/mxum.html#toc-Subsection-2.4");
+    this->show();
 }
 
 void mxwelcome::on_buttonPanelOrient_clicked()
