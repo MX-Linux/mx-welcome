@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 18 Oct 2016 22:40:41 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source amd64
+Version: 16.10mx16+4
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: dolphinoracle <dolphinoracle@gmail.com>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (16.10mx16+4) mx; urgency=medium
+ .
+   * fixed depends in control file
+Checksums-Sha1:
+ f587423e6447e0da43f01cc5eec0a85d70b91ead 632 mx-welcome_16.10mx16+4.dsc
+ 00d71e73cdee7bf87a7cd3ae8da7aba05c8ca00a 188800 mx-welcome_16.10mx16+4.tar.xz
+ c72c2e0f21df9e1b2929ba84ce5a29e1c79668a5 44352 mx-welcome_16.10mx16+4_amd64.deb
+Checksums-Sha256:
+ 4ce274b759fb01143e00d68b0f3bdeb7329c703566a7923c708547bf32821dfa 632 mx-welcome_16.10mx16+4.dsc
+ 319c1fe00d3fcde2154b4bd06036b55777a5f7226e0539c9f8203f9d04b0d855 188800 mx-welcome_16.10mx16+4.tar.xz
+ 868280f81ddbe8fe89ee69257b2eb923ac0bda03e3ed6a33ea6b276e7aafa878 44352 mx-welcome_16.10mx16+4_amd64.deb
+Files:
+ b0cd03ff5b1a5a511d64c95904c407b7 632 admin optional mx-welcome_16.10mx16+4.dsc
+ 2d985eb7da8d68ac2693c1742c81c9f1 188800 admin optional mx-welcome_16.10mx16+4.tar.xz
+ afd1b759f16ba18d87cc25fcf84e7385 44352 admin optional mx-welcome_16.10mx16+4_amd64.deb

@@ -1,3 +1,9 @@
+mx-welcome (16.10mx16+4) mx; urgency=medium
+
+  * fixed depends in control file
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Tue, 18 Oct 2016 22:40:41 -0400
+
 mx-welcome (16.10mx16+3) mx; urgency=medium
 
   * hide UI when clicking on buttons
