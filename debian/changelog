@@ -1,3 +1,9 @@
+mx-welcome (16.10mx16+5) mx; urgency=medium
+
+  * fixed depends in control file
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Thu, 20 Oct 2016 12:14:41 -0400
+
 mx-welcome (16.10mx16+4) mx; urgency=medium
 
   * fixed depends in control file
