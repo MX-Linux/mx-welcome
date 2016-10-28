@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -20,17 +18,14 @@
         <translation>MX Приветствие</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-15 &lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#000000;&quot;&gt;&amp;quot;Fusion&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-15 &lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#000000;&quot;&gt;&amp;quot;Fusion&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <location filename="../mxwelcome.ui" line="55"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Welcome to MX Linux, a fast, friendly, and stable OS loaded with amazing tools and supported by a great community. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Добро пожаловать в MX Linux - быструю, дружественную и стабильную ОС, которая загружается с удивительными инструментами и поддерживается большим сообществом. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="110"/>
         <source>Users Manual</source>
         <translation>Руководство пользователя</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Welcome to MX Linux, a fast, friendly, and stable OS loaded with amazing tools and supported by a great community. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Добро пожаловать в MX Linux - быструю, дружественную и стабильную ОС, которая загружается с удивительными инструментами и поддерживается большим сообществом. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="158"/>
@@ -60,17 +55,17 @@
     <message>
         <location filename="../mxwelcome.ui" line="430"/>
         <source>Default Look</source>
-        <translation type="unfinished"></translation>
+        <translation>Вид по умолчанию</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="453"/>
         <source>Popular Apps</source>
-        <translation type="unfinished"></translation>
+        <translation>Популярные приложения</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="473"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-16 &lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#000000;&quot;&gt;&amp;quot;metamorphosis&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-16 &amp;quot;Metamorphosis&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-16 &amp;quot;Трансформация&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="536"/>
@@ -81,6 +76,21 @@
         <location filename="../mxwelcome.ui" line="553"/>
         <source>Show this dialog at start up</source>
         <translation>Показывать этот диалог при запуске</translation>
+    </message>
+    <message>
+        <location filename="../mxwelcome.ui" line="608"/>
+        <source>About this application</source>
+        <translation>Об этом приложении</translation>
+    </message>
+    <message>
+        <location filename="../mxwelcome.ui" line="611"/>
+        <source>About...</source>
+        <translation>O...</translation>
+    </message>
+    <message>
+        <location filename="../mxwelcome.ui" line="618"/>
+        <source>Alt+B</source>
+        <translation>Alt+B</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="669"/>
@@ -96,26 +106,6 @@
         <location filename="../mxwelcome.ui" line="679"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
-    </message>
-    <message>
-        <location filename="../mxwelcome.ui" line="608"/>
-        <source>About this application</source>
-        <translation>Об этом приложении</translation>
-    </message>
-    <message>
-        <location filename="../mxwelcome.ui" line="55"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Welcome to MX Linux, a fast, friendly, and stable OS loaded with amazing tools and supported by a great community. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxwelcome.ui" line="611"/>
-        <source>About...</source>
-        <translation>O...</translation>
-    </message>
-    <message>
-        <location filename="../mxwelcome.ui" line="618"/>
-        <source>Alt+B</source>
-        <translation>Alt+B</translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="107"/>
