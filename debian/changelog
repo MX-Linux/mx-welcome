@@ -1,3 +1,9 @@
+mx-welcome (16.10mx16+7) mx; urgency=medium
+
+  * changed video url
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Fri, 28 Oct 2016 15:25:41 -0400
+
 mx-welcome (16.10mx16+6) mx; urgency=medium
 
   * translations
