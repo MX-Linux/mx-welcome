@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 16 Nov 2016 14:03:49 -0500
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source amd64
+Version: 16.11mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (16.11mx16) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ c881f9010078d81fcc10f4bc7a4c8d26c32ed26c 1142 mx-welcome_16.11mx16.dsc
+ 56bb08b127f5d280a3328bf7a5804363955c4726 42408 mx-welcome_16.11mx16.tar.xz
+ 8191e3d269f1f8a9576e055f5727064fca6c1516 47280 mx-welcome_16.11mx16_amd64.deb
+Checksums-Sha256:
+ fa4c99abbf7dfea0c857f450448cd3cee71e374453fa32618ef77361703620ef 1142 mx-welcome_16.11mx16.dsc
+ 13ac304e67b3c8976b8d4644db957621b516466a6195a8d1753f0cd88eb16751 42408 mx-welcome_16.11mx16.tar.xz
+ 9742f989a27e6cfe0bd5e25e188c63d16ddcfaec339016063eb99c0e29aac872 47280 mx-welcome_16.11mx16_amd64.deb
+Files:
+ ea0c5c860e26335f3fbcce334112c160 1142 admin optional mx-welcome_16.11mx16.dsc
+ 43bd46194449b647782c669f8962b2de 42408 admin optional mx-welcome_16.11mx16.tar.xz
+ 48bb1a5d6193c19dd8f9b51cbbaf947c 47280 admin optional mx-welcome_16.11mx16_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJYLK20AAoJEHCTjHgGee6YGgAIAId3Yi2SsroUbMy7rZTpas+z
+YdyZ522oW/fUWpmlA3NwclM2bJTaL95H9HTm4Im3FT75MXzFFSVCT0N+zevkwcbP
+E2IC2bQYDVZDUP76mxeVNaMDK6ioptYKvLwl7F7OUnliQ86GrbRFJAMmlpylngu6
+JpFpPO5vSwFopH9FgMNMXDoaM5PzLwGcD1HQmATSfLuhrr+oaUFBDCiD9FoeEY2v
+lVqT7ARMFGZHUWNgAdsPvxVihxwwiNu0PgINbXATZZJ1BEtWmcu6fW1rrFDKAt74
+21NBbbXgnyFupfZz9ODNyw+9FICogJ3yMFXXVCe5t5VKsgjllRoVikWGLRZ5lJs=
+=hit8
+-----END PGP SIGNATURE-----
