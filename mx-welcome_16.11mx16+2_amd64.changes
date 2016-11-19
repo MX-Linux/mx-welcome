@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sat, 19 Nov 2016 15:15:49 -0500
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source amd64
+Version: 16.11mx16+2
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Dolphin <dolphinoracle@gmail.com>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (16.11mx16+2) mx; urgency=medium
+ .
+   * window icon for panel
+Checksums-Sha1:
+ 5675ea599066acb5b11744314fc87508ffafb5b4 629 mx-welcome_16.11mx16+2.dsc
+ 1134ad09a6dcbcc7bd7635213a491184459769fa 44528 mx-welcome_16.11mx16+2.tar.xz
+ bc104e9d9aa96ee8dcaecfb1a37b02fd9cc93c40 47304 mx-welcome_16.11mx16+2_amd64.deb
+Checksums-Sha256:
+ 667148644925bf26af73a47f304fc5613234e8ec2a5058878539b8f330d09ce6 629 mx-welcome_16.11mx16+2.dsc
+ e315dbfa6c3a051a4c1546d71caad2270c07cb759ff8ab0c526480e945abbce1 44528 mx-welcome_16.11mx16+2.tar.xz
+ a80076f7674b6264d806c95e59b20687c64f568cb43660b78f14e856c3244166 47304 mx-welcome_16.11mx16+2_amd64.deb
+Files:
+ dc26264c6ba809c2dc0b7de6dc653437 629 admin optional mx-welcome_16.11mx16+2.dsc
+ 6bdafc8ac680292a5c709611c3cfa410 44528 admin optional mx-welcome_16.11mx16+2.tar.xz
+ afa13c40aef31d4309113c58f46ab251 47304 admin optional mx-welcome_16.11mx16+2_amd64.deb
