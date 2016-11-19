@@ -1,3 +1,9 @@
+mx-welcome (16.11mx16+2) mx; urgency=medium
+
+  * window icon for panel 
+
+ -- Dolphin <dolphinoracle@gmail.com>  Sat, 19 Nov 2016 15:15:49 -0500
+
 mx-welcome (16.11mx16+1) mx; urgency=medium
 
   * minor startup delay added to autostart  

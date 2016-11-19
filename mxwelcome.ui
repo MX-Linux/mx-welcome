@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../../../../../../../usr/share/pixmaps/mx/mx-welcome.png</normaloff>../../../../../../../usr/share/pixmaps/mx/mx-welcome.png</iconset>
+    <normaloff>../../../usr/share/pixmaps/mx-welcome.png</normaloff>../../../usr/share/pixmaps/mx-welcome.png</iconset>
   </property>
   <property name="sizeGripEnabled">
    <bool>false</bool>
