@@ -122,7 +122,7 @@ void mxwelcome::on_buttonAbout_clicked()
 void mxwelcome::on_checkBox_clicked(bool checked)
 {
     if (checked) {
-        system("cp /usr/share/applications/mx/mx-welcome.desktop ~/.config/autostart");
+        system("cp /usr/share/mx-welcome/mx-welcome.desktop ~/.config/autostart/mx-welcome.desktop");
     } else {
         system("rm ~/.config/autostart/mx-welcome.desktop >/dev/null 2>&1");
     }
