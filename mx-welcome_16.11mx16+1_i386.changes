@@ -1,0 +1,22 @@
+Format: 1.8
+Date: Sat, 19 Nov 2016 10:20:49 -0500
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: i386
+Version: 16.11mx16+1
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (16.11mx16+1) mx; urgency=medium
+ .
+   * minor startup delay added to autostart
+Checksums-Sha1:
+ 32603601dd5bb7b515eca7a2d3bc5a551533e153 47634 mx-welcome_16.11mx16+1_i386.deb
+Checksums-Sha256:
+ bc258efda4858f3f990bc6b86506a287fc8b7b5ba59b3b2bf019b72a6af15826 47634 mx-welcome_16.11mx16+1_i386.deb
+Files:
+ ae59806174af1047e50ed616e861816c 47634 admin optional mx-welcome_16.11mx16+1_i386.deb

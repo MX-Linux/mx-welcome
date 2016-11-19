@@ -1,3 +1,9 @@
+mx-welcome (16.11mx16+1) mx; urgency=medium
+
+  * minor startup delay added to autostart  
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 19 Nov 2016 10:20:49 -0500
+
 mx-welcome (16.11mx16) mx; urgency=medium
 
   * new translations 
