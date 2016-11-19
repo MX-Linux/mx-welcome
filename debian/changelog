@@ -1,3 +1,9 @@
+mx-welcome (16.11mx16) mx; urgency=medium
+
+  * new translations 
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 16 Nov 2016 14:03:49 -0500
+
 mx-welcome (16.10mx16+7) mx; urgency=medium
 
   * changed video url
