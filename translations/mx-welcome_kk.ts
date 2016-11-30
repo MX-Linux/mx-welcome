@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="kk" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="55"/>
         <source>You must run this program as normal user.</source>
-        <translation>Vous devez lancer cette application en tant qu&apos;utilisateur normal.</translation>
+        <translation>Бұл бағдарламаны қалыпты пайдаланушы атынан жөнелтуіңіз керек.</translation>
     </message>
 </context>
 <context>
@@ -15,77 +15,77 @@
         <location filename="../mxwelcome.cpp" line="108"/>
         <location filename="../mxwelcome.cpp" line="115"/>
         <source>MX Welcome</source>
-        <translation>MX Bienvenue</translation>
+        <translation>MX қарсы алу қолданбасы</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="55"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Welcome to MX Linux, a fast, friendly, and stable OS loaded with amazing tools and supported by a great community. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Bienvenue sur MX-Linux, un système d&apos;exploitation rapide, convivial, et stable, constitué d&apos;outils étonnants et soutenu par une grande communauté. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;MX Linux-ке қош келдіңіз! Ол - жылдам, икемді және тұрақты ОЖ, құрамында пайдалы саймандары және тамаша қоғамдастығы бар. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="110"/>
         <source>Users Manual</source>
-        <translation>Manuel de l&apos;utilisateur</translation>
+        <translation>Пайдаланушы нұсқаулығы</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="158"/>
         <source>Forums</source>
-        <translation>Forums</translation>
+        <translation>Форумдар</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="206"/>
         <source>Videos</source>
-        <translation>Vidéos</translation>
+        <translation>Видеолар</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="235"/>
         <source>Wiki</source>
-        <translation>Wiki</translation>
+        <translation>Вики</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="316"/>
         <source>Tools</source>
-        <translation>Outils </translation>
+        <translation>Саймандар</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="352"/>
         <source>Contribute</source>
-        <translation>Contribuer</translation>
+        <translation>Үлес қосу</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="430"/>
         <source>Default Look</source>
-        <translation>Apparence par défaut</translation>
+        <translation>Бастапқы сыртқы түрі</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="453"/>
         <source>Popular Apps</source>
-        <translation>Applications populaires</translation>
+        <translation>Әйгілі қолданбалар</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="473"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-16 &amp;quot;Metamorphosis&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-16 &amp;quot;Métamorphosis&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;MX-16 &amp;quot;Metamorphosis&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="536"/>
         <source>Login Info</source>
-        <translation>Données de connexion</translation>
+        <translation>Логин ақпараты</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="553"/>
         <source>Show this dialog at start up</source>
-        <translation>Afficher ce dialogue au démarrage</translation>
+        <translation>Бұл сұхбатты жүйеге кірген кезде көрсету</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="608"/>
         <source>About this application</source>
-        <translation>A propos de cette application</translation>
+        <translation>Бұл қолданба жөнінде</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="611"/>
         <source>About...</source>
-        <translation>A propos...</translation>
+        <translation>Осы туралы...</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="618"/>
@@ -95,12 +95,12 @@
     <message>
         <location filename="../mxwelcome.ui" line="669"/>
         <source>Quit application</source>
-        <translation>Quitter l&apos;application</translation>
+        <translation>Қолданба жұмысын аяқтау</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="672"/>
         <source>Close</source>
-        <translation>Fermer</translation>
+        <translation>Жабу</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="679"/>
@@ -110,17 +110,17 @@
     <message>
         <location filename="../mxwelcome.cpp" line="107"/>
         <source>About MX Welcome</source>
-        <translation>À propos de MX Bienvenue</translation>
+        <translation>MX қарсы алу қолданбасы туралы</translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="108"/>
         <source>Version: </source>
-        <translation>Version: </translation>
+        <translation>Нұсқасы:</translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="109"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation>Programme affichant un écran d&apos;accueil pour MX Linux</translation>
+        <translation>MX Linux ішінде қарсы алу экранын көрсетуге арналған қолданба</translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="111"/>
@@ -130,12 +130,12 @@
     <message>
         <location filename="../mxwelcome.cpp" line="112"/>
         <source>Cancel</source>
-        <translation>Annuler</translation>
+        <translation>Бас тарту</translation>
     </message>
     <message>
         <location filename="../mxwelcome.cpp" line="113"/>
         <source>License</source>
-        <translation>Licence</translation>
+        <translation>Лицензиясы</translation>
     </message>
 </context>
 </TS>
