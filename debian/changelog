@@ -1,3 +1,9 @@
+mx-welcome (16.11mx16+3) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 30 Nov 2016 13:03:51 -0500
+
 mx-welcome (16.11mx16+2) mx; urgency=medium
 
   * window icon for panel 
