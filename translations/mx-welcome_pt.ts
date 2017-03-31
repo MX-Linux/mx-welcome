@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pt">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="55"/>
         <source>You must run this program as normal user.</source>
-        <translation>Tem que executar este programa como utilizador normal</translation>
+        <translation>Tem que executar este programa como utilizador normal (não como administrador)</translation>
     </message>
 </context>
 <context>
@@ -27,7 +25,7 @@
     <message>
         <location filename="../mxwelcome.ui" line="110"/>
         <source>Users Manual</source>
-        <translation>Users Manual</translation>
+        <translation>Manual do utilizador</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="158"/>
@@ -52,17 +50,17 @@
     <message>
         <location filename="../mxwelcome.ui" line="352"/>
         <source>Contribute</source>
-        <translation>Contribua</translation>
+        <translation>Contribuir</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="430"/>
         <source>Default Look</source>
-        <translation>Aparência pré-definida</translation>
+        <translation>Aparência</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="453"/>
         <source>Popular Apps</source>
-        <translation>Aplicações mais solicitadas</translation>
+        <translation>Aplicações</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="473"/>
@@ -72,7 +70,7 @@
     <message>
         <location filename="../mxwelcome.ui" line="536"/>
         <source>Login Info</source>
-        <translation>Informação para entrar</translation>
+        <translation>Informação de Acesso</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="553"/>

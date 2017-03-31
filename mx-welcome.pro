@@ -39,6 +39,7 @@ HEADERS  += mxwelcome.h \
 FORMS    += mxwelcome.ui
 
 TRANSLATIONS += translations/mx-welcome_ca.ts \
+                translations/mx-welcome_cs.ts \
                 translations/mx-welcome_de.ts \
                 translations/mx-welcome_el.ts \
                 translations/mx-welcome_es.ts \
@@ -46,6 +47,7 @@ TRANSLATIONS += translations/mx-welcome_ca.ts \
                 translations/mx-welcome_it.ts \
                 translations/mx-welcome_ja.ts \
                 translations/mx-welcome_kk.ts \
+                translations/mx-welcome_lt.ts \
                 translations/mx-welcome_nl.ts \
                 translations/mx-welcome_pl.ts \
                 translations/mx-welcome_pt.ts \
