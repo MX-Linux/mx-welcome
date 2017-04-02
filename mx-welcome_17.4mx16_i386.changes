@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 02 Apr 2017 13:28:04 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: i386
+Version: 17.4mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (17.4mx16) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ 2a4a111041c1649dd098fbf6cee591719bf8efaa 49226 mx-welcome_17.4mx16_i386.deb
+Checksums-Sha256:
+ 0cb6276b340b3a5f2554f31fddd787d42641a05d01dd089b984036dbc3fb3520 49226 mx-welcome_17.4mx16_i386.deb
+Files:
+ 471b29dfb1ec4d29520b5325990b50eb 49226 admin optional mx-welcome_17.4mx16_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJY4VC/AAoJEHCTjHgGee6Yu1kH/1B4z1Vs672wv0q1lhmHReTW
+bx9VFfFeLZt8zK4IO7gpbLevhZpwRExgizAcHYJjUsy8RDm+e/vDS/Ahp99RII+w
+BJGxofgYYB9gywnjL1DNyFM+DaeWtYskXz8EkbMuXDSjUG/XRaUEJ1PPW7K7M0He
+Kr2Ph8llXnbplwWEbbru9aZx0KQKisEvaBQN6D3Maoat3f06S2NREIbMxg7KnIRv
+8Jk87w57RDFl/vRDOB5OUQxDdRKFKAbNPWpzrE2YpEBEuDs64j6APzRsQXURm4yG
+wyhc/DNdah2l/dWYKn83DmbiyvXFcpFcz12iUAig5qoH2sqC31o5dEHOSZdnjzQ=
+=RNg4
+-----END PGP SIGNATURE-----
