@@ -1,5 +1,5 @@
 mx-welcome 		usr/bin
-mx-welcome.desktop	usr/share/applications/mx
+mx-welcome.desktop	usr/share/applications
 autostart/mx-welcome.desktop	etc/skel/.config/autostart/
 autostart/mx-welcome.desktop	usr/share/mx-welcome
 translations/*.qm 	usr/share/mx-welcome/locale
