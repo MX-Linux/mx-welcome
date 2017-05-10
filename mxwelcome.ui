@@ -110,8 +110,8 @@
          <string>Users Manual</string>
         </property>
         <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../usr/share/mx-welcome/icons/users-manual.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/users-manual.png</iconset>
+         <iconset resource="images.qrc">
+          <normaloff>:/icons/users-manual.png</normaloff>:/icons/users-manual.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -158,8 +158,8 @@
          <string>Forums</string>
         </property>
         <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../usr/share/mx-welcome/icons/forums.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/forums.png</iconset>
+         <iconset resource="images.qrc">
+          <normaloff>:/icons/forums.png</normaloff>:/icons/forums.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -206,8 +206,8 @@
          <string>Videos</string>
         </property>
         <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../usr/share/mx-welcome/icons/videos.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/videos.png</iconset>
+         <iconset resource="images.qrc">
+          <normaloff>:/icons/videos.png</normaloff>:/icons/videos.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -235,8 +235,8 @@
          <string>Wiki</string>
         </property>
         <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../usr/share/mx-welcome/icons/wiki.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/wiki.png</iconset>
+         <iconset resource="images.qrc">
+          <normaloff>:/icons/wiki.png</normaloff>:/icons/wiki.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -316,8 +316,8 @@
          <string>Tools</string>
         </property>
         <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../usr/share/mx-welcome/icons/tools.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/tools.png</iconset>
+         <iconset resource="images.qrc">
+          <normaloff>:/icons/tools.png</normaloff>:/icons/tools.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -352,8 +352,8 @@
          <string>Contribute</string>
         </property>
         <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../usr/share/mx-welcome/icons/contribute.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/contribute.png</iconset>
+         <iconset resource="images.qrc">
+          <normaloff>:/icons/contribute.png</normaloff>:/icons/contribute.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -430,8 +430,8 @@
          <string>Default Look</string>
         </property>
         <property name="icon">
-         <iconset>
-          <normaloff>../../../usr/share/mx-welcome/icons/mxwelcome-icon-panel-orient.png</normaloff>../../../usr/share/mx-welcome/icons/mxwelcome-icon-panel-orient.png</iconset>
+         <iconset resource="images.qrc">
+          <normaloff>:/icons/mxwelcome-icon-panel-orient.png</normaloff>:/icons/mxwelcome-icon-panel-orient.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -453,8 +453,8 @@
          <string>Popular Apps</string>
         </property>
         <property name="icon">
-         <iconset>
-          <normaloff>../../../usr/share/mx-welcome/icons/mxwelcome-icon-packageinstaller.png</normaloff>../../../usr/share/mx-welcome/icons/mxwelcome-icon-packageinstaller.png</iconset>
+         <iconset resource="images.qrc">
+          <normaloff>:/icons/mxwelcome-icon-packageinstaller.png</normaloff>:/icons/mxwelcome-icon-packageinstaller.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -589,7 +589,7 @@
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../../../../../../usr/share/mx-welcome/icons/mxfcelogo.png</pixmap>
+        <pixmap resource="images.qrc">:/icons/logo.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -611,8 +611,7 @@
         <string>About...</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>../../../../../../../usr/share/mx-welcome/icons/accessories-text-editor.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/accessories-text-editor.png</iconset>
+        <iconset theme="help-about"/>
        </property>
        <property name="shortcut">
         <string>Alt+B</string>
@@ -672,8 +671,7 @@
         <string>Close</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>../../../../../../../usr/share/mx-welcome/icons/gtk-cancel.png</normaloff>../../../../../../../usr/share/mx-welcome/icons/gtk-cancel.png</iconset>
+        <iconset theme="window-close"/>
        </property>
        <property name="shortcut">
         <string>Alt+N</string>
@@ -694,7 +692,9 @@
    <header>flatbutton.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>buttonCancel</sender>

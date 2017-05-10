@@ -91,22 +91,22 @@
         <translation>Sobre...</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="618"/>
+        <location filename="../mxwelcome.ui" line="617"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="669"/>
+        <location filename="../mxwelcome.ui" line="668"/>
         <source>Quit application</source>
         <translation>Sair da aplicação</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="672"/>
+        <location filename="../mxwelcome.ui" line="671"/>
         <source>Close</source>
         <translation>Encerrar</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.ui" line="679"/>
+        <location filename="../mxwelcome.ui" line="677"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
@@ -131,12 +131,12 @@
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="112"/>
+        <location filename="../mxwelcome.cpp" line="113"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../mxwelcome.cpp" line="113"/>
+        <location filename="../mxwelcome.cpp" line="112"/>
         <source>License</source>
         <translation>Licença</translation>
     </message>

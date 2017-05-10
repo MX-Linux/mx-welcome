@@ -56,4 +56,7 @@ TRANSLATIONS += translations/mx-welcome_ca.ts \
                 translations/mx-welcome_sv.ts \
                 translations/mx-welcome_tr.ts
 
+RESOURCES += \
+    images.qrc
+
 

@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/logo.png</file>
+        <file>icons/contribute.png</file>
+        <file>icons/forums.png</file>
+        <file>icons/mxwelcome-icon-packageinstaller.png</file>
+        <file>icons/mxwelcome-icon-panel-orient.png</file>
+        <file>icons/tools.png</file>
+        <file>icons/users-manual.png</file>
+        <file>icons/videos.png</file>
+        <file>icons/wiki.png</file>
+        <file>icons/zoom-fit.png</file>
+    </qresource>
+</RCC>

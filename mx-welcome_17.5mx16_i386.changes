@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 10 May 2017 16:21:21 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: i386
+Version: 17.5mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (17.5mx16) mx; urgency=medium
+ .
+   * updated icons
+Checksums-Sha1:
+ 66fa091a8959ffbe9555f4cbe847d35fe8c4c30d 48046 mx-welcome_17.5mx16_i386.deb
+Checksums-Sha256:
+ 5b95dcc0a39474114e812d12d109f4e4d33884e92b7b73c59255697ea2c749a4 48046 mx-welcome_17.5mx16_i386.deb
+Files:
+ be54a39ed0710ebb8a59ad2f7b503165 48046 admin optional mx-welcome_17.5mx16_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZE3eYAAoJEHCTjHgGee6Y6xwIAK8Q+GoeAEoDs+2zBc3melC1
+XnPl2mWWEHks4Zy4TDwuBiYcqgErEWb1DlKdgQM6V1Jyx1B4zgcD9abL9JZyGmOQ
+++pEcfwe6uecJcds0qazyrDqLSARC2Pkm9XnJBEBYV8OpL/g9EUQ+QZmKDwNhOBu
+pA2GZx4LNTp2YUSGFT1uvs//GEb+cu2PcBWutdAJMRCpieSctbAiczmRKqKNMbvS
+tEeLu6mrHxZr3S9rsAdiROMhUmF39bb66hHx5duQJDvPm71R6FON04MLFRwMBTsK
+9f6Gg4BngVImeRt25RFTuw3ZHRzeDhpOd4gi3yyLIVtr0EObIugvuvaDuLUzgyY=
+=Dr9W
+-----END PGP SIGNATURE-----
