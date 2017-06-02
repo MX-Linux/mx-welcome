@@ -53,6 +53,7 @@ TRANSLATIONS += translations/mx-welcome_ca.ts \
                 translations/mx-welcome_pt.ts \
                 translations/mx-welcome_ro.ts \
                 translations/mx-welcome_ru.ts \
+                translations/mx-welcome_sk.ts \
                 translations/mx-welcome_sv.ts \
                 translations/mx-welcome_tr.ts
 
