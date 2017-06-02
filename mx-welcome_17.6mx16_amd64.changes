@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 02 Jun 2017 16:41:15 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source amd64
+Version: 17.6mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (17.6mx16) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ f04e30d27e1bb94319d4aa7f107d44c2df1806b0 1112 mx-welcome_17.6mx16.dsc
+ 716e11d71c6090133a76bbf84fdbc27c3a97653a 43100 mx-welcome_17.6mx16.tar.xz
+ 9746e7dea4e6899422be2644a4c2e14d062e2304 47932 mx-welcome_17.6mx16_amd64.deb
+Checksums-Sha256:
+ d23e399b43ead75cfe7d8c8cb74cbd3db144d5630bac0e77ebdcc13c58ca1dda 1112 mx-welcome_17.6mx16.dsc
+ a775e9ba0a17639c9585505c375f74723f5871d655374eed35549a40f6500fbd 43100 mx-welcome_17.6mx16.tar.xz
+ 9d4d1ccbeec9d170ea0a3beed603b470f6b132a3c0ed8d5dc9803a4ea2268787 47932 mx-welcome_17.6mx16_amd64.deb
+Files:
+ b048e2fe197684eaab6a1f36d34a5f87 1112 admin optional mx-welcome_17.6mx16.dsc
+ 8ca3ce9d57791ee0de0257f857106efb 43100 admin optional mx-welcome_17.6mx16.tar.xz
+ 7e961b0f72d1bc2fb49e92ded86f4f93 47932 admin optional mx-welcome_17.6mx16_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZMc2LAAoJEHCTjHgGee6Ye4MIAIhAKg1Uj31TYUK0vh+iKt+p
+53VZSJSBKr45VpKRqVKq4v2M2DRQsqYPYY3k00dq8MS0sz75IwbwmnATCsp6Rwtw
+0WleL30yXwHsYSJp7fRknSQfMpkVZBwz+qUfb6HxdtNI+bI9DbzcZR/58s3mexY6
+NiPCw2pP0gP5ge2erq4eV+s720mFUXaCSU2950wAIq8U5LTBVQreFIYoC6lJFX+4
+7g276D0PleXwPuFCP1Vmjc88GgmBcFLBAdx2NmVT+tjIU80z4TblGLnU/NFjTRpy
+INoGLW4BVST7jruIEOfE3yh0U7K/GF8Ct1bltyXxc7HQjM2ZQn67Lgz+/u56Pls=
+=t1qe
+-----END PGP SIGNATURE-----
