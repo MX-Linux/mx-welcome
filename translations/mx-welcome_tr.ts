@@ -37,7 +37,7 @@
     <message>
         <location filename="../mxwelcome.ui" line="206"/>
         <source>Videos</source>
-        <translation>Vidyolar</translation>
+        <translation>Videolar</translation>
     </message>
     <message>
         <location filename="../mxwelcome.ui" line="235"/>
