@@ -65,7 +65,11 @@ void MainWindow::setup()
     ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. " + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
     // if running live
     QString test = runCmd("df -T / |tail -n1 |awk '{print $2}'").output;
-    ( test == "aufs" || test == "overlay" ) ? ui->checkBox->hide() : ui->labelLoginInfo->hide();
+    if(test=="aufs" || test=="overlay") ui->checkBox->hide();
+    else {
+        ui->labelLoginInfo->hide();
+        ui->buttonSetup->hide();
+    }
 
     // setup title block & icons
     QSettings settings("/usr/share/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
@@ -78,6 +82,7 @@ void MainWindow::setup()
     QString LOGO=settings.value("LOGO").toString();
     QString PACKAGEINSTALLER=settings.value("PACKAGEINSTALLER").toString();
     QString PANELORIENT=settings.value("PANELORIENT").toString();
+    QString SETUP=settings.value("SETUP").toString();
     QString TOOLS=settings.value("TOOLS").toString();
     QString MANUAL=settings.value("MANUAL").toString();
     QString VIDEOS=settings.value("VIDEOS").toString();
@@ -93,6 +98,7 @@ void MainWindow::setup()
     ui->labelMX->setPixmap(QPixmap(LOGO));
     ui->buttonPackageInstall->setIcon(QIcon(PACKAGEINSTALLER));
     ui->buttonPanelOrient->setIcon(QIcon(PANELORIENT));
+    ui->buttonSetup->setIcon(QIcon(SETUP));
     ui->buttonTools->setIcon(QIcon(TOOLS));
     ui->buttonManual->setIcon(QIcon(MANUAL));
     ui->buttonVideo->setIcon(QIcon(VIDEOS));
@@ -230,4 +236,9 @@ void MainWindow::on_buttonCodecs_clicked()
 void MainWindow::on_buttonFAQ_clicked()
 {
     system("mx-faq&");
+}
+
+void MainWindow::on_buttonSetup_clicked()
+{
+    system("minstall-pkexec&");
 }

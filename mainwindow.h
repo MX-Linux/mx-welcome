@@ -72,8 +72,8 @@ private slots:
     void on_buttonPanelOrient_clicked();
     void on_buttonPackageInstall_clicked();
     void on_buttonCodecs_clicked();
-
     void on_buttonFAQ_clicked();
+    void on_buttonSetup_clicked();
 
 private:
     Ui::MainWindow *ui;
