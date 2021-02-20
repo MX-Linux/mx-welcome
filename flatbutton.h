@@ -31,7 +31,7 @@
 class FlatButton : public QPushButton
 {
 public:
-    FlatButton(QWidget * parent = 0);
+    FlatButton(QWidget * parent = nullptr);
 protected:
     void enterEvent(QEvent *e);
     void leaveEvent(QEvent *e);

@@ -2,13 +2,12 @@ Source: mx-welcome
 Section: admin
 Priority: optional
 Maintainer: Adrian <adrian@mxlinux.org>
-Build-Depends: qt5-qmake,
-	debhelper (>=7.0.50~)
-Standards-Version: 3.9.5
+Build-Depends: debhelper (>=9), qtbase5-dev, qttools5-dev-tools
+Standards-Version: 3.9.8
 Vcs-Git: git://github.com/AdrianTM/mx-welcome
 
 Package: mx-welcome
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, mx-viewer, mx-docs, mx-defaultlook
+Depends: mx-viewer, mx-welcome-data, ${misc:Depends}, ${shlibs:Depends}
 Description: MX Welcome
  MX Welcome displays a welcome screen

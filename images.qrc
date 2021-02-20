@@ -9,6 +9,7 @@
         <file>icons/users-manual.png</file>
         <file>icons/videos.png</file>
         <file>icons/wiki.png</file>
-        <file>icons/zoom-fit.png</file>
+        <file>icons/codecs.png</file>
+        <file>icons/faq.png</file>
     </qresource>
 </RCC>

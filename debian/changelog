@@ -1,3 +1,204 @@
+mx-welcome (20.07.01) mx; urgency=medium
+
+  * use xdg-open instead of exo-open 
+
+ -- Dolphin Oracle <dolphin@littlebyte>  Sun, 26 Jul 2020 09:01:04 -0400
+
+mx-welcome (19.10.01) mx; urgency=medium
+
+  * update FAQ button 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 12 Oct 2019 10:05:06 -0400
+
+mx-welcome (19.9.02) mx; urgency=medium
+
+  * preserve "AutoStartup" checkbox option
+  * translation refresh
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 29 Sep 2019 22:00:47 -0400
+
+mx-welcome (19.9.01) mx; urgency=medium
+
+  * translation refresh 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 28 Sep 2019 15:04:27 -0400
+
+mx-welcome (19.8.02) mx; urgency=medium
+
+  * translation refresh 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 27 Aug 2019 21:33:24 -0400
+
+mx-welcome (19.8.01) mx; urgency=medium
+
+  * local FAQ launch 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 14 Aug 2019 22:01:20 -0400
+
+mx-welcome (19.7.1) mx; urgency=medium
+
+  * new icon
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 08 Jul 2019 14:53:04 -0400
+
+mx-welcome (19.7) mx; urgency=medium
+
+  * fix windows buttons for Buster
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 07 Jul 2019 14:30:24 -0400
+
+mx-welcome (19.6) mx; urgency=medium
+
+  * added mx-welcome-data-depend
+  * now reads icon and distro name/version from mx-welcome.conf data file 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 01 Jun 2019 14:25:04 -0400
+
+mx-welcome (19.4) mx; urgency=medium
+
+  * updated translations
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 05 Apr 2019 12:02:33 -0400
+
+mx-welcome (19.1) mx; urgency=medium
+
+  * updated translations
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 23 Jan 2019 16:53:55 -0500
+
+mx-welcome (18.12.07) mx; urgency=medium
+
+  * displays login info on window
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 09 Dec 2018 12:46:25 -0500
+
+mx-welcome (18.12.06) mx; urgency=medium
+
+  * updates to background launching of settings apps 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 07 Dec 2018 18:08:32 -0500
+
+mx-welcome (18.12.05) mx; urgency=medium
+
+  * mx 18 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 03 Dec 2018 19:34:32 -0500
+
+mx-welcome (18.11) mx; urgency=medium
+
+  * updated translations
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 30 Nov 2018 15:17:49 -0500
+
+mx-welcome (18.11) mx; urgency=medium
+
+  * mx-18 
+
+ -- dolphin <dolphin@littlebyte>  Sun, 18 Nov 2018 10:17:34 -0500
+
+mx-welcome (18.10) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 12 Oct 2018 11:16:08 -0400
+
+mx-welcome (18.8) mx; urgency=medium
+
+  * fix icon
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 11 Aug 2018 23:40:18 -0400
+
+mx-welcome (18.6.1) mx; urgency=medium
+
+  * new changelog button
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 28 Jun 2018 18:21:16 -0400
+
+mx-welcome (18.6) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 18 Jun 2018 18:29:22 -0400
+
+mx-welcome (18.02.01) mx; urgency=medium
+
+  *  updated text and translations
+
+ -- dolphin oracle <dolphinoracle@gmail.com>  Tue, 20 Feb 2018 20:29:32 -0500
+
+mx-welcome (17.12.01) mx; urgency=medium
+
+  * translations updates
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 11 Dec 2017 23:21:57 -0500
+
+mx-welcome (17.12) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 04 Dec 2017 15:20:48 -0500
+
+mx-welcome (17.11.03) mx; urgency=medium
+
+  * adjustments to default buttons 
+
+ -- Dolphin <dolphin@littlebyte>  Thu, 30 Nov 2017 19:46:11 -0500
+
+mx-welcome (17.11.02) mx; urgency=medium
+
+  * adjustment to help-about icon (paul)
+
+ -- Dolphin <dolphin@littlebyte>  Tue, 28 Nov 2017 17:57:09 -0500
+
+mx-welcome (17.11.01) mx; urgency=medium
+
+  * adjustment to "default buttons" (paul)
+
+ -- Dolphin <dolphinoracle@gmail.com>  Mon, 20 Nov 2017 18:50:18 -0500
+ 
+mx-welcome (17.11) mx; urgency=medium
+
+  * icon change (paul)
+
+ -- Dolphin <dolphinoracle@gmail.com>  Thu, 16 Oct 2017 16:35:34 -0500
+
+mx-welcome (17.10.05) mx; urgency=medium
+
+  * adjustments to login info box
+
+ -- Dolphin <dolphinoracle@gmail.com>  Sat, 21 Oct 2017 15:23:49 -0500
+ 
+ mx-welcome (17.10.04) mx; urgency=medium
+
+  * adjustments to for default button (paul)
+
+ -- Dolphin <dolphinoracle@gmail.com>  Fri, 13 Oct 2017 20:30:49 -0500
+
+mx-welcome (17.10.03) mx; urgency=medium
+
+  * new icons (paul)
+  * fix mx-manual launch (paul)
+
+ -- Dolphin <dolphinoracle@gmail.com>  Mon, 09 Oct 2017 18:52:49 -0500
+
+mx-welcome (17.10.01) mx; urgency=medium
+
+  * new horizon placeholder name
+
+ -- Dolphin <dolphinoracle@gmail.com>  Mon, 02 Oct 2017 21:05:49 -0500
+
+mx-welcome (17.07.01) mx; urgency=medium
+
+  * placeholder name
+
+ -- Dolphin <dolphinoracle@gmail.com>  Wed, 06 Sep 2017 16:14:49 -0500
+
+mx-welcome (17.07) mx; urgency=medium
+
+  * updates for stretch
+
+ -- Dolphin <dolphinoracle@gmail.com>  Sun, 23 Jul 2017 21:27:49 -0500
+
 mx-welcome (17.6mx16) mx; urgency=medium
 
   * updated translations
