@@ -1,3 +1,9 @@
+mx-welcome (20.03.01mx21) mx; urgency=medium
+
+  * installer butter 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 02 Mar 2021 19:54:10 -0500
+
 mx-welcome (20.07.01) mx; urgency=medium
 
   * use xdg-open instead of exo-open 
