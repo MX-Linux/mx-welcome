@@ -1,3 +1,9 @@
+mx-welcome (21.04.01mx21) mx; urgency=medium
+
+  * add about
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 04 Apr 2021 19:41:25 -0400
+
 mx-welcome (21.03.01mx21) mx; urgency=medium
 
   * installer button 
