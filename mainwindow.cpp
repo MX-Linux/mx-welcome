@@ -36,14 +36,22 @@
 #include <QSettings>
 
 
-MainWindow::MainWindow(QWidget *parent) :
+MainWindow::MainWindow(QWidget *parent, QStringList args) :
     QDialog(parent),
     ui(new Ui::MainWindow)
-{
+{        
     qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
     ui->setupUi(this);
     setWindowFlags(Qt::Window); // for the close, min and max buttons
     setup();
+    ui->tabWidget->setCurrentIndex(0);
+    if ( args.contains("--about")){
+        ui->tabWidget->setCurrentIndex(1);
+    }
+    if ( args.contains("--test")){
+        ui->labelLoginInfo->show();
+        ui->buttonSetup->show();
+    }
 }
 
 MainWindow::~MainWindow()
@@ -73,8 +81,8 @@ void MainWindow::setup()
 
     // setup title block & icons
     QSettings settings("/usr/share/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
-    QString DISTRO=settings.value("DISTRO").toString();
-    QString CODENAME=settings.value("CODENAME").toString();
+    //QString DISTRO=settings.value("DISTRO").toString();
+    //QString CODENAME=settings.value("CODENAME").toString();
     QString CONTRIBUTE=settings.value("CONTRIBUTE").toString();
     QString CODECS=settings.value("CODECS").toString();
     QString FAQ=settings.value("FAQ").toString();
@@ -87,8 +95,39 @@ void MainWindow::setup()
     QString MANUAL=settings.value("MANUAL").toString();
     QString VIDEOS=settings.value("VIDEOS").toString();
     QString WIKI=settings.value("WIKI").toString();
+    QString HEADER=settings.value("HEADER").toString();
+    QString SUPPORTED=settings.value("SUPPORTED").toString();
+
+    QSettings lsb("/etc/lsb-release", QSettings::NativeFormat);
+    QString MAINDISTRO=lsb.value("DISTRIB_ID").toString();
+    QString CODENAME=lsb.value("DISTRIB_CODENAME").toString();
+    QString DISTRIB_RELEASE=lsb.value("DISTRIB_RELEASE").toString();
+    QString DISTRO = MAINDISTRO + "-" + DISTRIB_RELEASE;
+
+    QString debian_version;
+
+    QFile file("/etc/debian_version");
+    if(!file.open(QIODevice::ReadOnly)) {
+        QMessageBox::information(0, "error", file.errorString());
+    }
+    QTextStream in(&file);
+    debian_version = in.readLine();
+    file.close();
+
+    ui->LabelDebianVersion->setText(debian_version);
+
+    ui->labelSupportUntil->setText(SUPPORTED);
+
+    QString DESKTOP=runCmd("LANG=C inxi -c 0 -S ").output.trimmed().section(":",5,5).section("\n",0,0);
+    ui->labelDesktopVersion->setText(DESKTOP);
+
+    QString SHORTSYSTEMINFO=runCmd("LANG=C inxi -c 0").output;
+    ui->textBrowser->setText(SHORTSYSTEMINFO);
 
     ui->labelTitle->setText(tr("<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">%1 &quot;%2&quot;</span></p></body></html>").arg(DISTRO).arg(CODENAME));
+    if (QFile::exists(HEADER)){
+        ui->labelgraphic->setPixmap(HEADER);
+    }
 
     //setup icons
     ui->buttonCodecs->setIcon(QIcon(CODECS));
@@ -103,6 +142,9 @@ void MainWindow::setup()
     ui->buttonManual->setIcon(QIcon(MANUAL));
     ui->buttonVideo->setIcon(QIcon(VIDEOS));
     ui->buttonWiki->setIcon(QIcon(WIKI));
+
+    //setup about labels
+    ui->labelMXversion->setText(DISTRO);
 
     this->adjustSize();
 }
@@ -241,4 +283,14 @@ void MainWindow::on_buttonFAQ_clicked()
 void MainWindow::on_buttonSetup_clicked()
 {
     system("minstall-pkexec&");
+}
+
+void MainWindow::on_buttonTOS_clicked()
+{
+    system("xdg-open https://mxlinux.org/terms-of-use/");
+}
+
+void MainWindow::on_ButtonQSI_clicked()
+{
+    system("x-terminal-emulator -e bash -c \"/usr/bin/quick-system-info-mx\" &");
 }

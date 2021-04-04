@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
         app.installTranslator(&appTran);
 
     if (getuid() != 0) {
-        MainWindow w;
+        MainWindow w(0, app.arguments());
         w.show();
         return app.exec();
     } else {

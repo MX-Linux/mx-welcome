@@ -49,7 +49,7 @@ protected:
     QProcess *proc;
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = 0, QStringList args = QStringList());
     ~MainWindow();
 
     Result runCmd(QString cmd);
@@ -74,6 +74,10 @@ private slots:
     void on_buttonCodecs_clicked();
     void on_buttonFAQ_clicked();
     void on_buttonSetup_clicked();
+
+    void on_buttonTOS_clicked();
+
+    void on_ButtonQSI_clicked();
 
 private:
     Ui::MainWindow *ui;
