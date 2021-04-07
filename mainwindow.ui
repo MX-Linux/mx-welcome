@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>674</width>
-    <height>697</height>
+    <height>725</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -35,7 +35,7 @@
      <item row="0" column="0">
       <widget class="QLabel" name="labelgraphic">
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600&quot;&gt;Welcome to MX Linux&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string/>
        </property>
        <property name="pixmap">
         <pixmap>../../../../usr/share/mx-welcome/header.jpg</pixmap>
@@ -64,7 +64,7 @@
         <string notr="true">QTabBar::tab { height: 30px; width: 326px; } </string>
        </property>
        <property name="currentIndex">
-        <number>1</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="Welcome">
         <attribute name="title">

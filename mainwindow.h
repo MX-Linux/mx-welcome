@@ -78,6 +78,9 @@ private slots:
     void on_buttonTOS_clicked();
 
     void on_ButtonQSI_clicked();
+    void shortsysteminfo();
+
+    void on_tabWidget_currentChanged(int index);
 
 private:
     Ui::MainWindow *ui;

@@ -121,9 +121,6 @@ void MainWindow::setup()
     QString DESKTOP=runCmd("LANG=C inxi -c 0 -S ").output.trimmed().section(":",5,5).section("\n",0,0);
     ui->labelDesktopVersion->setText(DESKTOP);
 
-    QString SHORTSYSTEMINFO=runCmd("LANG=C inxi -c 0").output;
-    ui->textBrowser->setText(SHORTSYSTEMINFO);
-
     ui->labelTitle->setText(tr("<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">%1 &quot;%2&quot;</span></p></body></html>").arg(DISTRO).arg(CODENAME));
     if (QFile::exists(HEADER)){
         ui->labelgraphic->setPixmap(HEADER);
@@ -293,4 +290,16 @@ void MainWindow::on_buttonTOS_clicked()
 void MainWindow::on_ButtonQSI_clicked()
 {
     system("x-terminal-emulator -e bash -c \"/usr/bin/quick-system-info-mx\" &");
+}
+
+void MainWindow::shortsysteminfo()
+{
+    QString SHORTSYSTEMINFO=runCmd("LANG=C inxi -c 0").output;
+        ui->textBrowser->setText(SHORTSYSTEMINFO);
+}
+void MainWindow::on_tabWidget_currentChanged(int index)
+{
+    if (index == 1){
+        shortsysteminfo();
+    }
 }
