@@ -1,3 +1,10 @@
+mx-welcome (21.04.02mx21) mx; urgency=medium
+
+  * revised about, 
+  * refresh short system report on tab switch 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 17 Apr 2021 08:20:17 -0400
+
 mx-welcome (21.04.01mx21) mx; urgency=medium
 
   * add about
