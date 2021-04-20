@@ -64,7 +64,7 @@
         <string notr="true">QTabBar::tab { height: 30px; width: 326px; } </string>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>1</number>
        </property>
        <widget class="QWidget" name="Welcome">
         <attribute name="title">
@@ -736,8 +736,14 @@ p, li { white-space: pre-wrap; }
            </item>
            <item row="4" column="0" colspan="4">
             <widget class="QPushButton" name="buttonTOS">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
              <property name="text">
               <string>Terms of Use</string>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
              </property>
             </widget>
            </item>

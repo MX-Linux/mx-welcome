@@ -82,6 +82,8 @@ private slots:
 
     void on_tabWidget_currentChanged(int index);
 
+    void settabstyle();
+
 private:
     Ui::MainWindow *ui;
 };
