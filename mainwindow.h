@@ -81,7 +81,7 @@ private slots:
     void shortsysteminfo();
 
     void on_tabWidget_currentChanged(int index);
-
+    void resizeEvent(QResizeEvent*);
     void settabstyle();
 
 private:

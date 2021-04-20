@@ -306,9 +306,15 @@ void MainWindow::on_tabWidget_currentChanged(int index)
     settabstyle();
 }
 
+void MainWindow::resizeEvent(QResizeEvent* event)
+{
+   settabstyle();
+}
+
 void MainWindow::settabstyle()
 {
     QString tw = QString::number(ui->tabWidget->width()/2-1);
     //qDebug() << "width" << ui->tabWidget->width() << "tw" << tw;
     ui->tabWidget->setStyleSheet("""QTabBar::tab:!selected{width: " + tw + "px; background:  rgba(140, 135, 135, 50); color: rgb(169, 157, 157)}""""QTabBar::tab:selected{width: " + tw + "px}""");
 }
+
