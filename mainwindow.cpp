@@ -120,7 +120,7 @@ void MainWindow::setup()
     ui->labelSupportUntil->setText(SUPPORTED);
 
     QString DESKTOP=runCmd("LANG=C inxi -c 0 -S ").output.trimmed().section(":",5,5).section("\n",0,0);
-    if (DESKTOP.contains("fluxbox")){
+    if (DESKTOP.contains("Fluxbox")){
         QFile file("/etc/mxfb_version");
         if (file.exists()) {
             if(!file.open(QIODevice::ReadOnly)) {
