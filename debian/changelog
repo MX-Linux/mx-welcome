@@ -1,3 +1,9 @@
+mx-welcome (21.05.01mx21) mx; urgency=medium
+
+  * add mx fluxbox info 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 07 May 2021 16:54:57 -0400
+
 mx-welcome (21.04.03mx21) mx; urgency=medium
 
   * adjust tab color & sizes 

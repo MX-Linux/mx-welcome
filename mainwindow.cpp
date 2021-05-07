@@ -105,6 +105,7 @@ void MainWindow::setup()
     QString DISTRO = MAINDISTRO + "-" + DISTRIB_RELEASE;
 
     QString debian_version;
+    QString mxfluxbox_version;
 
     QFile file("/etc/debian_version");
     if(!file.open(QIODevice::ReadOnly)) {
@@ -119,6 +120,23 @@ void MainWindow::setup()
     ui->labelSupportUntil->setText(SUPPORTED);
 
     QString DESKTOP=runCmd("LANG=C inxi -c 0 -S ").output.trimmed().section(":",5,5).section("\n",0,0);
+    if (DESKTOP.contains("fluxbox")){
+        QFile file("/etc/mxfb_version");
+        if (file.exists()) {
+            if(!file.open(QIODevice::ReadOnly)) {
+                QMessageBox::information(0, "error", file.errorString());
+            }
+            QTextStream in(&file);
+            mxfluxbox_version = in.readLine();
+            qDebug() << "mxfluxbox" << mxfluxbox_version;
+            file.close();
+            if ( ! mxfluxbox_version.isEmpty() ){
+                DESKTOP.append(" " + mxfluxbox_version);
+            }
+        }
+    }
+
+
     ui->labelDesktopVersion->setText(DESKTOP);
 
     ui->labelTitle->setText(tr("<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">%1 &quot;%2&quot;</span></p></body></html>").arg(DISTRO).arg(CODENAME));
