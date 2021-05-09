@@ -1,3 +1,9 @@
+mx-welcome (21.05.02mx21) mx; urgency=medium
+
+  * new build with dialog size changes (ak-47)
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 09 May 2021 15:04:53 -0400
+
 mx-welcome (21.05.01mx21) mx; urgency=medium
 
   * add mx fluxbox info 
