@@ -73,7 +73,7 @@ void MainWindow::setup()
     ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. " + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
     // if running live
     QString test = runCmd("df -T / |tail -n1 |awk '{print $2}'").output;
-    if(test=="aufs" || test=="overlay") ui->checkBox->hide();
+    if (test=="aufs" || test=="overlay") ui->checkBox->hide();
     else {
         ui->labelLoginInfo->hide();
         ui->buttonSetup->hide();
@@ -108,7 +108,7 @@ void MainWindow::setup()
     QString mxfluxbox_version;
 
     QFile file("/etc/debian_version");
-    if(!file.open(QIODevice::ReadOnly)) {
+    if (!file.open(QIODevice::ReadOnly)) {
         QMessageBox::information(0, "error", file.errorString());
     }
     QTextStream in(&file);
@@ -123,7 +123,7 @@ void MainWindow::setup()
     if (DESKTOP.contains("Fluxbox")){
         QFile file("/etc/mxfb_version");
         if (file.exists()) {
-            if(!file.open(QIODevice::ReadOnly)) {
+            if (!file.open(QIODevice::ReadOnly)) {
                 QMessageBox::information(0, "error", file.errorString());
             }
             QTextStream in(&file);
