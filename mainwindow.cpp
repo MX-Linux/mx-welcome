@@ -39,7 +39,7 @@
 MainWindow::MainWindow(QWidget *parent, QStringList args) :
     QDialog(parent),
     ui(new Ui::MainWindow)
-{        
+{
     qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
     ui->setupUi(this);
     setWindowFlags(Qt::Window); // for the close, min and max buttons
@@ -65,7 +65,7 @@ void MainWindow::setup()
     version = getVersion("mx-welcome");
     this->setWindowTitle(tr("MX Welcome"));
 
-    QSettings user_settings(QCoreApplication::applicationName());
+    QSettings user_settings(qApp->organizationName(), qApp->applicationName());
     bool autostart = user_settings.value("AutoStartup", false).toBool();
     ui->checkBox->setChecked(autostart);
     if (!autostart) system("rm ~/.config/autostart/mx-welcome.desktop >/dev/null 2>&1");
@@ -230,7 +230,7 @@ void MainWindow::on_buttonAbout_clicked()
 // Add/remove autostart at login
 void MainWindow::on_checkBox_clicked(bool checked)
 {
-    QSettings user_settings(QCoreApplication::applicationName());
+    QSettings user_settings(qApp->organizationName(), qApp->applicationName());
     if (checked) {
         system("cp /usr/share/mx-welcome/mx-welcome.desktop ~/.config/autostart/mx-welcome.desktop");
         user_settings.setValue("AutoStartup", true);

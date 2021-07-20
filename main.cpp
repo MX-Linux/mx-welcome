@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     app.setWindowIcon(QIcon::fromTheme(app.applicationName()));
+    app.setOrganizationName("MX-Linux");
 
     QTranslator qtTran;
     if (qtTran.load(QLocale::system(), "qt", "_", QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
@@ -52,13 +53,13 @@ int main(int argc, char *argv[])
         app.installTranslator(&appTran);
 
     if (getuid() != 0) {
-        MainWindow w(0, app.arguments());
+        MainWindow w(nullptr, app.arguments());
         w.show();
         return app.exec();
     } else {
         QApplication::beep();
         QMessageBox::critical(nullptr, QString::null,
                               QApplication::tr("You must run this program as normal user."));
-        return 1;
+        return EXIT_FAILURE;
     }
 }
