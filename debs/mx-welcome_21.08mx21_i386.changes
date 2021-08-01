@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Sun, 01 Aug 2021 03:19:18 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: i386
+Version: 21.08mx21
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (21.08mx21) mx; urgency=medium
+ .
+   * Move .conf file to ~/.conf/MX-Linux
+Checksums-Sha1:
+ 6e78893c8f2c0916097c7f63f73fa40d78a02e2d 9103 mx-welcome_21.08mx21_i386.buildinfo
+ cf75457b413e397b3803bb2c10cd0c0962c039be 50276 mx-welcome_21.08mx21_i386.deb
+Checksums-Sha256:
+ ce5432c2c0df0dc96b1be3a0ff78288b8880d8c98bd7d8158baa26941114cdb3 9103 mx-welcome_21.08mx21_i386.buildinfo
+ efea306cd07a8a323267a45c680d1ba3a7461f8f56b7780b4563323e90d0fde1 50276 mx-welcome_21.08mx21_i386.deb
+Files:
+ 00c4d0f51a18b41a7a48d6800704b20a 9103 admin optional mx-welcome_21.08mx21_i386.buildinfo
+ 55b7aa21db147c587668cb686cbf033a 50276 admin optional mx-welcome_21.08mx21_i386.deb

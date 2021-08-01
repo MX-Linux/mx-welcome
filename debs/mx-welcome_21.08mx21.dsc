@@ -10,8 +10,8 @@ Build-Depends: debhelper (>= 10), qtbase5-dev, qttools5-dev-tools
 Package-List:
  mx-welcome deb admin optional arch=any
 Checksums-Sha1:
- 8178e1b30695b144849a93a91eedd5e99f7cc8ad 45828 mx-welcome_21.08mx21.tar.xz
+ 3a94c3f79977e2e830ff5c8c1d34e855353d64d9 45748 mx-welcome_21.08mx21.tar.xz
 Checksums-Sha256:
- 18a4eb7d51d89ede90df1a7d7ea8e32be6d51a7a8ef18fd1bc70231cf98c507f 45828 mx-welcome_21.08mx21.tar.xz
+ 96e4c3f720dac90c0a884b70ef6c4502248f2a071cb00b3fc83a490d48fa3d34 45748 mx-welcome_21.08mx21.tar.xz
 Files:
- b8ae0f46dc1a56600a438499077701c0 45828 mx-welcome_21.08mx21.tar.xz
+ 880ae5330db5dc6088ddf45cb5e7e5fd 45748 mx-welcome_21.08mx21.tar.xz
