@@ -1,3 +1,9 @@
+mx-welcome (21.08mx21) mx; urgency=medium
+
+  * Move .conf file to ~/.conf/MX-Linux
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 01 Aug 2021 03:19:18 -0400
+
 mx-welcome (21.05.02mx21) mx; urgency=medium
 
   * new build with dialog size changes (ak-47)

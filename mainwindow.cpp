@@ -72,7 +72,8 @@ void MainWindow::setup()
     }
     bool autostart = user_settings.value("AutoStartup", false).toBool();
     ui->checkBox->setChecked(autostart);
-    if (!autostart) system("rm ~/.config/autostart/mx-welcome.desktop >/dev/null 2>&1");
+    if (!autostart)
+        QFile::remove(QDir::homePath() + "/.config/autostart/mx-welcome.desktop");
 
     ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. " + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
     // if running live
@@ -146,7 +147,7 @@ void MainWindow::setup()
     if (QFile::exists(HEADER))
         ui->labelgraphic->setPixmap(HEADER);
 
-    //setup icons
+    // setup icons
     ui->buttonCodecs->setIcon(QIcon(CODECS));
     ui->buttonContribute->setIcon(QIcon(CONTRIBUTE));
     ui->buttonFAQ->setIcon(QIcon(FAQ));
@@ -160,7 +161,7 @@ void MainWindow::setup()
     ui->buttonVideo->setIcon(QIcon(VIDEOS));
     ui->buttonWiki->setIcon(QIcon(WIKI));
 
-    //setup about labels
+    // setup about labels
     ui->labelMXversion->setText(DISTRO);
 
     settabstyle();

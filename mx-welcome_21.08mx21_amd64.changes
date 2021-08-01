@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sun, 01 Aug 2021 03:19:18 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source amd64
+Version: 21.08mx21
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (21.08mx21) mx; urgency=medium
+ .
+   * Move .conf file to ~/.conf/MX-Linux
+Checksums-Sha1:
+ fc66bd840b464a3119e16e0aa4cd4c64ffcb87c3 612 mx-welcome_21.08mx21.dsc
+ 8178e1b30695b144849a93a91eedd5e99f7cc8ad 45828 mx-welcome_21.08mx21.tar.xz
+ 1a336af5eed1c8c43227bf623ee6c2af49f65876 9397 mx-welcome_21.08mx21_amd64.buildinfo
+ e8cd3b230ca9356a611772b6c6c2d5640c0e7c72 49560 mx-welcome_21.08mx21_amd64.deb
+Checksums-Sha256:
+ 81d57a6b3ad58116904ae66b0f063ea62ba4e0620c9acc8557838d6e6c2e287f 612 mx-welcome_21.08mx21.dsc
+ 18a4eb7d51d89ede90df1a7d7ea8e32be6d51a7a8ef18fd1bc70231cf98c507f 45828 mx-welcome_21.08mx21.tar.xz
+ e23cbe8586a8403e34d267d3c4f3593c7f685b393c4c248faf54b45e67c7582f 9397 mx-welcome_21.08mx21_amd64.buildinfo
+ 6fca399ed4610e6ddef0b89035c57e09c3454a24b58de440e168bd88e89af4d4 49560 mx-welcome_21.08mx21_amd64.deb
+Files:
+ d2b968b16a10c63b1858fbc7245a78c3 612 admin optional mx-welcome_21.08mx21.dsc
+ b8ae0f46dc1a56600a438499077701c0 45828 admin optional mx-welcome_21.08mx21.tar.xz
+ f35d748d8b3fd812ed66e0d1e5fd5849 9397 admin optional mx-welcome_21.08mx21_amd64.buildinfo
+ 948cfbdc17c6d96289a5a84e5631ccc6 49560 admin optional mx-welcome_21.08mx21_amd64.deb
