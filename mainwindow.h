@@ -49,7 +49,7 @@ protected:
     QProcess *proc;
 
 public:
-    explicit MainWindow(QWidget *parent = 0, QStringList args = QStringList());
+    explicit MainWindow(QWidget *parent = nullptr, QStringList args = QStringList());
     ~MainWindow();
 
     Result runCmd(QString cmd);
@@ -61,28 +61,25 @@ public:
     void setup();
 
 private slots:
-    void on_buttonAbout_clicked();
-    void on_checkBox_clicked(bool checked);
-    void on_buttonTools_clicked();
-    void on_buttonManual_clicked();
-    void on_buttonForum_clicked();
-    void on_buttonWiki_clicked();
-    void on_buttonVideo_clicked();
-    void on_buttonContribute_clicked();
-    void on_buttonPanelOrient_clicked();
-    void on_buttonPackageInstall_clicked();
-    void on_buttonCodecs_clicked();
-    void on_buttonFAQ_clicked();
-    void on_buttonSetup_clicked();
-
-    void on_buttonTOS_clicked();
-
     void on_ButtonQSI_clicked();
-    void shortsysteminfo();
-
+    void on_buttonAbout_clicked();
+    void on_buttonCodecs_clicked();
+    void on_buttonContribute_clicked();
+    void on_buttonFAQ_clicked();
+    void on_buttonForum_clicked();
+    void on_buttonManual_clicked();
+    void on_buttonPackageInstall_clicked();
+    void on_buttonPanelOrient_clicked();
+    void on_buttonSetup_clicked();
+    void on_buttonTOS_clicked();
+    void on_buttonTools_clicked();
+    void on_buttonVideo_clicked();
+    void on_buttonWiki_clicked();
+    void on_checkBox_clicked(bool checked);
     void on_tabWidget_currentChanged(int index);
     void resizeEvent(QResizeEvent*);
     void settabstyle();
+    void shortsysteminfo();
 
 private:
     Ui::MainWindow *ui;

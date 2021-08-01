@@ -24,16 +24,15 @@
  * along with mx-welcome.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
+#include <QDebug>
+#include <QFileInfo>
+#include <QSettings>
+#include <QTextEdit>
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "flatbutton.h"
 #include "version.h"
-
-#include <QFileInfo>
-#include <QTextEdit>
-#include <QDebug>
-#include <QSettings>
 
 
 MainWindow::MainWindow(QWidget *parent, QStringList args) :
@@ -45,10 +44,10 @@ MainWindow::MainWindow(QWidget *parent, QStringList args) :
     setWindowFlags(Qt::Window); // for the close, min and max buttons
     setup();
     ui->tabWidget->setCurrentIndex(0);
-    if ( args.contains("--about")){
+    if (args.contains("--about"))
         ui->tabWidget->setCurrentIndex(1);
-    }
-    if ( args.contains("--test")){
+
+    if (args.contains("--test")) {
         ui->labelLoginInfo->show();
         ui->buttonSetup->show();
     }
@@ -73,8 +72,9 @@ void MainWindow::setup()
     ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. " + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
     // if running live
     QString test = runCmd("df -T / |tail -n1 |awk '{print $2}'").output;
-    if (test=="aufs" || test=="overlay") ui->checkBox->hide();
-    else {
+    if (test == "aufs" || test == "overlay") {
+        ui->checkBox->hide();
+    } else {
         ui->labelLoginInfo->hide();
         ui->buttonSetup->hide();
     }
@@ -108,9 +108,9 @@ void MainWindow::setup()
     QString mxfluxbox_version;
 
     QFile file("/etc/debian_version");
-    if (!file.open(QIODevice::ReadOnly)) {
-        QMessageBox::information(0, "error", file.errorString());
-    }
+    if (!file.open(QIODevice::ReadOnly))
+        QMessageBox::information(nullptr, "error", file.errorString());
+
     QTextStream in(&file);
     debian_version = in.readLine();
     file.close();
@@ -123,16 +123,14 @@ void MainWindow::setup()
     if (DESKTOP.contains("Fluxbox")){
         QFile file("/etc/mxfb_version");
         if (file.exists()) {
-            if (!file.open(QIODevice::ReadOnly)) {
-                QMessageBox::information(0, "error", file.errorString());
-            }
+            if (!file.open(QIODevice::ReadOnly))
+                QMessageBox::information(nullptr, "error", file.errorString());
             QTextStream in(&file);
             mxfluxbox_version = in.readLine();
             qDebug() << "mxfluxbox" << mxfluxbox_version;
             file.close();
-            if ( ! mxfluxbox_version.isEmpty() ){
+            if (!mxfluxbox_version.isEmpty())
                 DESKTOP.append(" " + mxfluxbox_version);
-            }
         }
     }
 
@@ -140,9 +138,8 @@ void MainWindow::setup()
     ui->labelDesktopVersion->setText(DESKTOP);
 
     ui->labelTitle->setText(tr("<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">%1 &quot;%2&quot;</span></p></body></html>").arg(DISTRO).arg(CODENAME));
-    if (QFile::exists(HEADER)){
+    if (QFile::exists(HEADER))
         ui->labelgraphic->setPixmap(HEADER);
-    }
 
     //setup icons
     ui->buttonCodecs->setIcon(QIcon(CODECS));
@@ -169,14 +166,12 @@ void MainWindow::setup()
 Result MainWindow::runCmd(QString cmd)
 {
     QEventLoop loop;
-    proc = new QProcess(this);
-    proc->setReadChannelMode(QProcess::MergedChannels);
-    connect(proc, static_cast<void (QProcess::*)(int)>(&QProcess::finished), &loop, &QEventLoop::quit);
-    proc->start("/bin/bash", QStringList() << "-c" << cmd);
+    QProcess proc;
+    proc.setReadChannelMode(QProcess::MergedChannels);
+    connect(&proc, static_cast<void (QProcess::*)(int)>(&QProcess::finished), &loop, &QEventLoop::quit);
+    proc.start("/bin/bash", QStringList() << "-c" << cmd);
     loop.exec();
-    Result result = {proc->exitCode(), proc->readAll().trimmed()};
-    delete proc;
-    return result;
+    return {proc.exitCode(), proc.readAll().trimmed()};
 }
 
 
@@ -195,7 +190,7 @@ void MainWindow::on_buttonAbout_clicked()
                        tr("MX Welcome") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
                        tr("Program for displaying a welcome screen in MX Linux") +
                        "</h3></p><p align=\"center\"><a href=\"http://www.mxlinux.org/mx\">http://www.mxlinux.org/mx</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", nullptr, this);
     QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
     QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
     QPushButton *btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
@@ -314,24 +309,23 @@ void MainWindow::on_ButtonQSI_clicked()
 void MainWindow::shortsysteminfo()
 {
     QString SHORTSYSTEMINFO=runCmd("LANG=C inxi -c 0").output;
-        ui->textBrowser->setText(SHORTSYSTEMINFO);
+    ui->textBrowser->setText(SHORTSYSTEMINFO);
 }
 void MainWindow::on_tabWidget_currentChanged(int index)
 {
-    if (index == 1){
+    if (index == 1)
         shortsysteminfo();
-    }
     settabstyle();
 }
 
-void MainWindow::resizeEvent(QResizeEvent* event)
+void MainWindow::resizeEvent(QResizeEvent*)
 {
    settabstyle();
 }
 
 void MainWindow::settabstyle()
 {
-    QString tw = QString::number(ui->tabWidget->width()/2-1);
+    QString tw = QString::number(ui->tabWidget->width() / 2 - 1);
     //qDebug() << "width" << ui->tabWidget->width() << "tw" << tw;
     ui->tabWidget->setStyleSheet("""QTabBar::tab:!selected{width: " + tw + "px; background:  rgba(140, 135, 135, 50); color: rgb(169, 157, 157)}""""QTabBar::tab:selected{width: " + tw + "px}""");
 }
