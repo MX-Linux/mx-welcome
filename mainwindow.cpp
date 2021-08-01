@@ -25,8 +25,8 @@
  **********************************************************************/
 
 #include <QDebug>
+#include <QDir>
 #include <QFileInfo>
-#include <QSettings>
 #include <QTextEdit>
 
 #include "mainwindow.h"
@@ -64,7 +64,12 @@ void MainWindow::setup()
     version = getVersion("mx-welcome");
     this->setWindowTitle(tr("MX Welcome"));
 
-    QSettings user_settings(qApp->organizationName(), qApp->applicationName());
+    QString old_conf_file = QDir::homePath() + "/.config/" + qApp->applicationName() + ".conf";
+    if (QFileInfo::exists(old_conf_file)) {
+        QSettings old_settings(qApp->applicationName());
+        user_settings.setValue("AutoStartup", old_settings.value("AutoStartup", false).toBool());
+        QFile::remove(old_conf_file);
+    }
     bool autostart = user_settings.value("AutoStartup", false).toBool();
     ui->checkBox->setChecked(autostart);
     if (!autostart) system("rm ~/.config/autostart/mx-welcome.desktop >/dev/null 2>&1");
@@ -225,14 +230,11 @@ void MainWindow::on_buttonAbout_clicked()
 // Add/remove autostart at login
 void MainWindow::on_checkBox_clicked(bool checked)
 {
-    QSettings user_settings(qApp->organizationName(), qApp->applicationName());
-    if (checked) {
-        system("cp /usr/share/mx-welcome/mx-welcome.desktop ~/.config/autostart/mx-welcome.desktop");
-        user_settings.setValue("AutoStartup", true);
-    } else {
-        system("rm ~/.config/autostart/mx-welcome.desktop >/dev/null 2>&1");
-        user_settings.setValue("AutoStartup", false);
-    }
+    user_settings.setValue("AutoStartup", checked);
+    if (checked)
+        QFile::copy("/usr/share/mx-welcome/mx-welcome.desktop", QDir::homePath() + "/.config/autostart/mx-welcome.desktop");
+    else
+        QFile::remove(QDir::homePath() + "/.config/autostart/mx-welcome.desktop");
 }
 
 // Start MX-Tools
