@@ -58,6 +58,7 @@ public:
 
     QString version;
     QString output;
+    bool isfluxbox = false;
 
     void setup();
 

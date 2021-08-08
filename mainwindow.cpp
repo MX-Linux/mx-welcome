@@ -127,6 +127,7 @@ void MainWindow::setup()
 
     QString DESKTOP=runCmd("LANG=C inxi -c 0 -S ").output.trimmed().section(":",5,5).section("\n",0,0);
     if (DESKTOP.contains("Fluxbox")){
+        isfluxbox = true;
         QFile file("/etc/mxfb_version");
         if (file.exists()) {
             if (!file.open(QIODevice::ReadOnly))
@@ -247,12 +248,17 @@ void MainWindow::on_buttonTools_clicked()
 // Launch Manual in browser
 void MainWindow::on_buttonManual_clicked()
 {
-    system("mx-manual&");
+    if (isfluxbox) {
+        system("mxfb-help&");
+    } else {
+        system("mx-manual&");
+    }
 }
 
 // Launch Forum in browser
 void MainWindow::on_buttonForum_clicked()
 {
+
     system("xdg-open http://forum.mxlinux.org/index.php");
 }
 

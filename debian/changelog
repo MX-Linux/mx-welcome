@@ -1,3 +1,9 @@
+mx-welcome (21.08.01mx21) mx; urgency=medium
+
+  * add switch for fluxbox detection 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 08 Aug 2021 16:06:53 -0400
+
 mx-welcome (21.08mx21) mx; urgency=medium
 
   * Move .conf file to ~/.conf/MX-Linux
