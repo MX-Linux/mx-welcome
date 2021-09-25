@@ -75,7 +75,8 @@ void MainWindow::setup()
     if (!autostart)
         QFile::remove(QDir::homePath() + "/.config/autostart/mx-welcome.desktop");
 
-    ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. " + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
+    ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. " +
+                                tr("Superuser root, password:") + "<b> root</b>." + "</p>");
     // if running live
     QString test = runCmd("df -T / |tail -n1 |awk '{print $2}'").output;
     if (test == "aufs" || test == "overlay") {
@@ -87,27 +88,27 @@ void MainWindow::setup()
 
     // setup title block & icons
     QSettings settings("/usr/share/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
-    //QString DISTRO=settings.value("DISTRO").toString();
-    //QString CODENAME=settings.value("CODENAME").toString();
-    QString CONTRIBUTE=settings.value("CONTRIBUTE").toString();
-    QString CODECS=settings.value("CODECS").toString();
-    QString FAQ=settings.value("FAQ").toString();
-    QString FORUMS=settings.value("FORUMS").toString();
-    QString LOGO=settings.value("LOGO").toString();
-    QString PACKAGEINSTALLER=settings.value("PACKAGEINSTALLER").toString();
-    QString PANELORIENT=settings.value("PANELORIENT").toString();
-    QString SETUP=settings.value("SETUP").toString();
-    QString TOOLS=settings.value("TOOLS").toString();
-    QString MANUAL=settings.value("MANUAL").toString();
-    QString VIDEOS=settings.value("VIDEOS").toString();
-    QString WIKI=settings.value("WIKI").toString();
-    QString HEADER=settings.value("HEADER").toString();
-    QString SUPPORTED=settings.value("SUPPORTED").toString();
+    //QString DISTRO = settings.value("DISTRO").toString();
+    //QString CODENAME = settings.value("CODENAME").toString();
+    QString CONTRIBUTE = settings.value("CONTRIBUTE").toString();
+    QString CODECS = settings.value("CODECS").toString();
+    QString FAQ = settings.value("FAQ").toString();
+    QString FORUMS = settings.value("FORUMS").toString();
+    QString LOGO = settings.value("LOGO").toString();
+    QString PACKAGEINSTALLER = settings.value("PACKAGEINSTALLER").toString();
+    QString PANELORIENT = settings.value("PANELORIENT").toString();
+    QString SETUP = settings.value("SETUP").toString();
+    QString TOOLS = settings.value("TOOLS").toString();
+    QString MANUAL = settings.value("MANUAL").toString();
+    QString VIDEOS = settings.value("VIDEOS").toString();
+    QString WIKI = settings.value("WIKI").toString();
+    QString HEADER = settings.value("HEADER").toString();
+    QString SUPPORTED = settings.value("SUPPORTED").toString();
 
     QSettings lsb("/etc/lsb-release", QSettings::NativeFormat);
-    QString MAINDISTRO=lsb.value("DISTRIB_ID").toString();
-    QString CODENAME=lsb.value("DISTRIB_CODENAME").toString();
-    QString DISTRIB_RELEASE=lsb.value("DISTRIB_RELEASE").toString();
+    QString MAINDISTRO = lsb.value("DISTRIB_ID").toString();
+    QString CODENAME = lsb.value("DISTRIB_CODENAME").toString();
+    QString DISTRIB_RELEASE = lsb.value("DISTRIB_RELEASE").toString();
     QString DISTRO = MAINDISTRO + "-" + DISTRIB_RELEASE;
 
     QString debian_version;
@@ -115,7 +116,7 @@ void MainWindow::setup()
 
     QFile file("/etc/debian_version");
     if (!file.open(QIODevice::ReadOnly))
-        QMessageBox::information(nullptr, "error", file.errorString());
+        QMessageBox::information(nullptr, tr("Error"), file.errorString());
 
     QTextStream in(&file);
     debian_version = in.readLine();
@@ -125,13 +126,13 @@ void MainWindow::setup()
 
     ui->labelSupportUntil->setText(SUPPORTED);
 
-    QString DESKTOP=runCmd("LANG=C inxi -c 0 -S ").output.trimmed().section(":",5,5).section("\n",0,0);
+    QString DESKTOP = runCmd("LANG=C inxi -c 0 -S ").output.trimmed().section(":",5,5).section("\n",0,0);
     if (DESKTOP.contains("Fluxbox")){
         isfluxbox = true;
         QFile file("/etc/mxfb_version");
         if (file.exists()) {
             if (!file.open(QIODevice::ReadOnly))
-                QMessageBox::information(nullptr, "error", file.errorString());
+                QMessageBox::information(nullptr, tr("Error"), file.errorString());
             QTextStream in(&file);
             mxfluxbox_version = in.readLine();
             qDebug() << "mxfluxbox" << mxfluxbox_version;
@@ -174,8 +175,8 @@ Result MainWindow::runCmd(QString cmd)
 {
     QEventLoop loop;
     QProcess proc;
-    proc.setReadChannelMode(QProcess::MergedChannels);
-    connect(&proc, static_cast<void (QProcess::*)(int)>(&QProcess::finished), &loop, &QEventLoop::quit);
+    proc.setProcessChannelMode(QProcess::MergedChannels);
+    connect(&proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
     proc.start("/bin/bash", QStringList() << "-c" << cmd);
     loop.exec();
     return {proc.exitCode(), proc.readAll().trimmed()};
@@ -197,7 +198,7 @@ void MainWindow::on_buttonAbout_clicked()
                        tr("MX Welcome") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
                        tr("Program for displaying a welcome screen in MX Linux") +
                        "</h3></p><p align=\"center\"><a href=\"http://www.mxlinux.org/mx\">http://www.mxlinux.org/mx</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", nullptr, this);
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>");
     QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
     QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
     QPushButton *btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
@@ -248,17 +249,15 @@ void MainWindow::on_buttonTools_clicked()
 // Launch Manual in browser
 void MainWindow::on_buttonManual_clicked()
 {
-    if (isfluxbox) {
+    if (isfluxbox)
         system("mxfb-help&");
-    } else {
+    else
         system("mx-manual&");
-    }
 }
 
 // Launch Forum in browser
 void MainWindow::on_buttonForum_clicked()
 {
-
     system("xdg-open http://forum.mxlinux.org/index.php");
 }
 
@@ -317,8 +316,7 @@ void MainWindow::on_ButtonQSI_clicked()
 
 void MainWindow::shortsysteminfo()
 {
-    QString SHORTSYSTEMINFO=runCmd("LANG=C inxi -c 0").output;
-    ui->textBrowser->setText(SHORTSYSTEMINFO);
+    ui->textBrowser->setText(runCmd("LANG=C inxi -c 0").output);
 }
 void MainWindow::on_tabWidget_currentChanged(int index)
 {

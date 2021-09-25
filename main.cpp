@@ -57,8 +57,7 @@ int main(int argc, char *argv[])
         return app.exec();
     } else {
         QApplication::beep();
-        QMessageBox::critical(nullptr, QString::null,
-                              QApplication::tr("You must run this program as normal user."));
+        QMessageBox::critical(nullptr, QObject::tr("Error"), QApplication::tr("You must run this program as normal user."));
         return EXIT_FAILURE;
     }
 }
