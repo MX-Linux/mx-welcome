@@ -44,6 +44,7 @@ Name[tr]=About MX Linux
 Name[uk]=About MX Linux
 Name[zh_CN]=About MX Linux
 Name[zh_TW]=About MX Linux
+Comment=View basic info about your MX install
 Exec=mx-welcome --about
 Terminal=false
 Type=Application
