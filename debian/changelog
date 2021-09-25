@@ -1,3 +1,10 @@
+mx-welcome (21.09mx21) mx; urgency=medium
+
+  * Add comment to display in Whisker menu
+  * Update program description
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 25 Sep 2021 08:52:30 -0400
+
 mx-welcome (21.08.01mx21) mx; urgency=medium
 
   * add switch for fluxbox detection 

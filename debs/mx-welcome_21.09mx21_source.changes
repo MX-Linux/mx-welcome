@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Sat, 25 Sep 2021 08:52:30 -0400
+Source: mx-welcome
+Architecture: source
+Version: 21.09mx21
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-welcome (21.09mx21) mx; urgency=medium
+ .
+   * Add comment to display in Whisker menu
+   * Update program description
+Checksums-Sha1:
+ f94a703137ff73ee98dba8ef1c49145b488121c4 612 mx-welcome_21.09mx21.dsc
+ e8c7d04a5965d5199b2533de2e052d3def50dc97 46068 mx-welcome_21.09mx21.tar.xz
+ f49cc9039b940d32c0d74db74491aab740a86f8a 9103 mx-welcome_21.09mx21_i386.buildinfo
+Checksums-Sha256:
+ cd9aec193662a9eabd01fada2d3e750225dafd39342c89cebb90bb5ee69662e7 612 mx-welcome_21.09mx21.dsc
+ a4de6c8d1b131a6cd3aadc67099c208eed4b43f9ca1efd42fb1b4fd2cbd1a9ba 46068 mx-welcome_21.09mx21.tar.xz
+ 0b1d68d83766206783b437bb3c334d5bae587e0db8f473017ca7aac5f8af292b 9103 mx-welcome_21.09mx21_i386.buildinfo
+Files:
+ 27402f05f66d43a950e1c99751edcc32 612 admin optional mx-welcome_21.09mx21.dsc
+ 6084d6b82273a7b307dd61bd719057b7 46068 admin optional mx-welcome_21.09mx21.tar.xz
+ 7f0c8d485a5ecdac38fc27517e57723b 9103 admin optional mx-welcome_21.09mx21_i386.buildinfo
