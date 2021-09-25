@@ -28,6 +28,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QCommandLineParser>
 #include <QMessageBox>
 #include <QProcess>
 #include <QSettings>
@@ -50,7 +51,7 @@ protected:
     QProcess *proc;
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr, QStringList args = QStringList());
+    explicit MainWindow(const QCommandLineParser &arg_parser, QWidget *parent = nullptr);
     ~MainWindow();
 
     Result runCmd(QString cmd);

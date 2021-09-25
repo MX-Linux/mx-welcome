@@ -25,6 +25,7 @@
  **********************************************************************/
 
 #include <QApplication>
+#include <QCommandLineParser>
 #include <QIcon>
 #include <QLibraryInfo>
 #include <QLocale>
@@ -39,6 +40,16 @@ int main(int argc, char *argv[])
     app.setWindowIcon(QIcon::fromTheme(app.applicationName()));
     app.setOrganizationName("MX-Linux");
 
+    QCommandLineParser parser;
+    parser.setApplicationDescription(QObject::tr("This tool displays a welcome screen with two tabs."));
+    parser.addHelpOption();
+    parser.addVersionOption();
+    parser.addOption({{"a", "about"}, QObject::tr("Start with About tab selected. "
+                      "The About tab provides basic information about the current "
+                      "MX Linux version, the user's hardware, and access to a full system report.")});
+    parser.addOption({{"t", "test"}, QObject::tr("Run a test mode.")});
+    parser.process(app);
+
     QTranslator qtTran;
     if (qtTran.load(QLocale::system(), "qt", "_", QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         app.installTranslator(&qtTran);
@@ -52,7 +63,7 @@ int main(int argc, char *argv[])
         app.installTranslator(&appTran);
 
     if (getuid() != 0) {
-        MainWindow w(nullptr, app.arguments());
+        MainWindow w(parser);
         w.show();
         return app.exec();
     } else {

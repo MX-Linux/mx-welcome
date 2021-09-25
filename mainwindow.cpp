@@ -35,7 +35,7 @@
 #include "version.h"
 
 
-MainWindow::MainWindow(QWidget *parent, QStringList args) :
+MainWindow::MainWindow(const QCommandLineParser &arg_parser, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MainWindow)
 {
@@ -43,11 +43,12 @@ MainWindow::MainWindow(QWidget *parent, QStringList args) :
     ui->setupUi(this);
     setWindowFlags(Qt::Window); // for the close, min and max buttons
     setup();
+
     ui->tabWidget->setCurrentIndex(0);
-    if (args.contains("--about"))
+    if (arg_parser.isSet("about"))
         ui->tabWidget->setCurrentIndex(1);
 
-    if (args.contains("--test")) {
+    if (arg_parser.isSet("test")) {
         ui->labelLoginInfo->show();
         ui->buttonSetup->show();
     }
