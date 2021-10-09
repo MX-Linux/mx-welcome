@@ -335,6 +335,6 @@ void MainWindow::settabstyle()
 {
     QString tw = QString::number(ui->tabWidget->width() / 2 - 1);
     //qDebug() << "width" << ui->tabWidget->width() << "tw" << tw;
-    ui->tabWidget->setStyleSheet("""QTabBar::tab:!selected{width: " + tw + "px; background:  rgba(140, 135, 135, 50); color: rgb(169, 157, 157)}""""QTabBar::tab:selected{width: " + tw + "px}""");
+    ui->tabWidget->setStyleSheet("""QTabBar::tab:!selected{width: " + tw + "px; background:  rgba(140, 135, 135, 50)}""""QTabBar::tab:selected{width: " + tw + "px}""");
 }
 

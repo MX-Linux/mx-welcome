@@ -1,3 +1,9 @@
+mx-welcome (21.10.01mx21) mx; urgency=medium
+
+  * adjust style sheet for inactive tab 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 08 Oct 2021 21:19:09 -0400
+
 mx-welcome (21.09mx21) mx; urgency=medium
 
   * Add comment to display in Whisker menu
