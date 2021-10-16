@@ -309,7 +309,7 @@ void MainWindow::on_buttonFAQ_clicked()
 
 void MainWindow::on_buttonSetup_clicked()
 {
-    system("minstall-pkexec&");
+    system("minstall-launcher&");
 }
 
 void MainWindow::on_buttonTOS_clicked()
@@ -345,3 +345,8 @@ void MainWindow::settabstyle()
     ui->tabWidget->setStyleSheet("""QTabBar::tab:!selected{width: " + tw + "px; background:  rgba(140, 135, 135, 50)}""""QTabBar::tab:selected{width: " + tw + "px}""");
 }
 
+
+void MainWindow::on_buttonTour_clicked()
+{
+    system("mx-tour&");
+}

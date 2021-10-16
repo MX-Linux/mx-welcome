@@ -84,6 +84,8 @@ private slots:
     void settabstyle();
     void shortsysteminfo();
 
+    void on_buttonTour_clicked();
+
 private:
     Ui::MainWindow *ui;
     QSettings user_settings;
