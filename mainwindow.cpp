@@ -87,6 +87,11 @@ void MainWindow::setup()
         ui->buttonSetup->hide();
     }
 
+    // hide tour if not present
+    if (! QFile("/usr/bin/mx-tour").exists()){
+        ui->buttonTour->hide();
+    }
+
     // setup title block & icons
     QSettings settings("/usr/share/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
     //QString DISTRO = settings.value("DISTRO").toString();
@@ -105,6 +110,7 @@ void MainWindow::setup()
     QString WIKI = settings.value("WIKI").toString();
     QString HEADER = settings.value("HEADER").toString();
     QString SUPPORTED = settings.value("SUPPORTED").toString();
+    QString TOUR = settings.value("TOUR").toString();
 
     QSettings lsb("/etc/lsb-release", QSettings::NativeFormat);
     QString MAINDISTRO = lsb.value("DISTRIB_ID").toString();
@@ -163,6 +169,7 @@ void MainWindow::setup()
     ui->buttonManual->setIcon(QIcon(MANUAL));
     ui->buttonVideo->setIcon(QIcon(VIDEOS));
     ui->buttonWiki->setIcon(QIcon(WIKI));
+    ui->buttonTour->setIcon(QIcon(TOUR));
 
     // setup about labels
     ui->labelMXversion->setText(DISTRO);

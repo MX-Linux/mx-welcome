@@ -1,3 +1,9 @@
+mx-welcome (21.10.02mx21) mx; urgency=medium
+
+  * add button for tour app (visible when mx-tour is installed)
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 16 Oct 2021 18:19:30 -0400
+
 mx-welcome (21.10.01mx21) mx; urgency=medium
 
   * adjust style sheet for inactive tab 
