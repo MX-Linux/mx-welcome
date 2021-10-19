@@ -1,3 +1,9 @@
+mx-welcome (21.10.05mx21) mx; urgency=medium
+
+  * Put installer icon in the center
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 19 Oct 2021 13:58:20 -0400
+
 mx-welcome (21.10.04mx21) mx; urgency=medium
 
   * Remove Codecs

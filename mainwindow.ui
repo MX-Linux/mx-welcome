@@ -203,6 +203,66 @@
          <string>Welcome</string>
         </attribute>
         <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0" colspan="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <spacer name="horizontalSpacer_16">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_17">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <spacer name="horizontalSpacer_20">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_21">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
          <item row="1" column="0" colspan="2">
           <layout class="QGridLayout" name="gridLayout">
            <property name="verticalSpacing">
@@ -415,23 +475,17 @@
              </property>
             </spacer>
            </item>
-           <item row="0" column="5">
-            <widget class="FlatButton" name="buttonForum">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
+           <item row="0" column="3">
+            <widget class="FlatButton" name="buttonSetup">
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
              </property>
              <property name="text">
-              <string>Forums</string>
+              <string>Install MX Linux</string>
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>:/icons/forums.png</normaloff>:/icons/forums.png</iconset>
+               <normaloff>:/icons/setup.png</normaloff>:/icons/setup.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -447,23 +501,17 @@
              </property>
             </widget>
            </item>
-           <item row="1" column="5">
-            <widget class="FlatButton" name="buttonVideo">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
+           <item row="5" column="1">
+            <widget class="FlatButton" name="buttonPanelOrient">
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
              </property>
              <property name="text">
-              <string>Videos</string>
+              <string>Tweak (Panel, etc...)</string>
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>:/icons/videos.png</normaloff>:/icons/videos.png</iconset>
+               <normaloff>:/icons/mxwelcome-icon-panel-orient.png</normaloff>:/icons/mxwelcome-icon-panel-orient.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -479,17 +527,17 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="5">
-            <widget class="FlatButton" name="buttonContribute">
+           <item row="4" column="1">
+            <widget class="FlatButton" name="buttonTools">
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
              </property>
              <property name="text">
-              <string>Contribute</string>
+              <string>Tools</string>
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>:/icons/contribute.png</normaloff>:/icons/contribute.png</iconset>
+               <normaloff>:/icons/tools.png</normaloff>:/icons/tools.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -505,91 +553,7 @@
              </property>
             </widget>
            </item>
-           <item row="3" column="5">
-            <widget class="FlatButton" name="buttonPackageInstall">
-             <property name="focusPolicy">
-              <enum>Qt::NoFocus</enum>
-             </property>
-             <property name="text">
-              <string>Popular Apps</string>
-             </property>
-             <property name="icon">
-              <iconset>
-               <normaloff>:/icons/mxwelcome-icon-packageinstaller.png</normaloff>:/icons/mxwelcome-icon-packageinstaller.png</iconset>
-             </property>
-             <property name="iconSize">
-              <size>
-               <width>42</width>
-               <height>42</height>
-              </size>
-             </property>
-             <property name="autoDefault">
-              <bool>true</bool>
-             </property>
-             <property name="flat">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="FlatButton" name="buttonFAQ">
-             <property name="focusPolicy">
-              <enum>Qt::NoFocus</enum>
-             </property>
-             <property name="text">
-              <string>FAQ</string>
-             </property>
-             <property name="icon">
-              <iconset>
-               <normaloff>:/icons/faq.png</normaloff>:/icons/faq.png</iconset>
-             </property>
-             <property name="iconSize">
-              <size>
-               <width>42</width>
-               <height>42</height>
-              </size>
-             </property>
-             <property name="autoDefault">
-              <bool>true</bool>
-             </property>
-             <property name="flat">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <widget class="FlatButton" name="buttonManual">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="focusPolicy">
-              <enum>Qt::NoFocus</enum>
-             </property>
-             <property name="text">
-              <string>Users Manual</string>
-             </property>
-             <property name="icon">
-              <iconset>
-               <normaloff>:/icons/users-manual.png</normaloff>:/icons/users-manual.png</iconset>
-             </property>
-             <property name="iconSize">
-              <size>
-               <width>42</width>
-               <height>42</height>
-              </size>
-             </property>
-             <property name="autoDefault">
-              <bool>true</bool>
-             </property>
-             <property name="flat">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="1">
+           <item row="3" column="1">
             <widget class="FlatButton" name="buttonWiki">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -621,17 +585,23 @@
              </property>
             </widget>
            </item>
-           <item row="3" column="1">
-            <widget class="FlatButton" name="buttonTools">
+           <item row="2" column="1">
+            <widget class="FlatButton" name="buttonManual">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
              </property>
              <property name="text">
-              <string>Tools</string>
+              <string>Users Manual</string>
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>:/icons/tools.png</normaloff>:/icons/tools.png</iconset>
+               <normaloff>:/icons/users-manual.png</normaloff>:/icons/users-manual.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -647,17 +617,17 @@
              </property>
             </widget>
            </item>
-           <item row="5" column="1">
-            <widget class="FlatButton" name="buttonSetup">
+           <item row="1" column="1">
+            <widget class="FlatButton" name="buttonFAQ">
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
              </property>
              <property name="text">
-              <string>Install MX Linux</string>
+              <string>FAQ</string>
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>:/icons/setup.png</normaloff>:/icons/setup.png</iconset>
+               <normaloff>:/icons/faq.png</normaloff>:/icons/faq.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -673,33 +643,7 @@
              </property>
             </widget>
            </item>
-           <item row="4" column="1">
-            <widget class="FlatButton" name="buttonPanelOrient">
-             <property name="focusPolicy">
-              <enum>Qt::NoFocus</enum>
-             </property>
-             <property name="text">
-              <string>Tweak (Panel, etc...)</string>
-             </property>
-             <property name="icon">
-              <iconset>
-               <normaloff>:/icons/mxwelcome-icon-panel-orient.png</normaloff>:/icons/mxwelcome-icon-panel-orient.png</iconset>
-             </property>
-             <property name="iconSize">
-              <size>
-               <width>42</width>
-               <height>42</height>
-              </size>
-             </property>
-             <property name="autoDefault">
-              <bool>true</bool>
-             </property>
-             <property name="flat">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="5">
+           <item row="5" column="5">
             <widget class="FlatButton" name="buttonTour">
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
@@ -721,65 +665,121 @@
              </property>
             </widget>
            </item>
-          </layout>
-         </item>
-         <item row="0" column="0" colspan="2">
-          <layout class="QHBoxLayout" name="horizontalLayout_4">
-           <item>
-            <spacer name="horizontalSpacer_16">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+           <item row="4" column="5">
+            <widget class="FlatButton" name="buttonPackageInstall">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
              </property>
-             <property name="sizeHint" stdset="0">
+             <property name="text">
+              <string>Popular Apps</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>:/icons/mxwelcome-icon-packageinstaller.png</normaloff>:/icons/mxwelcome-icon-packageinstaller.png</iconset>
+             </property>
+             <property name="iconSize">
               <size>
-               <width>0</width>
-               <height>0</height>
+               <width>42</width>
+               <height>42</height>
               </size>
              </property>
-            </spacer>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
            </item>
-           <item>
-            <spacer name="horizontalSpacer_17">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+           <item row="3" column="5">
+            <widget class="FlatButton" name="buttonContribute">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
              </property>
-             <property name="sizeHint" stdset="0">
+             <property name="text">
+              <string>Contribute</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>:/icons/contribute.png</normaloff>:/icons/contribute.png</iconset>
+             </property>
+             <property name="iconSize">
               <size>
-               <width>0</width>
-               <height>0</height>
+               <width>42</width>
+               <height>42</height>
               </size>
              </property>
-            </spacer>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
            </item>
-          </layout>
-         </item>
-         <item row="2" column="0" colspan="2">
-          <layout class="QHBoxLayout" name="horizontalLayout_5">
-           <item>
-            <spacer name="horizontalSpacer_20">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+           <item row="2" column="5">
+            <widget class="FlatButton" name="buttonVideo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
-             <property name="sizeHint" stdset="0">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>Videos</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>:/icons/videos.png</normaloff>:/icons/videos.png</iconset>
+             </property>
+             <property name="iconSize">
               <size>
-               <width>0</width>
-               <height>0</height>
+               <width>42</width>
+               <height>42</height>
               </size>
              </property>
-            </spacer>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
            </item>
-           <item>
-            <spacer name="horizontalSpacer_21">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+           <item row="1" column="5">
+            <widget class="FlatButton" name="buttonForum">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
-             <property name="sizeHint" stdset="0">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>Forums</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>:/icons/forums.png</normaloff>:/icons/forums.png</iconset>
+             </property>
+             <property name="iconSize">
               <size>
-               <width>0</width>
-               <height>0</height>
+               <width>42</width>
+               <height>42</height>
               </size>
              </property>
-            </spacer>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
