@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Tue, 19 Oct 2021 13:58:20 -0400
+Source: mx-welcome
+Architecture: source
+Version: 21.10.05mx21
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-welcome (21.10.05mx21) mx; urgency=medium
+ .
+   * Put installer icon in the center
+Checksums-Sha1:
+ 569cb489c290c4dfcddbd20c1c09610fcf195dd3 624 mx-welcome_21.10.05mx21.dsc
+ 43a4aa0d28c644a130b45052c34cf124d7070848 47044 mx-welcome_21.10.05mx21.tar.xz
+ c57e3b9e8ae00aa6b9cbc6ca2cdd105df89697c2 9118 mx-welcome_21.10.05mx21_i386.buildinfo
+Checksums-Sha256:
+ 47a0ee630657678835084f96cb9d4a2a659de9ca46d54bb38f4ef61875dbcdd6 624 mx-welcome_21.10.05mx21.dsc
+ 00d5a00e665e384a37435d99f35dcf15d0c1c19a6213322cb45afe730dfe7287 47044 mx-welcome_21.10.05mx21.tar.xz
+ 06f6d44924898b52a2d6ba6781c45bbb9dd56c6971dd42b7a426888b98fe80fe 9118 mx-welcome_21.10.05mx21_i386.buildinfo
+Files:
+ 02e8936a81f513d8eddd62e31e7ff8ff 624 admin optional mx-welcome_21.10.05mx21.dsc
+ 31f0b8b4d097f5a0fdd96741011989ed 47044 admin optional mx-welcome_21.10.05mx21.tar.xz
+ 19eb0fcf9ac2fa7cb907a92da4928dc0 9118 admin optional mx-welcome_21.10.05mx21_i386.buildinfo

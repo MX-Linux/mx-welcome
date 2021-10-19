@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Tue, 19 Oct 2021 13:58:20 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source amd64
+Version: 21.10.05mx21
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (21.10.05mx21) mx; urgency=medium
+ .
+   * Put installer icon in the center
+Checksums-Sha1:
+ e4f4c49607434972eb18b5537bad1559553da6a0 624 mx-welcome_21.10.05mx21.dsc
+ 6a7f3a91c5d71f92c7e0cefe82c2caa298067095 47060 mx-welcome_21.10.05mx21.tar.xz
+ 0e1421204e110bc1a88d5ea5da8c429d6fc41b61 9421 mx-welcome_21.10.05mx21_amd64.buildinfo
+ 01dc6322ddd19d18e0ca70edb5f30a27a6b5ffe8 47888 mx-welcome_21.10.05mx21_amd64.deb
+Checksums-Sha256:
+ b3c9d7cd8a791757bd5c2fec9cba57a02757f4b54ce05d3c9372899bab5d9fd1 624 mx-welcome_21.10.05mx21.dsc
+ a8f942803d1f94b48584c535a5a5d5f1261e53ee0b72c4b91e1b7c2e5ac34b17 47060 mx-welcome_21.10.05mx21.tar.xz
+ 0c5454243d61234a2d8215fe227871a671a4372b640cb8b5191f058aac8a2598 9421 mx-welcome_21.10.05mx21_amd64.buildinfo
+ fa61107d712e824da44f20cd30d3212035c74592cb351061043310d4b95d12b3 47888 mx-welcome_21.10.05mx21_amd64.deb
+Files:
+ 03fd77c977d3251fc74b3ba625530bb3 624 admin optional mx-welcome_21.10.05mx21.dsc
+ db11397195f2383d71eb424cd6100758 47060 admin optional mx-welcome_21.10.05mx21.tar.xz
+ 1a0efde2425a900abcee5e2afa26fe64 9421 admin optional mx-welcome_21.10.05mx21_amd64.buildinfo
+ f278a168923d237c3d08f664d2e15f0d 47888 admin optional mx-welcome_21.10.05mx21_amd64.deb

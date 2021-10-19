@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Tue, 19 Oct 2021 13:58:20 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: i386
+Version: 21.10.05mx21
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (21.10.05mx21) mx; urgency=medium
+ .
+   * Put installer icon in the center
+Checksums-Sha1:
+ c57e3b9e8ae00aa6b9cbc6ca2cdd105df89697c2 9118 mx-welcome_21.10.05mx21_i386.buildinfo
+ 4c8baa568ce3804e31449ab990e16a6808f9b4df 48548 mx-welcome_21.10.05mx21_i386.deb
+Checksums-Sha256:
+ 06f6d44924898b52a2d6ba6781c45bbb9dd56c6971dd42b7a426888b98fe80fe 9118 mx-welcome_21.10.05mx21_i386.buildinfo
+ 08b916f69559a4e7401f7de6e63554ebb05bc261304d0bac410240dc08941090 48548 mx-welcome_21.10.05mx21_i386.deb
+Files:
+ 19eb0fcf9ac2fa7cb907a92da4928dc0 9118 admin optional mx-welcome_21.10.05mx21_i386.buildinfo
+ c3849d4b2981951adfa2100edeb61de4 48548 admin optional mx-welcome_21.10.05mx21_i386.deb
