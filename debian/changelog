@@ -1,3 +1,10 @@
+mx-welcome (21.10.04mx21) mx; urgency=medium
+
+  * Remove Codecs
+  * Rearrange icons
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 19 Oct 2021 12:18:59 -0400
+
 mx-welcome (21.10.03mx21) mx; urgency=medium
 
   * relocate installer and tour buttons (off center) 

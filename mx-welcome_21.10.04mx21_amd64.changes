@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 19 Oct 2021 12:18:59 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source amd64
+Version: 21.10.04mx21
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (21.10.04mx21) mx; urgency=medium
+ .
+   * Remove Codecs
+   * Rearrange icons
+Checksums-Sha1:
+ 545088d71b1813d9ee3b690ab1af69f02583d579 1186 mx-welcome_21.10.04mx21.dsc
+ 633719abb9305bdc422871f02ce73abdab54c1f2 47020 mx-welcome_21.10.04mx21.tar.xz
+ 003325ffccac138792ddaa31c45b4f9527b3c651 9986 mx-welcome_21.10.04mx21_amd64.buildinfo
+ acfae09d3d66350658505b3eb54242ef7376d2be 48016 mx-welcome_21.10.04mx21_amd64.deb
+Checksums-Sha256:
+ 2145b06541d45056197f23f033adeca9f31a277881da976317d261d522ea4d14 1186 mx-welcome_21.10.04mx21.dsc
+ ab49221740061ea0c8151d91ee7d68d6bb464d24364bf44908b13e4d8a557df8 47020 mx-welcome_21.10.04mx21.tar.xz
+ f2b38fd1d24fc4f4de37726333ed5d710441a61d5f9e3de967627454021e3b9a 9986 mx-welcome_21.10.04mx21_amd64.buildinfo
+ 9ee9ff0d414a47a02ac0d873a2d1fb53b3808f6853a28440d491fe0d5337413d 48016 mx-welcome_21.10.04mx21_amd64.deb
+Files:
+ 6a9e004cf52d887c889d425c1bfd5268 1186 admin optional mx-welcome_21.10.04mx21.dsc
+ 3f0c620ca6b5ce926a7d150bf3761bad 47020 admin optional mx-welcome_21.10.04mx21.tar.xz
+ d7254993eaa73ae14966a4023873e7b6 9986 admin optional mx-welcome_21.10.04mx21_amd64.buildinfo
+ 2b11a292628721be44d95fb03f1eb3a6 48016 admin optional mx-welcome_21.10.04mx21_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmFu8EwTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumFioB/9fthfSaWPYpyZYkJHebcUdSUfMS26n
+eWrfm7y/e5I5DKGdzURSOweXKCPdDyynK/+QA4FJkxQeNX1WUUQZdPNeeS5Pexdz
+HSOb6M0GfH7JaqRy06wn5GdGKNsE1f4cpAkqJszszqpkcVOt9FDATLFVDVHMAQni
+Ik7Aa45GljJy3qnC4Y1hbhAnlpx1mV03sxYsgd7G+MOXuhOejEpGS7LwndJkX+Xg
+Dd84WxBhr5W1vAT7Tc7b2pI7jACtsmFwkiGbctxGJV5FQz3xLS+uM7Nlz5Pqu/t0
+Dz8mjCFJREoKPb0a4JqYoKnFKJMvPW8l/b5j4ysHpa+AaWJ9wt7XDAnc
+=jw9T
+-----END PGP SIGNATURE-----
