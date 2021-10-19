@@ -29,15 +29,14 @@
 #include <QFileInfo>
 #include <QTextEdit>
 
+#include "flatbutton.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "flatbutton.h"
 #include "version.h"
 
-
-MainWindow::MainWindow(const QCommandLineParser &arg_parser, QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::MainWindow)
+MainWindow::MainWindow(const QCommandLineParser& arg_parser, QWidget* parent)
+    : QDialog(parent)
+    , ui(new Ui::MainWindow)
 {
     qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
     ui->setupUi(this);
@@ -76,8 +75,7 @@ void MainWindow::setup()
     if (!autostart)
         QFile::remove(QDir::homePath() + "/.config/autostart/mx-welcome.desktop");
 
-    ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. " +
-                                tr("Superuser root, password:") + "<b> root</b>." + "</p>");
+    ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. " + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
     // if running live
     QString test = runCmd("df -T / |tail -n1 |awk '{print $2}'").output;
     if (test == "aufs" || test == "overlay") {
@@ -88,7 +86,7 @@ void MainWindow::setup()
     }
 
     // hide tour if not present
-    if (! QFile("/usr/bin/mx-tour").exists()){
+    if (!QFile::exists("/usr/bin/mx-tour")) {
         ui->buttonTour->hide();
     }
 
@@ -133,8 +131,8 @@ void MainWindow::setup()
 
     ui->labelSupportUntil->setText(SUPPORTED);
 
-    QString DESKTOP = runCmd("LANG=C inxi -c 0 -S ").output.trimmed().section(":",5,5).section("\n",0,0);
-    if (DESKTOP.contains("Fluxbox")){
+    QString DESKTOP = runCmd("LANG=C inxi -c 0 -S ").output.trimmed().section(":", 5, 5).section("\n", 0, 0);
+    if (DESKTOP.contains("Fluxbox")) {
         isfluxbox = true;
         QFile file("/etc/mxfb_version");
         if (file.exists()) {
@@ -149,7 +147,6 @@ void MainWindow::setup()
         }
     }
 
-
     ui->labelDesktopVersion->setText(DESKTOP);
 
     ui->labelTitle->setText(tr("<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">%1 &quot;%2&quot;</span></p></body></html>").arg(DISTRO).arg(CODENAME));
@@ -157,7 +154,7 @@ void MainWindow::setup()
         ui->labelgraphic->setPixmap(HEADER);
 
     // setup icons
-    ui->buttonCodecs->setIcon(QIcon(CODECS));
+    //ui->buttonCodecs->setIcon(QIcon(CODECS));
     ui->buttonContribute->setIcon(QIcon(CONTRIBUTE));
     ui->buttonFAQ->setIcon(QIcon(FAQ));
     ui->buttonForum->setIcon(QIcon(FORUMS));
@@ -187,9 +184,8 @@ Result MainWindow::runCmd(QString cmd)
     connect(&proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
     proc.start("/bin/bash", QStringList() << "-c" << cmd);
     loop.exec();
-    return {proc.exitCode(), proc.readAll().trimmed()};
+    return { proc.exitCode(), proc.readAll().trimmed() };
 }
-
 
 // Get version of the program
 QString MainWindow::getVersion(QString name)
@@ -202,14 +198,10 @@ void MainWindow::on_buttonAbout_clicked()
 {
     this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
-                       tr("About MX Welcome"), "<p align=\"center\"><b><h2>" +
-                       tr("MX Welcome") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
-                       tr("Program for displaying a welcome screen in MX Linux") +
-                       "</h3></p><p align=\"center\"><a href=\"http://www.mxlinux.org/mx\">http://www.mxlinux.org/mx</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>");
-    QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
-    QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
-    QPushButton *btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
+        tr("About MX Welcome"), "<p align=\"center\"><b><h2>" + tr("MX Welcome") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + version + "</p><p align=\"center\"><h3>" + tr("Program for displaying a welcome screen in MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://www.mxlinux.org/mx\">http://www.mxlinux.org/mx</a><br /></p><p align=\"center\">" + tr("Copyright (c) MX Linux") + "<br /><br /></p>");
+    QPushButton* btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
+    QPushButton* btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
+    QPushButton* btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
     btnCancel->setIcon(QIcon::fromTheme("window-close"));
 
     msgBox.exec();
@@ -218,18 +210,18 @@ void MainWindow::on_buttonAbout_clicked()
         QString cmd = QString("mx-viewer file:///usr/share/doc/mx-welcome/license.html '%1'").arg(tr("MX Welcome"));
         system(cmd.toUtf8());
     } else if (msgBox.clickedButton() == btnChangelog) {
-        QDialog *changelog = new QDialog(this);
+        QDialog* changelog = new QDialog(this);
         changelog->resize(600, 500);
 
-        QTextEdit *text = new QTextEdit;
+        QTextEdit* text = new QTextEdit;
         text->setReadOnly(true);
-        text->setText(runCmd("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz").output);
+        text->setText(runCmd("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName() + "/changelog.gz").output);
 
-        QPushButton *btnClose = new QPushButton(tr("&Close"));
+        QPushButton* btnClose = new QPushButton(tr("&Close"));
         btnClose->setIcon(QIcon::fromTheme("window-close"));
         connect(btnClose, &QPushButton::clicked, changelog, &QDialog::close);
 
-        QVBoxLayout *layout = new QVBoxLayout;
+        QVBoxLayout* layout = new QVBoxLayout;
         layout->addWidget(text);
         layout->addWidget(btnClose);
         changelog->setLayout(layout);
@@ -335,16 +327,21 @@ void MainWindow::on_tabWidget_currentChanged(int index)
 
 void MainWindow::resizeEvent(QResizeEvent*)
 {
-   settabstyle();
+    settabstyle();
 }
 
 void MainWindow::settabstyle()
 {
     QString tw = QString::number(ui->tabWidget->width() / 2 - 1);
     //qDebug() << "width" << ui->tabWidget->width() << "tw" << tw;
-    ui->tabWidget->setStyleSheet("""QTabBar::tab:!selected{width: " + tw + "px; background:  rgba(140, 135, 135, 50)}""""QTabBar::tab:selected{width: " + tw + "px}""");
+    ui->tabWidget->setStyleSheet(""
+                                 "QTabBar::tab:!selected{width: "
+        + tw + "px; background:  rgba(140, 135, 135, 50)}"
+               ""
+               "QTabBar::tab:selected{width: "
+        + tw + "px}"
+               "");
 }
-
 
 void MainWindow::on_buttonTour_clicked()
 {
