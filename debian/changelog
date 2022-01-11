@@ -1,4 +1,4 @@
-mx-welcome (21.10.06mx21) mx; urgency=medium
+mx-welcome (22.01.01) mx; urgency=medium
 
   * use data from mx-welcome.conf if /etc/lsb-release is missing. 
 
