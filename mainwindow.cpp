@@ -92,8 +92,8 @@ void MainWindow::setup()
 
     // setup title block & icons
     QSettings settings("/usr/share/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
-    //QString DISTRO = settings.value("DISTRO").toString();
-    //QString CODENAME = settings.value("CODENAME").toString();
+    QString DISTRO = settings.value("DISTRO").toString();
+    QString CODENAME = settings.value("CODENAME").toString();
     QString CONTRIBUTE = settings.value("CONTRIBUTE").toString();
     QString CODECS = settings.value("CODECS").toString();
     QString FAQ = settings.value("FAQ").toString();
@@ -110,11 +110,13 @@ void MainWindow::setup()
     QString SUPPORTED = settings.value("SUPPORTED").toString();
     QString TOUR = settings.value("TOUR").toString();
 
-    QSettings lsb("/etc/lsb-release", QSettings::NativeFormat);
-    QString MAINDISTRO = lsb.value("DISTRIB_ID").toString();
-    QString CODENAME = lsb.value("DISTRIB_CODENAME").toString();
-    QString DISTRIB_RELEASE = lsb.value("DISTRIB_RELEASE").toString();
-    QString DISTRO = MAINDISTRO + "-" + DISTRIB_RELEASE;
+    if ( QFileInfo("/etc/lsb-release").exists() ) {
+        QSettings lsb("/etc/lsb-release", QSettings::NativeFormat);
+        QString MAINDISTRO = lsb.value("DISTRIB_ID").toString();
+        CODENAME = lsb.value("DISTRIB_CODENAME").toString();
+        QString DISTRIB_RELEASE = lsb.value("DISTRIB_RELEASE").toString();
+        DISTRO = MAINDISTRO + "-" + DISTRIB_RELEASE;
+    }
 
     QString debian_version;
     QString mxfluxbox_version;
