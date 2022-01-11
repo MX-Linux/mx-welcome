@@ -1,3 +1,9 @@
+mx-welcome (21.10.06mx21) mx; urgency=medium
+
+  * use data from mx-welcome.conf if /etc/lsb-release is missing. 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 10 Jan 2022 21:12:47 -0500
+
 mx-welcome (21.10.05mx21) mx; urgency=medium
 
   * Put installer icon in the center
