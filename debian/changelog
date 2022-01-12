@@ -1,6 +1,6 @@
 mx-welcome (22.01.02) mx; urgency=medium
 
-  * add checking for a /etc/mx-welcome.comf
+  * add checking for a /etc/mx-welcome/mx-welcome.comf
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 11 Jan 2022 19:36:41 -0500
 
