@@ -1,3 +1,9 @@
+mx-welcome (22.01.02) mx; urgency=medium
+
+  * add checking for a /etc/mx-welcome.comf
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 11 Jan 2022 19:36:41 -0500
+
 mx-welcome (22.01.01) mx; urgency=medium
 
   * use data from mx-welcome.conf if /etc/lsb-release is missing. 

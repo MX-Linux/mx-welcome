@@ -91,24 +91,76 @@ void MainWindow::setup()
     }
 
     // setup title block & icons
-    QSettings settings("/usr/share/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
+    QSettings settings("/etc/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
+    QSettings settingsusr("/usr/share/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
     QString DISTRO = settings.value("DISTRO").toString();
+    if ( DISTRO.isEmpty()) {
+        DISTRO = settingsusr.value("DISTRO").toString();
+    }
     QString CODENAME = settings.value("CODENAME").toString();
+    if ( CODENAME.isEmpty()) {
+        CODENAME = settingsusr.value("CODENAME").toString();
+    }
     QString CONTRIBUTE = settings.value("CONTRIBUTE").toString();
+    if ( CONTRIBUTE.isEmpty()) {
+        CONTRIBUTE = settingsusr.value("CONTRIBUTE").toString();
+    }
     QString CODECS = settings.value("CODECS").toString();
+    if ( CODECS.isEmpty()) {
+        CODECS = settingsusr.value("CODECS").toString();
+    }
     QString FAQ = settings.value("FAQ").toString();
+    if ( FAQ.isEmpty()) {
+        FAQ = settingsusr.value("FAQ").toString();
+    }
     QString FORUMS = settings.value("FORUMS").toString();
+    if ( FORUMS.isEmpty()) {
+        FORUMS = settingsusr.value("FORUMS").toString();
+    }
     QString LOGO = settings.value("LOGO").toString();
+    if ( LOGO.isEmpty()) {
+        LOGO = settingsusr.value("LOGO").toString();
+    }
     QString PACKAGEINSTALLER = settings.value("PACKAGEINSTALLER").toString();
+    if ( PACKAGEINSTALLER.isEmpty()) {
+        PACKAGEINSTALLER = settingsusr.value("PACKAGEINSTALLER").toString();
+    }
     QString PANELORIENT = settings.value("PANELORIENT").toString();
+    if ( PANELORIENT.isEmpty()) {
+        PANELORIENT = settingsusr.value("PANELORIENT").toString();
+    }
     QString SETUP = settings.value("SETUP").toString();
+    if ( SETUP.isEmpty()) {
+        SETUP = settingsusr.value("SETUP").toString();
+    }
     QString TOOLS = settings.value("TOOLS").toString();
+    if ( TOOLS.isEmpty()) {
+        TOOLS = settingsusr.value("TOOLS").toString();
+    }
     QString MANUAL = settings.value("MANUAL").toString();
+    if ( MANUAL.isEmpty()) {
+        MANUAL = settingsusr.value("MANUAL").toString();
+    }
     QString VIDEOS = settings.value("VIDEOS").toString();
+    if ( VIDEOS.isEmpty()) {
+        VIDEOS = settingsusr.value("VIDEOS").toString();
+    }
     QString WIKI = settings.value("WIKI").toString();
+    if ( WIKI.isEmpty()) {
+        WIKI = settingsusr.value("WIKI").toString();
+    }
     QString HEADER = settings.value("HEADER").toString();
+    if ( HEADER.isEmpty()) {
+        HEADER = settingsusr.value("HEADER").toString();
+    }
     QString SUPPORTED = settings.value("SUPPORTED").toString();
+    if ( SUPPORTED.isEmpty()) {
+        SUPPORTED = settingsusr.value("SUPPORTED").toString();
+    }
     QString TOUR = settings.value("TOUR").toString();
+    if ( TOUR.isEmpty()) {
+        TOUR = settingsusr.value("TOUR").toString();
+    }
 
     if ( QFileInfo("/etc/lsb-release").exists() ) {
         QSettings lsb("/etc/lsb-release", QSettings::NativeFormat);
