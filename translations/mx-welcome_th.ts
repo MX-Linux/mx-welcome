@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="lt">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="th">
 <context>
     <name>MainWindow</name>
     <message>
@@ -7,17 +7,17 @@
         <location filename="mainwindow.cpp" line="255"/>
         <location filename="mainwindow.cpp" line="264"/>
         <source>MX Welcome</source>
-        <translation>MX pasveikinimas</translation>
+        <translation>หน้าต้อนรับของ MX</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="80"/>
         <source>Quit application</source>
-        <translation>Išeiti iš programos</translation>
+        <translation>ออกจากแอปพลิเคชัน</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="83"/>
         <source>Close</source>
-        <translation>Užverti</translation>
+        <translation>ปิด</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="90"/>
@@ -27,12 +27,12 @@
     <message>
         <location filename="mainwindow.ui" line="112"/>
         <source>About this application</source>
-        <translation>Apie šią programą</translation>
+        <translation>เกี่ยวกับแอปพลิเคชันนี้</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="115"/>
         <source>About...</source>
-        <translation>Apie...</translation>
+        <translation>เกี่ยวกับ...</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="122"/>
@@ -52,27 +52,27 @@
     <message>
         <location filename="mainwindow.ui" line="510"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation>Patobulinimai (Skydelis ir t.t. ...)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="536"/>
         <source>Tools</source>
-        <translation>Įrankiai</translation>
+        <translation>เครื่องมือ</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="568"/>
         <source>Wiki</source>
-        <translation>Vikis</translation>
+        <translation>วิกิ</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="600"/>
         <source>Users Manual</source>
-        <translation>Naudotojo vadovas</translation>
+        <translation>คู่มือสำหรับผู้ใช้</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="626"/>
         <source>FAQ</source>
-        <translation>DUK</translation>
+        <translation>คำถามที่พบบ่อย</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="652"/>
@@ -82,27 +82,27 @@
     <message>
         <location filename="mainwindow.ui" line="674"/>
         <source>Popular Apps</source>
-        <translation>Populiarios programos</translation>
+        <translation>แอปพลิเคชันยอดนิยม</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="700"/>
         <source>Contribute</source>
-        <translation>Talkinti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="732"/>
         <source>Videos</source>
-        <translation>Vaizdo įrašai</translation>
+        <translation>วิดีโอ</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="764"/>
         <source>Forums</source>
-        <translation>Forumai</translation>
+        <translation>ฟอรัม</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="790"/>
         <source>About</source>
-        <translation>Apie</translation>
+        <translation>เกี่ยวกับ</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="798"/>
@@ -122,7 +122,7 @@
     <message>
         <location filename="mainwindow.ui" line="829"/>
         <source>Terms of Use</source>
-        <translation>Naudojimo sąlygos</translation>
+        <translation>ข้อกำหนดการใช้งาน</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="846"/>
@@ -147,7 +147,7 @@
     <message>
         <location filename="mainwindow.ui" line="924"/>
         <source>Show this dialog at start up</source>
-        <translation>Rodyti šį dialogą paleidimo metu</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="78"/>
@@ -163,47 +163,47 @@
         <location filename="mainwindow.cpp" line="178"/>
         <location filename="mainwindow.cpp" line="194"/>
         <source>Error</source>
-        <translation>Klaida</translation>
+        <translation>ข้อผิดพลาด</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
         <source>About MX Welcome</source>
-        <translation>Apie MX pasveikinimas</translation>
+        <translation>เกี่ยวกับหน้าต้อนรับของ MX</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
         <source>Version: </source>
-        <translation>Versija: </translation>
+        <translation>เวอร์ชัน:</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation>Programa, skirta rodyti pasisveikinimo langą MX Linux</translation>
+        <translation>โปรแแกรมสำหรับแสดงหน้าจอต้อนรับใน MX Linux</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Autorių teisės (c) MX Linux</translation>
+        <translation>สงวนลิขสิทธิ์ (c) MX Linux</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="256"/>
         <source>License</source>
-        <translation>Licencija</translation>
+        <translation>สัญญาอนุญาต</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="257"/>
         <source>Changelog</source>
-        <translation>Keitinių žurnalas</translation>
+        <translation>Changelog</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="258"/>
         <source>Cancel</source>
-        <translation>Atsisakyti</translation>
+        <translation>ยกเลิก</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="274"/>
         <source>&amp;Close</source>
-        <translation>&amp;Užverti</translation>
+        <translation>&amp;ปิด</translation>
     </message>
 </context>
 <context>
@@ -211,7 +211,7 @@
     <message>
         <location filename="main.cpp" line="71"/>
         <source>You must run this program as normal user.</source>
-        <translation>Privalote paleisti šią programą kaip normalus naudotojas.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -234,7 +234,7 @@
     <message>
         <location filename="main.cpp" line="71"/>
         <source>Error</source>
-        <translation>Klaida</translation>
+        <translation>ข้อผิดพลาด</translation>
     </message>
 </context>
 </TS>

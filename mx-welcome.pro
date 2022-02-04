@@ -40,20 +40,32 @@ HEADERS  += \
 FORMS    += \
     mainwindow.ui
 
-TRANSLATIONS += translations/mx-welcome_am.ts \
+TRANSLATIONS += translations/mx-welcome_af.ts \
+				translations/mx-welcome_am.ts \
                 translations/mx-welcome_ar.ts \
+                translations/mx-welcome_be.ts \
                 translations/mx-welcome_bg.ts \
+                translations/mx-welcome_bn.ts \
                 translations/mx-welcome_ca.ts \
                 translations/mx-welcome_cs.ts \
                 translations/mx-welcome_da.ts \
                 translations/mx-welcome_de.ts \
                 translations/mx-welcome_el.ts \
+                translations/mx-welcome_en_GB.ts \
+                translations/mx-welcome_eo.ts \
                 translations/mx-welcome_es.ts \
+                translations/mx-welcome_es_ES.ts \
                 translations/mx-welcome_et.ts \
                 translations/mx-welcome_eu.ts \
                 translations/mx-welcome_fa.ts \
                 translations/mx-welcome_fi.ts \
+                translations/mx-welcome_fil_PH.ts \
                 translations/mx-welcome_fr.ts \
+                translations/mx-welcome_fr_BE.ts \
+                translations/mx-welcome_fr_FR.ts \
+                translations/mx-welcome_gl_es.ts \
+                translations/mx-welcome_gu.ts \
+                translations/mx-welcome_he.ts \
                 translations/mx-welcome_he_IL.ts \
                 translations/mx-welcome_hi.ts \
                 translations/mx-welcome_hr.ts \
@@ -64,11 +76,15 @@ TRANSLATIONS += translations/mx-welcome_am.ts \
                 translations/mx-welcome_ja.ts \
                 translations/mx-welcome_kk.ts \
                 translations/mx-welcome_ko.ts \
+                translations/mx-welcome_ku.ts \
                 translations/mx-welcome_lt.ts \
                 translations/mx-welcome_mk.ts \
                 translations/mx-welcome_mr.ts \
                 translations/mx-welcome_nb.ts \
+                translations/mx-welcome_nb_NO.ts \
                 translations/mx-welcome_nl.ts \
+                translations/mx-welcome_nl_BE.ts \
+                translations/mx-welcome_or.ts \
                 translations/mx-welcome_pl.ts \
                 translations/mx-welcome_pt.ts \
                 translations/mx-welcome_pt_BR.ts \
@@ -76,12 +92,16 @@ TRANSLATIONS += translations/mx-welcome_am.ts \
                 translations/mx-welcome_ru.ts \
                 translations/mx-welcome_sk.ts \
                 translations/mx-welcome_sl.ts \
+                translations/mx-welcome_so.ts \
                 translations/mx-welcome_sq.ts \
                 translations/mx-welcome_sr.ts \
                 translations/mx-welcome_sv.ts \
+                translations/mx-welcome_th.ts \
                 translations/mx-welcome_tr.ts \
                 translations/mx-welcome_uk.ts \
+                translations/mx-welcome_vi.ts \
                 translations/mx-welcome_zh_CN.ts \
+                translations/mx-welcome_zh_HK.ts \
                 translations/mx-welcome_zh_TW.ts
 
 RESOURCES +=

@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="lt">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="or">
 <context>
     <name>MainWindow</name>
     <message>
@@ -7,37 +7,37 @@
         <location filename="mainwindow.cpp" line="255"/>
         <location filename="mainwindow.cpp" line="264"/>
         <source>MX Welcome</source>
-        <translation>MX pasveikinimas</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="80"/>
         <source>Quit application</source>
-        <translation>Išeiti iš programos</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="83"/>
         <source>Close</source>
-        <translation>Užverti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="90"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="112"/>
         <source>About this application</source>
-        <translation>Apie šią programą</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="115"/>
         <source>About...</source>
-        <translation>Apie...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="122"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="203"/>
@@ -52,27 +52,27 @@
     <message>
         <location filename="mainwindow.ui" line="510"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation>Patobulinimai (Skydelis ir t.t. ...)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="536"/>
         <source>Tools</source>
-        <translation>Įrankiai</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="568"/>
         <source>Wiki</source>
-        <translation>Vikis</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="600"/>
         <source>Users Manual</source>
-        <translation>Naudotojo vadovas</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="626"/>
         <source>FAQ</source>
-        <translation>DUK</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="652"/>
@@ -82,27 +82,27 @@
     <message>
         <location filename="mainwindow.ui" line="674"/>
         <source>Popular Apps</source>
-        <translation>Populiarios programos</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="700"/>
         <source>Contribute</source>
-        <translation>Talkinti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="732"/>
         <source>Videos</source>
-        <translation>Vaizdo įrašai</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="764"/>
         <source>Forums</source>
-        <translation>Forumai</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="790"/>
         <source>About</source>
-        <translation>Apie</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="798"/>
@@ -122,7 +122,7 @@
     <message>
         <location filename="mainwindow.ui" line="829"/>
         <source>Terms of Use</source>
-        <translation>Naudojimo sąlygos</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="846"/>
@@ -147,7 +147,7 @@
     <message>
         <location filename="mainwindow.ui" line="924"/>
         <source>Show this dialog at start up</source>
-        <translation>Rodyti šį dialogą paleidimo metu</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="78"/>
@@ -163,47 +163,47 @@
         <location filename="mainwindow.cpp" line="178"/>
         <location filename="mainwindow.cpp" line="194"/>
         <source>Error</source>
-        <translation>Klaida</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
         <source>About MX Welcome</source>
-        <translation>Apie MX pasveikinimas</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
         <source>Version: </source>
-        <translation>Versija: </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation>Programa, skirta rodyti pasisveikinimo langą MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Autorių teisės (c) MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="256"/>
         <source>License</source>
-        <translation>Licencija</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="257"/>
         <source>Changelog</source>
-        <translation>Keitinių žurnalas</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="258"/>
         <source>Cancel</source>
-        <translation>Atsisakyti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="274"/>
         <source>&amp;Close</source>
-        <translation>&amp;Užverti</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -211,7 +211,7 @@
     <message>
         <location filename="main.cpp" line="71"/>
         <source>You must run this program as normal user.</source>
-        <translation>Privalote paleisti šią programą kaip normalus naudotojas.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -234,7 +234,7 @@
     <message>
         <location filename="main.cpp" line="71"/>
         <source>Error</source>
-        <translation>Klaida</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>

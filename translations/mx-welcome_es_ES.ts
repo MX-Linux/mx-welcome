@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="lt">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="es_ES">
 <context>
     <name>MainWindow</name>
     <message>
@@ -7,17 +7,17 @@
         <location filename="mainwindow.cpp" line="255"/>
         <location filename="mainwindow.cpp" line="264"/>
         <source>MX Welcome</source>
-        <translation>MX pasveikinimas</translation>
+        <translation>MX Bienvenida</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="80"/>
         <source>Quit application</source>
-        <translation>Išeiti iš programos</translation>
+        <translation>Salir de la aplicación</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="83"/>
         <source>Close</source>
-        <translation>Užverti</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="90"/>
@@ -27,12 +27,12 @@
     <message>
         <location filename="mainwindow.ui" line="112"/>
         <source>About this application</source>
-        <translation>Apie šią programą</translation>
+        <translation>Acerca de esta aplicación</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="115"/>
         <source>About...</source>
-        <translation>Apie...</translation>
+        <translation>Acerca de...</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="122"/>
@@ -52,27 +52,27 @@
     <message>
         <location filename="mainwindow.ui" line="510"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation>Patobulinimai (Skydelis ir t.t. ...)</translation>
+        <translation>Retocar (Panel, etc...)</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="536"/>
         <source>Tools</source>
-        <translation>Įrankiai</translation>
+        <translation>Herramientas</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="568"/>
         <source>Wiki</source>
-        <translation>Vikis</translation>
+        <translation>Wiki</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="600"/>
         <source>Users Manual</source>
-        <translation>Naudotojo vadovas</translation>
+        <translation>Manual del Usuario</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="626"/>
         <source>FAQ</source>
-        <translation>DUK</translation>
+        <translation>FAQ (Preguntas frecuentes)</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="652"/>
@@ -82,27 +82,27 @@
     <message>
         <location filename="mainwindow.ui" line="674"/>
         <source>Popular Apps</source>
-        <translation>Populiarios programos</translation>
+        <translation>Aplicaciones Populares</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="700"/>
         <source>Contribute</source>
-        <translation>Talkinti</translation>
+        <translation>Contribuir</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="732"/>
         <source>Videos</source>
-        <translation>Vaizdo įrašai</translation>
+        <translation>Videos</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="764"/>
         <source>Forums</source>
-        <translation>Forumai</translation>
+        <translation>Foros</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="790"/>
         <source>About</source>
-        <translation>Apie</translation>
+        <translation>Acerca de</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="798"/>
@@ -122,7 +122,7 @@
     <message>
         <location filename="mainwindow.ui" line="829"/>
         <source>Terms of Use</source>
-        <translation>Naudojimo sąlygos</translation>
+        <translation>Condiciones de uso</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="846"/>
@@ -147,63 +147,63 @@
     <message>
         <location filename="mainwindow.ui" line="924"/>
         <source>Show this dialog at start up</source>
-        <translation>Rodyti šį dialogą paleidimo metu</translation>
+        <translation>Mostrar esta ventana al inicio</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="78"/>
         <source>User demo, password:</source>
-        <translation type="unfinished"/>
+        <translation>Usuario Demo, contraseña:</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="78"/>
         <source>Superuser root, password:</source>
-        <translation type="unfinished"/>
+        <translation>Superusuario root, contraseña:</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="178"/>
         <location filename="mainwindow.cpp" line="194"/>
         <source>Error</source>
-        <translation>Klaida</translation>
+        <translation>Error</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
         <source>About MX Welcome</source>
-        <translation>Apie MX pasveikinimas</translation>
+        <translation>Acerca de MX Bienvenida</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
         <source>Version: </source>
-        <translation>Versija: </translation>
+        <translation>Versión: </translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation>Programa, skirta rodyti pasisveikinimo langą MX Linux</translation>
+        <translation>Programa para mostrar una pantalla de bienvenida en MX Linux</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Autorių teisės (c) MX Linux</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="256"/>
         <source>License</source>
-        <translation>Licencija</translation>
+        <translation>Licencia</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="257"/>
         <source>Changelog</source>
-        <translation>Keitinių žurnalas</translation>
+        <translation>Registro de cambios</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="258"/>
         <source>Cancel</source>
-        <translation>Atsisakyti</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="274"/>
         <source>&amp;Close</source>
-        <translation>&amp;Užverti</translation>
+        <translation>&amp;Cerrar</translation>
     </message>
 </context>
 <context>
@@ -211,7 +211,7 @@
     <message>
         <location filename="main.cpp" line="71"/>
         <source>You must run this program as normal user.</source>
-        <translation>Privalote paleisti šią programą kaip normalus naudotojas.</translation>
+        <translation>Debe ejecutar este programa como usuario normal.</translation>
     </message>
 </context>
 <context>
@@ -234,7 +234,7 @@
     <message>
         <location filename="main.cpp" line="71"/>
         <source>Error</source>
-        <translation>Klaida</translation>
+        <translation>Error</translation>
     </message>
 </context>
 </TS>
