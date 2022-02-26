@@ -318,14 +318,26 @@ void MainWindow::setup()
         ui->buttonSetup->setVisible(false);
     }
 
-    if ( QFileInfo("/etc/lsb-release").exists() ) {
-        QSettings lsb("/etc/lsb-release", QSettings::NativeFormat);
-        QString MAINDISTRO = lsb.value("DISTRIB_ID").toString();
-        CODENAME = lsb.value("DISTRIB_CODENAME").toString();
-        QString DISTRIB_RELEASE = lsb.value("DISTRIB_RELEASE").toString();
-        DISTRO = MAINDISTRO + "-" + DISTRIB_RELEASE;
+    //check /etc/lsb-release file, overridable
+    QString CHECKLSB_RELEASE = settings.value("CHECKLSB_RELEASE", "true").toString();
+    if ( CHECKLSB_RELEASE.isEmpty()) {
+        CHECKLSB_RELEASE = settingsusr.value("CHECKLSB_RELEASE", "true").toString();
     }
 
+    bool CHECKLSB = true;
+    if ( CHECKLSB_RELEASE == "false" ){
+        CHECKLSB = false;
+    }
+
+    if (CHECKLSB) {
+        if ( QFileInfo("/etc/lsb-release").exists() ) {
+            QSettings lsb("/etc/lsb-release", QSettings::NativeFormat);
+            QString MAINDISTRO = lsb.value("DISTRIB_ID").toString();
+            CODENAME = lsb.value("DISTRIB_CODENAME").toString();
+            QString DISTRIB_RELEASE = lsb.value("DISTRIB_RELEASE").toString();
+            DISTRO = MAINDISTRO + "-" + DISTRIB_RELEASE;
+        }
+    }
     QString debian_version;
     QString mxfluxbox_version;
 
