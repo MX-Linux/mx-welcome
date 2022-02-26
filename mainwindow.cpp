@@ -72,27 +72,11 @@ void MainWindow::setup()
     }
     bool autostart = user_settings.value("AutoStartup", false).toBool();
     ui->checkBox->setChecked(autostart);
-    if (!autostart)
-        QFile::remove(QDir::homePath() + "/.config/autostart/mx-welcome.desktop");
-
-    ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. " + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
-    // if running live
-    QString test = runCmd("df -T / |tail -n1 |awk '{print $2}'").output;
-    if (test == "aufs" || test == "overlay") {
-        ui->checkBox->hide();
-    } else {
-        ui->labelLoginInfo->hide();
-        ui->buttonSetup->hide();
-    }
-
-    // hide tour if not present
-    if (!QFile::exists("/usr/bin/mx-tour")) {
-        ui->buttonTour->hide();
-    }
+    if (!autostart) QFile::remove(QDir::homePath() + "/.config/autostart/mx-welcome.desktop");
 
     // setup title block & icons
-    QSettings settings("/etc/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
-    QSettings settingsusr("/usr/share/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
+    QSettings settings("/usr/share/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
+    QSettings settingsusr("/etc/share/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
     QString DISTRO = settings.value("DISTRO").toString();
     if ( DISTRO.isEmpty()) {
         DISTRO = settingsusr.value("DISTRO").toString();
@@ -101,65 +85,237 @@ void MainWindow::setup()
     if ( CODENAME.isEmpty()) {
         CODENAME = settingsusr.value("CODENAME").toString();
     }
-    QString CONTRIBUTE = settings.value("CONTRIBUTE").toString();
-    if ( CONTRIBUTE.isEmpty()) {
-        CONTRIBUTE = settingsusr.value("CONTRIBUTE").toString();
-    }
-    QString CODECS = settings.value("CODECS").toString();
-    if ( CODECS.isEmpty()) {
-        CODECS = settingsusr.value("CODECS").toString();
-    }
-    QString FAQ = settings.value("FAQ").toString();
-    if ( FAQ.isEmpty()) {
-        FAQ = settingsusr.value("FAQ").toString();
-    }
-    QString FORUMS = settings.value("FORUMS").toString();
-    if ( FORUMS.isEmpty()) {
-        FORUMS = settingsusr.value("FORUMS").toString();
-    }
-    QString LOGO = settings.value("LOGO").toString();
-    if ( LOGO.isEmpty()) {
-        LOGO = settingsusr.value("LOGO").toString();
-    }
-    QString PACKAGEINSTALLER = settings.value("PACKAGEINSTALLER").toString();
-    if ( PACKAGEINSTALLER.isEmpty()) {
-        PACKAGEINSTALLER = settingsusr.value("PACKAGEINSTALLER").toString();
-    }
-    QString PANELORIENT = settings.value("PANELORIENT").toString();
-    if ( PANELORIENT.isEmpty()) {
-        PANELORIENT = settingsusr.value("PANELORIENT").toString();
-    }
-    QString SETUP = settings.value("SETUP").toString();
-    if ( SETUP.isEmpty()) {
-        SETUP = settingsusr.value("SETUP").toString();
-    }
-    QString TOOLS = settings.value("TOOLS").toString();
-    if ( TOOLS.isEmpty()) {
-        TOOLS = settingsusr.value("TOOLS").toString();
-    }
-    QString MANUAL = settings.value("MANUAL").toString();
-    if ( MANUAL.isEmpty()) {
-        MANUAL = settingsusr.value("MANUAL").toString();
-    }
-    QString VIDEOS = settings.value("VIDEOS").toString();
-    if ( VIDEOS.isEmpty()) {
-        VIDEOS = settingsusr.value("VIDEOS").toString();
-    }
-    QString WIKI = settings.value("WIKI").toString();
-    if ( WIKI.isEmpty()) {
-        WIKI = settingsusr.value("WIKI").toString();
-    }
+
     QString HEADER = settings.value("HEADER").toString();
     if ( HEADER.isEmpty()) {
         HEADER = settingsusr.value("HEADER").toString();
     }
+
+    QString LOGO = settings.value("LOGO").toString();
+    if ( LOGO.isEmpty()) {
+        LOGO = settingsusr.value("LOGO").toString();
+    }
+
     QString SUPPORTED = settings.value("SUPPORTED").toString();
     if ( SUPPORTED.isEmpty()) {
         SUPPORTED = settingsusr.value("SUPPORTED").toString();
     }
-    QString TOUR = settings.value("TOUR").toString();
+
+    TOSCMD=settings.value("TOSCMD").toString();
+    if ( TOSCMD.isEmpty()) {
+        TOSCMD  = settingsusr.value("TOSCMD").toString();
+    }
+    QString TOSTEXT=settings.value("TOSTEXT").toString();
+    if ( TOSTEXT.isEmpty()) {
+        TOSTEXT = settingsusr.value("TOSTEXT").toString();
+    }
+    if ( ! TOSTEXT.isEmpty() ){
+        ui->buttonFAQ->setText(TOSTEXT);
+    }
+
+    QString SETUP = settings.value("1icon").toString();
+    if ( SETUP.isEmpty()) {
+        SETUP = settingsusr.value("1icon").toString();
+    }
+    QString SETUPTEXT=settings.value("1text").toString();
+    if ( SETUPTEXT.isEmpty()) {
+        SETUPTEXT = settingsusr.value("1text").toString();
+    }
+    if ( ! SETUPTEXT.isEmpty() ){
+        ui->buttonSetup->setText(SETUPTEXT);
+    }
+    SETUPCMD=settings.value("1command").toString();
+    if ( SETUPCMD.isEmpty()) {
+        SETUPCMD = settingsusr.value("1command").toString();
+    }
+
+    QString FAQ = settings.value("2icon").toString();
+    if ( FAQ.isEmpty()) {
+        FAQ = settingsusr.value("2icon").toString();
+    }
+    QString FAQTEXT=settings.value("2text").toString();
+    if ( FAQTEXT.isEmpty()) {
+        FAQTEXT = settingsusr.value("2text").toString();
+    }
+    if ( ! FAQTEXT.isEmpty() ){
+        ui->buttonFAQ->setText(FAQTEXT);
+    }
+    FAQCMD=settings.value("2command").toString();
+    if ( FAQCMD.isEmpty()) {
+        FAQCMD = settingsusr.value("2command").toString();
+    }
+
+    QString FORUMS = settings.value("3icon").toString();
+    if ( FORUMS.isEmpty()) {
+        FORUMS = settingsusr.value("3icon").toString();
+    }
+    QString FORUMTEXT=settings.value("3text").toString();
+    if ( FORUMTEXT.isEmpty()) {
+        FORUMTEXT = settingsusr.value("3text").toString();
+    }
+    if ( ! FORUMTEXT.isEmpty() ){
+        ui->buttonForum->setText(FORUMTEXT);
+    }
+    FORUMCMD=settings.value("3command").toString();
+    if ( FORUMCMD.isEmpty()) {
+        FORUMCMD = settingsusr.value("3command").toString();
+    }
+
+
+    QString MANUAL = settings.value("4icon").toString();
+    if ( MANUAL.isEmpty()) {
+        MANUAL = settingsusr.value("4icon").toString();
+    }
+    QString MANUALTEXT=settings.value("4text").toString();
+    if ( MANUALTEXT.isEmpty()) {
+        MANUALTEXT = settingsusr.value("4text").toString();
+    }
+    if ( ! MANUALTEXT.isEmpty() ){
+        ui->buttonManual->setText(MANUALTEXT);
+    }
+    MANUALCMD=settings.value("4command").toString();
+    if ( MANUALCMD.isEmpty()) {
+        MANUALCMD = settingsusr.value("4command").toString();
+    }
+
+    QString VIDEOS = settings.value("5icon").toString();
+    if ( VIDEOS.isEmpty()) {
+        VIDEOS = settingsusr.value("5icon").toString();
+    }
+    QString VIDEOTEXT=settings.value("5text").toString();
+    if ( VIDEOTEXT.isEmpty()) {
+        VIDEOTEXT = settingsusr.value("5text").toString();
+    }
+    if ( ! VIDEOTEXT.isEmpty() ){
+        ui->buttonVideo->setText(VIDEOTEXT);
+    }
+    VIDEOCMD=settings.value("5command").toString();
+    if ( VIDEOCMD.isEmpty()) {
+        VIDEOCMD = settingsusr.value("5command").toString();
+    }
+
+    QString WIKI = settings.value("6icon").toString();
+    if ( WIKI.isEmpty()) {
+        WIKI = settingsusr.value("6icon").toString();
+    }
+    QString WIKITEXT=settings.value("6text").toString();
+    if ( WIKITEXT.isEmpty()) {
+        WIKITEXT = settingsusr.value("6text").toString();
+    }
+    if ( ! WIKITEXT.isEmpty() ){
+        ui->buttonWiki->setText(WIKITEXT);
+    }
+    WIKICMD=settings.value("6command").toString();
+    if ( WIKICMD.isEmpty()) {
+        WIKICMD = settingsusr.value("6command").toString();
+    }
+
+    QString CONTRIBUTE = settings.value("7icon").toString();
+    if ( CONTRIBUTE.isEmpty()) {
+        CONTRIBUTE = settingsusr.value("7icon").toString();
+    }
+    QString CONTRIBUTETEXT=settings.value("7text").toString();
+    if ( CONTRIBUTETEXT.isEmpty()) {
+        CONTRIBUTETEXT = settingsusr.value("7text").toString();
+    }
+    if ( ! CONTRIBUTETEXT.isEmpty() ){
+        ui->buttonContribute->setText(CONTRIBUTETEXT);
+    }
+    CONTRIBUTECMD=settings.value("7command").toString();
+    if ( CONTRIBUTECMD.isEmpty()) {
+        CONTRIBUTECMD = settingsusr.value("7command").toString();
+    }
+
+    QString TOOLS = settings.value("8icon").toString();
+    if ( TOOLS.isEmpty()) {
+        TOOLS = settingsusr.value("8icon").toString();
+    }
+    QString TOOLSTEXT=settings.value("8text").toString();
+    if ( TOOLSTEXT.isEmpty()) {
+        TOOLSTEXT = settingsusr.value("8text").toString();
+    }
+    if ( ! TOOLSTEXT.isEmpty() ){
+        ui->buttonTools->setText(TOOLSTEXT);
+    }
+    TOOLSCMD=settings.value("8command").toString();
+    if ( TOOLSCMD.isEmpty()) {
+        TOOLSCMD = settingsusr.value("8command").toString();
+    }
+
+    QString PACKAGEINSTALLER = settings.value("9icon").toString();
+    if ( PACKAGEINSTALLER.isEmpty()) {
+        PACKAGEINSTALLER = settingsusr.value("9icon").toString();
+    }
+    QString PACKAGEINSTALLERTEXT=settings.value("9text").toString();
+    if ( PACKAGEINSTALLERTEXT.isEmpty()) {
+        PACKAGEINSTALLERTEXT = settingsusr.value("9text").toString();
+    }
+    if ( ! PACKAGEINSTALLERTEXT.isEmpty() ){
+        ui->buttonPackageInstall->setText(PACKAGEINSTALLERTEXT);
+    }
+    PACKAGEINSTALLERCMD=settings.value("9command").toString();
+    if ( PACKAGEINSTALLERCMD.isEmpty()) {
+        PACKAGEINSTALLERCMD = settingsusr.value("9command").toString();
+    }
+
+    QString TWEAK = settings.value("10icon").toString();
+    if ( TWEAK.isEmpty()) {
+        TWEAK = settingsusr.value("10icon").toString();
+    }
+    QString TWEAKTEXT=settings.value("10text").toString();
+    if ( TWEAKTEXT.isEmpty()) {
+        TWEAKTEXT = settingsusr.value("10text").toString();
+    }
+    if ( ! TWEAKTEXT.isEmpty() ){
+        ui->buttonPanelOrient->setText(TWEAKTEXT);
+    }
+    TWEAKCMD=settings.value("10command").toString();
+    if ( TWEAKCMD.isEmpty()) {
+        TWEAKCMD = settingsusr.value("10command").toString();
+    }
+
+    QString TOUR = settings.value("11icon").toString();
     if ( TOUR.isEmpty()) {
-        TOUR = settingsusr.value("TOUR").toString();
+        TOUR = settingsusr.value("11icon").toString();
+    }
+    QString TOURTEXT=settings.value("11text").toString();
+    if ( TOURTEXT.isEmpty()) {
+        TOURTEXT = settingsusr.value("11text").toString();
+    }
+    if ( ! TOURTEXT.isEmpty() ){
+        ui->buttonTour->setText(TOURTEXT);
+    }
+    TOURCMD=settings.value("11command").toString();
+    if ( TOURCMD.isEmpty()) {
+        TOURCMD = settingsusr.value("11command").toString();
+    }
+
+    // hide tour if not present AND TOURTEXT.ISEMPTY
+    if ( TOURTEXT.isEmpty() ){
+        if (!QFile::exists("/usr/bin/mx-tour")) {
+            ui->buttonTour->hide();
+        }
+    }
+    QString SHOWLIVEUSERINFO = settings.value("SHOWLIVEUSERINFO", "true").toString();
+    if ( SHOWLIVEUSERINFO.isEmpty()) {
+        SHOWLIVEUSERINFO = settingsusr.value("SHOWLIVEUSERINFO", "true").toString();
+    }
+    //qDebug() << "hide value: " << SHOWLIVEUSERINFO;
+    bool LIVEUSERINFOSHOW = true;
+    if ( SHOWLIVEUSERINFO == "false" ){
+        LIVEUSERINFOSHOW = false;
+    }
+
+    ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. " + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
+
+    // if running live
+    QString test = runCmd("df -T / |tail -n1 |awk '{print $2}'").output;
+    if ( test == "aufs" || test == "overlay") {
+        ui->checkBox->setVisible(false);
+        ui->labelLoginInfo->setVisible(LIVEUSERINFOSHOW);
+    } else {
+        ui->labelLoginInfo->setVisible(false);
+        ui->buttonSetup->setVisible(false);
     }
 
     if ( QFileInfo("/etc/lsb-release").exists() ) {
@@ -214,7 +370,7 @@ void MainWindow::setup()
     ui->buttonForum->setIcon(QIcon(FORUMS));
     ui->labelMX->setPixmap(QPixmap(LOGO));
     ui->buttonPackageInstall->setIcon(QIcon(PACKAGEINSTALLER));
-    ui->buttonPanelOrient->setIcon(QIcon(PANELORIENT));
+    ui->buttonPanelOrient->setIcon(QIcon(TWEAK));
     ui->buttonSetup->setIcon(QIcon(SETUP));
     ui->buttonTools->setIcon(QIcon(TOOLS));
     ui->buttonManual->setIcon(QIcon(MANUAL));
@@ -297,70 +453,110 @@ void MainWindow::on_checkBox_clicked(bool checked)
 // Start MX-Tools
 void MainWindow::on_buttonTools_clicked()
 {
-    system("mx-tools&");
+    QString cmd = "mx-tools&";
+    if ( ! TOOLSCMD.isEmpty() ){
+        cmd = TOOLSCMD;
+    }
+    system(cmd.toUtf8());
 }
 
 // Launch Manual in browser
 void MainWindow::on_buttonManual_clicked()
 {
+    QString cmd;
     if (isfluxbox)
-        system("mxfb-help&");
+        cmd = "mxfb-help&";
     else
-        system("mx-manual&");
+        cmd = "mx-manual&";
+    if ( ! MANUALCMD.isEmpty() )
+        cmd = MANUALCMD;
+
+    system(cmd.toUtf8());
 }
 
 // Launch Forum in browser
 void MainWindow::on_buttonForum_clicked()
 {
-    system("xdg-open http://forum.mxlinux.org/index.php");
+    QString cmd = "xdg-open http://forum.mxlinux.org/index.php";
+    if ( ! FORUMCMD.isEmpty() ){
+        cmd = FORUMCMD;
+    }
+    system(cmd.toUtf8());
 }
 
 // Launch Wiki in browser
 void MainWindow::on_buttonWiki_clicked()
 {
-    system("xdg-open http://www.mxlinux.org/wiki");
+    QString cmd = "xdg-open http://www.mxlinux.org/wiki";
+    if ( ! WIKICMD.isEmpty() ){
+        cmd = WIKICMD;
+    }
+    system(cmd.toUtf8());
 }
 
 // Launch Video links in browser
 void MainWindow::on_buttonVideo_clicked()
 {
-    system("xdg-open http://www.mxlinux.org/videos/");
+    QString cmd = "xdg-open http://www.mxlinux.org/videos/";
+    if ( ! VIDEOCMD.isEmpty() ){
+        cmd = VIDEOCMD;
+    }
+    system(cmd.toUtf8());
 }
 
 // Launch Contribution page
 void MainWindow::on_buttonContribute_clicked()
 {
-    system("xdg-open http://www.mxlinux.org/donate");
+    QString cmd = "xdg-open http://www.mxlinux.org/donate";
+    if ( ! CONTRIBUTECMD.isEmpty() ){
+        cmd = CONTRIBUTECMD;
+    }
+    system(cmd.toUtf8());
 }
 
 void MainWindow::on_buttonPanelOrient_clicked()
 {
-    system("mx-tweak&");
+    QString cmd = "mx-tweak&";
+    if ( ! TWEAKCMD.isEmpty() ){
+        cmd = TWEAKCMD;
+    }
+    system(cmd.toUtf8());
 }
 
 void MainWindow::on_buttonPackageInstall_clicked()
 {
-    system("su-to-root -X -c mx-packageinstaller&");
-}
-
-void MainWindow::on_buttonCodecs_clicked()
-{
-    system("su-to-root -X -c mx-codecs&");
+    QString cmd = "su-to-root -X -c mx-packageinstaller&";
+    if ( ! PACKAGEINSTALLERCMD.isEmpty() ){
+        cmd = PACKAGEINSTALLERCMD;
+    }
+    system(cmd.toUtf8());
 }
 
 void MainWindow::on_buttonFAQ_clicked()
 {
-    system("mx-faq&");
+    QString cmd = "mx-faq&";
+    if ( ! FAQCMD.isEmpty() ){
+        cmd = FAQCMD;
+    }
+    system(cmd.toUtf8());
 }
 
 void MainWindow::on_buttonSetup_clicked()
 {
-    system("minstall-launcher&");
+    QString cmd = "minstall-launcher&";
+    if ( ! SETUPCMD.isEmpty() ){
+        cmd = SETUPCMD;
+    }
+    system(cmd.toUtf8());
 }
 
 void MainWindow::on_buttonTOS_clicked()
 {
-    system("xdg-open https://mxlinux.org/terms-of-use/");
+    QString cmd = "xdg-open https://mxlinux.org/terms-of-use/";
+    if ( ! TOSCMD.isEmpty() ){
+        cmd = TOSCMD;
+    }
+    system(cmd.toUtf8());
 }
 
 void MainWindow::on_ButtonQSI_clicked()
@@ -399,5 +595,9 @@ void MainWindow::settabstyle()
 
 void MainWindow::on_buttonTour_clicked()
 {
-    system("mx-tour&");
+    QString cmd = "mx-tour&";
+    if ( ! TOURCMD.isEmpty() ){
+        cmd = TOURCMD;
+    }
+    system(cmd.toUtf8());
 }

@@ -60,13 +60,24 @@ public:
     QString version;
     QString output;
     bool isfluxbox = false;
+    QString SETUPCMD;
+    QString FAQCMD;
+    QString FORUMCMD;
+    QString MANUALCMD;
+    QString VIDEOCMD;
+    QString WIKICMD;
+    QString CONTRIBUTECMD;
+    QString TOOLSCMD;
+    QString PACKAGEINSTALLERCMD;
+    QString TWEAKCMD;
+    QString TOURCMD;
+    QString TOSCMD;
 
     void setup();
 
 private slots:
     void on_ButtonQSI_clicked();
     void on_buttonAbout_clicked();
-    void on_buttonCodecs_clicked();
     void on_buttonContribute_clicked();
     void on_buttonFAQ_clicked();
     void on_buttonForum_clicked();

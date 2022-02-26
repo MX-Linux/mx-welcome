@@ -1,3 +1,9 @@
+mx-welcome (22.02.01) mx; urgency=medium
+
+  * add more customization with /etc/mx-welcome/mx-welcome.conf 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 25 Feb 2022 20:36:21 -0500
+
 mx-welcome (22.01.02) mx; urgency=medium
 
   * add checking for a /etc/mx-welcome/mx-welcome.comf
