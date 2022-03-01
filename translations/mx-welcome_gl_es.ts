@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="hr">
+<TS version="2.1" language="gl_ES">
 <context>
     <name>MainWindow</name>
     <message>
@@ -14,32 +14,32 @@
     <message>
         <location filename="../mainwindow.ui" line="80"/>
         <source>Quit application</source>
-        <translation>Zatvori aplikaciju</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="83"/>
         <source>Close</source>
-        <translation>Zatvori</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="90"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="112"/>
         <source>About this application</source>
-        <translation>O ovoj aplikaciji</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="115"/>
         <source>About...</source>
-        <translation>O programu...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="122"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="203"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../mainwindow.ui" line="536"/>
         <source>Tools</source>
-        <translation>Alati</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="568"/>
@@ -104,7 +104,7 @@
     <message>
         <location filename="../mainwindow.ui" line="790"/>
         <source>About</source>
-        <translation>O programu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="798"/>
@@ -174,7 +174,7 @@ p, li { white-space: pre-wrap; }
         <location filename="../mainwindow.cpp" line="346"/>
         <location filename="../mainwindow.cpp" line="362"/>
         <source>Error</source>
-        <translation>Greška</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="374"/>
@@ -189,7 +189,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../mainwindow.cpp" line="423"/>
         <source>Version: </source>
-        <translation>Inačica:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="423"/>
@@ -199,12 +199,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../mainwindow.cpp" line="423"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Autorska prava (c) MX Linux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="424"/>
         <source>License</source>
-        <translation>Licenca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="425"/>
@@ -214,12 +214,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../mainwindow.cpp" line="426"/>
         <source>Cancel</source>
-        <translation>Otkaži</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="442"/>
         <source>&amp;Close</source>
-        <translation>&amp;Zatvori</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -227,7 +227,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>You must run this program as normal user.</source>
-        <translation>Morate pokrenuti ovaj program kao normalni korisnik.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -250,7 +250,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Error</source>
-        <translation>Greška</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

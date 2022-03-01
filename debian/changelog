@@ -1,3 +1,9 @@
+mx-welcome (22.02.02mx21) mx; urgency=medium
+
+  * allow customization of live user login info text 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 28 Feb 2022 19:18:48 -0500
+
 mx-welcome (22.02.01) mx; urgency=medium
 
   * add more customization with /etc/mx-welcome/mx-welcome.conf 

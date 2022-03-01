@@ -296,6 +296,14 @@ void MainWindow::setup()
             ui->buttonTour->hide();
         }
     }
+
+    QString LIVEUSERINFOTEXT=settings.value("LIVEUSERINFOTEXT").toString();
+    if ( LIVEUSERINFOTEXT.isEmpty()) {
+        LIVEUSERINFOTEXT = settingsusr.value("LIVEUSERINFOTEXT").toString();
+    }
+    if ( ! LIVEUSERINFOTEXT.isEmpty() ){
+        ui->labelLoginInfo->setText(LIVEUSERINFOTEXT);
+    }
     QString SHOWLIVEUSERINFO = settings.value("SHOWLIVEUSERINFO", "true").toString();
     if ( SHOWLIVEUSERINFO.isEmpty()) {
         SHOWLIVEUSERINFO = settingsusr.value("SHOWLIVEUSERINFO", "true").toString();
