@@ -21,13 +21,17 @@
 # * along with mx-welcome.  If not, see <http://www.gnu.org/licenses/>.
 # **********************************************************************/
 
-QT       += core gui
+QT       += core gui widgets
+CONFIG   += c++17
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+# The following define makes your compiler warn you if you use any
+# feature of Qt which has been marked as deprecated (the exact warnings
+# depend on your compiler). Please consult the documentation of the
+# deprecated API in order to know how to port your code away from it.
+DEFINES += QT_DEPRECATED_WARNINGS
 
 TARGET = mx-welcome
 TEMPLATE = app
-
 
 SOURCES += main.cpp\
     flatbutton.cpp \
@@ -41,7 +45,7 @@ FORMS    += \
     mainwindow.ui
 
 TRANSLATIONS += translations/mx-welcome_af.ts \
-				translations/mx-welcome_am.ts \
+                translations/mx-welcome_am.ts \
                 translations/mx-welcome_ar.ts \
                 translations/mx-welcome_be.ts \
                 translations/mx-welcome_bg.ts \
