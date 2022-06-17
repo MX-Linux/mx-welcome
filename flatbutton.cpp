@@ -27,19 +27,19 @@ FlatButton::FlatButton(QWidget *parent)
     : QPushButton(parent)
 {
     setFlat(true);
-    setStyleSheet("text-align:left;");
+    setStyleSheet(QStringLiteral("text-align:left;"));
 }
 
 void FlatButton::leaveEvent(QEvent *e)
 {
     //setFlat(true);
-    setStyleSheet("text-align:left; text-decoration: none;");
+    setStyleSheet(QStringLiteral("text-align:left; text-decoration: none;"));
     QPushButton::leaveEvent(e);
 }
 
 void FlatButton::enterEvent(QEvent *e)
 {
     //setFlat(false);
-    setStyleSheet("QPushButton { text-align:left; text-decoration: underline;}; QToolTip { text-decoration: none; }");
+    setStyleSheet(QStringLiteral("QPushButton { text-align:left; text-decoration: underline;}; QToolTip { text-decoration: none; }"));
     QPushButton::enterEvent(e);
 }

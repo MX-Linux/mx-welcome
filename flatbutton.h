@@ -30,6 +30,7 @@
 
 class FlatButton : public QPushButton
 {
+	Q_OBJECT
 public:
     FlatButton(QWidget *parent = nullptr);
 protected:

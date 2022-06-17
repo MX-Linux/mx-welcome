@@ -338,7 +338,7 @@ void MainWindow::setup()
     }
 
     if (CHECKLSB) {
-        if ( QFileInfo("/etc/lsb-release").exists() ) {
+        if ( QFileInfo::exists("/etc/lsb-release") ) {
             QSettings lsb("/etc/lsb-release", QSettings::NativeFormat);
             QString MAINDISTRO = lsb.value("DISTRIB_ID").toString();
             CODENAME = lsb.value("DISTRIB_CODENAME").toString();
@@ -379,7 +379,7 @@ void MainWindow::setup()
 
     ui->labelDesktopVersion->setText(DESKTOP);
 
-    ui->labelTitle->setText(tr("<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">%1 &quot;%2&quot;</span></p></body></html>").arg(DISTRO).arg(CODENAME));
+    ui->labelTitle->setText(tr(R"(<html><head/><body><p align="center"><span style=" font-size:14pt; font-weight:600;">%1 &quot;%2&quot;</span></p></body></html>)").arg(DISTRO).arg(CODENAME));
     if (QFile::exists(HEADER))
         ui->labelgraphic->setPixmap(HEADER);
 
@@ -406,7 +406,7 @@ void MainWindow::setup()
 }
 
 // Util function for getting bash command output and error code
-Result MainWindow::runCmd(QString cmd)
+Result MainWindow::runCmd(const QString &cmd)
 {
     QEventLoop loop;
     QProcess proc;
@@ -418,7 +418,7 @@ Result MainWindow::runCmd(QString cmd)
 }
 
 // Get version of the program
-QString MainWindow::getVersion(QString name)
+QString MainWindow::getVersion(const QString &name)
 {
     return runCmd("dpkg-query -f '${Version}' -W " + name).output;
 }
@@ -428,7 +428,11 @@ void MainWindow::on_buttonAbout_clicked()
 {
     this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
-        tr("About MX Welcome"), "<p align=\"center\"><b><h2>" + tr("MX Welcome") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + version + "</p><p align=\"center\"><h3>" + tr("Program for displaying a welcome screen in MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://www.mxlinux.org/mx\">http://www.mxlinux.org/mx</a><br /></p><p align=\"center\">" + tr("Copyright (c) MX Linux") + "<br /><br /></p>");
+        tr("About MX Welcome"), "<p align=\"center\"><b><h2>" + tr("MX Welcome") + "</h2></b></p><p align=\"center\">" +
+                       tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
+                       tr("Program for displaying a welcome screen in MX Linux") +
+                       R"(</h3></p><p align="center"><a href="http://www.mxlinux.org/mx">http://www.mxlinux.org/mx</a><br /></p><p align="center">)" +
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>");
     QPushButton* btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
     QPushButton* btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
     QPushButton* btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
@@ -471,7 +475,7 @@ void MainWindow::on_checkBox_clicked(bool checked)
 }
 
 // Start MX-Tools
-void MainWindow::on_buttonTools_clicked()
+void MainWindow::on_buttonTools_clicked() const
 {
     QString cmd = "mx-tools&";
     if ( ! TOOLSCMD.isEmpty() ){
@@ -481,7 +485,7 @@ void MainWindow::on_buttonTools_clicked()
 }
 
 // Launch Manual in browser
-void MainWindow::on_buttonManual_clicked()
+void MainWindow::on_buttonManual_clicked() const
 {
     QString cmd;
     if (isfluxbox)
@@ -495,7 +499,7 @@ void MainWindow::on_buttonManual_clicked()
 }
 
 // Launch Forum in browser
-void MainWindow::on_buttonForum_clicked()
+void MainWindow::on_buttonForum_clicked() const
 {
     QString cmd = "xdg-open http://forum.mxlinux.org/index.php";
     if ( ! FORUMCMD.isEmpty() ){
@@ -505,7 +509,7 @@ void MainWindow::on_buttonForum_clicked()
 }
 
 // Launch Wiki in browser
-void MainWindow::on_buttonWiki_clicked()
+void MainWindow::on_buttonWiki_clicked() const
 {
     QString cmd = "xdg-open http://www.mxlinux.org/wiki";
     if ( ! WIKICMD.isEmpty() ){
@@ -515,7 +519,7 @@ void MainWindow::on_buttonWiki_clicked()
 }
 
 // Launch Video links in browser
-void MainWindow::on_buttonVideo_clicked()
+void MainWindow::on_buttonVideo_clicked() const
 {
     QString cmd = "xdg-open http://www.mxlinux.org/videos/";
     if ( ! VIDEOCMD.isEmpty() ){
@@ -525,7 +529,7 @@ void MainWindow::on_buttonVideo_clicked()
 }
 
 // Launch Contribution page
-void MainWindow::on_buttonContribute_clicked()
+void MainWindow::on_buttonContribute_clicked() const
 {
     QString cmd = "xdg-open http://www.mxlinux.org/donate";
     if ( ! CONTRIBUTECMD.isEmpty() ){
@@ -534,7 +538,7 @@ void MainWindow::on_buttonContribute_clicked()
     system(cmd.toUtf8());
 }
 
-void MainWindow::on_buttonPanelOrient_clicked()
+void MainWindow::on_buttonPanelOrient_clicked() const
 {
     QString cmd = "mx-tweak&";
     if ( ! TWEAKCMD.isEmpty() ){
@@ -543,7 +547,7 @@ void MainWindow::on_buttonPanelOrient_clicked()
     system(cmd.toUtf8());
 }
 
-void MainWindow::on_buttonPackageInstall_clicked()
+void MainWindow::on_buttonPackageInstall_clicked() const
 {
     QString cmd = "su-to-root -X -c mx-packageinstaller&";
     if ( ! PACKAGEINSTALLERCMD.isEmpty() ){
@@ -552,7 +556,7 @@ void MainWindow::on_buttonPackageInstall_clicked()
     system(cmd.toUtf8());
 }
 
-void MainWindow::on_buttonFAQ_clicked()
+void MainWindow::on_buttonFAQ_clicked() const
 {
     QString cmd = "mx-faq&";
     if ( ! FAQCMD.isEmpty() ){
@@ -561,7 +565,7 @@ void MainWindow::on_buttonFAQ_clicked()
     system(cmd.toUtf8());
 }
 
-void MainWindow::on_buttonSetup_clicked()
+void MainWindow::on_buttonSetup_clicked() const
 {
     QString cmd = "minstall-launcher&";
     if ( ! SETUPCMD.isEmpty() ){
@@ -570,7 +574,7 @@ void MainWindow::on_buttonSetup_clicked()
     system(cmd.toUtf8());
 }
 
-void MainWindow::on_buttonTOS_clicked()
+void MainWindow::on_buttonTOS_clicked() const
 {
     QString cmd = "xdg-open https://mxlinux.org/terms-of-use/";
     if ( ! TOSCMD.isEmpty() ){
@@ -613,7 +617,7 @@ void MainWindow::settabstyle()
                "");
 }
 
-void MainWindow::on_buttonTour_clicked()
+void MainWindow::on_buttonTour_clicked() const
 {
     QString cmd = "mx-tour&";
     if ( ! TOURCMD.isEmpty() ){

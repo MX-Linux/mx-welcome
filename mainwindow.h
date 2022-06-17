@@ -48,14 +48,14 @@ class MainWindow : public QDialog
     Q_OBJECT
 
 protected:
-    QProcess *proc;
+    QProcess *proc{};
 
 public:
     explicit MainWindow(const QCommandLineParser &arg_parser, QWidget *parent = nullptr);
     ~MainWindow();
 
-    Result runCmd(QString cmd);
-    QString getVersion(QString name);
+    static Result runCmd(const QString &cmd);
+    static QString getVersion(const QString &name);
 
     QString version;
     QString output;
@@ -76,26 +76,26 @@ public:
     void setup();
 
 private slots:
-    void on_ButtonQSI_clicked();
+    static void on_ButtonQSI_clicked();
     void on_buttonAbout_clicked();
-    void on_buttonContribute_clicked();
-    void on_buttonFAQ_clicked();
-    void on_buttonForum_clicked();
-    void on_buttonManual_clicked();
-    void on_buttonPackageInstall_clicked();
-    void on_buttonPanelOrient_clicked();
-    void on_buttonSetup_clicked();
-    void on_buttonTOS_clicked();
-    void on_buttonTools_clicked();
-    void on_buttonVideo_clicked();
-    void on_buttonWiki_clicked();
+    void on_buttonContribute_clicked() const;
+    void on_buttonFAQ_clicked() const;
+    void on_buttonForum_clicked() const;
+    void on_buttonManual_clicked() const;
+    void on_buttonPackageInstall_clicked() const;
+    void on_buttonPanelOrient_clicked() const;
+    void on_buttonSetup_clicked() const;
+    void on_buttonTOS_clicked() const;
+    void on_buttonTools_clicked() const;
+    void on_buttonVideo_clicked() const;
+    void on_buttonWiki_clicked() const;
     void on_checkBox_clicked(bool checked);
     void on_tabWidget_currentChanged(int index);
     void resizeEvent(QResizeEvent*);
     void settabstyle();
     void shortsysteminfo();
 
-    void on_buttonTour_clicked();
+    void on_buttonTour_clicked() const;
 
 private:
     Ui::MainWindow *ui;
