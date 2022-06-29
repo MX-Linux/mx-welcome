@@ -6,8 +6,8 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <location filename="../mainwindow.cpp" line="65"/>
-        <location filename="../mainwindow.cpp" line="423"/>
-        <location filename="../mainwindow.cpp" line="432"/>
+        <location filename="../mainwindow.cpp" line="431"/>
+        <location filename="../mainwindow.cpp" line="444"/>
         <source>MX Welcome</source>
         <translation>MX Velkommen</translation>
     </message>
@@ -161,63 +161,63 @@ p, li { white-space: pre-wrap; }
         <translation>Vis dette vinduet ved oppstart</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="317"/>
         <source>User demo, password:</source>
         <translation>Bruker demo, passord:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="317"/>
         <source>Superuser root, password:</source>
         <translation>Superbruker root, passord:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="346"/>
-        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="354"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>Error</source>
         <translation>Feil</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="374"/>
+        <location filename="../mainwindow.cpp" line="382"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;%1 &amp;quot;%2&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
+        <location filename="../mainwindow.cpp" line="431"/>
         <source>About MX Welcome</source>
         <translation>Om MX Velkommen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
+        <location filename="../mainwindow.cpp" line="432"/>
         <source>Version: </source>
         <translation>Versjon:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
+        <location filename="../mainwindow.cpp" line="433"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
         <translation>Program som viser en velkomstskjerm i MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
+        <location filename="../mainwindow.cpp" line="435"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Opphavsrett (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="424"/>
+        <location filename="../mainwindow.cpp" line="436"/>
         <source>License</source>
         <translation>Lisens</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="437"/>
         <source>Changelog</source>
         <translation>Endringslogg</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="426"/>
+        <location filename="../mainwindow.cpp" line="438"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="442"/>
+        <location filename="../mainwindow.cpp" line="454"/>
         <source>&amp;Close</source>
         <translation>&amp;Lukk</translation>
     </message>
@@ -225,9 +225,8 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../main.cpp" line="71"/>
         <source>You must run this program as normal user.</source>
-        <translation>Du må kjøre dette programmet som en vanlig bruker.</translation>
+        <translation type="vanished">Du må kjøre dette programmet som en vanlig bruker.</translation>
     </message>
 </context>
 <context>
@@ -251,6 +250,11 @@ p, li { white-space: pre-wrap; }
         <location filename="../main.cpp" line="71"/>
         <source>Error</source>
         <translation>Feil</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="71"/>
+        <source>You must run this program as normal user.</source>
+        <translation type="unfinished">Du må kjøre dette programmet som en vanlig bruker.</translation>
     </message>
 </context>
 </TS>

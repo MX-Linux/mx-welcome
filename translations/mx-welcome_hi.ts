@@ -6,8 +6,8 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <location filename="../mainwindow.cpp" line="65"/>
-        <location filename="../mainwindow.cpp" line="423"/>
-        <location filename="../mainwindow.cpp" line="432"/>
+        <location filename="../mainwindow.cpp" line="431"/>
+        <location filename="../mainwindow.cpp" line="444"/>
         <source>MX Welcome</source>
         <translation>एमएक्स स्वागत स्क्रीन</translation>
     </message>
@@ -161,63 +161,63 @@ p, li { white-space: pre-wrap; }
         <translation>आरंभ होने पर यह विंडो दिखाएँ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="317"/>
         <source>User demo, password:</source>
         <translation>सैंपल उपयोक्ता, कूटशब्द :</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="317"/>
         <source>Superuser root, password:</source>
         <translation>प्रशासक रुट, कूटशब्द :</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="346"/>
-        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="354"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>Error</source>
         <translation>त्रुटि</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="374"/>
+        <location filename="../mainwindow.cpp" line="382"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;%1 &amp;quot;%2&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
+        <location filename="../mainwindow.cpp" line="431"/>
         <source>About MX Welcome</source>
         <translation>एमएक्स स्वागत स्क्रीन के बारे में</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
+        <location filename="../mainwindow.cpp" line="432"/>
         <source>Version: </source>
         <translation>संस्करण :</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
+        <location filename="../mainwindow.cpp" line="433"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
         <translation>एमएक्स लिनक्स में स्वागत स्क्रीन दिखने हेतु प्रोग्राम</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
+        <location filename="../mainwindow.cpp" line="435"/>
         <source>Copyright (c) MX Linux</source>
         <translation>कॉपीराइट (c) एमएक्स लिनक्स</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="424"/>
+        <location filename="../mainwindow.cpp" line="436"/>
         <source>License</source>
         <translation>लाइसेंस</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="437"/>
         <source>Changelog</source>
         <translation>परिवर्तन सूची</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="426"/>
+        <location filename="../mainwindow.cpp" line="438"/>
         <source>Cancel</source>
         <translation>रद्द करें</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="442"/>
+        <location filename="../mainwindow.cpp" line="454"/>
         <source>&amp;Close</source>
         <translation>बंद करें (&amp;C)</translation>
     </message>
@@ -225,9 +225,8 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../main.cpp" line="71"/>
         <source>You must run this program as normal user.</source>
-        <translation>प्रोग्राम निष्पादन हेतु आपका रुट उपयोक्ता होना आवश्यक है।</translation>
+        <translation type="vanished">प्रोग्राम निष्पादन हेतु आपका रुट उपयोक्ता होना आवश्यक है।</translation>
     </message>
 </context>
 <context>
@@ -251,6 +250,11 @@ p, li { white-space: pre-wrap; }
         <location filename="../main.cpp" line="71"/>
         <source>Error</source>
         <translation>त्रुटि</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="71"/>
+        <source>You must run this program as normal user.</source>
+        <translation type="unfinished">प्रोग्राम निष्पादन हेतु आपका रुट उपयोक्ता होना आवश्यक है।</translation>
     </message>
 </context>
 </TS>
