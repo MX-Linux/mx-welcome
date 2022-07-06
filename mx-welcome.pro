@@ -55,6 +55,7 @@ TRANSLATIONS += translations/mx-welcome_af.ts \
                 translations/mx-welcome_da.ts \
                 translations/mx-welcome_de.ts \
                 translations/mx-welcome_el.ts \
+                translations/mx-welcome_en.ts \
                 translations/mx-welcome_en_GB.ts \
                 translations/mx-welcome_eo.ts \
                 translations/mx-welcome_es.ts \
