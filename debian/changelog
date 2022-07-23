@@ -1,3 +1,9 @@
+mx-welcome (22.07.01) mx; urgency=medium
+
+  * translation refresh 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 23 Jul 2022 12:35:45 -0400
+
 mx-welcome (22.02.02) mx; urgency=medium
 
   * allow customization of live user login info text 
