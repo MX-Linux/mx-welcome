@@ -29,6 +29,7 @@
 #include <QFileInfo>
 #include <QTextEdit>
 
+#include "about.h"
 #include "flatbutton.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -44,10 +45,10 @@ MainWindow::MainWindow(const QCommandLineParser& arg_parser, QWidget* parent)
     setup();
 
     ui->tabWidget->setCurrentIndex(0);
-    if (arg_parser.isSet("about"))
+    if (arg_parser.isSet(QStringLiteral("about")))
         ui->tabWidget->setCurrentIndex(1);
 
-    if (arg_parser.isSet("test")) {
+    if (arg_parser.isSet(QStringLiteral("test"))) {
         ui->labelLoginInfo->show();
         ui->buttonSetup->show();
     }
@@ -61,264 +62,264 @@ MainWindow::~MainWindow()
 // setup versious items first time program runs
 void MainWindow::setup()
 {
-    version = getVersion("mx-welcome");
+    version = getVersion(QStringLiteral("mx-welcome"));
     this->setWindowTitle(tr("MX Welcome"));
 
     QString old_conf_file = QDir::homePath() + "/.config/" + qApp->applicationName() + ".conf";
     if (QFileInfo::exists(old_conf_file)) {
         QSettings old_settings(qApp->applicationName());
-        user_settings.setValue("AutoStartup", old_settings.value("AutoStartup", false).toBool());
+        user_settings.setValue(QStringLiteral("AutoStartup"), old_settings.value(QStringLiteral("AutoStartup"), false).toBool());
         QFile::remove(old_conf_file);
     }
-    bool autostart = user_settings.value("AutoStartup", false).toBool();
+    bool autostart = user_settings.value(QStringLiteral("AutoStartup"), false).toBool();
     ui->checkBox->setChecked(autostart);
     if (!autostart) QFile::remove(QDir::homePath() + "/.config/autostart/mx-welcome.desktop");
 
     // setup title block & icons
-    QSettings settings("/usr/share/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
-    QSettings settingsusr("/etc/share/mx-welcome/mx-welcome.conf", QSettings::NativeFormat);
-    QString DISTRO = settings.value("DISTRO").toString();
+    QSettings settings(QStringLiteral("/usr/share/mx-welcome/mx-welcome.conf"), QSettings::NativeFormat);
+    QSettings settingsusr(QStringLiteral("/etc/share/mx-welcome/mx-welcome.conf"), QSettings::NativeFormat);
+    QString DISTRO = settings.value(QStringLiteral("DISTRO")).toString();
     if ( DISTRO.isEmpty()) {
-        DISTRO = settingsusr.value("DISTRO").toString();
+        DISTRO = settingsusr.value(QStringLiteral("DISTRO")).toString();
     }
-    QString CODENAME = settings.value("CODENAME").toString();
+    QString CODENAME = settings.value(QStringLiteral("CODENAME")).toString();
     if ( CODENAME.isEmpty()) {
-        CODENAME = settingsusr.value("CODENAME").toString();
+        CODENAME = settingsusr.value(QStringLiteral("CODENAME")).toString();
     }
 
-    QString HEADER = settings.value("HEADER").toString();
+    QString HEADER = settings.value(QStringLiteral("HEADER")).toString();
     if ( HEADER.isEmpty()) {
-        HEADER = settingsusr.value("HEADER").toString();
+        HEADER = settingsusr.value(QStringLiteral("HEADER")).toString();
     }
 
-    QString LOGO = settings.value("LOGO").toString();
+    QString LOGO = settings.value(QStringLiteral("LOGO")).toString();
     if ( LOGO.isEmpty()) {
-        LOGO = settingsusr.value("LOGO").toString();
+        LOGO = settingsusr.value(QStringLiteral("LOGO")).toString();
     }
 
-    QString SUPPORTED = settings.value("SUPPORTED").toString();
+    QString SUPPORTED = settings.value(QStringLiteral("SUPPORTED")).toString();
     if ( SUPPORTED.isEmpty()) {
-        SUPPORTED = settingsusr.value("SUPPORTED").toString();
+        SUPPORTED = settingsusr.value(QStringLiteral("SUPPORTED")).toString();
     }
 
-    TOSCMD=settings.value("TOSCMD").toString();
+    TOSCMD=settings.value(QStringLiteral("TOSCMD")).toString();
     if ( TOSCMD.isEmpty()) {
-        TOSCMD  = settingsusr.value("TOSCMD").toString();
+        TOSCMD  = settingsusr.value(QStringLiteral("TOSCMD")).toString();
     }
-    QString TOSTEXT=settings.value("TOSTEXT").toString();
+    QString TOSTEXT=settings.value(QStringLiteral("TOSTEXT")).toString();
     if ( TOSTEXT.isEmpty()) {
-        TOSTEXT = settingsusr.value("TOSTEXT").toString();
+        TOSTEXT = settingsusr.value(QStringLiteral("TOSTEXT")).toString();
     }
     if ( ! TOSTEXT.isEmpty() ){
         ui->buttonFAQ->setText(TOSTEXT);
     }
 
-    QString SETUP = settings.value("1icon").toString();
+    QString SETUP = settings.value(QStringLiteral("1icon")).toString();
     if ( SETUP.isEmpty()) {
-        SETUP = settingsusr.value("1icon").toString();
+        SETUP = settingsusr.value(QStringLiteral("1icon")).toString();
     }
-    QString SETUPTEXT=settings.value("1text").toString();
+    QString SETUPTEXT=settings.value(QStringLiteral("1text")).toString();
     if ( SETUPTEXT.isEmpty()) {
-        SETUPTEXT = settingsusr.value("1text").toString();
+        SETUPTEXT = settingsusr.value(QStringLiteral("1text")).toString();
     }
     if ( ! SETUPTEXT.isEmpty() ){
         ui->buttonSetup->setText(SETUPTEXT);
     }
-    SETUPCMD=settings.value("1command").toString();
+    SETUPCMD=settings.value(QStringLiteral("1command")).toString();
     if ( SETUPCMD.isEmpty()) {
-        SETUPCMD = settingsusr.value("1command").toString();
+        SETUPCMD = settingsusr.value(QStringLiteral("1command")).toString();
     }
 
-    QString FAQ = settings.value("2icon").toString();
+    QString FAQ = settings.value(QStringLiteral("2icon")).toString();
     if ( FAQ.isEmpty()) {
-        FAQ = settingsusr.value("2icon").toString();
+        FAQ = settingsusr.value(QStringLiteral("2icon")).toString();
     }
-    QString FAQTEXT=settings.value("2text").toString();
+    QString FAQTEXT=settings.value(QStringLiteral("2text")).toString();
     if ( FAQTEXT.isEmpty()) {
-        FAQTEXT = settingsusr.value("2text").toString();
+        FAQTEXT = settingsusr.value(QStringLiteral("2text")).toString();
     }
     if ( ! FAQTEXT.isEmpty() ){
         ui->buttonFAQ->setText(FAQTEXT);
     }
-    FAQCMD=settings.value("2command").toString();
+    FAQCMD=settings.value(QStringLiteral("2command")).toString();
     if ( FAQCMD.isEmpty()) {
-        FAQCMD = settingsusr.value("2command").toString();
+        FAQCMD = settingsusr.value(QStringLiteral("2command")).toString();
     }
 
-    QString FORUMS = settings.value("3icon").toString();
+    QString FORUMS = settings.value(QStringLiteral("3icon")).toString();
     if ( FORUMS.isEmpty()) {
-        FORUMS = settingsusr.value("3icon").toString();
+        FORUMS = settingsusr.value(QStringLiteral("3icon")).toString();
     }
-    QString FORUMTEXT=settings.value("3text").toString();
+    QString FORUMTEXT=settings.value(QStringLiteral("3text")).toString();
     if ( FORUMTEXT.isEmpty()) {
-        FORUMTEXT = settingsusr.value("3text").toString();
+        FORUMTEXT = settingsusr.value(QStringLiteral("3text")).toString();
     }
     if ( ! FORUMTEXT.isEmpty() ){
         ui->buttonForum->setText(FORUMTEXT);
     }
-    FORUMCMD=settings.value("3command").toString();
+    FORUMCMD=settings.value(QStringLiteral("3command")).toString();
     if ( FORUMCMD.isEmpty()) {
-        FORUMCMD = settingsusr.value("3command").toString();
+        FORUMCMD = settingsusr.value(QStringLiteral("3command")).toString();
     }
 
 
-    QString MANUAL = settings.value("4icon").toString();
+    QString MANUAL = settings.value(QStringLiteral("4icon")).toString();
     if ( MANUAL.isEmpty()) {
-        MANUAL = settingsusr.value("4icon").toString();
+        MANUAL = settingsusr.value(QStringLiteral("4icon")).toString();
     }
-    QString MANUALTEXT=settings.value("4text").toString();
+    QString MANUALTEXT=settings.value(QStringLiteral("4text")).toString();
     if ( MANUALTEXT.isEmpty()) {
-        MANUALTEXT = settingsusr.value("4text").toString();
+        MANUALTEXT = settingsusr.value(QStringLiteral("4text")).toString();
     }
     if ( ! MANUALTEXT.isEmpty() ){
         ui->buttonManual->setText(MANUALTEXT);
     }
-    MANUALCMD=settings.value("4command").toString();
+    MANUALCMD=settings.value(QStringLiteral("4command")).toString();
     if ( MANUALCMD.isEmpty()) {
-        MANUALCMD = settingsusr.value("4command").toString();
+        MANUALCMD = settingsusr.value(QStringLiteral("4command")).toString();
     }
 
-    QString VIDEOS = settings.value("5icon").toString();
+    QString VIDEOS = settings.value(QStringLiteral("5icon")).toString();
     if ( VIDEOS.isEmpty()) {
-        VIDEOS = settingsusr.value("5icon").toString();
+        VIDEOS = settingsusr.value(QStringLiteral("5icon")).toString();
     }
-    QString VIDEOTEXT=settings.value("5text").toString();
+    QString VIDEOTEXT=settings.value(QStringLiteral("5text")).toString();
     if ( VIDEOTEXT.isEmpty()) {
-        VIDEOTEXT = settingsusr.value("5text").toString();
+        VIDEOTEXT = settingsusr.value(QStringLiteral("5text")).toString();
     }
     if ( ! VIDEOTEXT.isEmpty() ){
         ui->buttonVideo->setText(VIDEOTEXT);
     }
-    VIDEOCMD=settings.value("5command").toString();
+    VIDEOCMD=settings.value(QStringLiteral("5command")).toString();
     if ( VIDEOCMD.isEmpty()) {
-        VIDEOCMD = settingsusr.value("5command").toString();
+        VIDEOCMD = settingsusr.value(QStringLiteral("5command")).toString();
     }
 
-    QString WIKI = settings.value("6icon").toString();
+    QString WIKI = settings.value(QStringLiteral("6icon")).toString();
     if ( WIKI.isEmpty()) {
-        WIKI = settingsusr.value("6icon").toString();
+        WIKI = settingsusr.value(QStringLiteral("6icon")).toString();
     }
-    QString WIKITEXT=settings.value("6text").toString();
+    QString WIKITEXT=settings.value(QStringLiteral("6text")).toString();
     if ( WIKITEXT.isEmpty()) {
-        WIKITEXT = settingsusr.value("6text").toString();
+        WIKITEXT = settingsusr.value(QStringLiteral("6text")).toString();
     }
     if ( ! WIKITEXT.isEmpty() ){
         ui->buttonWiki->setText(WIKITEXT);
     }
-    WIKICMD=settings.value("6command").toString();
+    WIKICMD=settings.value(QStringLiteral("6command")).toString();
     if ( WIKICMD.isEmpty()) {
-        WIKICMD = settingsusr.value("6command").toString();
+        WIKICMD = settingsusr.value(QStringLiteral("6command")).toString();
     }
 
-    QString CONTRIBUTE = settings.value("7icon").toString();
+    QString CONTRIBUTE = settings.value(QStringLiteral("7icon")).toString();
     if ( CONTRIBUTE.isEmpty()) {
-        CONTRIBUTE = settingsusr.value("7icon").toString();
+        CONTRIBUTE = settingsusr.value(QStringLiteral("7icon")).toString();
     }
-    QString CONTRIBUTETEXT=settings.value("7text").toString();
+    QString CONTRIBUTETEXT=settings.value(QStringLiteral("7text")).toString();
     if ( CONTRIBUTETEXT.isEmpty()) {
-        CONTRIBUTETEXT = settingsusr.value("7text").toString();
+        CONTRIBUTETEXT = settingsusr.value(QStringLiteral("7text")).toString();
     }
     if ( ! CONTRIBUTETEXT.isEmpty() ){
         ui->buttonContribute->setText(CONTRIBUTETEXT);
     }
-    CONTRIBUTECMD=settings.value("7command").toString();
+    CONTRIBUTECMD=settings.value(QStringLiteral("7command")).toString();
     if ( CONTRIBUTECMD.isEmpty()) {
-        CONTRIBUTECMD = settingsusr.value("7command").toString();
+        CONTRIBUTECMD = settingsusr.value(QStringLiteral("7command")).toString();
     }
 
-    QString TOOLS = settings.value("8icon").toString();
+    QString TOOLS = settings.value(QStringLiteral("8icon")).toString();
     if ( TOOLS.isEmpty()) {
-        TOOLS = settingsusr.value("8icon").toString();
+        TOOLS = settingsusr.value(QStringLiteral("8icon")).toString();
     }
-    QString TOOLSTEXT=settings.value("8text").toString();
+    QString TOOLSTEXT=settings.value(QStringLiteral("8text")).toString();
     if ( TOOLSTEXT.isEmpty()) {
-        TOOLSTEXT = settingsusr.value("8text").toString();
+        TOOLSTEXT = settingsusr.value(QStringLiteral("8text")).toString();
     }
     if ( ! TOOLSTEXT.isEmpty() ){
         ui->buttonTools->setText(TOOLSTEXT);
     }
-    TOOLSCMD=settings.value("8command").toString();
+    TOOLSCMD=settings.value(QStringLiteral("8command")).toString();
     if ( TOOLSCMD.isEmpty()) {
-        TOOLSCMD = settingsusr.value("8command").toString();
+        TOOLSCMD = settingsusr.value(QStringLiteral("8command")).toString();
     }
 
-    QString PACKAGEINSTALLER = settings.value("9icon").toString();
+    QString PACKAGEINSTALLER = settings.value(QStringLiteral("9icon")).toString();
     if ( PACKAGEINSTALLER.isEmpty()) {
-        PACKAGEINSTALLER = settingsusr.value("9icon").toString();
+        PACKAGEINSTALLER = settingsusr.value(QStringLiteral("9icon")).toString();
     }
-    QString PACKAGEINSTALLERTEXT=settings.value("9text").toString();
+    QString PACKAGEINSTALLERTEXT=settings.value(QStringLiteral("9text")).toString();
     if ( PACKAGEINSTALLERTEXT.isEmpty()) {
-        PACKAGEINSTALLERTEXT = settingsusr.value("9text").toString();
+        PACKAGEINSTALLERTEXT = settingsusr.value(QStringLiteral("9text")).toString();
     }
     if ( ! PACKAGEINSTALLERTEXT.isEmpty() ){
         ui->buttonPackageInstall->setText(PACKAGEINSTALLERTEXT);
     }
-    PACKAGEINSTALLERCMD=settings.value("9command").toString();
+    PACKAGEINSTALLERCMD=settings.value(QStringLiteral("9command")).toString();
     if ( PACKAGEINSTALLERCMD.isEmpty()) {
-        PACKAGEINSTALLERCMD = settingsusr.value("9command").toString();
+        PACKAGEINSTALLERCMD = settingsusr.value(QStringLiteral("9command")).toString();
     }
 
-    QString TWEAK = settings.value("10icon").toString();
+    QString TWEAK = settings.value(QStringLiteral("10icon")).toString();
     if ( TWEAK.isEmpty()) {
-        TWEAK = settingsusr.value("10icon").toString();
+        TWEAK = settingsusr.value(QStringLiteral("10icon")).toString();
     }
-    QString TWEAKTEXT=settings.value("10text").toString();
+    QString TWEAKTEXT=settings.value(QStringLiteral("10text")).toString();
     if ( TWEAKTEXT.isEmpty()) {
-        TWEAKTEXT = settingsusr.value("10text").toString();
+        TWEAKTEXT = settingsusr.value(QStringLiteral("10text")).toString();
     }
     if ( ! TWEAKTEXT.isEmpty() ){
         ui->buttonPanelOrient->setText(TWEAKTEXT);
     }
-    TWEAKCMD=settings.value("10command").toString();
+    TWEAKCMD=settings.value(QStringLiteral("10command")).toString();
     if ( TWEAKCMD.isEmpty()) {
-        TWEAKCMD = settingsusr.value("10command").toString();
+        TWEAKCMD = settingsusr.value(QStringLiteral("10command")).toString();
     }
 
-    QString TOUR = settings.value("11icon").toString();
+    QString TOUR = settings.value(QStringLiteral("11icon")).toString();
     if ( TOUR.isEmpty()) {
-        TOUR = settingsusr.value("11icon").toString();
+        TOUR = settingsusr.value(QStringLiteral("11icon")).toString();
     }
-    QString TOURTEXT=settings.value("11text").toString();
+    QString TOURTEXT=settings.value(QStringLiteral("11text")).toString();
     if ( TOURTEXT.isEmpty()) {
-        TOURTEXT = settingsusr.value("11text").toString();
+        TOURTEXT = settingsusr.value(QStringLiteral("11text")).toString();
     }
     if ( ! TOURTEXT.isEmpty() ){
         ui->buttonTour->setText(TOURTEXT);
     }
-    TOURCMD=settings.value("11command").toString();
+    TOURCMD=settings.value(QStringLiteral("11command")).toString();
     if ( TOURCMD.isEmpty()) {
-        TOURCMD = settingsusr.value("11command").toString();
+        TOURCMD = settingsusr.value(QStringLiteral("11command")).toString();
     }
 
     // hide tour if not present AND TOURTEXT.ISEMPTY
     if ( TOURTEXT.isEmpty() ){
-        if (!QFile::exists("/usr/bin/mx-tour")) {
+        if (!QFile::exists(QStringLiteral("/usr/bin/mx-tour"))) {
             ui->buttonTour->hide();
         }
     }
 
-    QString LIVEUSERINFOTEXT=settings.value("LIVEUSERINFOTEXT").toString();
+    QString LIVEUSERINFOTEXT=settings.value(QStringLiteral("LIVEUSERINFOTEXT")).toString();
     if ( LIVEUSERINFOTEXT.isEmpty()) {
-        LIVEUSERINFOTEXT = settingsusr.value("LIVEUSERINFOTEXT").toString();
+        LIVEUSERINFOTEXT = settingsusr.value(QStringLiteral("LIVEUSERINFOTEXT")).toString();
     }
     if ( ! LIVEUSERINFOTEXT.isEmpty() ){
         ui->labelLoginInfo->setText(LIVEUSERINFOTEXT);
     }
-    QString SHOWLIVEUSERINFO = settings.value("SHOWLIVEUSERINFO", "true").toString();
+    QString SHOWLIVEUSERINFO = settings.value(QStringLiteral("SHOWLIVEUSERINFO"), "true").toString();
     if ( SHOWLIVEUSERINFO.isEmpty()) {
-        SHOWLIVEUSERINFO = settingsusr.value("SHOWLIVEUSERINFO", "true").toString();
+        SHOWLIVEUSERINFO = settingsusr.value(QStringLiteral("SHOWLIVEUSERINFO"), "true").toString();
     }
     //qDebug() << "hide value: " << SHOWLIVEUSERINFO;
     bool LIVEUSERINFOSHOW = true;
-    if ( SHOWLIVEUSERINFO == "false" ){
+    if ( SHOWLIVEUSERINFO == QLatin1String("false") ){
         LIVEUSERINFOSHOW = false;
     }
 
     ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. " + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
 
     // if running live
-    QString test = runCmd("df -T / |tail -n1 |awk '{print $2}'").output;
-    if ( test == "aufs" || test == "overlay") {
+    QString test = runCmd(QStringLiteral("df -T / |tail -n1 |awk '{print $2}'")).output;
+    if ( test == QLatin1String("aufs") || test == QLatin1String("overlay")) {
         ui->checkBox->setVisible(false);
         ui->labelLoginInfo->setVisible(LIVEUSERINFOSHOW);
     } else {
@@ -327,29 +328,29 @@ void MainWindow::setup()
     }
 
     //check /etc/lsb-release file, overridable
-    QString CHECKLSB_RELEASE = settings.value("CHECKLSB_RELEASE", "true").toString();
+    QString CHECKLSB_RELEASE = settings.value(QStringLiteral("CHECKLSB_RELEASE"), "true").toString();
     if ( CHECKLSB_RELEASE.isEmpty()) {
-        CHECKLSB_RELEASE = settingsusr.value("CHECKLSB_RELEASE", "true").toString();
+        CHECKLSB_RELEASE = settingsusr.value(QStringLiteral("CHECKLSB_RELEASE"), "true").toString();
     }
 
     bool CHECKLSB = true;
-    if ( CHECKLSB_RELEASE == "false" ){
+    if ( CHECKLSB_RELEASE == QLatin1String("false") ){
         CHECKLSB = false;
     }
 
     if (CHECKLSB) {
-        if ( QFileInfo::exists("/etc/lsb-release") ) {
-            QSettings lsb("/etc/lsb-release", QSettings::NativeFormat);
-            QString MAINDISTRO = lsb.value("DISTRIB_ID").toString();
-            CODENAME = lsb.value("DISTRIB_CODENAME").toString();
-            QString DISTRIB_RELEASE = lsb.value("DISTRIB_RELEASE").toString();
+        if ( QFileInfo::exists(QStringLiteral("/etc/lsb-release")) ) {
+            QSettings lsb(QStringLiteral("/etc/lsb-release"), QSettings::NativeFormat);
+            QString MAINDISTRO = lsb.value(QStringLiteral("DISTRIB_ID")).toString();
+            CODENAME = lsb.value(QStringLiteral("DISTRIB_CODENAME")).toString();
+            QString DISTRIB_RELEASE = lsb.value(QStringLiteral("DISTRIB_RELEASE")).toString();
             DISTRO = MAINDISTRO + "-" + DISTRIB_RELEASE;
         }
     }
     QString debian_version;
     QString mxfluxbox_version;
 
-    QFile file("/etc/debian_version");
+    QFile file(QStringLiteral("/etc/debian_version"));
     if (!file.open(QIODevice::ReadOnly))
         QMessageBox::information(nullptr, tr("Error"), file.errorString());
 
@@ -361,10 +362,10 @@ void MainWindow::setup()
 
     ui->labelSupportUntil->setText(SUPPORTED);
 
-    QString DESKTOP = runCmd("LANG=C inxi -c 0 -S ").output.trimmed().section(":", 5, 5).section("\n", 0, 0);
-    if (DESKTOP.contains("Fluxbox")) {
+    QString DESKTOP = runCmd(QStringLiteral("LANG=C inxi -c 0 -S ")).output.trimmed().section(QStringLiteral(":"), 5, 5).section(QStringLiteral("\n"), 0, 0);
+    if (DESKTOP.contains(QLatin1String("Fluxbox"))) {
         isfluxbox = true;
-        QFile file("/etc/mxfb_version");
+        QFile file(QStringLiteral("/etc/mxfb_version"));
         if (file.exists()) {
             if (!file.open(QIODevice::ReadOnly))
                 QMessageBox::information(nullptr, tr("Error"), file.errorString());
@@ -412,7 +413,7 @@ Result MainWindow::runCmd(const QString &cmd)
     QProcess proc;
     proc.setProcessChannelMode(QProcess::MergedChannels);
     connect(&proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
-    proc.start("/bin/bash", QStringList() << "-c" << cmd);
+    proc.start(QStringLiteral("/bin/bash"), QStringList() << QStringLiteral("-c") << cmd);
     loop.exec();
     return { proc.exitCode(), proc.readAll().trimmed() };
 }
@@ -427,49 +428,22 @@ QString MainWindow::getVersion(const QString &name)
 void MainWindow::on_buttonAbout_clicked()
 {
     this->hide();
-    QMessageBox msgBox(QMessageBox::NoIcon,
-        tr("About MX Welcome"), "<p align=\"center\"><b><h2>" + tr("MX Welcome") + "</h2></b></p><p align=\"center\">" +
+    displayAboutMsgBox(tr("About MX Welcome"),
+                       "<p align=\"center\"><b><h2>" + tr("MX Welcome") + "</h2></b></p><p align=\"center\">" +
                        tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
                        tr("Program for displaying a welcome screen in MX Linux") +
-                       R"(</h3></p><p align="center"><a href="http://www.mxlinux.org/mx">http://www.mxlinux.org/mx</a><br /></p><p align="center">)" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>");
-    QPushButton* btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
-    QPushButton* btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
-    QPushButton* btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
-    btnCancel->setIcon(QIcon::fromTheme("window-close"));
-
-    msgBox.exec();
-
-    if (msgBox.clickedButton() == btnLicense) {
-        QString cmd = QString("mx-viewer file:///usr/share/doc/mx-welcome/license.html '%1'").arg(tr("MX Welcome"));
-        system(cmd.toUtf8());
-    } else if (msgBox.clickedButton() == btnChangelog) {
-        QDialog* changelog = new QDialog(this);
-        changelog->resize(600, 500);
-
-        QTextEdit* text = new QTextEdit;
-        text->setReadOnly(true);
-        text->setText(runCmd("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName() + "/changelog.gz").output);
-
-        QPushButton* btnClose = new QPushButton(tr("&Close"));
-        btnClose->setIcon(QIcon::fromTheme("window-close"));
-        connect(btnClose, &QPushButton::clicked, changelog, &QDialog::close);
-
-        QVBoxLayout* layout = new QVBoxLayout;
-        layout->addWidget(text);
-        layout->addWidget(btnClose);
-        changelog->setLayout(layout);
-        changelog->exec();
-    }
+                       "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p>"
+                       "<p align=\"center\">" + tr("Copyright (c) MX Linux") + "<br /><br /></p>",
+                       QStringLiteral("/usr/share/doc/mx-welcome/license.html"), tr("%1 License").arg(this->windowTitle()));
     this->show();
 }
 
 // Add/remove autostart at login
 void MainWindow::on_checkBox_clicked(bool checked)
 {
-    user_settings.setValue("AutoStartup", checked);
+    user_settings.setValue(QStringLiteral("AutoStartup"), checked);
     if (checked)
-        QFile::copy("/usr/share/mx-welcome/mx-welcome.desktop", QDir::homePath() + "/.config/autostart/mx-welcome.desktop");
+        QFile::copy(QStringLiteral("/usr/share/mx-welcome/mx-welcome.desktop"), QDir::homePath() + "/.config/autostart/mx-welcome.desktop");
     else
         QFile::remove(QDir::homePath() + "/.config/autostart/mx-welcome.desktop");
 }
@@ -477,7 +451,7 @@ void MainWindow::on_checkBox_clicked(bool checked)
 // Start MX-Tools
 void MainWindow::on_buttonTools_clicked() const
 {
-    QString cmd = "mx-tools&";
+    QString cmd = QStringLiteral("mx-tools&");
     if ( ! TOOLSCMD.isEmpty() ){
         cmd = TOOLSCMD;
     }
@@ -489,9 +463,9 @@ void MainWindow::on_buttonManual_clicked() const
 {
     QString cmd;
     if (isfluxbox)
-        cmd = "mxfb-help&";
+        cmd = QStringLiteral("mxfb-help&");
     else
-        cmd = "mx-manual&";
+        cmd = QStringLiteral("mx-manual&");
     if ( ! MANUALCMD.isEmpty() )
         cmd = MANUALCMD;
 
@@ -501,7 +475,7 @@ void MainWindow::on_buttonManual_clicked() const
 // Launch Forum in browser
 void MainWindow::on_buttonForum_clicked() const
 {
-    QString cmd = "xdg-open http://forum.mxlinux.org/index.php";
+    QString cmd = QStringLiteral("xdg-open http://forum.mxlinux.org/index.php");
     if ( ! FORUMCMD.isEmpty() ){
         cmd = FORUMCMD;
     }
@@ -511,7 +485,7 @@ void MainWindow::on_buttonForum_clicked() const
 // Launch Wiki in browser
 void MainWindow::on_buttonWiki_clicked() const
 {
-    QString cmd = "xdg-open http://www.mxlinux.org/wiki";
+    QString cmd = QStringLiteral("xdg-open http://www.mxlinux.org/wiki");
     if ( ! WIKICMD.isEmpty() ){
         cmd = WIKICMD;
     }
@@ -521,7 +495,7 @@ void MainWindow::on_buttonWiki_clicked() const
 // Launch Video links in browser
 void MainWindow::on_buttonVideo_clicked() const
 {
-    QString cmd = "xdg-open http://www.mxlinux.org/videos/";
+    QString cmd = QStringLiteral("xdg-open http://www.mxlinux.org/videos/");
     if ( ! VIDEOCMD.isEmpty() ){
         cmd = VIDEOCMD;
     }
@@ -531,7 +505,7 @@ void MainWindow::on_buttonVideo_clicked() const
 // Launch Contribution page
 void MainWindow::on_buttonContribute_clicked() const
 {
-    QString cmd = "xdg-open http://www.mxlinux.org/donate";
+    QString cmd = QStringLiteral("xdg-open http://www.mxlinux.org/donate");
     if ( ! CONTRIBUTECMD.isEmpty() ){
         cmd = CONTRIBUTECMD;
     }
@@ -540,7 +514,7 @@ void MainWindow::on_buttonContribute_clicked() const
 
 void MainWindow::on_buttonPanelOrient_clicked() const
 {
-    QString cmd = "mx-tweak&";
+    QString cmd = QStringLiteral("mx-tweak&");
     if ( ! TWEAKCMD.isEmpty() ){
         cmd = TWEAKCMD;
     }
@@ -549,7 +523,7 @@ void MainWindow::on_buttonPanelOrient_clicked() const
 
 void MainWindow::on_buttonPackageInstall_clicked() const
 {
-    QString cmd = "su-to-root -X -c mx-packageinstaller&";
+    QString cmd = QStringLiteral("su-to-root -X -c mx-packageinstaller&");
     if ( ! PACKAGEINSTALLERCMD.isEmpty() ){
         cmd = PACKAGEINSTALLERCMD;
     }
@@ -558,7 +532,7 @@ void MainWindow::on_buttonPackageInstall_clicked() const
 
 void MainWindow::on_buttonFAQ_clicked() const
 {
-    QString cmd = "mx-faq&";
+    QString cmd = QStringLiteral("mx-faq&");
     if ( ! FAQCMD.isEmpty() ){
         cmd = FAQCMD;
     }
@@ -567,7 +541,7 @@ void MainWindow::on_buttonFAQ_clicked() const
 
 void MainWindow::on_buttonSetup_clicked() const
 {
-    QString cmd = "minstall-launcher&";
+    QString cmd = QStringLiteral("minstall-launcher&");
     if ( ! SETUPCMD.isEmpty() ){
         cmd = SETUPCMD;
     }
@@ -576,7 +550,7 @@ void MainWindow::on_buttonSetup_clicked() const
 
 void MainWindow::on_buttonTOS_clicked() const
 {
-    QString cmd = "xdg-open https://mxlinux.org/terms-of-use/";
+    QString cmd = QStringLiteral("xdg-open https://mxlinux.org/terms-of-use/");
     if ( ! TOSCMD.isEmpty() ){
         cmd = TOSCMD;
     }
@@ -590,7 +564,7 @@ void MainWindow::on_ButtonQSI_clicked()
 
 void MainWindow::shortsysteminfo()
 {
-    ui->textBrowser->setText(runCmd("LANG=C inxi -c 0").output);
+    ui->textBrowser->setText(runCmd(QStringLiteral("LANG=C inxi -c 0")).output);
 }
 void MainWindow::on_tabWidget_currentChanged(int index)
 {
@@ -619,7 +593,7 @@ void MainWindow::settabstyle()
 
 void MainWindow::on_buttonTour_clicked() const
 {
-    QString cmd = "mx-tour&";
+    QString cmd = QStringLiteral("mx-tour&");
     if ( ! TOURCMD.isEmpty() ){
         cmd = TOURCMD;
     }

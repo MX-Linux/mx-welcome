@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 02 Aug 2022 21:50:45 -0400
+Source: mx-welcome
+Architecture: source
+Version: 22.08
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-welcome (22.08) mx; urgency=medium
+ .
+   * Remove mx-viewer dependency
+Checksums-Sha1:
+ fe272103f46210e9693887d220a59172bbb370f2 1158 mx-welcome_22.08.dsc
+ 7bb1b2886deab749e9eb720d5710c55cf7e479b3 51356 mx-welcome_22.08.tar.xz
+ 308d1babfbbc097a3e1362c54924bd3c048e3589 10727 mx-welcome_22.08_amd64.buildinfo
+Checksums-Sha256:
+ a77d4716d805171916e8709307c6f87e2d69984d22fa2dc4ca71b09f38f06312 1158 mx-welcome_22.08.dsc
+ e220c96fcf308e2844307931a9571d3c4b553ad1b41c658a102c4be9a3725b5b 51356 mx-welcome_22.08.tar.xz
+ 6d35879df9d6d49dab05db10b4f7825ccc6504a4517b3d7453753c3fd124efe8 10727 mx-welcome_22.08_amd64.buildinfo
+Files:
+ 08ac06a2a2565c1e20915670c90403f1 1158 admin optional mx-welcome_22.08.dsc
+ 99b83781293b521c73abae90ea166f83 51356 admin optional mx-welcome_22.08.tar.xz
+ fe08c9798438809c7656cb34b74ebffc 10727 admin optional mx-welcome_22.08_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmLp1w0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumMsjCAC+K98zrRLZacfpDj1nk8wf+/C+eXJe
+0mTDnNKA2GGBsFuCNLFoWeI6UnCWHjiOThsCt13cvMYbBkaNHqwdXiAmsZcd0Ux6
+1eUNSsGKJIqohib5gGGgxZGe9w/Xavep6BMO0EQmU2buArEVtc+KTnjAg+4XpNN3
+FlJgw23BARbrjpe7emnLfQz7TUykVB8m99132dcVPWkK4fGKSitSShcCdL6eVESq
+yGX949X0y6rWUWRf9E3m7dnLXjBSxsEMiHjehd9PaVgLM3zw8FTOh0yvIBswcjmL
+GA7fsX89pE8011eI3htWKubu+zN6q+pXQLOfWesJD16IYQuWEC+qJ5yE
+=8RD2
+-----END PGP SIGNATURE-----

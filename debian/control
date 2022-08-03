@@ -8,7 +8,10 @@ Vcs-Git: git://github.com/AdrianTM/mx-welcome
 
 Package: mx-welcome
 Architecture: any
-Depends: mx-viewer, mx-welcome-data (>= 22.02.01), ${misc:Depends}, ${shlibs:Depends}
+Depends: mx-viewer | xdg-utils,
+        mx-welcome-data (>= 22.02.01),
+        ${misc:Depends},
+        ${shlibs:Depends}
 Description: MX Welcome
  MX Welcome displays a welcome screen with two tabs.
  .

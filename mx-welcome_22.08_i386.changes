@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Tue, 02 Aug 2022 21:50:45 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: i386
+Version: 22.08
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (22.08) mx; urgency=medium
+ .
+   * Remove mx-viewer dependency
+Checksums-Sha1:
+ 630aa8ef424ebfd7f18c20a564e6011a86ec052b 10029 mx-welcome_22.08_i386.buildinfo
+ 887325c816639624eb8452b10481e6ed7f82ea8a 69812 mx-welcome_22.08_i386.deb
+Checksums-Sha256:
+ 94db4665825a72a84652b4b9fb5471a27579b6e710af941bc56283b4148e052b 10029 mx-welcome_22.08_i386.buildinfo
+ a88b4c3d0d4a8b6a4981d3a60e92a0bfb50dc510bbcece333f3a0f18e4fe7881 69812 mx-welcome_22.08_i386.deb
+Files:
+ fa5c6d5ff1ffb446e9dfed3f072c9ac0 10029 admin optional mx-welcome_22.08_i386.buildinfo
+ 2faed23ca9ba3c67567fee07af0655ff 69812 admin optional mx-welcome_22.08_i386.deb
