@@ -559,7 +559,7 @@ void MainWindow::on_buttonTOS_clicked() const
 
 void MainWindow::on_ButtonQSI_clicked()
 {
-    system("x-terminal-emulator -e bash -c \"/usr/bin/quick-system-info-mx\" &");
+    system("/usr/bin/quick-system-info-gui &");
 }
 
 void MainWindow::shortsysteminfo()

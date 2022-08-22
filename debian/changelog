@@ -1,3 +1,9 @@
+mx-welcome (22.08.01) mx; urgency=medium
+
+  * call gui instead of qsi cli mode 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 21 Aug 2022 21:25:19 -0400
+
 mx-welcome (22.08) mx; urgency=medium
 
   * Remove mx-viewer dependency
