@@ -347,7 +347,7 @@ void MainWindow::setup()
             DISTRO = MAINDISTRO + "-" + DISTRIB_RELEASE;
         }
     }
-    QString debian_version;
+
     QString mxfluxbox_version;
 
     QFile file(QStringLiteral("/etc/debian_version"));
@@ -559,7 +559,11 @@ void MainWindow::on_buttonTOS_clicked() const
 
 void MainWindow::on_ButtonQSI_clicked()
 {
-    system("/usr/bin/quick-system-info-gui &");
+    if (debian_version.section(".",0,0) == "10"){
+        system("x-terminal-emulator -e bash -c \"/usr/bin/quick-system-info-mx\" &");
+    } else {
+        system("/usr/bin/quick-system-info-gui &");
+    }
 }
 
 void MainWindow::shortsysteminfo()

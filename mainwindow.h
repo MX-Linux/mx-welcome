@@ -72,11 +72,12 @@ public:
     QString TWEAKCMD;
     QString TOURCMD;
     QString TOSCMD;
+    QString debian_version;
 
     void setup();
 
 private slots:
-    static void on_ButtonQSI_clicked();
+    void on_ButtonQSI_clicked();
     void on_buttonAbout_clicked();
     void on_buttonContribute_clicked() const;
     void on_buttonFAQ_clicked() const;
