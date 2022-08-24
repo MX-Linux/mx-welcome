@@ -77,7 +77,7 @@ void MainWindow::setup()
 
     // setup title block & icons
     QSettings settings(QStringLiteral("/usr/share/mx-welcome/mx-welcome.conf"), QSettings::NativeFormat);
-    QSettings settingsusr(QStringLiteral("/etc/share/mx-welcome/mx-welcome.conf"), QSettings::NativeFormat);
+    QSettings settingsusr(QStringLiteral("/etc/mx-welcome/mx-welcome.conf"), QSettings::NativeFormat);
     QString DISTRO = settings.value(QStringLiteral("DISTRO")).toString();
     if ( DISTRO.isEmpty()) {
         DISTRO = settingsusr.value(QStringLiteral("DISTRO")).toString();
@@ -362,7 +362,8 @@ void MainWindow::setup()
 
     ui->labelSupportUntil->setText(SUPPORTED);
 
-    QString DESKTOP = runCmd(QStringLiteral("LANG=C inxi -c 0 -S ")).output.trimmed().section(QStringLiteral(":"), 5, 5).section(QStringLiteral("\n"), 0, 0);
+    QString DESKTOP = runCmd(QStringLiteral("LANG=C inxi -c 0 -S ")).output.trimmed().section(QStringLiteral(":"), 4, 4).section(QStringLiteral("\n"), 0, 0);
+    qDebug() << "desktop is " << DESKTOP;
     if (DESKTOP.contains(QLatin1String("Fluxbox"))) {
         isfluxbox = true;
         QFile file(QStringLiteral("/etc/mxfb_version"));

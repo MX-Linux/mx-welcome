@@ -1,3 +1,10 @@
+mx-welcome (22.08.02) mx; urgency=medium
+
+  * fix bug in fluxbox detection
+  * fix alternate mx-welcome.conf location
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 24 Aug 2022 18:57:10 -0400
+
 mx-welcome (22.08.01) mx; urgency=medium
 
   * call gui instead of qsi cli mode 
