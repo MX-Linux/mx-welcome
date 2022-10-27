@@ -2,16 +2,16 @@ Format: 1.0
 Source: mx-welcome
 Binary: mx-welcome
 Architecture: armhf
-Version: 22.08.01
+Version: 22.10
 Checksums-Md5:
- 181101015c2b803683f2fc788bdce0ce 64708 mx-welcome_22.08.01_armhf.deb
+ 42ef9f3f5cfde25847bc9e625484f614 65688 mx-welcome_22.10_armhf.deb
 Checksums-Sha1:
- 3b1130ec1ede77f236bc89f77b29d2c1c78fbbd6 64708 mx-welcome_22.08.01_armhf.deb
+ 7d9935aa499136bc65dcb8741a5679aaf37ce122 65688 mx-welcome_22.10_armhf.deb
 Checksums-Sha256:
- 23a011ef178d5309e3b08007afb7022b0ed0abfe602e4b4e58a8555b2ebe6c51 64708 mx-welcome_22.08.01_armhf.deb
+ 87c60ddf05dcec426e9f9b7de18bbf6449217940966ed73e7112bad26999e8a3 65688 mx-welcome_22.10_armhf.deb
 Build-Origin: Raspbian
 Build-Architecture: armhf
-Build-Date: Sun, 21 Aug 2022 21:57:49 -0400
+Build-Date: Wed, 26 Oct 2022 21:22:48 -0400
 Build-Tainted-By:
  merged-usr-via-symlinks
  usr-local-has-libraries
@@ -313,4 +313,4 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1661131519"
+ SOURCE_DATE_EPOCH="1666829476"

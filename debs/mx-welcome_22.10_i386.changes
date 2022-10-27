@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Wed, 26 Oct 2022 20:11:16 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: i386
+Version: 22.10
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (22.10) mx; urgency=medium
+ .
+   * translations
+Checksums-Sha1:
+ 34a8163014db740bd696a15b40c313c955d334f9 10182 mx-welcome_22.10_i386.buildinfo
+ 6c337cbf351605201aa360f1e7d5243ea2afa8fe 70528 mx-welcome_22.10_i386.deb
+Checksums-Sha256:
+ ef9b699d2dade9c6b754e12bf784d69d3422ff2a4497281d9e849c54479a77ee 10182 mx-welcome_22.10_i386.buildinfo
+ 44c3fe57ae7d921bcbabc990343efdf0a9b3656c22f723bf03f85ee27045de36 70528 mx-welcome_22.10_i386.deb
+Files:
+ de1d77277963dd071fc93c6f82f6bba7 10182 admin optional mx-welcome_22.10_i386.buildinfo
+ c9690ead35ce97dc1bc1a33a3177ee98 70528 admin optional mx-welcome_22.10_i386.deb

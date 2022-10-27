@@ -1,17 +1,20 @@
 Format: 1.0
 Source: mx-welcome
 Binary: mx-welcome
-Architecture: i386
-Version: 22.08.01
+Architecture: amd64 source
+Version: 22.10
 Checksums-Md5:
- 5cb3aae8545b1793d4af6b1a24fb3886 69864 mx-welcome_22.08.01_i386.deb
+ 0d0227a6ad9e98ed508adf3577a168ce 599 mx-welcome_22.10.dsc
+ c26fd5a070168eb53018ceede9831b91 69428 mx-welcome_22.10_amd64.deb
 Checksums-Sha1:
- d01676b59ca48ad778e4897b6b1463da29687a5c 69864 mx-welcome_22.08.01_i386.deb
+ 83e39e8008e07b5614b109ee9f6b134dddbb7c8a 599 mx-welcome_22.10.dsc
+ aac0b6b220dd033e2ba8dba7c7d2b43590dd9f9c 69428 mx-welcome_22.10_amd64.deb
 Checksums-Sha256:
- 4a431093c927b8c3ae622df6b0fc86f5f0e021fc01c52e0b2cd85f9528cf52f7 69864 mx-welcome_22.08.01_i386.deb
+ 0813e7e26efaf59f7e8a9525edaf9d104259c47f3dfcda71592c33f17d9489c2 599 mx-welcome_22.10.dsc
+ 083e9cd2f5d492a098dcc4ea78adb9e80b05ae7bc97bee11e2f23d42cbd5c08d 69428 mx-welcome_22.10_amd64.deb
 Build-Origin: Debian
-Build-Architecture: i386
-Build-Date: Sun, 21 Aug 2022 22:03:27 -0400
+Build-Architecture: amd64
+Build-Date: Wed, 26 Oct 2022 20:40:41 -0400
 Build-Tainted-By:
  merged-usr-via-symlinks
  usr-local-has-libraries
@@ -26,7 +29,7 @@ Installed-Build-Depends:
  bash (= 5.0-4),
  binutils (= 2.31.1-16),
  binutils-common (= 2.31.1-16),
- binutils-i686-linux-gnu (= 2.31.1-16),
+ binutils-x86-64-linux-gnu (= 2.31.1-16),
  bsdmainutils (= 11.1.2+b1),
  bsdutils (= 1:2.33.1-0.1),
  build-essential (= 12.6),
@@ -162,6 +165,7 @@ Installed-Build-Depends:
  libkrb5-3 (= 1.17-3+deb10u1),
  libkrb5support0 (= 1.17-3+deb10u1),
  libllvm7 (= 1:7.0.1-8+deb10u2),
+ liblsan0 (= 8.3.0-6),
  liblz4-1 (= 1.8.3-1),
  liblzma5 (= 5.2.4-1),
  libmagic-mgc (= 1:5.35-4+deb10u2),
@@ -222,13 +226,14 @@ Installed-Build-Depends:
  libssl1.1 (= 1.1.1d-0+deb10u6),
  libstdc++-8-dev (= 8.3.0-6),
  libstdc++6 (= 8.3.0-6),
- libsystemd0 (= 1:241-7~deb10u5+mx19),
+ libsystemd0 (= 1:241-7~deb10u8+mx19+1),
  libtasn1-6 (= 4.13-3),
  libtinfo6 (= 6.1+20181013-2+deb10u2),
  libtool (= 2.4.6-9),
+ libtsan0 (= 8.3.0-6),
  libubsan1 (= 8.3.0-6),
  libuchardet0 (= 0.0.6-3),
- libudev1 (= 1:241-7~deb10u5+mx19),
+ libudev1 (= 1:241-7~deb10u8+mx19+1),
  libunistring2 (= 0.9.10-1),
  libuuid1 (= 2.33.1-0.1),
  libvulkan-dev (= 1.1.97-2),
@@ -339,4 +344,4 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1661131519"
+ SOURCE_DATE_EPOCH="1666829476"

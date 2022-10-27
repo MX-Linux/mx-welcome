@@ -1,6 +1,6 @@
  dpkg-buildpackage -us -uc -ui
 dpkg-buildpackage: info: source package mx-welcome
-dpkg-buildpackage: info: source version 22.08.01
+dpkg-buildpackage: info: source version 22.10
 dpkg-buildpackage: info: source distribution mx
 dpkg-buildpackage: info: source changed by Dolphin Oracle <dolphinoracle@gmail.com>
  dpkg-source --before-build .
@@ -16,8 +16,8 @@ make[1]: Leaving directory '/media/demo/dataext/development/working/mx-welcome/6
    dh_clean -O--no-automatic-dbgsym -O--parallel
  dpkg-source -b .
 dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building mx-welcome in mx-welcome_22.08.01.tar.xz
-dpkg-source: info: building mx-welcome in mx-welcome_22.08.01.dsc
+dpkg-source: info: building mx-welcome in mx-welcome_22.10.tar.xz
+dpkg-source: info: building mx-welcome in mx-welcome_22.10.dsc
  debian/rules build
 dh build --no-automatic-dbgsym --parallel 
    dh_update_autotools_config -O--no-automatic-dbgsym -O--parallel
@@ -55,12 +55,13 @@ Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-
     Generated 32 translation(s) (32 finished and 0 unfinished)
     Ignored 13 untranslated source text(s)
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_de.qm'...
-    Generated 32 translation(s) (32 finished and 0 unfinished)
-    Ignored 13 untranslated source text(s)
+    Generated 38 translation(s) (38 finished and 0 unfinished)
+    Ignored 7 untranslated source text(s)
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_el.qm'...
     Generated 45 translation(s) (45 finished and 0 unfinished)
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_en.qm'...
-    Generated 45 translation(s) (45 finished and 0 unfinished)
+    Generated 45 translation(s) (40 finished and 5 unfinished)
+    Ignored 3 untranslated source text(s)
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_en_GB.qm'...
     Generated 0 translation(s) (0 finished and 0 unfinished)
     Ignored 45 untranslated source text(s)
@@ -81,8 +82,8 @@ Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-
     Generated 27 translation(s) (27 finished and 0 unfinished)
     Ignored 18 untranslated source text(s)
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_fi.qm'...
-    Generated 32 translation(s) (32 finished and 0 unfinished)
-    Ignored 13 untranslated source text(s)
+    Generated 39 translation(s) (39 finished and 0 unfinished)
+    Ignored 6 untranslated source text(s)
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_fil_PH.qm'...
     Generated 16 translation(s) (16 finished and 0 unfinished)
     Ignored 29 untranslated source text(s)
@@ -93,9 +94,6 @@ Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_fr_FR.qm'...
     Generated 0 translation(s) (0 finished and 0 unfinished)
     Ignored 45 untranslated source text(s)
-Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_gl_es.qm'...
-    Generated 0 translation(s) (0 finished and 0 unfinished)
-    Ignored 47 untranslated source text(s)
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_gu.qm'...
     Generated 7 translation(s) (7 finished and 0 unfinished)
     Ignored 38 untranslated source text(s)
@@ -112,8 +110,8 @@ Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-
     Generated 16 translation(s) (16 finished and 0 unfinished)
     Ignored 29 untranslated source text(s)
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_hu.qm'...
-    Generated 16 translation(s) (16 finished and 0 unfinished)
-    Ignored 29 untranslated source text(s)
+    Generated 18 translation(s) (18 finished and 0 unfinished)
+    Ignored 27 untranslated source text(s)
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_id.qm'...
     Generated 13 translation(s) (13 finished and 0 unfinished)
     Ignored 32 untranslated source text(s)
@@ -148,11 +146,11 @@ Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-
     Generated 14 translation(s) (14 finished and 0 unfinished)
     Ignored 31 untranslated source text(s)
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_nl.qm'...
-    Generated 32 translation(s) (32 finished and 0 unfinished)
-    Ignored 13 untranslated source text(s)
+    Generated 36 translation(s) (36 finished and 0 unfinished)
+    Ignored 9 untranslated source text(s)
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_nl_BE.qm'...
-    Generated 1 translation(s) (1 finished and 0 unfinished)
-    Ignored 44 untranslated source text(s)
+    Generated 41 translation(s) (41 finished and 0 unfinished)
+    Ignored 4 untranslated source text(s)
 Updating '/media/demo/dataext/development/working/mx-welcome/64/translations/mx-welcome_or.qm'...
     Generated 0 translation(s) (0 finished and 0 unfinished)
     Ignored 45 untranslated source text(s)
@@ -215,58 +213,58 @@ g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/m
 /usr/lib/qt5/bin/moc -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /media/demo/dataext/development/working/mx-welcome/64/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/media/demo/dataext/development/working/mx-welcome/64 -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/8 -I/usr/include/x86_64-linux-gnu/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/x86_64-linux-gnu/8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include mainwindow.h -o moc_mainwindow.cpp
 g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-welcome/64=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -o moc_flatbutton.o moc_flatbutton.cpp
 mainwindow.cpp: In member function ‘void MainWindow::on_buttonTools_clicked() const’:
-mainwindow.cpp:458:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:459:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
      system(cmd.toUtf8());
      ~~~~~~^~~~~~~~~~~~~~
 mainwindow.cpp: In member function ‘void MainWindow::on_buttonManual_clicked() const’:
-mainwindow.cpp:472:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:473:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
      system(cmd.toUtf8());
      ~~~~~~^~~~~~~~~~~~~~
 mainwindow.cpp: In member function ‘void MainWindow::on_buttonForum_clicked() const’:
-mainwindow.cpp:482:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:483:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
      system(cmd.toUtf8());
      ~~~~~~^~~~~~~~~~~~~~
 mainwindow.cpp: In member function ‘void MainWindow::on_buttonWiki_clicked() const’:
-mainwindow.cpp:492:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:493:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
      system(cmd.toUtf8());
      ~~~~~~^~~~~~~~~~~~~~
 mainwindow.cpp: In member function ‘void MainWindow::on_buttonVideo_clicked() const’:
-mainwindow.cpp:502:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:503:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
      system(cmd.toUtf8());
      ~~~~~~^~~~~~~~~~~~~~
 mainwindow.cpp: In member function ‘void MainWindow::on_buttonContribute_clicked() const’:
-mainwindow.cpp:512:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:513:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
      system(cmd.toUtf8());
      ~~~~~~^~~~~~~~~~~~~~
 mainwindow.cpp: In member function ‘void MainWindow::on_buttonPanelOrient_clicked() const’:
-mainwindow.cpp:521:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:522:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
      system(cmd.toUtf8());
      ~~~~~~^~~~~~~~~~~~~~
 mainwindow.cpp: In member function ‘void MainWindow::on_buttonPackageInstall_clicked() const’:
-mainwindow.cpp:530:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:531:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
      system(cmd.toUtf8());
      ~~~~~~^~~~~~~~~~~~~~
 mainwindow.cpp: In member function ‘void MainWindow::on_buttonFAQ_clicked() const’:
-mainwindow.cpp:539:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:540:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
      system(cmd.toUtf8());
      ~~~~~~^~~~~~~~~~~~~~
 mainwindow.cpp: In member function ‘void MainWindow::on_buttonSetup_clicked() const’:
-mainwindow.cpp:548:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:549:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
      system(cmd.toUtf8());
      ~~~~~~^~~~~~~~~~~~~~
 mainwindow.cpp: In member function ‘void MainWindow::on_buttonTOS_clicked() const’:
-mainwindow.cpp:557:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:558:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
      system(cmd.toUtf8());
      ~~~~~~^~~~~~~~~~~~~~
 mainwindow.cpp: In member function ‘void MainWindow::on_ButtonQSI_clicked()’:
-mainwindow.cpp:563:15: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:564:15: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
          system("x-terminal-emulator -e bash -c \"/usr/bin/quick-system-info-mx\" &");
          ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-mainwindow.cpp:565:15: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:566:15: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
          system("/usr/bin/quick-system-info-gui &");
          ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 mainwindow.cpp: In member function ‘void MainWindow::on_buttonTour_clicked() const’:
-mainwindow.cpp:604:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+mainwindow.cpp:605:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
      system(cmd.toUtf8());
      ~~~~~~^~~~~~~~~~~~~~
 g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-welcome/64=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -o moc_mainwindow.o moc_mainwindow.cpp
@@ -307,9 +305,9 @@ make[1]: Leaving directory '/media/demo/dataext/development/working/mx-welcome/6
    dh_gencontrol -O--no-automatic-dbgsym -O--parallel
    dh_md5sums -O--no-automatic-dbgsym -O--parallel
    dh_builddeb -O--no-automatic-dbgsym -O--parallel
-dpkg-deb: building package 'mx-welcome' in '../mx-welcome_22.08.01_amd64.deb'.
+dpkg-deb: building package 'mx-welcome' in '../mx-welcome_22.10_amd64.deb'.
  dpkg-genbuildinfo
- dpkg-genchanges  >../mx-welcome_22.08.01_amd64.changes
+ dpkg-genchanges  >../mx-welcome_22.10_amd64.changes
 dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build .
 dpkg-buildpackage: info: full upload; Debian-native package (full source is included)

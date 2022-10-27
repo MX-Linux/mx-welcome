@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 26 Oct 2022 20:11:16 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source amd64
+Version: 22.10
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-welcome - MX Welcome
+Changes:
+ mx-welcome (22.10) mx; urgency=medium
+ .
+   * translations
+Checksums-Sha1:
+ 83e39e8008e07b5614b109ee9f6b134dddbb7c8a 599 mx-welcome_22.10.dsc
+ fd0dd49df96c7cc5893c99411e92805def05d426 515016 mx-welcome_22.10.tar.xz
+ f0f0f90bba4e2b39db01193ec8df15d6c69f15e5 10463 mx-welcome_22.10_amd64.buildinfo
+ aac0b6b220dd033e2ba8dba7c7d2b43590dd9f9c 69428 mx-welcome_22.10_amd64.deb
+Checksums-Sha256:
+ 0813e7e26efaf59f7e8a9525edaf9d104259c47f3dfcda71592c33f17d9489c2 599 mx-welcome_22.10.dsc
+ 346276958ac8c3ab6053e1a8a74f4b7421226cd61c70d1b22c7ebeff4ac52226 515016 mx-welcome_22.10.tar.xz
+ d116e7ea611b72ffab07fe40b80e5245eded55ff1cfae619870bf3e2824e2564 10463 mx-welcome_22.10_amd64.buildinfo
+ 083e9cd2f5d492a098dcc4ea78adb9e80b05ae7bc97bee11e2f23d42cbd5c08d 69428 mx-welcome_22.10_amd64.deb
+Files:
+ 0d0227a6ad9e98ed508adf3577a168ce 599 admin optional mx-welcome_22.10.dsc
+ 38efc54262c51c3cf66e85560103181d 515016 admin optional mx-welcome_22.10.tar.xz
+ c591c8450b105b8e9fc5cf93ac25d01a 10463 admin optional mx-welcome_22.10_amd64.buildinfo
+ c26fd5a070168eb53018ceede9831b91 69428 admin optional mx-welcome_22.10_amd64.deb
