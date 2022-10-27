@@ -1,3 +1,9 @@
+mx-welcome (22.10) mx; urgency=medium
+
+  * translations 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 26 Oct 2022 20:11:16 -0400
+
 mx-welcome (22.08.02) mx; urgency=medium
 
   * fix bug in fluxbox detection
