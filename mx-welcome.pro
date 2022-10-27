@@ -70,7 +70,6 @@ TRANSLATIONS += translations/mx-welcome_af.ts \
                 translations/mx-welcome_fr.ts \
                 translations/mx-welcome_fr_BE.ts \
                 translations/mx-welcome_fr_FR.ts \
-                translations/mx-welcome_gl_es.ts \
                 translations/mx-welcome_gu.ts \
                 translations/mx-welcome_he.ts \
                 translations/mx-welcome_he_IL.ts \
