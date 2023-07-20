@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ru_RU">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ast">
 <context>
     <name>MainWindow</name>
     <message>
@@ -17,7 +17,7 @@
     <message>
         <location filename="mainwindow.ui" line="83"/>
         <source>Close</source>
-        <translation>Закрыть</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="90"/>
@@ -102,7 +102,7 @@
     <message>
         <location filename="mainwindow.ui" line="790"/>
         <source>About</source>
-        <translation>О</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="798"/>
@@ -163,7 +163,7 @@
         <location filename="mainwindow.cpp" line="178"/>
         <location filename="mainwindow.cpp" line="194"/>
         <source>Error</source>
-        <translation>Ошибка</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="255"/>
@@ -234,7 +234,7 @@
     <message>
         <location filename="main.cpp" line="71"/>
         <source>Error</source>
-        <translation>Ошибка</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
