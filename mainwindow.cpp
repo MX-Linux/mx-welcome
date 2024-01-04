@@ -111,7 +111,7 @@ void MainWindow::setup()
         TOSTEXT = settingsusr.value(QStringLiteral("TOSTEXT")).toString();
     }
     if (!TOSTEXT.isEmpty()) {
-        ui->buttonFAQ->setText(TOSTEXT);
+        ui->labelTOS->setText(TOSTEXT);
     }
 
     QString SETUP = settings.value(QStringLiteral("1icon")).toString();
