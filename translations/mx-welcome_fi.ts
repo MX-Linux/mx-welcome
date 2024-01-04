@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.ui" line="798"/>
         <source>SHORT SYSTEM REPORT:</source>
-        <translation type="unfinished"></translation>
+        <translation>LYHYT RAPORTTI:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="805"/>
@@ -118,7 +118,7 @@
     <message>
         <location filename="../mainwindow.ui" line="819"/>
         <source>Quick-System-Info Full Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Quick-System-Info koko raportti</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="829"/>
@@ -128,7 +128,7 @@
     <message>
         <location filename="../mainwindow.ui" line="846"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
-        <translation type="unfinished"></translation>
+        <translation>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="856"/>
@@ -150,12 +150,15 @@
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Noto Sans&apos;; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="924"/>
+        <location filename="../mainwindow.ui" line="927"/>
         <source>Show this dialog at start up</source>
         <translation>Näytä tämä ikkuna käynnistyksen yhteydessä</translation>
     </message>
@@ -234,17 +237,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../main.cpp" line="44"/>
         <source>This tool displays a welcome screen with two tabs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Työkalu näyttää tervetuloa ruudun, jossa on kaksi välilehteä.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="48"/>
         <source>Start with About tab selected. The About tab provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aloita valitsemalla &quot;Tietoja&quot; välilehti. Tämä tarjoaa perustiedot nykyisestä MX Linux versiosta, käyttäjän laitteistosta ja pääsyn täydelliseen järjestelmän raporttiin.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="51"/>
         <source>Run a test mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Suorita testitilassa.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="73"/>

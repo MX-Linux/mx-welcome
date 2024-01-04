@@ -13,7 +13,7 @@
     <message>
         <location filename="../mainwindow.ui" line="80"/>
         <source>Quit application</source>
-        <translation type="unfinished"></translation>
+        <translation>Выйти из приложения</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="83"/>
@@ -23,22 +23,22 @@
     <message>
         <location filename="../mainwindow.ui" line="90"/>
         <source>Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="112"/>
         <source>About this application</source>
-        <translation type="unfinished"></translation>
+        <translation>Об этом приложении</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="115"/>
         <source>About...</source>
-        <translation type="unfinished"></translation>
+        <translation>О программе...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="122"/>
         <source>Alt+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+B</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="203"/>
@@ -150,12 +150,15 @@
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Noto Sans&apos;; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="924"/>
+        <location filename="../mainwindow.ui" line="927"/>
         <source>Show this dialog at start up</source>
         <translation type="unfinished"></translation>
     </message>
@@ -188,7 +191,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../mainwindow.cpp" line="434"/>
         <source>Version: </source>
-        <translation type="unfinished"></translation>
+        <translation>Версия: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
@@ -198,12 +201,28 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../mainwindow.cpp" line="438"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="439"/>
         <source>%1 License</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>License</source>
+        <translation type="vanished">Лицензия</translation>
+    </message>
+    <message>
+        <source>Changelog</source>
+        <translation type="vanished">Список изменений</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="vanished">Отмена</translation>
+    </message>
+    <message>
+        <source>&amp;Close</source>
+        <translation type="vanished">&amp;Закрыть</translation>
     </message>
 </context>
 <context>
@@ -236,23 +255,23 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../about.cpp" line="39"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Лицензия</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="40"/>
         <location filename="../about.cpp" line="50"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Список изменений</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Отмена</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Закрыть</translation>
     </message>
 </context>
 </TS>
