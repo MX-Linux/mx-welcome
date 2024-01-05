@@ -1,3 +1,9 @@
+mx-welcome (24.12.02) mx; urgency=medium
+
+  * use word wrap on about screen labels
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 04 Jan 2024 20:46:15 -0500
+
 mx-welcome (24.12.01) mx; urgency=medium
 
   * fix TOS text setting
