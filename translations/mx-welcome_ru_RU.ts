@@ -8,7 +8,7 @@
         <location filename="../mainwindow.cpp" line="64"/>
         <location filename="../mainwindow.cpp" line="434"/>
         <source>MX Welcome</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Приветствие</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="80"/>
@@ -43,62 +43,62 @@
     <message>
         <location filename="../mainwindow.ui" line="203"/>
         <source>Welcome</source>
-        <translation type="unfinished"></translation>
+        <translation>Добро пожаловать</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="484"/>
         <source>Install MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Установить MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="510"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройка (панели и пр.)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="536"/>
         <source>Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>Инструменты</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="568"/>
         <source>Wiki</source>
-        <translation type="unfinished"></translation>
+        <translation>Вики</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="600"/>
         <source>Users Manual</source>
-        <translation type="unfinished"></translation>
+        <translation>Руководство пользователя</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="626"/>
         <source>FAQ</source>
-        <translation type="unfinished"></translation>
+        <translation>ЧаВо</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="652"/>
         <source>Tour</source>
-        <translation type="unfinished"></translation>
+        <translation>Обзор</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="674"/>
         <source>Popular Apps</source>
-        <translation type="unfinished"></translation>
+        <translation>Популярные приложения</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="700"/>
         <source>Contribute</source>
-        <translation type="unfinished"></translation>
+        <translation>Поддержать</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="732"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Видео</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="764"/>
         <source>Forums</source>
-        <translation type="unfinished"></translation>
+        <translation>Форумы</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="790"/>
@@ -120,57 +120,57 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../mainwindow.ui" line="923"/>
         <source>SHORT SYSTEM REPORT:</source>
-        <translation type="unfinished"></translation>
+        <translation>КРАТКИЙ ОТЧЁТ О СИСТЕМЕ:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="798"/>
         <source>DESKTOP</source>
-        <translation type="unfinished"></translation>
+        <translation>РАБОЧИЙ СТОЛ</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="815"/>
         <source>Quick-System-Info Full Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Подробный отчёт Quick-System-Info</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="825"/>
         <source>Terms of Use</source>
-        <translation type="unfinished"></translation>
+        <translation>Условия использования</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="845"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
-        <translation type="unfinished"></translation>
+        <translation>Название «MX Linux» подпадает под сублицензию Linux Foundation No. 20140605-0483. Мы разрабатываем программное обеспечение, на которое распространяется бесплатная лицензия, доступная в списке Вики. Мы также включаем программное обеспечение, разработанное другими, которое также имеет бесплатную лицензию.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="855"/>
         <source>MX VERSION</source>
-        <translation type="unfinished"></translation>
+        <translation>ВЕРСИЯ MX</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="862"/>
         <source>DEBIAN VERSION:</source>
-        <translation type="unfinished"></translation>
+        <translation>ВЕРСИЯ DEBIAN:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="869"/>
         <source>SUPPORTED UNTIL:</source>
-        <translation type="unfinished"></translation>
+        <translation>СРОК ПОДДЕРЖКИ:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="939"/>
         <source>Show this dialog at start up</source>
-        <translation type="unfinished"></translation>
+        <translation>Показывать этот диалог при запуске</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="317"/>
         <source>User demo, password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Пароль пользователя demo:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="318"/>
         <source>Superuser root, password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Пароль суперпользователя root:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="355"/>
@@ -186,7 +186,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../mainwindow.cpp" line="433"/>
         <source>About MX Welcome</source>
-        <translation type="unfinished"></translation>
+        <translation>О программе MX Приветствие</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="434"/>
@@ -196,7 +196,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Программа показа экрана приветствия в MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="438"/>
@@ -226,21 +226,28 @@ li.checked::marker { content: &quot;\2612&quot;; }
     </message>
 </context>
 <context>
+    <name>QApplication</name>
+    <message>
+        <source>You must run this program as normal user.</source>
+        <translation type="vanished">Вы должны запустить эту программу как обычный пользователь.</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <location filename="../main.cpp" line="44"/>
         <source>This tool displays a welcome screen with two tabs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Этот инструмент отображает экран приветствия с двумя вкладками.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="48"/>
         <source>Start with About tab selected. The About tab provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
-        <translation type="unfinished"></translation>
+        <translation>Начните с выбора вкладки «О системе». В ней представлены основная информация о текущей версии MX Linux и оборудовании пользователя, а также доступ к полному системному отчёту.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="51"/>
         <source>Run a test mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Запустить тестовый режим.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="73"/>
@@ -250,7 +257,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../main.cpp" line="73"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Вы должны запустить эту программу как обычный пользователь.</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="39"/>
