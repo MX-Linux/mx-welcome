@@ -4,7 +4,6 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Dolphin Oracle <dolphinoracle@gmail.com>, 2022
 # Arnold Marko <arnold.marko@gmail.com>, 2023
 # 
 #, fuzzy
@@ -35,9 +34,9 @@ msgstr "Prikaz osnovnih podatkov o MX namestitvi"
 #. The desktop entry name will be displayed within the menu.
 #: desktop-in/mx-welcome.desktop.in:5
 msgid "MX Welcome"
-msgstr "MX Dobrodošli"
+msgstr "MX pozdrav"
 
 #. # The desktop entry comment will be shown within the menu.
 #: desktop-in/mx-welcome.desktop.in:7
 msgid "Display welcome message"
-msgstr "Prikaži dobrodošlico"
+msgstr "Prikaz dobrodošlice"
