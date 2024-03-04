@@ -200,8 +200,6 @@ void MainWindow::setup()
         }
     }
 
-    QString mxfluxbox_version;
-
     QFile file("/etc/debian_version");
     if (!file.open(QIODevice::ReadOnly)) {
         QMessageBox::information(nullptr, tr("Error"), file.errorString());
@@ -225,7 +223,7 @@ void MainWindow::setup()
                 QMessageBox::information(nullptr, tr("Error"), file.errorString());
             }
             QTextStream in(&file);
-            mxfluxbox_version = in.readLine();
+            QString mxfluxbox_version = in.readLine();
             qDebug() << "mxfluxbox" << mxfluxbox_version;
             file.close();
             if (!mxfluxbox_version.isEmpty()) {
@@ -312,111 +310,75 @@ void MainWindow::on_checkBox_clicked(bool checked)
 // Start MX-Tools
 void MainWindow::on_buttonTools_clicked() const
 {
-    QString cmd = "mx-tools&";
-    if (!TOOLSCMD.isEmpty()) {
-        cmd = TOOLSCMD;
-    }
+    QString cmd = TOOLSCMD.isEmpty() ? "mx-tools&" : TOOLSCMD;
     system(cmd.toUtf8());
 }
 
 // Launch Manual in browser
 void MainWindow::on_buttonManual_clicked() const
 {
-    QString cmd;
-    if (isfluxbox) {
-        cmd = "mxfb-help&";
-    } else {
-        cmd = "mx-manual&";
-    }
+    QString cmd = isfluxbox ? "mxfb-help&" : "mx-manual&";
     if (!MANUALCMD.isEmpty()) {
         cmd = MANUALCMD;
     }
-
     system(cmd.toUtf8());
 }
 
 // Launch Forum in browser
 void MainWindow::on_buttonForum_clicked() const
 {
-    QString cmd = "xdg-open http://forum.mxlinux.org/index.php";
-    if (!FORUMCMD.isEmpty()) {
-        cmd = FORUMCMD;
-    }
+    QString cmd = FORUMCMD.isEmpty() ? "xdg-open http://forum.mxlinux.org/index.php" : FORUMCMD;
     system(cmd.toUtf8());
 }
 
 // Launch Wiki in browser
 void MainWindow::on_buttonWiki_clicked() const
 {
-    QString cmd = "xdg-open http://www.mxlinux.org/wiki";
-    if (!WIKICMD.isEmpty()) {
-        cmd = WIKICMD;
-    }
+    QString cmd = WIKICMD.isEmpty() ? "xdg-open http://www.mxlinux.org/wiki" : WIKICMD;
     system(cmd.toUtf8());
 }
 
 // Launch Video links in browser
 void MainWindow::on_buttonVideo_clicked() const
 {
-    QString cmd = "xdg-open http://www.mxlinux.org/videos/";
-    if (!VIDEOCMD.isEmpty()) {
-        cmd = VIDEOCMD;
-    }
+    QString cmd = VIDEOCMD.isEmpty() ? "xdg-open http://www.mxlinux.org/videos/" : VIDEOCMD;
     system(cmd.toUtf8());
 }
 
 // Launch Contribution page
 void MainWindow::on_buttonContribute_clicked() const
 {
-    QString cmd = "xdg-open http://www.mxlinux.org/donate";
-    if (!CONTRIBUTECMD.isEmpty()) {
-        cmd = CONTRIBUTECMD;
-    }
+    QString cmd = CONTRIBUTECMD.isEmpty() ? "xdg-open http://www.mxlinux.org/donate" : CONTRIBUTECMD;
     system(cmd.toUtf8());
 }
 
 void MainWindow::on_buttonPanelOrient_clicked() const
 {
-    QString cmd = "mx-tweak&";
-    if (!TWEAKCMD.isEmpty()) {
-        cmd = TWEAKCMD;
-    }
+    QString cmd = TWEAKCMD.isEmpty() ? "mx-tweak&" : TWEAKCMD;
     system(cmd.toUtf8());
 }
 
 void MainWindow::on_buttonPackageInstall_clicked() const
 {
-    QString cmd = "mx-packageinstaller&";
-    if (!PACKAGEINSTALLERCMD.isEmpty()) {
-        cmd = PACKAGEINSTALLERCMD;
-    }
+    QString cmd = PACKAGEINSTALLERCMD.isEmpty() ? "mx-packageinstaller&" : PACKAGEINSTALLERCMD;
     system(cmd.toUtf8());
 }
 
 void MainWindow::on_buttonFAQ_clicked() const
 {
-    QString cmd = "mx-faq&";
-    if (!FAQCMD.isEmpty()) {
-        cmd = FAQCMD;
-    }
+    QString cmd = FAQCMD.isEmpty() ? "mx-faq&" : FAQCMD;
     system(cmd.toUtf8());
 }
 
 void MainWindow::on_buttonSetup_clicked() const
 {
-    QString cmd = "minstall-launcher&";
-    if (!SETUPCMD.isEmpty()) {
-        cmd = SETUPCMD;
-    }
+    QString cmd = SETUPCMD.isEmpty() ? "minstall-launcher&" : SETUPCMD;
     system(cmd.toUtf8());
 }
 
 void MainWindow::on_buttonTOS_clicked() const
 {
-    QString cmd = "xdg-open https://mxlinux.org/terms-of-use/";
-    if (!TOSCMD.isEmpty()) {
-        cmd = TOSCMD;
-    }
+    QString cmd = TOSCMD.isEmpty() ? "xdg-open https://mxlinux.org/terms-of-use/" : TOSCMD;
     system(cmd.toUtf8());
 }
 
@@ -463,9 +425,6 @@ void MainWindow::settabstyle()
 
 void MainWindow::on_buttonTour_clicked() const
 {
-    QString cmd = "mx-tour&";
-    if (!TOURCMD.isEmpty()) {
-        cmd = TOURCMD;
-    }
+    QString cmd = TOURCMD.isEmpty() ? "mx-tour&" : TOURCMD;
     system(cmd.toUtf8());
 }
