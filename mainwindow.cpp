@@ -1,7 +1,7 @@
 /**********************************************************************
  *  mainwindow.cpp
  **********************************************************************
- * Copyright (C) 2015 MX Authors
+ * Copyright (C) 2015-2024 MX Authors
  *
  * Authors: Adrian
  *          Paul David Callahan
@@ -39,7 +39,7 @@ MainWindow::MainWindow(const QCommandLineParser& arg_parser, QWidget* parent)
     : QDialog(parent),
       ui(new Ui::MainWindow)
 {
-    qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
+    // qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
     ui->setupUi(this);
     setWindowFlags(Qt::Window); // For the close, min and max buttons
     connect(ui->buttonCancel, &QPushButton::pressed, this, &MainWindow::close);
@@ -159,7 +159,7 @@ void MainWindow::setup()
     }
     TOURCMD = settingsusr.value("11command", settings.value("11command").toString()).toString();
 
-    // hide tour if not present AND TOURTEXT.ISEMPTY
+    // Hide tour if not present AND TOURTEXT.ISEMPTY
     if (TOURTEXT.isEmpty()) {
         if (!QFile::exists("/usr/bin/mx-tour")) {
             ui->buttonTour->hide();
@@ -177,7 +177,7 @@ void MainWindow::setup()
                                 + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
 
     // If running live
-    QString test = runCmd("df -T / |tail -n1 |awk '{print $2}'").output;
+    QString test = runCmd("df -T / |tail -n1 |awk '{print $2}'");
     if (test == "aufs" || test == "overlay") {
         ui->checkBox->setVisible(false);
         ui->labelLoginInfo->setVisible(SHOWLIVEUSERINFO != "false");
@@ -202,7 +202,7 @@ void MainWindow::setup()
 
     QFile file("/etc/debian_version");
     if (!file.open(QIODevice::ReadOnly)) {
-        QMessageBox::information(nullptr, tr("Error"), file.errorString());
+        QMessageBox::information(this, tr("Error"), file.errorString());
     }
 
     QTextStream in(&file);
@@ -213,14 +213,14 @@ void MainWindow::setup()
 
     ui->labelSupportUntil->setText(SUPPORTED);
 
-    QString DESKTOP = runCmd("LANG=C inxi -c 0 -S | grep Desktop | cut -d':' -f5-6").output.remove(" Distro");
+    QString DESKTOP = runCmd("LANG=C inxi -c 0 -S | grep Desktop | cut -d':' -f5-6").remove(" Distro");
     qDebug() << "desktop is " << DESKTOP;
     if (DESKTOP.contains("Fluxbox")) {
         isfluxbox = true;
         QFile file("/etc/mxfb_version");
         if (file.exists()) {
             if (!file.open(QIODevice::ReadOnly)) {
-                QMessageBox::information(nullptr, tr("Error"), file.errorString());
+                QMessageBox::information(this, tr("Error"), file.errorString());
             }
             QTextStream in(&file);
             QString mxfluxbox_version = in.readLine();
@@ -259,12 +259,12 @@ void MainWindow::setup()
     // Setup about labels
     ui->labelMXversion->setText(DISTRO);
 
-    settabstyle();
+    setTabStyle();
     this->adjustSize();
 }
 
 // Util function for getting bash command output and error code
-Result MainWindow::runCmd(const QString& cmd)
+QString MainWindow::runCmd(const QString& cmd)
 {
     QEventLoop loop;
     QProcess proc;
@@ -272,13 +272,13 @@ Result MainWindow::runCmd(const QString& cmd)
     connect(&proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
     proc.start("/bin/bash", {"-c", cmd});
     loop.exec();
-    return {proc.exitCode(), proc.readAll().trimmed()};
+    return proc.readAll().trimmed();
 }
 
 // Get version of the program
 QString MainWindow::getVersion(const QString& name)
 {
-    return runCmd("dpkg-query -f '${Version}' -W " + name).output;
+    return runCmd("dpkg-query -f '${Version}' -W " + name);
 }
 
 void MainWindow::on_buttonAbout_clicked()
@@ -391,24 +391,24 @@ void MainWindow::on_ButtonQSI_clicked() const
     }
 }
 
-void MainWindow::shortsysteminfo()
+void MainWindow::shortSystemInfo()
 {
-    ui->textBrowser->setText(runCmd("LANG=C inxi -c 0").output);
+    ui->textBrowser->setText(runCmd("LANG=C inxi -c 0"));
 }
 void MainWindow::on_tabWidget_currentChanged(int index)
 {
     if (index == 1) {
-        shortsysteminfo();
+        shortSystemInfo();
     }
-    settabstyle();
+    setTabStyle();
 }
 
 void MainWindow::resizeEvent(QResizeEvent* /*unused*/)
 {
-    settabstyle();
+    setTabStyle();
 }
 
-void MainWindow::settabstyle()
+void MainWindow::setTabStyle()
 {
     QString tw = QString::number(ui->tabWidget->width() / 2 - 1);
     // qDebug() << "width" << ui->tabWidget->width() << "tw" << tw;
