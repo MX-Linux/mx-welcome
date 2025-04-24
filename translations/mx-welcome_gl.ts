@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="pt">
+<TS version="2.1" language="gl">
 <context>
     <name>MainWindow</name>
     <message>
@@ -8,17 +8,17 @@
         <location filename="../mainwindow.cpp" line="68"/>
         <location filename="../mainwindow.cpp" line="289"/>
         <source>MX Welcome</source>
-        <translation>MX Bem-vindo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="80"/>
         <source>Quit application</source>
-        <translation>Sair da aplicação</translation>
+        <translation>Saír do aplicativo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="83"/>
         <source>Close</source>
-        <translation>Fechar</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="90"/>
@@ -28,7 +28,7 @@
     <message>
         <location filename="../mainwindow.ui" line="112"/>
         <source>About this application</source>
-        <translation>Sobre esta aplicação</translation>
+        <translation>Sobre esta aplicación</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="115"/>
@@ -43,62 +43,62 @@
     <message>
         <location filename="../mainwindow.ui" line="203"/>
         <source>Welcome</source>
-        <translation>Bem-vindo(a)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="484"/>
         <source>Install MX Linux</source>
-        <translation>Instalar o MX Linux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="510"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation>Ajustes (Painel, etc...)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="536"/>
         <source>Tools</source>
-        <translation>Ferramentas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="568"/>
         <source>Wiki</source>
-        <translation>Wiki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="600"/>
         <source>Users Manual</source>
-        <translation>Manual</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="626"/>
         <source>FAQ</source>
-        <translation>FAQ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="652"/>
         <source>Tour</source>
-        <translation>Guia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="674"/>
         <source>Popular Apps</source>
-        <translation>Aplicações populares</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="700"/>
         <source>Contribute</source>
-        <translation>Contribuir</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="732"/>
         <source>Videos</source>
-        <translation>Vídeos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="764"/>
         <source>Forums</source>
-        <translation>Fóruns</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="790"/>
@@ -120,57 +120,57 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../mainwindow.ui" line="923"/>
         <source>SHORT SYSTEM REPORT:</source>
-        <translation>BREVE RELATÓRIO DO SISTEMA:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="798"/>
         <source>DESKTOP</source>
-        <translation>AMBIENTE GRÁFICO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="815"/>
         <source>Quick-System-Info Full Report</source>
-        <translation>Relatório completo de informação rápida do sistema</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="825"/>
         <source>Terms of Use</source>
-        <translation>Termos de Utilização</translation>
+        <translation>Termos de uso</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="845"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
-        <translation>O nome &quot;MX Linux&quot; ESTÁ COBERTO pela Linux Foundation Sublicense n.º 20140605-0483. Desenvolvemos software que está coberto por uma licença livre que pode ser examinada na lista Wiki. Também incluímos software desenvolvido por outros que está sob uma licença livre.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="855"/>
         <source>MX VERSION</source>
-        <translation>VERSÃO MX</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="862"/>
         <source>DEBIAN VERSION:</source>
-        <translation>VERSÃO DEBIAN</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="869"/>
         <source>SUPPORTED UNTIL:</source>
-        <translation>SUPORTADO ATÉ:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="939"/>
         <source>Show this dialog at start up</source>
-        <translation>Mostrar esta janela ao iniciar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="176"/>
         <source>User demo, password:</source>
-        <translation>Utilizador demo, palavra-passe:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="177"/>
         <source>Superuser root, password:</source>
-        <translation>Superutilizador (root), palavra-passe:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
@@ -186,22 +186,22 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../mainwindow.cpp" line="288"/>
         <source>About MX Welcome</source>
-        <translation>Sobre o MX Bem-vindo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="289"/>
         <source>Version: </source>
-        <translation>Versão: </translation>
+        <translation>Versión: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="290"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation>Programa para mostrar um ecrã de boas-vindas no MX Linux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="293"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Direitos de autor (c) MX Linux</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
@@ -210,11 +210,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
     </message>
     <message>
         <source>License</source>
-        <translation type="vanished">Licença</translation>
+        <translation type="vanished">Licenza</translation>
     </message>
     <message>
         <source>Changelog</source>
-        <translation type="vanished">Registo de alterações</translation>
+        <translation type="vanished">Rexistro dos cambios</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -222,14 +222,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation type="vanished">&amp;Fechar</translation>
-    </message>
-</context>
-<context>
-    <name>QApplication</name>
-    <message>
-        <source>You must run this program as normal user.</source>
-        <translation type="vanished">Deve executar este programa como utilizador normal.</translation>
+        <translation type="vanished">&amp;Cerrar</translation>
     </message>
 </context>
 <context>
@@ -237,17 +230,17 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../main.cpp" line="44"/>
         <source>This tool displays a welcome screen with two tabs.</source>
-        <translation>Esta ferramenta exibe um ecrã de boas-vindas com dois separadores.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.cpp" line="48"/>
         <source>Start with About tab selected. The About tab provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
-        <translation>iniciar com o separador Sobre selecionado. O separador Sobre fornece informação básica sobre a versão atual do MX Linux, o equipamento do utilizador e acesso a um relatório completo do sistema.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.cpp" line="51"/>
         <source>Run a test mode.</source>
-        <translation>Executar um modo de teste.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.cpp" line="76"/>
@@ -257,18 +250,18 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../main.cpp" line="76"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished">Deve executar este programa como utilizador normal.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.cpp" line="61"/>
         <source>License</source>
-        <translation type="unfinished">Licença</translation>
+        <translation type="unfinished">Licenza</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="62"/>
         <location filename="../about.cpp" line="72"/>
         <source>Changelog</source>
-        <translation type="unfinished">Registo de alterações</translation>
+        <translation type="unfinished">Rexistro dos cambios</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
@@ -278,7 +271,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../about.cpp" line="85"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Fechar</translation>
+        <translation type="unfinished">&amp;Cerrar</translation>
     </message>
 </context>
 </TS>
