@@ -5,9 +5,9 @@
  *          Paul David Callahan
  *          MX Linux <http://mxlinux.org>
  *
- * This file is part of mx-welcome.
+ * This file is part of MX Tools.
  *
- * mx-welcome is free software: you can redistribute it and/or modify
+ * MX Tools is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
@@ -27,19 +27,36 @@ FlatButton::FlatButton(QWidget *parent)
     : QPushButton(parent)
 {
     setFlat(true);
-    setStyleSheet("text-align:left;");
+    setStyleSheet("text-align:left; color:black");
+}
+
+FlatButton::FlatButton(const QString &name, QWidget *parent)
+    : QPushButton(name, parent)
+{
+    setFlat(true);
+    setStyleSheet("text-align:left");
 }
 
 void FlatButton::leaveEvent(QEvent *e)
 {
     // setFlat(true);
-    setStyleSheet("text-align:left; text-decoration: none;");
+    setStyleSheet("text-align:left; text-decoration:none");
     QPushButton::leaveEvent(e);
 }
 
-void FlatButton::enterEvent(QEvent *e)
+void FlatButton::enterEvent(QEnterEvent *e)
 {
     // setFlat(false);
-    setStyleSheet("QPushButton { text-align:left; text-decoration: underline;}; QToolTip { text-decoration: none; }");
+    setStyleSheet("QPushButton { text-align:left; text-decoration:underline}; QToolTip { text-decoration: none; }");
     QPushButton::enterEvent(e);
+}
+
+void FlatButton::setIconSize(int x, int y)
+{
+    QPushButton::setIconSize(QSize(x, y));
+}
+
+void FlatButton::setIconSize(QSize size)
+{
+    QPushButton::setIconSize(size);
 }
