@@ -322,84 +322,84 @@ void MainWindow::on_checkBox_clicked(bool checked)
 // Start MX-Tools
 void MainWindow::on_buttonTools_clicked() const
 {
-    QString cmd = TOOLSCMD.isEmpty() ? "mx-tools&" : TOOLSCMD;
-    system(cmd.toUtf8());
+    QString cmd = TOOLSCMD.isEmpty() ? "mx-tools" : TOOLSCMD;
+    QProcess::startDetached(cmd);
 }
 
 // Launch Manual in browser
 void MainWindow::on_buttonManual_clicked() const
 {
-    QString cmd = isfluxbox ? "mxfb-help&" : "mx-manual&";
+    QString cmd = isfluxbox ? "mxfb-help" : "mx-manual";
     if (!MANUALCMD.isEmpty()) {
         cmd = MANUALCMD;
     }
-    system(cmd.toUtf8());
+    QProcess::startDetached(cmd);
 }
 
 // Launch Forum in browser
 void MainWindow::on_buttonForum_clicked() const
 {
     QString cmd = FORUMCMD.isEmpty() ? "xdg-open http://forum.mxlinux.org/index.php" : FORUMCMD;
-    system(cmd.toUtf8());
+    QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 // Launch Wiki in browser
 void MainWindow::on_buttonWiki_clicked() const
 {
     QString cmd = WIKICMD.isEmpty() ? "xdg-open http://www.mxlinux.org/wiki" : WIKICMD;
-    system(cmd.toUtf8());
+    QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 // Launch Video links in browser
 void MainWindow::on_buttonVideo_clicked() const
 {
     QString cmd = VIDEOCMD.isEmpty() ? "xdg-open http://www.mxlinux.org/videos/" : VIDEOCMD;
-    system(cmd.toUtf8());
+    QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 // Launch Contribution page
 void MainWindow::on_buttonContribute_clicked() const
 {
     QString cmd = CONTRIBUTECMD.isEmpty() ? "xdg-open http://www.mxlinux.org/donate" : CONTRIBUTECMD;
-    system(cmd.toUtf8());
+    QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 void MainWindow::on_buttonPanelOrient_clicked() const
 {
-    QString cmd = TWEAKCMD.isEmpty() ? "mx-tweak&" : TWEAKCMD;
-    system(cmd.toUtf8());
+    QString cmd = TWEAKCMD.isEmpty() ? "mx-tweak" : TWEAKCMD;
+    QProcess::startDetached(cmd);
 }
 
 void MainWindow::on_buttonPackageInstall_clicked() const
 {
-    QString cmd = PACKAGEINSTALLERCMD.isEmpty() ? "mx-packageinstaller&" : PACKAGEINSTALLERCMD;
-    system(cmd.toUtf8());
+    QString cmd = PACKAGEINSTALLERCMD.isEmpty() ? "mx-packageinstaller" : PACKAGEINSTALLERCMD;
+    QProcess::startDetached(cmd);
 }
 
 void MainWindow::on_buttonFAQ_clicked() const
 {
-    QString cmd = FAQCMD.isEmpty() ? "mx-faq&" : FAQCMD;
-    system(cmd.toUtf8());
+    QString cmd = FAQCMD.isEmpty() ? "mx-faq" : FAQCMD;
+    QProcess::startDetached(cmd);
 }
 
 void MainWindow::on_buttonSetup_clicked() const
 {
-    QString cmd = SETUPCMD.isEmpty() ? "minstall-launcher&" : SETUPCMD;
-    system(cmd.toUtf8());
+    QString cmd = SETUPCMD.isEmpty() ? "minstall-launcher" : SETUPCMD;
+    QProcess::startDetached(cmd);
 }
 
 void MainWindow::on_buttonTOS_clicked() const
 {
     QString cmd = TOSCMD.isEmpty() ? "xdg-open https://mxlinux.org/terms-of-use/" : TOSCMD;
-    system(cmd.toUtf8());
+    QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 void MainWindow::on_ButtonQSI_clicked() const
 {
     if (debian_version.section(".", 0, 0) == "10") {
-        system("x-terminal-emulator -e bash -c \"/usr/bin/quick-system-info-mx\" &");
+        QProcess::startDetached("/bin/sh", {"-c", "x-terminal-emulator -e bash -c \"/usr/bin/quick-system-info-mx\""});
     } else {
-        system("/usr/bin/quick-system-info-gui &");
+        QProcess::startDetached("/usr/bin/quick-system-info-gui");
     }
 }
 
@@ -437,6 +437,6 @@ void MainWindow::setTabStyle()
 
 void MainWindow::on_buttonTour_clicked() const
 {
-    QString cmd = TOURCMD.isEmpty() ? "mx-tour&" : TOURCMD;
-    system(cmd.toUtf8());
+    QString cmd = TOURCMD.isEmpty() ? "mx-tour" : TOURCMD;
+    QProcess::startDetached(cmd);
 }

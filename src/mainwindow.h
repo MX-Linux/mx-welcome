@@ -27,9 +27,11 @@
 #pragma once
 
 #include <QCommandLineParser>
+#include <QDialog>
 #include <QMessageBox>
 #include <QProcess>
 #include <QSettings>
+#include <QWidget>
 
 namespace Ui
 {
