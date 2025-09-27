@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Fri, 26 Sep 2025 21:28:10 -0400
+Source: mx-welcome
+Binary: mx-welcome
+Architecture: source amd64
+Version: 25.09.01mx25
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-welcome - Welcome screen for MX Linux
+Changes:
+ mx-welcome (25.09.01mx25) mx; urgency=medium
+ .
+   * add all test terms of use
+Checksums-Sha1:
+ 0260d1f75a57e54db79fe4b735327d4f917a1c5e 752 mx-welcome_25.09.01mx25.dsc
+ 72c3928b16380cc6718adfd41d080cf245a94b48 1894788 mx-welcome_25.09.01mx25.tar.xz
+ 029f9ced1b6e39fbe00ed6d68098e431a21c1116 11665 mx-welcome_25.09.01mx25_amd64.buildinfo
+ 83e72fed55f0bf6ef8690daba3cc53099292a3b0 71312 mx-welcome_25.09.01mx25_amd64.deb
+Checksums-Sha256:
+ b873a97b8dfab38396ddde00ed0ae1175b73ef482f4f6e93d3ab1015badc12f7 752 mx-welcome_25.09.01mx25.dsc
+ edde2d7a44be6101017a3e4cd075b92abdb197dfc9b35435259fd476616d7423 1894788 mx-welcome_25.09.01mx25.tar.xz
+ 546778f4e004cf7f8bc17f91d8212900631b43d6fb576034ad1a366b4d18add8 11665 mx-welcome_25.09.01mx25_amd64.buildinfo
+ 1cc057fac2c7d3b296f212081350a4182050f58da5b965c425b1a53dc1b9f45c 71312 mx-welcome_25.09.01mx25_amd64.deb
+Files:
+ 9fb547a58df60043e3d6e03fc576e014 752 admin optional mx-welcome_25.09.01mx25.dsc
+ 7d0de62581a22d9769418dc467fa1550 1894788 admin optional mx-welcome_25.09.01mx25.tar.xz
+ e4af464dd027f8c673645133fda24707 11665 admin optional mx-welcome_25.09.01mx25_amd64.buildinfo
+ 42ec3cd20e0e0a54541e6f4222d83e48 71312 admin optional mx-welcome_25.09.01mx25_amd64.deb
