@@ -472,5 +472,5 @@ void MainWindow::termsofuse() const
     layout->addWidget(btnClose);
     TOS->setLayout(layout);
     TOS->exec();
-}
+
 }
