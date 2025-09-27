@@ -27,9 +27,9 @@
 #include <QDebug>
 #include <QDir>
 #include <QFileInfo>
-#include <QTextEdit>
 #include <QRegularExpression>
 #include <QRegularExpressionMatch>
+#include <QTextEdit>
 
 #include "about.h"
 #include "flatbutton.h"
@@ -390,8 +390,8 @@ void MainWindow::on_buttonSetup_clicked() const
 
 void MainWindow::on_buttonTOS_clicked() const
 {
-    if (TOSCMD.isEmpty()){
-        termsofuser();
+    if (TOSCMD.isEmpty()) {
+        termsofuse();
     } else {
         QProcess::startDetached("/bin/sh", {"-c", TOSCMD});
     }
@@ -449,28 +449,24 @@ void MainWindow::termsofuse() const
     const auto width = 600;
     const auto height = 500;
 
-    auto *TOS = new QDialog;
+    auto* TOS = new QDialog;
     TOS->setWindowTitle(QObject::tr("Terms of Use"));
     TOS->resize(width, height);
 
-    auto *text = new QTextEdit(TOS);
+    auto* text = new QTextEdit(TOS);
     text->setReadOnly(true);
     QProcess proc;
-    proc.start(
-        "zless",
-        {"/usr/share/mx-welcome/TOS"},
-        QIODevice::ReadOnly);
+    proc.start("zless", {"/usr/share/mx-welcome/TOS"}, QIODevice::ReadOnly);
     proc.waitForFinished();
     text->setText(proc.readAllStandardOutput());
 
-    auto *btnClose = new QPushButton(QObject::tr("&Close"), changelog);
+    auto* btnClose = new QPushButton(QObject::tr("&Close"), TOS);
     btnClose->setIcon(QIcon::fromTheme("window-close"));
     QObject::connect(btnClose, &QPushButton::clicked, TOS, &QDialog::close);
 
-    auto *layout = new QVBoxLayout(TOS);
+    auto* layout = new QVBoxLayout(TOS);
     layout->addWidget(text);
     layout->addWidget(btnClose);
     TOS->setLayout(layout);
     TOS->exec();
-
 }
