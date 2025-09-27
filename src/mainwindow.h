@@ -71,6 +71,7 @@ private slots:
     void resizeEvent(QResizeEvent * /*unused*/) override;
     void setTabStyle();
     void shortSystemInfo();
+    void termsofuser() const;
 
 private:
     Ui::MainWindow *ui;

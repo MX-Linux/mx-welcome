@@ -1,3 +1,9 @@
+mx-welcome (25.09.01mx25) mx; urgency=medium
+
+  * add all test terms of use
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 26 Sep 2025 21:28:10 -0400
+
 mx-welcome (25.06.01mx25) mx; urgency=medium
 
   * make desktop grab more resilient
