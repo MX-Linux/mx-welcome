@@ -106,6 +106,7 @@ void MainWindow::setup()
         ui->buttonFAQ->setText(FAQTEXT);
     }
     FAQCMD = settingsusr.value("2command", settings.value("2command").toString()).toString();
+    qDebug() << "faq command is " << FAQCMD;
     QString FORUMS = settingsusr.value("3icon", settings.value("3icon").toString()).toString();
     QString FORUMTEXT = settingsusr.value("3text", settings.value("3text").toString()).toString();
     if (!FORUMTEXT.isEmpty()) {
@@ -333,7 +334,7 @@ void MainWindow::on_buttonManual_clicked() const
     if (!MANUALCMD.isEmpty()) {
         cmd = MANUALCMD;
     }
-    QProcess::startDetached(cmd);
+     QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 // Launch Forum in browser
@@ -367,25 +368,26 @@ void MainWindow::on_buttonContribute_clicked() const
 void MainWindow::on_buttonPanelOrient_clicked() const
 {
     QString cmd = TWEAKCMD.isEmpty() ? "mx-tweak" : TWEAKCMD;
-    QProcess::startDetached(cmd);
+    QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 void MainWindow::on_buttonPackageInstall_clicked() const
 {
     QString cmd = PACKAGEINSTALLERCMD.isEmpty() ? "mx-packageinstaller" : PACKAGEINSTALLERCMD;
-    QProcess::startDetached(cmd);
+   QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 void MainWindow::on_buttonFAQ_clicked() const
 {
     QString cmd = FAQCMD.isEmpty() ? "mx-faq" : FAQCMD;
-    QProcess::startDetached(cmd);
+    qDebug() << "cmd is " << cmd;
+    QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 void MainWindow::on_buttonSetup_clicked() const
 {
     QString cmd = SETUPCMD.isEmpty() ? "minstall-launcher" : SETUPCMD;
-    QProcess::startDetached(cmd);
+    QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 void MainWindow::on_buttonTOS_clicked() const

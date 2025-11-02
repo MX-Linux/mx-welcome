@@ -30,6 +30,7 @@ Makefile*
 # QtCreator
 
 *.autosave
+CMakeLists*user*
 
 # QtCtreator Qml
 *.qmlproject.user

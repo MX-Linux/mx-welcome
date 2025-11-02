@@ -1,3 +1,9 @@
+mx-welcome (25.10.01mx25) mx; urgency=medium
+
+  * adjust cmd entries so commands work the same on all buttons
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 02 Nov 2025 14:16:02 -0500
+
 mx-welcome (25.09.02mx25) mx; urgency=medium
 
   * add all text terms of use
