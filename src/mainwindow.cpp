@@ -205,7 +205,7 @@ void MainWindow::setup()
 
     QFile file("/etc/debian_version");
     if (!file.open(QIODevice::ReadOnly)) {
-        QMessageBox::information(this, tr("Error"), file.errorString());
+        QMessageBox::information(this, tr("Errorinxi"), file.errorString());
     }
 
     QTextStream in(&file);
@@ -217,13 +217,17 @@ void MainWindow::setup()
     ui->labelSupportUntil->setText(SUPPORTED);
 
     QString DESKTOPSTRING = runCmd("LANG=C.UTF-8 inxi -c 0 -S | grep Desktop");
-    QRegularExpression re(R"(Desktop:\s*(\S+)\s+v:\s*([\d\.]+))");
+    qDebug() << "DESKTOP STRING is " << DESKTOPSTRING;
+    QRegularExpression re(R"(Desktop:\s*(.+?)\s+v:\s*([\d\.]+))");
     QRegularExpressionMatch match = re.match(DESKTOPSTRING);
+    qDebug() << "match is " << match;
 
     QString DESKTOP, ver;
     if (match.hasMatch()) {
         DESKTOP = match.captured(1);
+        qDebug() << "match captured 1 is : " << DESKTOP;
         ver = match.captured(2);
+        qDebug() << "match cpatured 2 is "  << ver;
         DESKTOP = match.captured(1) + " " + ver;
     }
 
