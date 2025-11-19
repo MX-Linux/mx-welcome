@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: mx-welcome
 Binary: mx-welcome
 Architecture: any
-Version: 25.11.01mx25
+Version: 25.11.02mx25
 Maintainer: Adrian <adrian@mxlinux.org>
 Homepage: https://github.com/AdrianTM/mx-welcome
 Standards-Version: 3.9.8
@@ -11,8 +11,8 @@ Build-Depends: debhelper-compat (= 12), cmake (>= 3.16), ninja-build, qt6-base-d
 Package-List:
  mx-welcome deb admin optional arch=any
 Checksums-Sha1:
- 6900a56bab8e5ac44b706344cbb599e59fcce70d 167416 mx-welcome_25.11.01mx25.tar.xz
+ daeb5710a4aa3897a509065c8b6a961360d33874 239128 mx-welcome_25.11.02mx25.tar.xz
 Checksums-Sha256:
- 04dfab5040711bedacf72380d7b22f12a5a4b5c30419f88b23bb8c04b886a119 167416 mx-welcome_25.11.01mx25.tar.xz
+ 8e7b656fb31723d8f44a5e68386e02acfd69380b8f1fc09da861d8e07acbfd33 239128 mx-welcome_25.11.02mx25.tar.xz
 Files:
- cfae9eefd7983b61f8af5ec0a34f3712 167416 mx-welcome_25.11.01mx25.tar.xz
+ 94e8ecd34b509098d94f61ce62147c8b 239128 mx-welcome_25.11.02mx25.tar.xz
