@@ -1,3 +1,9 @@
+mx-welcome (25.11.02mx25) mx; urgency=medium
+
+  * make sure 8command (TOOLSCMD) runs with arguements 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 18 Nov 2025 20:00:55 -0500
+
 mx-welcome (25.11.01mx25) mx; urgency=medium
 
   * adjust regex on desktop check to deal with spaces in desktop name
