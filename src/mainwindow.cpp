@@ -328,7 +328,7 @@ void MainWindow::on_checkBox_clicked(bool checked)
 void MainWindow::on_buttonTools_clicked() const
 {
     QString cmd = TOOLSCMD.isEmpty() ? "mx-tools" : TOOLSCMD;
-    QProcess::startDetached(cmd);
+    QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 // Launch Manual in browser
