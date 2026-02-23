@@ -24,9 +24,9 @@
  * along with mx-welcome.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#include <QDebug>
 #include <QDir>
 #include <QFileInfo>
+#include <QProcess>
 #include <QRegularExpression>
 #include <QRegularExpressionMatch>
 #include <QTextEdit>
@@ -41,7 +41,6 @@ MainWindow::MainWindow(const QCommandLineParser& arg_parser, QWidget* parent)
     : QDialog(parent),
       ui(new Ui::MainWindow)
 {
-    // qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
     ui->setupUi(this);
     setWindowFlags(Qt::Window); // For the close, min and max buttons
     connect(ui->buttonCancel, &QPushButton::pressed, this, &MainWindow::close);
@@ -63,7 +62,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-// Setup versious items first time program runs
+// Setup various items first time program runs
 void MainWindow::setup()
 {
     version = getVersion("mx-welcome");
@@ -106,7 +105,6 @@ void MainWindow::setup()
         ui->buttonFAQ->setText(FAQTEXT);
     }
     FAQCMD = settingsusr.value("2command", settings.value("2command").toString()).toString();
-    qDebug() << "faq command is " << FAQCMD;
     QString FORUMS = settingsusr.value("3icon", settings.value("3icon").toString()).toString();
     QString FORUMTEXT = settingsusr.value("3text", settings.value("3text").toString()).toString();
     if (!FORUMTEXT.isEmpty()) {
@@ -217,21 +215,15 @@ void MainWindow::setup()
     ui->labelSupportUntil->setText(SUPPORTED);
 
     QString DESKTOPSTRING = runCmd("LANG=C.UTF-8 inxi -c 0 -S | grep Desktop");
-    qDebug() << "DESKTOP STRING is " << DESKTOPSTRING;
     QRegularExpression re(R"(Desktop:\s*(.+?)\s+v:\s*([\d\.]+))");
     QRegularExpressionMatch match = re.match(DESKTOPSTRING);
-    qDebug() << "match is " << match;
 
     QString DESKTOP, ver;
     if (match.hasMatch()) {
         DESKTOP = match.captured(1);
-        qDebug() << "match captured 1 is : " << DESKTOP;
         ver = match.captured(2);
-        qDebug() << "match cpatured 2 is "  << ver;
         DESKTOP = match.captured(1) + " " + ver;
     }
-
-    qDebug() << "desktop is " << DESKTOP;
     if (DESKTOP.contains("Fluxbox")) {
         isfluxbox = true;
         QFile file("/etc/mxfb_version");
@@ -241,7 +233,6 @@ void MainWindow::setup()
             }
             QTextStream in(&file);
             QString mxfluxbox_version = in.readLine();
-            qDebug() << "mxfluxbox" << mxfluxbox_version;
             file.close();
             if (!mxfluxbox_version.isEmpty()) {
                 DESKTOP.append(" " + mxfluxbox_version);
@@ -259,7 +250,6 @@ void MainWindow::setup()
     }
 
     // Setup icons
-    // ui->buttonCodecs->setIcon(QIcon(CODECS));
     ui->buttonContribute->setIcon(QIcon(CONTRIBUTE));
     ui->buttonFAQ->setIcon(QIcon(FAQ));
     ui->buttonForum->setIcon(QIcon(FORUMS));
@@ -286,10 +276,10 @@ QString MainWindow::runCmd(const QString& cmd)
     QEventLoop loop;
     QProcess proc;
     proc.setProcessChannelMode(QProcess::MergedChannels);
-    connect(&proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
+    connect(&proc, &QProcess::finished, &loop, &QEventLoop::quit);
     proc.start("/bin/bash", {"-c", cmd});
     loop.exec();
-    return proc.readAll().trimmed();
+    return QString::fromUtf8(proc.readAll().trimmed());
 }
 
 // Get version of the program
@@ -338,7 +328,7 @@ void MainWindow::on_buttonManual_clicked() const
     if (!MANUALCMD.isEmpty()) {
         cmd = MANUALCMD;
     }
-     QProcess::startDetached("/bin/sh", {"-c", cmd});
+    QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 // Launch Forum in browser
@@ -378,13 +368,12 @@ void MainWindow::on_buttonPanelOrient_clicked() const
 void MainWindow::on_buttonPackageInstall_clicked() const
 {
     QString cmd = PACKAGEINSTALLERCMD.isEmpty() ? "mx-packageinstaller" : PACKAGEINSTALLERCMD;
-   QProcess::startDetached("/bin/sh", {"-c", cmd});
+    QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 void MainWindow::on_buttonFAQ_clicked() const
 {
     QString cmd = FAQCMD.isEmpty() ? "mx-faq" : FAQCMD;
-    qDebug() << "cmd is " << cmd;
     QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
@@ -432,7 +421,6 @@ void MainWindow::resizeEvent(QResizeEvent* /*unused*/)
 void MainWindow::setTabStyle()
 {
     QString tw = QString::number(ui->tabWidget->width() / 2 - 1);
-    // qDebug() << "width" << ui->tabWidget->width() << "tw" << tw;
     ui->tabWidget->setStyleSheet(""
                                  "QTabBar::tab:!selected{width: "
                                  + tw
