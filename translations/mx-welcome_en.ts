@@ -5,9 +5,9 @@
     <name>MainWindow</name>
     <message>
         <location filename="../src/mainwindow.ui" line="14"/>
-        <location filename="../src/ui_mainwindow.h" line="573"/>
         <location filename="../src/mainwindow.cpp" line="79"/>
         <location filename="../src/mainwindow.cpp" line="306"/>
+        <location filename="../src/ui_mainwindow.h" line="573"/>
         <source>MX Welcome</source>
         <translation type="unfinished"></translation>
     </message>
