@@ -25,17 +25,27 @@
  **********************************************************************/
 
 #include <QDir>
+#include <QDesktopServices>
 #include <QFileInfo>
 #include <QProcess>
 #include <QRegularExpression>
 #include <QRegularExpressionMatch>
 #include <QTextEdit>
+#include <QUrl>
 
 #include "about.h"
 #include "flatbutton.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "version.h"
+
+namespace
+{
+void openUrl(const QString &url)
+{
+    QDesktopServices::openUrl(QUrl(url));
+}
+}
 
 MainWindow::MainWindow(const QCommandLineParser& arg_parser, QWidget* parent)
     : QDialog(parent),
@@ -334,29 +344,41 @@ void MainWindow::on_buttonManual_clicked() const
 // Launch Forum in browser
 void MainWindow::on_buttonForum_clicked() const
 {
-    QString cmd = FORUMCMD.isEmpty() ? "xdg-open http://forum.mxlinux.org/index.php" : FORUMCMD;
-    QProcess::startDetached("/bin/sh", {"-c", cmd});
+    if (FORUMCMD.isEmpty()) {
+        openUrl(QStringLiteral("http://forum.mxlinux.org/index.php"));
+        return;
+    }
+    QProcess::startDetached("/bin/sh", {"-c", FORUMCMD});
 }
 
 // Launch Wiki in browser
 void MainWindow::on_buttonWiki_clicked() const
 {
-    QString cmd = WIKICMD.isEmpty() ? "xdg-open http://www.mxlinux.org/wiki" : WIKICMD;
-    QProcess::startDetached("/bin/sh", {"-c", cmd});
+    if (WIKICMD.isEmpty()) {
+        openUrl(QStringLiteral("http://www.mxlinux.org/wiki"));
+        return;
+    }
+    QProcess::startDetached("/bin/sh", {"-c", WIKICMD});
 }
 
 // Launch Video links in browser
 void MainWindow::on_buttonVideo_clicked() const
 {
-    QString cmd = VIDEOCMD.isEmpty() ? "xdg-open http://www.mxlinux.org/videos/" : VIDEOCMD;
-    QProcess::startDetached("/bin/sh", {"-c", cmd});
+    if (VIDEOCMD.isEmpty()) {
+        openUrl(QStringLiteral("http://www.mxlinux.org/videos/"));
+        return;
+    }
+    QProcess::startDetached("/bin/sh", {"-c", VIDEOCMD});
 }
 
 // Launch Contribution page
 void MainWindow::on_buttonContribute_clicked() const
 {
-    QString cmd = CONTRIBUTECMD.isEmpty() ? "xdg-open http://www.mxlinux.org/donate" : CONTRIBUTECMD;
-    QProcess::startDetached("/bin/sh", {"-c", cmd});
+    if (CONTRIBUTECMD.isEmpty()) {
+        openUrl(QStringLiteral("http://www.mxlinux.org/donate"));
+        return;
+    }
+    QProcess::startDetached("/bin/sh", {"-c", CONTRIBUTECMD});
 }
 
 void MainWindow::on_buttonPanelOrient_clicked() const
