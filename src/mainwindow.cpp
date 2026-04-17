@@ -188,7 +188,10 @@ void MainWindow::setup()
                                 + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
 
     // If running live
-    QString test = runCmd("df -T / |tail -n1 |awk '{print $2}'");
+    const QStringList dfLines = runCmd("df -T /").split('\n', Qt::SkipEmptyParts);
+    const QString test = dfLines.isEmpty()
+                             ? QString()
+                             : dfLines.last().section(' ', 1, 1, QString::SectionSkipEmpty).trimmed();
     if (test == "aufs" || test == "overlay") {
         ui->checkBox->setVisible(false);
         ui->labelLoginInfo->setVisible(SHOWLIVEUSERINFO != "false");
@@ -224,7 +227,13 @@ void MainWindow::setup()
 
     ui->labelSupportUntil->setText(SUPPORTED);
 
-    QString DESKTOPSTRING = runCmd("LANG=C.UTF-8 inxi -c 0 -S | grep Desktop");
+    QString DESKTOPSTRING;
+    for (const QString &line : runCmd("LANG=C.UTF-8 inxi -c 0 -S").split('\n', Qt::SkipEmptyParts)) {
+        if (line.contains(QStringLiteral("Desktop"))) {
+            DESKTOPSTRING = line;
+            break;
+        }
+    }
     QRegularExpression re(R"(Desktop:\s*(.+?)\s+v:\s*([\d\.]+))");
     QRegularExpressionMatch match = re.match(DESKTOPSTRING);
 
