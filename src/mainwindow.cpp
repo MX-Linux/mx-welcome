@@ -31,6 +31,7 @@
 #include <QRegularExpression>
 #include <QRegularExpressionMatch>
 #include <QTextEdit>
+#include <QTimer>
 #include <QUrl>
 
 #include "about.h"
@@ -295,6 +296,11 @@ QString MainWindow::runCmd(const QString& cmd)
     QEventLoop loop;
     QProcess proc;
     proc.setProcessChannelMode(QProcess::MergedChannels);
+    QTimer::singleShot(10000, &loop, [&proc, &loop]() {
+        if (proc.state() != QProcess::NotRunning)
+            proc.kill();
+        loop.quit();
+    });
     connect(&proc, &QProcess::finished, &loop, &QEventLoop::quit);
     proc.start("/bin/bash", {"-c", cmd});
     loop.exec();
