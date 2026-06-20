@@ -137,7 +137,6 @@ target_link_libraries(mx-welcome
 
 # Set compiler flags
 target_compile_options(mx-welcome PRIVATE
-    -Wpedantic
     -pedantic
     -Werror=return-type
     -Werror=switch
