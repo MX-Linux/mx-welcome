@@ -104,15 +104,18 @@ void MainWindow::setup()
     if (!TOSTEXT.isEmpty()) {
         ui->labelTOS->setText(TOSTEXT);
     }
-    QString icons[11], texts[11];
+    // Each button's icon, label, and command come from settings keyed by its
+    // position number (1..11); the lambda resolves and applies all three.
+    QString tourText;
     {
         auto cfg = [&](int idx, QString &cmd, QPushButton *btn) {
             auto const n = QString::number(idx);
-            icons[idx - 1] = settingsusr.value(n + "icon", settings.value(n + "icon").toString()).toString();
-            texts[idx - 1] = settingsusr.value(n + "text", settings.value(n + "text").toString()).toString();
-            if (!texts[idx - 1].isEmpty())
-                btn->setText(texts[idx - 1]);
+            btn->setIcon(QIcon(settingsusr.value(n + "icon", settings.value(n + "icon").toString()).toString()));
+            const QString text = settingsusr.value(n + "text", settings.value(n + "text").toString()).toString();
+            if (!text.isEmpty())
+                btn->setText(text);
             cmd = settingsusr.value(n + "command", settings.value(n + "command").toString()).toString();
+            return text;
         };
         cfg(1, SETUPCMD, ui->buttonSetup);
         cfg(2, FAQCMD, ui->buttonFAQ);
@@ -124,11 +127,11 @@ void MainWindow::setup()
         cfg(8, TOOLSCMD, ui->buttonTools);
         cfg(9, PACKAGEINSTALLERCMD, ui->buttonPackageInstall);
         cfg(10, TWEAKCMD, ui->buttonPanelOrient);
-        cfg(11, TOURCMD, ui->buttonTour);
+        tourText = cfg(11, TOURCMD, ui->buttonTour);
     }
 
     // Hide tour if not present AND no configured text
-    if (texts[10].isEmpty()) {
+    if (tourText.isEmpty()) {
         if (!QFile::exists("/usr/bin/mx-tour")) {
             ui->buttonTour->hide();
         }
@@ -225,18 +228,6 @@ void MainWindow::setup()
         ui->labelgraphic->setPixmap(HEADER);
     }
 
-    // Setup icons
-    ui->buttonSetup->setIcon(QIcon(icons[0]));
-    ui->buttonFAQ->setIcon(QIcon(icons[1]));
-    ui->buttonForum->setIcon(QIcon(icons[2]));
-    ui->buttonManual->setIcon(QIcon(icons[3]));
-    ui->buttonVideo->setIcon(QIcon(icons[4]));
-    ui->buttonWiki->setIcon(QIcon(icons[5]));
-    ui->buttonContribute->setIcon(QIcon(icons[6]));
-    ui->buttonTools->setIcon(QIcon(icons[7]));
-    ui->buttonPackageInstall->setIcon(QIcon(icons[8]));
-    ui->buttonPanelOrient->setIcon(QIcon(icons[9]));
-    ui->buttonTour->setIcon(QIcon(icons[10]));
     ui->labelMX->setPixmap(QPixmap(LOGO));
 
     // Setup about labels
