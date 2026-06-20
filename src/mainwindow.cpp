@@ -104,75 +104,31 @@ void MainWindow::setup()
     if (!TOSTEXT.isEmpty()) {
         ui->labelTOS->setText(TOSTEXT);
     }
-    QString SETUP = settingsusr.value("1icon", settings.value("1icon").toString()).toString();
-    QString SETUPTEXT = settingsusr.value("1text", settings.value("1text").toString()).toString();
-    if (!SETUPTEXT.isEmpty()) {
-        ui->buttonSetup->setText(SETUPTEXT);
+    QString icons[11], texts[11];
+    {
+        auto cfg = [&](int idx, QString &cmd, QPushButton *btn) {
+            auto const n = QString::number(idx);
+            icons[idx - 1] = settingsusr.value(n + "icon", settings.value(n + "icon").toString()).toString();
+            texts[idx - 1] = settingsusr.value(n + "text", settings.value(n + "text").toString()).toString();
+            if (!texts[idx - 1].isEmpty())
+                btn->setText(texts[idx - 1]);
+            cmd = settingsusr.value(n + "command", settings.value(n + "command").toString()).toString();
+        };
+        cfg(1, SETUPCMD, ui->buttonSetup);
+        cfg(2, FAQCMD, ui->buttonFAQ);
+        cfg(3, FORUMCMD, ui->buttonForum);
+        cfg(4, MANUALCMD, ui->buttonManual);
+        cfg(5, VIDEOCMD, ui->buttonVideo);
+        cfg(6, WIKICMD, ui->buttonWiki);
+        cfg(7, CONTRIBUTECMD, ui->buttonContribute);
+        cfg(8, TOOLSCMD, ui->buttonTools);
+        cfg(9, PACKAGEINSTALLERCMD, ui->buttonPackageInstall);
+        cfg(10, TWEAKCMD, ui->buttonPanelOrient);
+        cfg(11, TOURCMD, ui->buttonTour);
     }
-    SETUPCMD = settingsusr.value("1command", settings.value("1command").toString()).toString();
-    QString FAQ = settingsusr.value("2icon", settings.value("2icon").toString()).toString();
-    QString FAQTEXT = settingsusr.value("2text", settings.value("2text").toString()).toString();
-    if (!FAQTEXT.isEmpty()) {
-        ui->buttonFAQ->setText(FAQTEXT);
-    }
-    FAQCMD = settingsusr.value("2command", settings.value("2command").toString()).toString();
-    QString FORUMS = settingsusr.value("3icon", settings.value("3icon").toString()).toString();
-    QString FORUMTEXT = settingsusr.value("3text", settings.value("3text").toString()).toString();
-    if (!FORUMTEXT.isEmpty()) {
-        ui->buttonForum->setText(FORUMTEXT);
-    }
-    FORUMCMD = settingsusr.value("3command", settings.value("3command").toString()).toString();
-    QString MANUAL = settingsusr.value("4icon", settings.value("4icon").toString()).toString();
-    QString MANUALTEXT = settingsusr.value("4text", settings.value("4text").toString()).toString();
-    if (!MANUALTEXT.isEmpty()) {
-        ui->buttonManual->setText(MANUALTEXT);
-    }
-    MANUALCMD = settingsusr.value("4command", settings.value("4command").toString()).toString();
-    QString VIDEOS = settingsusr.value("5icon", settings.value("5icon").toString()).toString();
-    QString VIDEOTEXT = settingsusr.value("5text", settings.value("5text").toString()).toString();
-    if (!VIDEOTEXT.isEmpty()) {
-        ui->buttonVideo->setText(VIDEOTEXT);
-    }
-    VIDEOCMD = settingsusr.value("5command", settings.value("5command").toString()).toString();
-    QString WIKI = settingsusr.value("6icon", settings.value("6icon").toString()).toString();
-    QString WIKITEXT = settingsusr.value("6text", settings.value("6text").toString()).toString();
-    if (!WIKITEXT.isEmpty()) {
-        ui->buttonWiki->setText(WIKITEXT);
-    }
-    WIKICMD = settingsusr.value("6command", settings.value("6command").toString()).toString();
-    QString CONTRIBUTE = settingsusr.value("7icon", settings.value("7icon").toString()).toString();
-    QString CONTRIBUTETEXT = settingsusr.value("7text", settings.value("7text").toString()).toString();
-    if (!CONTRIBUTETEXT.isEmpty()) {
-        ui->buttonContribute->setText(CONTRIBUTETEXT);
-    }
-    CONTRIBUTECMD = settingsusr.value("7command", settings.value("7command").toString()).toString();
-    QString TOOLS = settingsusr.value("8icon", settings.value("8icon").toString()).toString();
-    QString TOOLSTEXT = settingsusr.value("8text", settings.value("8text").toString()).toString();
-    if (!TOOLSTEXT.isEmpty()) {
-        ui->buttonTools->setText(TOOLSTEXT);
-    }
-    TOOLSCMD = settingsusr.value("8command", settings.value("8command").toString()).toString();
-    QString PACKAGEINSTALLER = settingsusr.value("9icon", settings.value("9icon").toString()).toString();
-    QString PACKAGEINSTALLERTEXT = settingsusr.value("9text", settings.value("9text").toString()).toString();
-    if (!PACKAGEINSTALLERTEXT.isEmpty()) {
-        ui->buttonPackageInstall->setText(PACKAGEINSTALLERTEXT);
-    }
-    PACKAGEINSTALLERCMD = settingsusr.value("9command", settings.value("9command").toString()).toString();
-    QString TWEAK = settingsusr.value("10icon", settings.value("10icon").toString()).toString();
-    QString TWEAKTEXT = settingsusr.value("10text", settings.value("10text").toString()).toString();
-    if (!TWEAKTEXT.isEmpty()) {
-        ui->buttonPanelOrient->setText(TWEAKTEXT);
-    }
-    TWEAKCMD = settingsusr.value("10command", settings.value("10command").toString()).toString();
-    QString TOUR = settingsusr.value("11icon", settings.value("11icon").toString()).toString();
-    QString TOURTEXT = settingsusr.value("11text", settings.value("11text").toString()).toString();
-    if (!TOURTEXT.isEmpty()) {
-        ui->buttonTour->setText(TOURTEXT);
-    }
-    TOURCMD = settingsusr.value("11command", settings.value("11command").toString()).toString();
 
-    // Hide tour if not present AND TOURTEXT.ISEMPTY
-    if (TOURTEXT.isEmpty()) {
+    // Hide tour if not present AND no configured text
+    if (texts[10].isEmpty()) {
         if (!QFile::exists("/usr/bin/mx-tour")) {
             ui->buttonTour->hide();
         }
@@ -270,18 +226,18 @@ void MainWindow::setup()
     }
 
     // Setup icons
-    ui->buttonContribute->setIcon(QIcon(CONTRIBUTE));
-    ui->buttonFAQ->setIcon(QIcon(FAQ));
-    ui->buttonForum->setIcon(QIcon(FORUMS));
+    ui->buttonSetup->setIcon(QIcon(icons[0]));
+    ui->buttonFAQ->setIcon(QIcon(icons[1]));
+    ui->buttonForum->setIcon(QIcon(icons[2]));
+    ui->buttonManual->setIcon(QIcon(icons[3]));
+    ui->buttonVideo->setIcon(QIcon(icons[4]));
+    ui->buttonWiki->setIcon(QIcon(icons[5]));
+    ui->buttonContribute->setIcon(QIcon(icons[6]));
+    ui->buttonTools->setIcon(QIcon(icons[7]));
+    ui->buttonPackageInstall->setIcon(QIcon(icons[8]));
+    ui->buttonPanelOrient->setIcon(QIcon(icons[9]));
+    ui->buttonTour->setIcon(QIcon(icons[10]));
     ui->labelMX->setPixmap(QPixmap(LOGO));
-    ui->buttonPackageInstall->setIcon(QIcon(PACKAGEINSTALLER));
-    ui->buttonPanelOrient->setIcon(QIcon(TWEAK));
-    ui->buttonSetup->setIcon(QIcon(SETUP));
-    ui->buttonTools->setIcon(QIcon(TOOLS));
-    ui->buttonManual->setIcon(QIcon(MANUAL));
-    ui->buttonVideo->setIcon(QIcon(VIDEOS));
-    ui->buttonWiki->setIcon(QIcon(WIKI));
-    ui->buttonTour->setIcon(QIcon(TOUR));
 
     // Setup about labels
     ui->labelMXversion->setText(DISTRO);
