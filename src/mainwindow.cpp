@@ -466,7 +466,7 @@ void MainWindow::setTabStyle()
 void MainWindow::on_buttonTour_clicked() const
 {
     QString cmd = TOURCMD.isEmpty() ? "mx-tour" : TOURCMD;
-    QProcess::startDetached(cmd);
+    QProcess::startDetached("/bin/sh", {"-c", cmd});
 }
 
 void MainWindow::termsofuse() const
