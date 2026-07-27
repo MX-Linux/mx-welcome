@@ -428,24 +428,24 @@ void MainWindow::termsofuse() const
     const auto width = 600;
     const auto height = 500;
 
-    auto* TOS = new QDialog;
-    TOS->setWindowTitle(QObject::tr("Terms of Use"));
-    TOS->resize(width, height);
+    QDialog TOS;
+    TOS.setWindowTitle(QObject::tr("Terms of Use"));
+    TOS.resize(width, height);
 
-    auto* text = new QTextEdit(TOS);
+    auto* text = new QTextEdit(&TOS);
     text->setReadOnly(true);
     QProcess proc;
     proc.start("zless", {"/usr/share/mx-welcome/TOS"}, QIODevice::ReadOnly);
     proc.waitForFinished();
     text->setText(proc.readAllStandardOutput());
 
-    auto* btnClose = new QPushButton(QObject::tr("&Close"), TOS);
+    auto* btnClose = new QPushButton(QObject::tr("&Close"), &TOS);
     btnClose->setIcon(QIcon::fromTheme("window-close"));
-    QObject::connect(btnClose, &QPushButton::clicked, TOS, &QDialog::close);
+    QObject::connect(btnClose, &QPushButton::clicked, &TOS, &QDialog::close);
 
-    auto* layout = new QVBoxLayout(TOS);
+    auto* layout = new QVBoxLayout(&TOS);
     layout->addWidget(text);
     layout->addWidget(btnClose);
-    TOS->setLayout(layout);
-    TOS->exec();
+    TOS.setLayout(layout);
+    TOS.exec();
 }
