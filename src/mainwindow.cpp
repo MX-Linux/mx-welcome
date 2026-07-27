@@ -141,11 +141,12 @@ void MainWindow::setup()
         = settingsusr.value("LIVEUSERINFOTEXT", settings.value("LIVEUSERINFOTEXT").toString()).toString();
     if (!LIVEUSERINFOTEXT.isEmpty()) {
         ui->labelLoginInfo->setText(LIVEUSERINFOTEXT);
+    } else {
+        ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. "
+                                    + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
     }
     QString SHOWLIVEUSERINFO
         = settingsusr.value("SHOWLIVEUSERINFO", settings.value("SHOWLIVEUSERINFO", "true").toString()).toString();
-    ui->labelLoginInfo->setText("<p align=\"center\">" + tr("User demo, password:") + "<b> demo</b>. "
-                                + tr("Superuser root, password:") + "<b> root</b>." + "</p>");
 
     // If running live
     const QStringList dfLines = runCmd("df -T /").split('\n', Qt::SkipEmptyParts);
