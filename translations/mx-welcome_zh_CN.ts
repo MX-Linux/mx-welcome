@@ -1,240 +1,576 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="zh_CN">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="zh_CN">
+<context>
+    <name>Backend</name>
+    <message>
+        <location filename="../src/backend.cpp" line="26"/>
+        <source>Get Started</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="29"/>
+        <source>System</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="31"/>
+        <source>Community</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="51"/>
+        <location filename="../src/backend.cpp" line="342"/>
+        <source>All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="112"/>
+        <location filename="../src/backend.cpp" line="133"/>
+        <location filename="../src/backend.cpp" line="156"/>
+        <location filename="../src/backend.cpp" line="364"/>
+        <source>Error</source>
+        <translation type="unfinished">错误</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="112"/>
+        <source>Could not update the login startup setting.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="133"/>
+        <source>Could not open %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="144"/>
+        <source>System information is unavailable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="156"/>
+        <source>Could not start Quick System Info.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="167"/>
+        <source>Could not load the Terms of Use.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="174"/>
+        <source>Could not load %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="184"/>
+        <source>Could not load changelog.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="235"/>
+        <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
+        <translation type="unfinished">名称“MX Linux”受 Linux 基金会分许可 No. 20140605-0483 保护。我们开发的软件受免费许可保护，可以在 Wiki 列表中进行检查。我们还包括由其他人开发的、获得免费许可的软件。</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="246"/>
+        <source>User demo, password: demo. Superuser root, password: root.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="266"/>
+        <source>%1 “%2”</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="301"/>
+        <source>Install MX Linux</source>
+        <translation type="unfinished">安装 MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="301"/>
+        <source>Install MX Linux on this computer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="302"/>
+        <source>FAQ</source>
+        <translation type="unfinished">问答</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="302"/>
+        <source>Find answers to frequently asked questions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="303"/>
+        <source>Forums</source>
+        <translation type="unfinished">论坛</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="303"/>
+        <source>Ask questions and join the MX Linux community.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="304"/>
+        <source>Users Manual</source>
+        <translation type="unfinished">用户手册</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="304"/>
+        <source>Read the documentation for your MX Linux release.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="305"/>
+        <source>Videos</source>
+        <translation type="unfinished">视频</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="305"/>
+        <source>Watch MX Linux tutorials and demonstrations.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="306"/>
+        <source>Wiki</source>
+        <translation type="unfinished">维基</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="306"/>
+        <source>Browse community-maintained guides and reference material.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="307"/>
+        <source>Contribute</source>
+        <translation type="unfinished">捐助</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="307"/>
+        <source>Learn how to support and contribute to MX Linux.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="308"/>
+        <source>Tools</source>
+        <translation type="unfinished">工具</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="308"/>
+        <source>Open the collection of MX system utilities.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="309"/>
+        <source>Popular Apps</source>
+        <translation type="unfinished">热门应用</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="309"/>
+        <source>Discover and install popular applications.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="310"/>
+        <source>Tweak (Panel, etc...)</source>
+        <translation type="unfinished">调整（面板等）</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="310"/>
+        <source>Adjust desktop, panel, and system preferences.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="311"/>
+        <source>Tour</source>
+        <translation type="unfinished">教程</translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="311"/>
+        <source>Take a guided tour of MX Linux.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/backend.cpp" line="364"/>
+        <source>Could not start the requested action.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Main</name>
+    <message>
+        <location filename="../qml/Main.qml" line="19"/>
+        <location filename="../qml/Main.qml" line="108"/>
+        <location filename="../qml/Main.qml" line="577"/>
+        <source>MX Welcome</source>
+        <translation type="unfinished">MX 欢迎界面</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="124"/>
+        <source>Manual</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="135"/>
+        <source>About</source>
+        <translation type="unfinished">关于</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="191"/>
+        <location filename="../qml/Main.qml" line="430"/>
+        <source>Welcome</source>
+        <translation type="unfinished">欢迎</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="201"/>
+        <location filename="../qml/Main.qml" line="423"/>
+        <source>About this system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="224"/>
+        <source>Categories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="253"/>
+        <source>Show at startup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="256"/>
+        <source>Show MX Welcome when you log in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="286"/>
+        <location filename="../qml/Main.qml" line="289"/>
+        <source>Search tools and resources</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="297"/>
+        <source>Clear search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="310"/>
+        <source>Category</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="316"/>
+        <source>System</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="389"/>
+        <source>No tools match your search.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="399"/>
+        <source>Show this dialog at start up</source>
+        <translation type="unfinished">启动时显示此窗口</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="450"/>
+        <source>MX version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="451"/>
+        <source>Debian version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="452"/>
+        <source>Desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="453"/>
+        <source>Supported until</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="479"/>
+        <source>Unavailable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="493"/>
+        <location filename="../qml/Main.qml" line="508"/>
+        <source>Short system report</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="504"/>
+        <source>Loading system information…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="518"/>
+        <source>Quick-System-Info Full Report</source>
+        <translation type="unfinished">Quick-System-Info 完整报告</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="527"/>
+        <location filename="../qml/Main.qml" line="536"/>
+        <source>Terms of Use</source>
+        <translation type="unfinished">使用条款</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="562"/>
+        <source>About MX Welcome</source>
+        <translation type="unfinished">关于 MX 欢迎界面</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="585"/>
+        <source>Version: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="591"/>
+        <source>Program for displaying a welcome screen in MX Linux</source>
+        <translation type="unfinished">显示 MX Linux 欢迎界面的程序</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="598"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="unfinished">Copyright (c) MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="605"/>
+        <source>License</source>
+        <translation type="unfinished">许可证</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="611"/>
+        <source>MX Welcome License</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="614"/>
+        <location filename="../qml/Main.qml" line="620"/>
+        <source>Changelog</source>
+        <translation type="unfinished">更新日志</translation>
+    </message>
+</context>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="mainwindow.ui" line="14"/>
-        <location filename="mainwindow.cpp" line="65"/>
-        <location filename="mainwindow.cpp" line="255"/>
-        <location filename="mainwindow.cpp" line="264"/>
         <source>MX Welcome</source>
-        <translation>MX 欢迎界面</translation>
+        <translation type="vanished">MX 欢迎界面</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="80"/>
         <source>Quit application</source>
-        <translation>退出程序</translation>
+        <translation type="vanished">退出程序</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="83"/>
         <source>Close</source>
-        <translation>关闭</translation>
+        <translation type="vanished">关闭</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="90"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="vanished">Alt+N</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="112"/>
         <source>About this application</source>
-        <translation>关于此软件</translation>
+        <translation type="vanished">关于此软件</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="115"/>
         <source>About...</source>
-        <translation>关于…</translation>
+        <translation type="vanished">关于…</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="122"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="vanished">Alt+B</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="203"/>
         <source>Welcome</source>
-        <translation>欢迎</translation>
+        <translation type="vanished">欢迎</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="484"/>
         <source>Install MX Linux</source>
-        <translation>安装 MX Linux</translation>
+        <translation type="vanished">安装 MX Linux</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="510"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation>调整（面板等）</translation>
+        <translation type="vanished">调整（面板等）</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="536"/>
         <source>Tools</source>
-        <translation>工具</translation>
+        <translation type="vanished">工具</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="568"/>
         <source>Wiki</source>
-        <translation>维基</translation>
+        <translation type="vanished">维基</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="600"/>
         <source>Users Manual</source>
-        <translation>用户手册</translation>
+        <translation type="vanished">用户手册</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="626"/>
         <source>FAQ</source>
-        <translation>问答</translation>
+        <translation type="vanished">问答</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="652"/>
         <source>Tour</source>
-        <translation>教程</translation>
+        <translation type="vanished">教程</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="674"/>
         <source>Popular Apps</source>
-        <translation>热门应用</translation>
+        <translation type="vanished">热门应用</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="700"/>
         <source>Contribute</source>
-        <translation>捐助</translation>
+        <translation type="vanished">捐助</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="732"/>
         <source>Videos</source>
-        <translation>视频</translation>
+        <translation type="vanished">视频</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="764"/>
         <source>Forums</source>
-        <translation>论坛</translation>
+        <translation type="vanished">论坛</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="790"/>
         <source>About</source>
-        <translation>关于</translation>
+        <translation type="vanished">关于</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="798"/>
         <source>SHORT SYSTEM REPORT:</source>
-        <translation>简短系统报告：</translation>
+        <translation type="vanished">简短系统报告：</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="805"/>
         <source>DESKTOP</source>
-        <translation>桌面</translation>
+        <translation type="vanished">桌面</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="819"/>
         <source>Quick-System-Info Full Report</source>
-        <translation>Quick-System-Info 完整报告</translation>
+        <translation type="vanished">Quick-System-Info 完整报告</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="829"/>
         <source>Terms of Use</source>
-        <translation>使用条款</translation>
+        <translation type="vanished">使用条款</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="846"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
-        <translation>名称“MX Linux”受 Linux 基金会分许可 No. 20140605-0483 保护。我们开发的软件受免费许可保护，可以在 Wiki 列表中进行检查。我们还包括由其他人开发的、获得免费许可的软件。</translation>
+        <translation type="vanished">名称“MX Linux”受 Linux 基金会分许可 No. 20140605-0483 保护。我们开发的软件受免费许可保护，可以在 Wiki 列表中进行检查。我们还包括由其他人开发的、获得免费许可的软件。</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="856"/>
         <source>MX VERSION</source>
-        <translation>MX 版本</translation>
+        <translation type="vanished">MX 版本</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="863"/>
         <source>DEBIAN VERSION:</source>
-        <translation>DEBIAN 版本:</translation>
+        <translation type="vanished">DEBIAN 版本:</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="870"/>
         <source>SUPPORTED UNTIL:</source>
-        <translation>支持到：</translation>
+        <translation type="vanished">支持到：</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="924"/>
         <source>Show this dialog at start up</source>
-        <translation>启动时显示此窗口</translation>
+        <translation type="vanished">启动时显示此窗口</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="78"/>
         <source>User demo, password:</source>
-        <translation>demo 用户，密码：</translation>
+        <translation type="vanished">demo 用户，密码：</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="78"/>
         <source>Superuser root, password:</source>
-        <translation>root 管理员，密码：</translation>
+        <translation type="vanished">root 管理员，密码：</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="178"/>
-        <location filename="mainwindow.cpp" line="194"/>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation type="vanished">错误</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="255"/>
         <source>About MX Welcome</source>
-        <translation>关于 MX 欢迎界面</translation>
+        <translation type="vanished">关于 MX 欢迎界面</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="255"/>
         <source>Version: </source>
-        <translation>版本：</translation>
+        <translation type="vanished">版本：</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="255"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation>显示 MX Linux 欢迎界面的程序</translation>
+        <translation type="vanished">显示 MX Linux 欢迎界面的程序</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="255"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="vanished">Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="256"/>
         <source>License</source>
-        <translation>许可证</translation>
+        <translation type="vanished">许可证</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="257"/>
         <source>Changelog</source>
-        <translation>更新日志</translation>
+        <translation type="vanished">更新日志</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="258"/>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation type="vanished">取消</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="274"/>
         <source>&amp;Close</source>
-        <translation>关闭(&amp;C)</translation>
+        <translation type="vanished">关闭(&amp;C)</translation>
     </message>
 </context>
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="main.cpp" line="71"/>
         <source>You must run this program as normal user.</source>
-        <translation>您必须以普通用户的身份来运行该程序。</translation>
+        <translation type="vanished">您必须以普通用户的身份来运行该程序。</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="main.cpp" line="44"/>
         <source>This tool displays a welcome screen with two tabs.</source>
-        <translation>此工具显示带有两个选项卡的欢迎屏幕。</translation>
+        <translation type="vanished">此工具显示带有两个选项卡的欢迎屏幕。</translation>
     </message>
     <message>
-        <location filename="main.cpp" line="47"/>
         <source>Start with About tab selected. The About tab provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
-        <translation>从以选中的“关于”选项卡开始。“关于”选项卡提供有关当前 MX Linux 版本、用户硬件和完整系统报告的基本信息。</translation>
+        <translation type="vanished">从以选中的“关于”选项卡开始。“关于”选项卡提供有关当前 MX Linux 版本、用户硬件和完整系统报告的基本信息。</translation>
     </message>
     <message>
-        <location filename="main.cpp" line="50"/>
+        <location filename="../src/main.cpp" line="55"/>
+        <source>This tool displays the MX Linux welcome screen.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/main.cpp" line="59"/>
+        <source>Start with About selected. The About page provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/main.cpp" line="61"/>
         <source>Run a test mode.</source>
         <translation>运行测试模块</translation>
     </message>
     <message>
-        <location filename="main.cpp" line="71"/>
+        <location filename="../src/main.cpp" line="82"/>
         <source>Error</source>
         <translation>错误</translation>
+    </message>
+    <message>
+        <location filename="../src/main.cpp" line="83"/>
+        <source>You must run this program as normal user.</source>
+        <translation type="unfinished">您必须以普通用户的身份来运行该程序。</translation>
+    </message>
+</context>
+<context>
+    <name>ToolCard</name>
+    <message>
+        <location filename="../qml/components/ToolCard.qml" line="80"/>
+        <source>Open this tool</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
