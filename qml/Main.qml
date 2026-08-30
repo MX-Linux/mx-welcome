@@ -560,7 +560,20 @@ ApplicationWindow {
         width: Math.min(520, root.width - 40)
         modal: true
         title: qsTr("About MX Welcome")
-        standardButtons: Dialog.Close
+        footer: DialogButtonBox {
+            standardButtons: DialogButtonBox.Close
+            alignment: Qt.AlignRight
+            padding: 12
+            background: Item {}
+            delegate: SecondaryButton {
+                textColor: root.primaryTextColor
+                surfaceColor: root.surfaceColor
+                hoverColor: root.accentWash
+                borderColor: root.borderColor
+                accentColor: root.accentColor
+            }
+            onRejected: aboutDialog.reject()
+        }
 
         ColumnLayout {
             width: parent.width
@@ -629,7 +642,20 @@ ApplicationWindow {
         width: Math.min(760, root.width - 40)
         height: Math.min(620, root.height - 40)
         modal: true
-        standardButtons: Dialog.Close
+        footer: DialogButtonBox {
+            standardButtons: DialogButtonBox.Close
+            alignment: Qt.AlignRight
+            padding: 12
+            background: Item {}
+            delegate: SecondaryButton {
+                textColor: root.primaryTextColor
+                surfaceColor: root.surfaceColor
+                hoverColor: root.accentWash
+                borderColor: root.borderColor
+                accentColor: root.accentColor
+            }
+            onRejected: documentDialog.reject()
+        }
 
         ScrollView {
             anchors.fill: parent
@@ -649,7 +675,20 @@ ApplicationWindow {
         anchors.centerIn: Overlay.overlay
         width: Math.min(440, root.width - 40)
         modal: true
-        standardButtons: Dialog.Ok
+        footer: DialogButtonBox {
+            standardButtons: DialogButtonBox.Ok
+            alignment: Qt.AlignRight
+            padding: 12
+            background: Item {}
+            delegate: SecondaryButton {
+                textColor: root.primaryTextColor
+                surfaceColor: root.surfaceColor
+                hoverColor: root.accentWash
+                borderColor: root.borderColor
+                accentColor: root.accentColor
+            }
+            onAccepted: errorDialog.accept()
+        }
 
         Text {
             width: parent.width
