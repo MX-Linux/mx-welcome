@@ -5,8 +5,7 @@ A Qt 6 Quick welcome application for MX Linux that provides quick access to usef
 [![latest packaged version(s)](https://repology.org/badge/latest-versions/mx-welcome.svg)](https://repology.org/project/mx-welcome/versions)
 [![build result](https://build.opensuse.org/projects/home:mx-packaging/packages/mx-welcome/badge.svg?type=default)](https://software.opensuse.org//download.html?project=home%3Amx-packaging&package=mx-welcome)
 
-<img width="765" height="766" alt="image" src="https://github.com/user-attachments/assets/ff37dff7-39a3-488c-b202-1db8c37f9219" />
-
+<img width="771" height="774" alt="image" src="https://github.com/user-attachments/assets/ac9b8fb6-f064-43ac-9009-8a20f4f14fb7" />
 
 ## Features
 
