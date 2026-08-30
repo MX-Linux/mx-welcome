@@ -1,5 +1,6 @@
 import QtQuick
 import QtQuick.Controls
+import QtQuick.Layouts
 
 AbstractButton {
     id: card
@@ -33,63 +34,56 @@ AbstractButton {
         Behavior on scale { NumberAnimation { duration: 80 } }
     }
 
-    contentItem: Item {
+    contentItem: RowLayout {
+        spacing: 10
+
         Image {
-            id: icon
-            anchors.left: parent.left
-            anchors.top: parent.top
-            width: 48
-            height: 48
+            Layout.alignment: Qt.AlignVCenter
+            Layout.preferredWidth: 28
+            Layout.preferredHeight: 28
             source: card.iconSource
-            sourceSize: Qt.size(64, 64)
+            sourceSize: Qt.size(56, 56)
             fillMode: Image.PreserveAspectFit
             asynchronous: true
         }
 
-        Text {
-            id: titleText
-            anchors.left: icon.right
-            anchors.leftMargin: 14
-            anchors.right: parent.right
-            anchors.top: parent.top
-            text: card.title
-            color: card.primaryTextColor
-            font.pixelSize: Application.font.pixelSize > 0 ? Application.font.pixelSize + 2 : 15
-            font.weight: Font.DemiBold
-            elide: Text.ElideRight
-        }
+        ColumnLayout {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            spacing: 1
 
-        Text {
-            id: categoryText
-            anchors.left: titleText.left
-            anchors.right: parent.right
-            anchors.top: titleText.bottom
-            anchors.topMargin: 4
-            text: card.category
-            color: card.mutedTextColor
-            font.pixelSize: Application.font.pixelSize > 0 ? Math.max(10, Application.font.pixelSize - 1) : 12
-            elide: Text.ElideRight
-        }
+            Text {
+                id: titleText
+                Layout.fillWidth: true
+                text: card.title
+                color: card.primaryTextColor
+                font.pixelSize: Application.font.pixelSize > 0 ? Application.font.pixelSize + 1 : 14
+                font.weight: Font.DemiBold
+                elide: Text.ElideRight
+            }
 
-        Text {
-            id: descriptionText
-            anchors.left: parent.left
-            anchors.right: parent.right
-            anchors.top: icon.bottom
-            anchors.topMargin: 14
-            text: card.description.length > 0 ? card.description : qsTr("Open this tool")
-            color: card.mutedTextColor
-            font: Application.font
-            wrapMode: Text.Wrap
-            maximumLineCount: 3
-            elide: Text.ElideRight
+            Text {
+                id: descriptionText
+                Layout.fillWidth: true
+                text: card.description.length > 0 ? card.description : qsTr("Open this tool")
+                color: card.mutedTextColor
+                font.pixelSize: Application.font.pixelSize > 0 ? Application.font.pixelSize - 1 : 12
+                elide: Text.ElideRight
+            }
+
+            Text {
+                text: card.category
+                color: card.mutedTextColor
+                font.pixelSize: Application.font.pixelSize > 0 ? Math.max(9, Application.font.pixelSize - 2) : 11
+                elide: Text.ElideRight
+            }
         }
     }
 
-    leftPadding: 18
-    rightPadding: 18
-    topPadding: 18
-    bottomPadding: 18
+    leftPadding: 14
+    rightPadding: 14
+    topPadding: 8
+    bottomPadding: 8
 
     ToolTip.visible: hovered && descriptionText.truncated
     ToolTip.text: descriptionText.text

@@ -334,7 +334,7 @@ ApplicationWindow {
                             model: root.backend.actions
                             property int columnCount: Math.max(1, Math.floor(width / 270))
                             cellWidth: width / columnCount
-                            cellHeight: 184
+                            cellHeight: 105
                             boundsBehavior: Flickable.StopAtBounds
                             keyNavigationEnabled: true
 
