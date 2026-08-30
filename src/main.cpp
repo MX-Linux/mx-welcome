@@ -16,9 +16,20 @@
 #include <QQmlApplicationEngine>
 #include <QQuickImageProvider>
 #include <QTranslator>
+#include <QUrl>
+#include <QtGlobal>
 
 #include <cstdlib>
 #include <unistd.h>
+
+static QString bundledIconPath()
+{
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+    return QStringLiteral(":/qt/qml/MxWelcome/icons/mx-welcome.svg");
+#else
+    return QStringLiteral(":/MxWelcome/icons/mx-welcome.svg");
+#endif
+}
 
 class ThemeIconProvider final : public QQuickImageProvider
 {
@@ -31,7 +42,7 @@ public:
     QPixmap requestPixmap(const QString &id, QSize *size, const QSize &requestedSize) override
     {
         const QSize target = requestedSize.isValid() ? requestedSize : QSize(64, 64);
-        const QIcon fallback(QStringLiteral(":/qt/qml/MxWelcome/icons/mx-welcome.svg"));
+        const QIcon fallback(bundledIconPath());
         const QPixmap pixmap = QIcon::fromTheme(id, fallback).pixmap(target);
         if (size) {
             *size = pixmap.size();
@@ -48,8 +59,8 @@ int main(int argc, char *argv[])
     QApplication::setApplicationVersion(QStringLiteral(VERSION));
 
     QApplication app(argc, argv);
-    QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("mx-welcome"),
-                                                 QIcon(QStringLiteral(":/qt/qml/MxWelcome/icons/mx-welcome.svg"))));
+    QApplication::setWindowIcon(
+        QIcon::fromTheme(QStringLiteral("mx-welcome"), QIcon(bundledIconPath())));
 
     QCommandLineParser parser;
     parser.setApplicationDescription(QObject::tr("This tool displays the MX Linux welcome screen."));
@@ -90,7 +101,11 @@ int main(int argc, char *argv[])
     engine.setInitialProperties({{QStringLiteral("backend"), QVariant::fromValue(&backend)}});
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed, &app,
                      [] { QCoreApplication::exit(EXIT_FAILURE); }, Qt::QueuedConnection);
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
     engine.loadFromModule(QStringLiteral("MxWelcome"), QStringLiteral("Main"));
+#else
+    engine.load(QUrl(QStringLiteral("qrc:/MxWelcome/qml/Main.qml")));
+#endif
 
     return QApplication::exec();
 }

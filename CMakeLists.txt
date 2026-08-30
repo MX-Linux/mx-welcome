@@ -88,8 +88,15 @@ find_package(Qt6 REQUIRED COMPONENTS
     LinguistTools
 )
 
-qt_policy(SET QTP0001 NEW)
-qt_policy(SET QTP0004 NEW)
+# These policies were introduced after the minimum Qt version available on
+# some supported distributions. Only set them when the installed Qt knows
+# about them.
+if(Qt6_VERSION VERSION_GREATER_EQUAL 6.5)
+    qt6_policy(SET QTP0001 NEW)
+endif()
+if(Qt6_VERSION VERSION_GREATER_EQUAL 6.8)
+    qt6_policy(SET QTP0004 NEW)
+endif()
 
 # Enable automatic MOC, UIC, and RCC processing
 set(CMAKE_AUTOMOC ON)
@@ -123,7 +130,7 @@ add_executable(mx-welcome
     ${HEADERS}
 )
 
-qt_add_qml_module(mx-welcome
+qt6_add_qml_module(mx-welcome
     URI MxWelcome
     VERSION 1.0
     QML_FILES
