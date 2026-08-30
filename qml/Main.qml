@@ -250,7 +250,7 @@ ApplicationWindow {
                                 }
                             }
 
-                            ScrollBar.vertical: ScrollBar { policy: ScrollBar.AlwaysOn }
+                            ScrollBar.vertical: ScrollBar { policy: ScrollBar.AsNeeded }
                         }
 
                         Text {
@@ -361,7 +361,7 @@ ApplicationWindow {
                             Layout.fillWidth: true
                             Layout.leftMargin: 24
                             Layout.rightMargin: 24
-                            Layout.minimumHeight: 210
+                            Layout.preferredHeight: Math.max(81, contentHeight + topPadding + bottomPadding)
                             text: root.backend.systemInfo.length > 0 ? root.backend.systemInfo : qsTr("Loading system information…")
                             readOnly: true
                             selectByMouse: true
