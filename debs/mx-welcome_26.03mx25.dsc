@@ -11,8 +11,8 @@ Build-Depends: debhelper-compat (= 12), cmake (>= 3.16), ninja-build, qt6-base-d
 Package-List:
  mx-welcome deb admin optional arch=any
 Checksums-Sha1:
- 78e8760bd12bb92b9cb264669dc51a07465cd30f 2892056 mx-welcome_26.03mx25.tar.xz
+ d81482859af626bb92543b0451079304d41054c0 3990816 mx-welcome_26.03mx25.tar.xz
 Checksums-Sha256:
- 05c0edf730dd957603692b7b5b62283fcab2aa616df981ee34651c66c16fa6b4 2892056 mx-welcome_26.03mx25.tar.xz
+ 1adf6356b9cbf1b4d7184ea579f5e04ebb23833e3680c903cc3208c98d6d63a7 3990816 mx-welcome_26.03mx25.tar.xz
 Files:
- 2252fe1222052629aa7162580ffe2099 2892056 mx-welcome_26.03mx25.tar.xz
+ c45ce9b3b1970438db6a2b53fc7f0a8b 3990816 mx-welcome_26.03mx25.tar.xz
