@@ -67,6 +67,8 @@ AbstractButton {
                 text: card.description.length > 0 ? card.description : qsTr("Open this tool")
                 color: card.mutedTextColor
                 font.pixelSize: Application.font.pixelSize > 0 ? Application.font.pixelSize - 1 : 12
+                wrapMode: Text.Wrap
+                maximumLineCount: 2
                 elide: Text.ElideRight
             }
         }

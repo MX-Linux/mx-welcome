@@ -12,7 +12,7 @@ ApplicationWindow {
     required property var backend
 
     visible: false
-    width: windowSettings.windowWidth
+    width: Math.min(windowSettings.windowWidth, 760)
     height: windowSettings.windowHeight
     minimumWidth: 680
     minimumHeight: 560
