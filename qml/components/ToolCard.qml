@@ -8,7 +8,6 @@ AbstractButton {
     required property string actionId
     required property string title
     required property string description
-    required property string category
     required property url iconSource
     required property color surfaceColor
     required property color primaryTextColor
@@ -68,13 +67,6 @@ AbstractButton {
                 text: card.description.length > 0 ? card.description : qsTr("Open this tool")
                 color: card.mutedTextColor
                 font.pixelSize: Application.font.pixelSize > 0 ? Application.font.pixelSize - 1 : 12
-                elide: Text.ElideRight
-            }
-
-            Text {
-                text: card.category
-                color: card.mutedTextColor
-                font.pixelSize: Application.font.pixelSize > 0 ? Math.max(9, Application.font.pixelSize - 2) : 11
                 elide: Text.ElideRight
             }
         }

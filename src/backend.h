@@ -10,9 +10,6 @@ class Backend final : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(ActionModel *actions READ actions CONSTANT)
-    Q_PROPERTY(QStringList categories READ categories CONSTANT)
-    Q_PROPERTY(QString searchText READ searchText WRITE setSearchText NOTIFY searchTextChanged)
-    Q_PROPERTY(QString selectedCategory READ selectedCategory WRITE setSelectedCategory NOTIFY selectedCategoryChanged)
     Q_PROPERTY(QString distroTitle READ distroTitle CONSTANT)
     Q_PROPERTY(QString distroVersion READ distroVersion CONSTANT)
     Q_PROPERTY(QString debianVersion READ debianVersion CONSTANT)
@@ -33,9 +30,6 @@ public:
     explicit Backend(const QCommandLineParser &parser, QObject *parent = nullptr);
 
     [[nodiscard]] ActionModel *actions();
-    [[nodiscard]] QStringList categories() const;
-    [[nodiscard]] QString searchText() const;
-    [[nodiscard]] QString selectedCategory() const;
     [[nodiscard]] QString distroTitle() const;
     [[nodiscard]] QString distroVersion() const;
     [[nodiscard]] QString debianVersion() const;
@@ -52,8 +46,6 @@ public:
     [[nodiscard]] bool startOnAbout() const;
     [[nodiscard]] QString version() const;
 
-    void setSearchText(const QString &text);
-    void setSelectedCategory(const QString &category);
     void setAutoStartup(bool enabled);
 
     Q_INVOKABLE void activate(const QString &identifier);
@@ -64,8 +56,6 @@ public:
     Q_INVOKABLE QString changelogText() const;
 
 signals:
-    void searchTextChanged();
-    void selectedCategoryChanged();
     void systemInfoChanged();
     void autoStartupChanged();
     void errorOccurred(const QString &title, const QString &message);
@@ -90,8 +80,6 @@ private:
     ActionModel m_actions;
     QVector<ActionDefinition> m_definitions;
     QSettings m_userSettings;
-    QString m_searchText;
-    QString m_selectedCategory;
     QString m_distroTitle;
     QString m_distroVersion;
     QString m_debianVersion;

@@ -128,7 +128,6 @@ qt_add_qml_module(mx-welcome
     VERSION 1.0
     QML_FILES
         qml/Main.qml
-        qml/components/CategoryButton.qml
         qml/components/SecondaryButton.qml
         qml/components/ToolCard.qml
     RESOURCES

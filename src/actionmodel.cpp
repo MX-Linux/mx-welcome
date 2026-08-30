@@ -24,8 +24,6 @@ QVariant ActionModel::data(const QModelIndex &index, int role) const
         return action.title;
     case DescriptionRole:
         return action.description;
-    case CategoryRole:
-        return action.category;
     case IconSourceRole:
         return action.iconSource;
     case EnabledRole:
@@ -40,7 +38,6 @@ QHash<int, QByteArray> ActionModel::roleNames() const
     return {{IdentifierRole, "identifier"},
             {TitleRole, "title"},
             {DescriptionRole, "description"},
-            {CategoryRole, "category"},
             {IconSourceRole, "iconSource"},
             {EnabledRole, "actionEnabled"}};
 }

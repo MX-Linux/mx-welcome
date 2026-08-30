@@ -20,16 +20,6 @@ QString configuredValue(const QSettings &system, const QSettings &defaults, cons
     return system.value(key, defaults.value(key, fallback)).toString();
 }
 
-QString translatedCategory(const QString &identifier)
-{
-    if (identifier == QLatin1String("get-started")) {
-        return Backend::tr("Get Started");
-    }
-    if (identifier == QLatin1String("system")) {
-        return Backend::tr("System");
-    }
-    return Backend::tr("Community");
-}
 }
 
 Backend::Backend(const QCommandLineParser &parser, QObject *parent)
@@ -46,14 +36,6 @@ ActionModel *Backend::actions()
     return &m_actions;
 }
 
-QStringList Backend::categories() const
-{
-    return {tr("All"), translatedCategory(QStringLiteral("get-started")),
-            translatedCategory(QStringLiteral("system")), translatedCategory(QStringLiteral("community"))};
-}
-
-QString Backend::searchText() const { return m_searchText; }
-QString Backend::selectedCategory() const { return m_selectedCategory; }
 QString Backend::distroTitle() const { return m_distroTitle; }
 QString Backend::distroVersion() const { return m_distroVersion; }
 QString Backend::debianVersion() const { return m_debianVersion; }
@@ -69,26 +51,6 @@ bool Backend::liveSession() const { return m_liveSession; }
 bool Backend::showLiveUserInfo() const { return m_showLiveUserInfo; }
 bool Backend::startOnAbout() const { return m_startOnAbout; }
 QString Backend::version() const { return QStringLiteral(VERSION); }
-
-void Backend::setSearchText(const QString &text)
-{
-    if (m_searchText == text) {
-        return;
-    }
-    m_searchText = text;
-    emit searchTextChanged();
-    rebuildActions();
-}
-
-void Backend::setSelectedCategory(const QString &category)
-{
-    if (m_selectedCategory == category) {
-        return;
-    }
-    m_selectedCategory = category;
-    emit selectedCategoryChanged();
-    rebuildActions();
-}
 
 void Backend::setAutoStartup(bool enabled)
 {
@@ -292,23 +254,22 @@ void Backend::loadConfiguration(bool testMode)
         int configIndex;
         QString title;
         QString description;
-        QString category;
         const char *themeIcon;
         QString defaultCommand;
         const char *defaultUrl;
     };
     const QVector<Seed> seeds = {
-        {"setup", 1, tr("Install MX Linux"), tr("Install MX Linux on this computer."), "get-started", "system-software-install", QStringLiteral("minstall-launcher"), nullptr},
-        {"faq", 2, tr("FAQ"), tr("Find answers to frequently asked questions."), "community", "help-faq", QStringLiteral("mx-faq"), nullptr},
-        {"forum", 3, tr("Forums"), tr("Ask questions and join the MX Linux community."), "community", "system-users", {}, "http://forum.mxlinux.org/index.php"},
-        {"manual", 4, tr("Users Manual"), tr("Read the documentation for your MX Linux release."), "get-started", "help-contents", m_isFluxbox ? QStringLiteral("mxfb-help") : QStringLiteral("mx-manual"), nullptr},
-        {"video", 5, tr("Videos"), tr("Watch MX Linux tutorials and demonstrations."), "community", "video-x-generic", {}, "http://www.mxlinux.org/videos/"},
-        {"wiki", 6, tr("Wiki"), tr("Browse community-maintained guides and reference material."), "community", "internet-web-browser", {}, "http://www.mxlinux.org/wiki"},
-        {"contribute", 7, tr("Contribute"), tr("Learn how to support and contribute to MX Linux."), "community", "help-donate", {}, "http://www.mxlinux.org/donate"},
-        {"tools", 8, tr("Tools"), tr("Open the collection of MX system utilities."), "system", "preferences-system", QStringLiteral("mx-tools"), nullptr},
-        {"packages", 9, tr("Popular Apps"), tr("Discover and install popular applications."), "system", "system-software-install", QStringLiteral("mx-packageinstaller"), nullptr},
-        {"tweak", 10, tr("Tweak (Panel, etc...)"), tr("Adjust desktop, panel, and system preferences."), "system", "preferences-desktop", QStringLiteral("mx-tweak"), nullptr},
-        {"tour", 11, tr("Tour"), tr("Take a guided tour of MX Linux."), "get-started", "start-here", QStringLiteral("mx-tour"), nullptr},
+        {"setup", 1, tr("Install MX Linux"), tr("Install MX Linux on this computer."), "system-software-install", QStringLiteral("minstall-launcher"), nullptr},
+        {"faq", 2, tr("FAQ"), tr("Find answers to frequently asked questions."), "help-faq", QStringLiteral("mx-faq"), nullptr},
+        {"forum", 3, tr("Forums"), tr("Ask questions and join the MX Linux community."), "system-users", {}, "http://forum.mxlinux.org/index.php"},
+        {"manual", 4, tr("Users Manual"), tr("Read the documentation for your MX Linux release."), "help-contents", m_isFluxbox ? QStringLiteral("mxfb-help") : QStringLiteral("mx-manual"), nullptr},
+        {"video", 5, tr("Videos"), tr("Watch MX Linux tutorials and demonstrations."), "video-x-generic", {}, "http://www.mxlinux.org/videos/"},
+        {"wiki", 6, tr("Wiki"), tr("Browse community-maintained guides and reference material."), "internet-web-browser", {}, "http://www.mxlinux.org/wiki"},
+        {"contribute", 7, tr("Contribute"), tr("Learn how to support and contribute to MX Linux."), "help-donate", {}, "http://www.mxlinux.org/donate"},
+        {"tools", 8, tr("Tools"), tr("Open the collection of MX system utilities."), "preferences-system", QStringLiteral("mx-tools"), nullptr},
+        {"packages", 9, tr("Popular Apps"), tr("Discover and install popular applications."), "system-software-install", QStringLiteral("mx-packageinstaller"), nullptr},
+        {"tweak", 10, tr("Tweak (Panel, etc...)"), tr("Adjust desktop, panel, and system preferences."), "preferences-desktop", QStringLiteral("mx-tweak"), nullptr},
+        {"tour", 11, tr("Tour"), tr("Take a guided tour of MX Linux."), "start-here", QStringLiteral("mx-tour"), nullptr},
     };
 
     for (const auto &seed : seeds) {
@@ -319,7 +280,6 @@ void Backend::loadConfiguration(bool testMode)
         definition.action.identifier = QString::fromLatin1(seed.identifier);
         definition.action.title = configuredTitle.isEmpty() ? seed.title : configuredTitle;
         definition.action.description = seed.description;
-        definition.action.category = translatedCategory(seed.category);
         definition.action.iconSource = localSource(configuredIcon);
         if (definition.action.iconSource.isEmpty()) {
             definition.action.iconSource = QUrl(QStringLiteral("image://icons/") + QString::fromLatin1(seed.themeIcon));
@@ -339,18 +299,8 @@ void Backend::loadConfiguration(bool testMode)
 void Backend::rebuildActions()
 {
     QVector<WelcomeAction> filtered;
-    const QString allCategory = tr("All");
     for (const auto &definition : m_definitions) {
         if (!definition.visible) {
-            continue;
-        }
-        if (!m_selectedCategory.isEmpty() && m_selectedCategory != allCategory
-            && definition.action.category != m_selectedCategory) {
-            continue;
-        }
-        if (!m_searchText.isEmpty()
-            && !definition.action.title.contains(m_searchText, Qt::CaseInsensitive)
-            && !definition.action.description.contains(m_searchText, Qt::CaseInsensitive)) {
             continue;
         }
         filtered.append(definition.action);

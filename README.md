@@ -9,7 +9,7 @@ A Qt 6 Quick welcome application for MX Linux that provides quick access to usef
 
 ## Features
 
-- **Welcome Dashboard**: Searchable, category-filtered cards for documentation, forums, videos, and system tools
+- **Welcome Dashboard**: A straightforward collection of buttons for documentation, forums, videos, and system tools
 - **Responsive Navigation**: Sidebar navigation on wide windows and compact controls on smaller screens
 - **System Page**: System information display with hardware details and MX Linux version
 - **System Reports**: Generate comprehensive system information reports
@@ -60,7 +60,7 @@ sudo apt install mx-welcome
 ## Usage
 
 1. Launch from the application menu or run `mx-welcome` in terminal
-2. **Welcome Dashboard**: Search, filter by category, or select a card to access:
+2. **Welcome Dashboard**: Select a button to access:
    - **MX Tools**: Launch the MX Tools collection
    - **Manual**: Open the MX Linux manual
    - **Forum**: Access the MX Linux community forum

@@ -9,7 +9,6 @@ struct WelcomeAction
     QString identifier;
     QString title;
     QString description;
-    QString category;
     QUrl iconSource;
     bool enabled = true;
 };
@@ -23,7 +22,6 @@ public:
         IdentifierRole = Qt::UserRole + 1,
         TitleRole,
         DescriptionRole,
-        CategoryRole,
         IconSourceRole,
         EnabledRole
     };

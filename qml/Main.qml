@@ -11,7 +11,7 @@ ApplicationWindow {
 
     required property var backend
 
-    visible: true
+    visible: false
     width: windowSettings.windowWidth
     height: windowSettings.windowHeight
     minimumWidth: 680
@@ -19,7 +19,6 @@ ApplicationWindow {
     title: qsTr("MX Welcome")
     color: backgroundColor
 
-    readonly property bool wideLayout: width >= 820
     readonly property real baseFontSize: Application.font.pixelSize > 0 ? Application.font.pixelSize : 13
 
     SystemPalette {
@@ -31,18 +30,16 @@ ApplicationWindow {
     readonly property color surfaceColor: systemPalette.base
     readonly property color primaryTextColor: systemPalette.text
     readonly property color accentColor: systemPalette.highlight
-    readonly property color highlightedTextColor: systemPalette.highlightedText
     readonly property color mutedTextColor: Qt.alpha(systemPalette.text, 0.68)
     readonly property color borderColor: Qt.alpha(systemPalette.text, 0.18)
     readonly property color accentWash: Qt.alpha(systemPalette.highlight, 0.13)
-    readonly property color raisedColor: Qt.alpha(systemPalette.text, 0.055)
 
     property int currentPage: root.backend.startOnAbout ? 1 : 0
 
     Settings {
         id: windowSettings
         category: "Window"
-        property int windowWidth: 1040
+        property int windowWidth: 760
         property int windowHeight: 720
     }
 
@@ -121,8 +118,24 @@ ApplicationWindow {
                 }
 
                 SecondaryButton {
+                    text: root.currentPage === 0 ? qsTr("About this system") : qsTr("Welcome")
+                    textColor: root.primaryTextColor
+                    surfaceColor: root.surfaceColor
+                    hoverColor: root.accentWash
+                    borderColor: root.borderColor
+                    accentColor: root.accentColor
+                    onClicked: {
+                        if (root.currentPage === 0) {
+                            root.currentPage = 1
+                            root.backend.requestSystemInfo()
+                        } else {
+                            root.currentPage = 0
+                        }
+                    }
+                }
+
+                SecondaryButton {
                     text: qsTr("Manual")
-                    visible: root.width >= 760
                     textColor: root.primaryTextColor
                     surfaceColor: root.surfaceColor
                     hoverColor: root.accentWash
@@ -175,96 +188,6 @@ ApplicationWindow {
             Layout.fillHeight: true
             spacing: 0
 
-            Rectangle {
-                Layout.fillHeight: true
-                Layout.preferredWidth: 206
-                visible: root.wideLayout
-                color: root.raisedColor
-
-                ColumnLayout {
-                    anchors.fill: parent
-                    anchors.margins: 14
-                    spacing: 5
-
-                    CategoryButton {
-                        Layout.fillWidth: true
-                        text: qsTr("Welcome")
-                        selected: root.currentPage === 0
-                        textColor: root.primaryTextColor
-                        accentColor: root.accentColor
-                        accentWash: root.accentWash
-                        borderColor: root.borderColor
-                        onClicked: root.currentPage = 0
-                    }
-                    CategoryButton {
-                        Layout.fillWidth: true
-                        text: qsTr("About this system")
-                        selected: root.currentPage === 1
-                        textColor: root.primaryTextColor
-                        accentColor: root.accentColor
-                        accentWash: root.accentWash
-                        borderColor: root.borderColor
-                        onClicked: {
-                            root.currentPage = 1
-                            root.backend.requestSystemInfo()
-                        }
-                    }
-
-                    Rectangle {
-                        Layout.fillWidth: true
-                        Layout.topMargin: 8
-                        Layout.bottomMargin: 8
-                        Layout.preferredHeight: 1
-                        color: root.borderColor
-                    }
-
-                    Text {
-                        Layout.fillWidth: true
-                        visible: root.currentPage === 0
-                        text: qsTr("Categories")
-                        color: root.mutedTextColor
-                        font.weight: Font.DemiBold
-                        leftPadding: 14
-                    }
-
-                    Repeater {
-                        model: root.backend.categories
-                        CategoryButton {
-                            required property int index
-                            required property string modelData
-                            Layout.fillWidth: true
-                            visible: root.currentPage === 0
-                            text: modelData
-                            selected: root.backend.selectedCategory === modelData
-                                      || (index === 0 && root.backend.selectedCategory.length === 0)
-                            textColor: root.primaryTextColor
-                            accentColor: root.accentColor
-                            accentWash: root.accentWash
-                            borderColor: root.borderColor
-                            onClicked: root.backend.selectedCategory = modelData
-                        }
-                    }
-
-                    Item { Layout.fillHeight: true }
-
-                    CheckBox {
-                        Layout.fillWidth: true
-                        visible: !root.backend.liveSession
-                        text: qsTr("Show at startup")
-                        checked: root.backend.autoStartup
-                        onToggled: root.backend.autoStartup = checked
-                        Accessible.description: qsTr("Show MX Welcome when you log in")
-                    }
-                }
-            }
-
-            Rectangle {
-                Layout.preferredWidth: 1
-                Layout.fillHeight: true
-                visible: root.wideLayout
-                color: root.borderColor
-            }
-
             StackLayout {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
@@ -273,58 +196,8 @@ ApplicationWindow {
                 Item {
                     ColumnLayout {
                         anchors.fill: parent
-                        anchors.margins: root.wideLayout ? 22 : 16
+                        anchors.margins: 22
                         spacing: 14
-
-                        RowLayout {
-                            Layout.fillWidth: true
-                            spacing: 10
-
-                            TextField {
-                                id: searchField
-                                Layout.fillWidth: true
-                                placeholderText: qsTr("Search tools and resources")
-                                text: root.backend.searchText
-                                selectByMouse: true
-                                Accessible.name: qsTr("Search tools and resources")
-                                onTextEdited: root.backend.searchText = text
-
-                                ToolButton {
-                                    anchors.right: parent.right
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    visible: searchField.text.length > 0
-                                    text: "×"
-                                    Accessible.name: qsTr("Clear search")
-                                    onClicked: {
-                                        searchField.clear()
-                                        root.backend.searchText = ""
-                                        searchField.forceActiveFocus()
-                                    }
-                                }
-                            }
-
-                            ComboBox {
-                                Layout.preferredWidth: Math.min(220, root.width * 0.34)
-                                visible: !root.wideLayout
-                                model: root.backend.categories
-                                Accessible.name: qsTr("Category")
-                                onActivated: root.backend.selectedCategory = currentText
-                            }
-
-                            SecondaryButton {
-                                visible: !root.wideLayout
-                                text: qsTr("System")
-                                textColor: root.primaryTextColor
-                                surfaceColor: root.surfaceColor
-                                hoverColor: root.accentWash
-                                borderColor: root.borderColor
-                                accentColor: root.accentColor
-                                onClicked: {
-                                    root.currentPage = 1
-                                    root.backend.requestSystemInfo()
-                                }
-                            }
-                        }
 
                         GridView {
                             id: actionGrid
@@ -354,7 +227,6 @@ ApplicationWindow {
                                 required property string identifier
                                 required property string title
                                 required property string description
-                                required property string category
                                 required property url iconSource
                                 required property bool actionEnabled
                                 width: actionGrid.cellWidth
@@ -366,7 +238,6 @@ ApplicationWindow {
                                     actionId: parent.identifier
                                     title: parent.title
                                     description: parent.description
-                                    category: parent.category
                                     iconSource: parent.iconSource
                                     enabled: parent.actionEnabled
                                     surfaceColor: root.surfaceColor
@@ -386,7 +257,7 @@ ApplicationWindow {
                             Layout.fillWidth: true
                             Layout.fillHeight: true
                             visible: actionGrid.count === 0
-                            text: qsTr("No tools match your search.")
+                            text: qsTr("No actions are available.")
                             color: root.mutedTextColor
                             font.pixelSize: root.baseFontSize + 2
                             horizontalAlignment: Text.AlignHCenter
@@ -394,8 +265,8 @@ ApplicationWindow {
                         }
 
                         CheckBox {
-                            Layout.fillWidth: true
-                            visible: !root.wideLayout && !root.backend.liveSession
+                            Layout.alignment: Qt.AlignHCenter
+                            visible: !root.backend.liveSession
                             text: qsTr("Show this dialog at start up")
                             checked: root.backend.autoStartup
                             onToggled: root.backend.autoStartup = checked
@@ -424,16 +295,6 @@ ApplicationWindow {
                                 color: root.primaryTextColor
                                 font.pixelSize: root.baseFontSize + 7
                                 font.weight: Font.DemiBold
-                            }
-                            SecondaryButton {
-                                visible: !root.wideLayout
-                                text: qsTr("Welcome")
-                                textColor: root.primaryTextColor
-                                surfaceColor: root.surfaceColor
-                                hoverColor: root.accentWash
-                                borderColor: root.borderColor
-                                accentColor: root.accentColor
-                                onClicked: root.currentPage = 0
                             }
                         }
 
@@ -699,6 +560,9 @@ ApplicationWindow {
     }
 
     Component.onCompleted: {
+        root.x = Screen.virtualX + Math.round((Screen.desktopAvailableWidth - root.width) / 2)
+        root.y = Screen.virtualY + Math.round((Screen.desktopAvailableHeight - root.height) / 2)
+        root.visible = true
         if (currentPage === 1)
             root.backend.requestSystemInfo()
     }

@@ -20,8 +20,7 @@ Recommends: mx-docs
 Description: Welcome screen for MX Linux
  MX Welcome displays a responsive dashboard for MX Linux.
  .
- The welcome dashboard provides searchable, categorized access to useful
- resources and tools.
+ The welcome dashboard provides direct access to useful resources and tools.
  .
  The system page provides basic information about the current MX Linux
  version, the user's hardware, and access to a full system report.
