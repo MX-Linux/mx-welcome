@@ -82,34 +82,30 @@ find_package(Qt6 REQUIRED COMPONENTS
     Core
     Gui
     Widgets
+    Qml
+    Quick
+    QuickControls2
     LinguistTools
 )
 
+qt_policy(SET QTP0001 NEW)
+qt_policy(SET QTP0004 NEW)
+
 # Enable automatic MOC, UIC, and RCC processing
 set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOUIC OFF)
 set(CMAKE_AUTORCC ON)
-
-# Set AUTOUIC search paths to find custom widget headers
-set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_SOURCE_DIR}/src)
 
 # Define source files
 set(SOURCES
     src/main.cpp
-    src/mainwindow.cpp
-    src/flatbutton.cpp
-    src/about.cpp
+    src/actionmodel.cpp
+    src/backend.cpp
 )
 
 set(HEADERS
-    src/mainwindow.h
-    src/flatbutton.h
-    src/about.h
-    src/version.h
-)
-
-set(UI_FILES
-    src/mainwindow.ui
+    src/actionmodel.h
+    src/backend.h
 )
 
 # No resource files for mx-welcome currently
@@ -125,15 +121,29 @@ list(FILTER TRANSLATION_FILES EXCLUDE REGEX "/mx-welcome_en_US\\.ts$")
 add_executable(mx-welcome
     ${SOURCES}
     ${HEADERS}
-    ${UI_FILES}
-    # ${RESOURCE_FILES}
+)
+
+qt_add_qml_module(mx-welcome
+    URI MxWelcome
+    VERSION 1.0
+    QML_FILES
+        qml/Main.qml
+        qml/components/CategoryButton.qml
+        qml/components/SecondaryButton.qml
+        qml/components/ToolCard.qml
+    RESOURCES
+        icons/mx-welcome.svg
 )
 
 # Link Qt6 libraries
 target_link_libraries(mx-welcome
+    PRIVATE
     Qt6::Core
     Qt6::Gui
     Qt6::Widgets
+    Qt6::Qml
+    Qt6::Quick
+    Qt6::QuickControls2
 )
 
 # Set compiler flags
@@ -196,7 +206,6 @@ set_target_properties(mx-welcome PROPERTIES
 )
 
 # Add build directory to include path for generated version.h
-# Also add source directory for AUTOUIC-generated headers to find custom widget headers
 target_include_directories(mx-welcome PRIVATE
     ${CMAKE_BINARY_DIR}/src
     ${CMAKE_SOURCE_DIR}/src
