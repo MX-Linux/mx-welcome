@@ -266,6 +266,7 @@ ApplicationWindow {
                             Layout.alignment: Qt.AlignHCenter
                             visible: !root.backend.liveSession
                             text: qsTr("Show this dialog at start up")
+                            palette.windowText: root.primaryTextColor
                             checked: root.backend.autoStartup
                             onToggled: root.backend.autoStartup = checked
                         }
