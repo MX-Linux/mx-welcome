@@ -419,6 +419,10 @@ ApplicationWindow {
         width: Math.min(520, root.width - 40)
         modal: true
         title: qsTr("About MX Welcome")
+        background: Rectangle {
+            color: root.backgroundColor
+            border.color: root.borderColor
+        }
         footer: DialogButtonBox {
             standardButtons: DialogButtonBox.Close
             alignment: Qt.AlignRight
@@ -442,6 +446,7 @@ ApplicationWindow {
                 Layout.preferredWidth: 72
                 Layout.preferredHeight: 72
                 source: root.backend.logoSource.toString().length > 0 ? root.backend.logoSource : "image://icons/mx-welcome"
+                sourceSize: Qt.size(96, 96)
                 fillMode: Image.PreserveAspectFit
             }
             Text {
@@ -501,6 +506,10 @@ ApplicationWindow {
         width: Math.min(760, root.width - 40)
         height: Math.min(620, root.height - 40)
         modal: true
+        background: Rectangle {
+            color: root.backgroundColor
+            border.color: root.borderColor
+        }
         footer: DialogButtonBox {
             standardButtons: DialogButtonBox.Close
             alignment: Qt.AlignRight
@@ -534,6 +543,10 @@ ApplicationWindow {
         anchors.centerIn: Overlay.overlay
         width: Math.min(440, root.width - 40)
         modal: true
+        background: Rectangle {
+            color: root.backgroundColor
+            border.color: root.borderColor
+        }
         footer: DialogButtonBox {
             standardButtons: DialogButtonBox.Ok
             alignment: Qt.AlignRight
