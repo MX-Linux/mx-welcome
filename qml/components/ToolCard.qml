@@ -20,7 +20,7 @@ AbstractButton {
     focusPolicy: Qt.StrongFocus
 
     background: Rectangle {
-        radius: 14
+        radius: 6
         color: card.down ? Qt.alpha(card.accentColor, 0.18)
                          : (card.hovered ? card.accentWash : card.surfaceColor)
         border.width: card.activeFocus ? 2 : 1

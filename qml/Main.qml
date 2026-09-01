@@ -317,7 +317,7 @@ ApplicationWindow {
                                     required property var modelData
                                     Layout.fillWidth: true
                                     Layout.preferredHeight: 82
-                                    radius: 11
+                                    radius: 6
                                     color: root.surfaceColor
                                     border.width: 1
                                     border.color: root.borderColor

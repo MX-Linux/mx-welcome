@@ -26,7 +26,7 @@ Button {
     }
 
     background: Rectangle {
-        radius: 8
+        radius: 6
         color: control.down ? Qt.darker(control.hoverColor, 1.08)
                             : (control.hovered ? control.hoverColor : control.surfaceColor)
         border.width: control.activeFocus ? 2 : 1
