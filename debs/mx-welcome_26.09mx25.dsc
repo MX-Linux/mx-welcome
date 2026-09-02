@@ -14,20 +14,20 @@ Build-Depends: debhelper-compat (= 12), cmake (>= 3.16), ninja-build, qt6-base-d
 Package-List:
  mx-welcome deb admin optional arch=any
 Checksums-Sha1:
- 3dfdc4aeda5aa744dd92c1f9f4e690c238cb1cb0 82648 mx-welcome_26.09mx25.tar.xz
+ 57e097379b5b1c2ecae36a3b3104ff9c10d907b6 82824 mx-welcome_26.09mx25.tar.xz
 Checksums-Sha256:
- 4d4cad4566123d1e642ebc7ba7e5423b4887f4b857ca40384b0e8c3c1826634e 82648 mx-welcome_26.09mx25.tar.xz
+ 2cdc9e2fd54e5cd69a78c5ff8391de67774f88eabf0f4b0acb355687143690bf 82824 mx-welcome_26.09mx25.tar.xz
 Files:
- 02594b26028b3510eeff97a9a7a28924 82648 mx-welcome_26.09mx25.tar.xz
+ d9ac177fd8054cd29a1a3c07a7e3c8e2 82824 mx-welcome_26.09mx25.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmqYjnwTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHVlB/0SYI4fDJx6yCiG+dzLoSLUckKvLhX6
-0Q2q4qmqyv2fOQBlapN20OtI8UUlwDPPqFNLB4Fa9zS6VhpARXdeRAwpsOrohv15
-ALKc8drvq5I8SE/ZhrfdLg5l46rYSC9rrzibnZveginjq1PQwq/YGc3/lV3dIqJr
-7CZPHHQH7LpacdgP1ceL6TDVx1NNx+FycchW1qS3usSeKUIS39NBt/WfW7UV3XqV
-Ci0av/mpN3nxWs1UQ8TXC15ckOiLuUAf6hVeB6HeYO/x4SJHhWIjgVs7U/QCo2LM
-/qLHCg6chMxWqmIPkX9ndCRrYrVJQGbWVeoRy6cMku+6ublqagID6C7V
-=9OrQ
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmqYlGsTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumN/HB/wJ196mqhhUWcQGS1goJGQXOFbttP3K
+LhZranieJz0ISjdNG5nWii9TnROPFtY9W64xZL6+me5SF9yy+kRu3GMVYqZLd5zl
+MIelNXZDsw+oKuU2IzVqnW7SV7NyhKMZC/jBs3Gb0IbltK8v9YR5U2f6Sngety7B
+ZyOhrLQLQ7XbkskectAq3WgD5xSEoN6QX5ihe1ZGEvWfqb2meIYyGG+EEKISKK6s
+BMGKwRINjrVodrx2rLe4vXNOq8s2iCGYznnw4yAUWRHtCCPU0EEuoG2efpOVTFjV
+t65CNqHIxxBg8KPKJnm0oWaI9foKY5ploCHBBPLwlh2HlJdmTH65P0Pn
+=rVt/
 -----END PGP SIGNATURE-----
