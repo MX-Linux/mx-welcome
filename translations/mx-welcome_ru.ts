@@ -180,123 +180,123 @@
 <context>
     <name>Main</name>
     <message>
-        <location filename="../qml/Main.qml" line="19"/>
-        <location filename="../qml/Main.qml" line="105"/>
-        <location filename="../qml/Main.qml" line="451"/>
+        <location filename="../qml/Main.qml" line="17"/>
+        <location filename="../qml/Main.qml" line="103"/>
+        <location filename="../qml/Main.qml" line="455"/>
         <source>MX Welcome</source>
         <translation type="unfinished">MX Приветствие</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="138"/>
+        <location filename="../qml/Main.qml" line="136"/>
         <source>Manual</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="148"/>
+        <location filename="../qml/Main.qml" line="146"/>
         <source>About</source>
         <translation type="unfinished">О системе</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="121"/>
+        <location filename="../qml/Main.qml" line="119"/>
         <source>Welcome</source>
         <translation type="unfinished">Добро пожаловать</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="121"/>
-        <location filename="../qml/Main.qml" line="294"/>
+        <location filename="../qml/Main.qml" line="119"/>
+        <location filename="../qml/Main.qml" line="293"/>
         <source>About this system</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="260"/>
+        <location filename="../qml/Main.qml" line="258"/>
         <source>No actions are available.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="270"/>
+        <location filename="../qml/Main.qml" line="268"/>
         <source>Show this dialog at start up</source>
         <translation type="unfinished">Показывать этот диалог при запуске</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="311"/>
+        <location filename="../qml/Main.qml" line="310"/>
         <source>MX version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="312"/>
+        <location filename="../qml/Main.qml" line="311"/>
         <source>Debian version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="313"/>
+        <location filename="../qml/Main.qml" line="312"/>
         <source>Desktop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="314"/>
+        <location filename="../qml/Main.qml" line="313"/>
         <source>Supported until</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="340"/>
+        <location filename="../qml/Main.qml" line="339"/>
         <source>Unavailable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="354"/>
-        <location filename="../qml/Main.qml" line="369"/>
+        <location filename="../qml/Main.qml" line="353"/>
+        <location filename="../qml/Main.qml" line="368"/>
         <source>Short system report</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="365"/>
+        <location filename="../qml/Main.qml" line="364"/>
         <source>Loading system information…</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="379"/>
+        <location filename="../qml/Main.qml" line="378"/>
         <source>Quick-System-Info Full Report</source>
         <translation type="unfinished">Подробный отчёт Quick-System-Info</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="388"/>
-        <location filename="../qml/Main.qml" line="397"/>
+        <location filename="../qml/Main.qml" line="387"/>
+        <location filename="../qml/Main.qml" line="396"/>
         <source>Terms of Use</source>
         <translation type="unfinished">Условия использования</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="423"/>
+        <location filename="../qml/Main.qml" line="422"/>
         <source>About MX Welcome</source>
         <translation type="unfinished">О программе MX Приветствие</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="459"/>
+        <location filename="../qml/Main.qml" line="463"/>
         <source>Version: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="465"/>
+        <location filename="../qml/Main.qml" line="469"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
         <translation type="unfinished">Программа показа экрана приветствия в MX Linux</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="472"/>
+        <location filename="../qml/Main.qml" line="476"/>
         <source>Copyright (c) MX Linux</source>
         <translation type="unfinished">Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="479"/>
+        <location filename="../qml/Main.qml" line="483"/>
         <source>License</source>
         <translation type="unfinished">Лицензия</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="485"/>
+        <location filename="../qml/Main.qml" line="489"/>
         <source>MX Welcome License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="488"/>
-        <location filename="../qml/Main.qml" line="494"/>
+        <location filename="../qml/Main.qml" line="492"/>
+        <location filename="../qml/Main.qml" line="498"/>
         <source>Changelog</source>
         <translation type="unfinished">Список изменений</translation>
     </message>
@@ -304,120 +304,161 @@
 <context>
     <name>MainWindow</name>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="573"/>
         <source>MX Welcome</source>
-        <translation type="vanished">MX Приветствие</translation>
+        <translation>MX Приветствие</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="576"/>
         <source>Quit application</source>
-        <translation type="vanished">Выход</translation>
+        <translation>Выход</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="578"/>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="580"/>
         <source>Alt+N</source>
-        <translation type="vanished">Alt+N</translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="583"/>
         <source>About this application</source>
-        <translation type="vanished">Об этом приложении</translation>
+        <translation>Об этом приложении</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="585"/>
         <source>About...</source>
-        <translation type="vanished">О программе...</translation>
+        <translation>О программе...</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="587"/>
         <source>Alt+B</source>
-        <translation type="vanished">Alt+B</translation>
+        <translation>Alt+B</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="600"/>
         <source>Welcome</source>
-        <translation type="vanished">Добро пожаловать</translation>
+        <translation>Добро пожаловать</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="589"/>
         <source>Install MX Linux</source>
-        <translation type="vanished">Установить MX Linux</translation>
+        <translation>Установить MX Linux</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="590"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation type="vanished">Настройка (панели и пр.)</translation>
+        <translation>Настройка (панели и пр.)</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="591"/>
         <source>Tools</source>
-        <translation type="vanished">Инструменты</translation>
+        <translation>Инструменты</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="592"/>
         <source>Wiki</source>
-        <translation type="vanished">Вики</translation>
+        <translation>Вики</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="593"/>
         <source>Users Manual</source>
-        <translation type="vanished">Руководство пользователя</translation>
+        <translation>Руководство пользователя</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="594"/>
         <source>FAQ</source>
-        <translation type="vanished">ЧаВо</translation>
+        <translation>ЧаВо</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="595"/>
         <source>Tour</source>
-        <translation type="vanished">Обзор</translation>
+        <translation>Обзор</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="596"/>
         <source>Popular Apps</source>
-        <translation type="vanished">Популярные приложения</translation>
+        <translation>Популярные приложения</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="597"/>
         <source>Contribute</source>
-        <translation type="vanished">Поддержать</translation>
+        <translation>Поддержать</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="598"/>
         <source>Videos</source>
-        <translation type="vanished">Видео</translation>
+        <translation>Видео</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="599"/>
         <source>Forums</source>
-        <translation type="vanished">Форумы</translation>
+        <translation>Форумы</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="611"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/ui_mainwindow.h" line="621"/>
         <source>About</source>
-        <translation type="vanished">О системе</translation>
+        <translation>О системе</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="620"/>
         <source>SHORT SYSTEM REPORT:</source>
-        <translation type="vanished">КРАТКИЙ ОТЧЁТ О СИСТЕМЕ:</translation>
+        <translation>КРАТКИЙ ОТЧЁТ О СИСТЕМЕ:</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="601"/>
         <source>DESKTOP</source>
-        <translation type="vanished">РАБОЧИЙ СТОЛ</translation>
+        <translation>РАБОЧИЙ СТОЛ</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="603"/>
         <source>Quick-System-Info Full Report</source>
-        <translation type="vanished">Подробный отчёт Quick-System-Info</translation>
+        <translation>Подробный отчёт Quick-System-Info</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="604"/>
         <source>Terms of Use</source>
-        <translation type="vanished">Условия использования</translation>
+        <translation>Условия использования</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="606"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
-        <translation type="vanished">Название «MX Linux» подпадает под Linux Foundation Sublicense No. 20140605-0483. Мы разрабатываем программное обеспечение, на которое распространяется бесплатная лицензия, доступная в списке Вики. Мы также включаем программное обеспечение, разработанное другими, которое находится под бесплатной лицензией.</translation>
+        <translation>Название «MX Linux» подпадает под Linux Foundation Sublicense No. 20140605-0483. Мы разрабатываем программное обеспечение, на которое распространяется бесплатная лицензия, доступная в списке Вики. Мы также включаем программное обеспечение, разработанное другими, которое находится под бесплатной лицензией.</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="607"/>
         <source>MX VERSION</source>
-        <translation type="vanished">ВЕРСИЯ MX</translation>
+        <translation>ВЕРСИЯ MX</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="608"/>
         <source>DEBIAN VERSION:</source>
-        <translation type="vanished">ВЕРСИЯ DEBIAN:</translation>
+        <translation>ВЕРСИЯ DEBIAN:</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="609"/>
         <source>SUPPORTED UNTIL:</source>
-        <translation type="vanished">СРОК ПОДДЕРЖКИ:</translation>
+        <translation>СРОК ПОДДЕРЖКИ:</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="622"/>
         <source>Show this dialog at start up</source>
-        <translation type="vanished">Показывать этот диалог при запуске</translation>
+        <translation>Показывать этот диалог при запуске</translation>
     </message>
     <message>
         <source>User demo, password:</source>
@@ -482,27 +523,27 @@
         <translation type="vanished">Начните с выбора вкладки «О системе». В ней представлены основная информация о текущей версии MX Linux и оборудовании пользователя, а также доступ к полному системному отчёту.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="55"/>
+        <location filename="../src/main.cpp" line="66"/>
         <source>This tool displays the MX Linux welcome screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="59"/>
+        <location filename="../src/main.cpp" line="70"/>
         <source>Start with About selected. The About page provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="61"/>
+        <location filename="../src/main.cpp" line="72"/>
         <source>Run a test mode.</source>
         <translation>Запустить тестовый режим.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="82"/>
+        <location filename="../src/main.cpp" line="93"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="83"/>
+        <location filename="../src/main.cpp" line="94"/>
         <source>You must run this program as normal user.</source>
         <translation type="unfinished">Вы должны запустить эту программу как обычный пользователь.</translation>
     </message>

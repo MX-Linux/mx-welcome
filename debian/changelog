@@ -1,3 +1,12 @@
+mx-welcome (26.09mx25) mx; urgency=medium
+
+  * replace the old tabbed interface with a responsive dashboard that supports searching, category filtering, and compact layouts
+  * prevent system-information checks from leaving the application unresponsive when a command stalls
+  * preserve custom live-session information and use the correct MX application-menu category
+  * update translations for the new interface and add Korean localization support
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 02 Sep 2026 12:54:43 -0400
+
 mx-welcome (26.03mx25) mx; urgency=medium
 
   * show license inside app and remove mx-viewer/xdg-open dependency

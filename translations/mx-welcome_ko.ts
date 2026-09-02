@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="gl_ES">
+<TS version="2.1" language="ko">
 <context>
     <name>Backend</name>
     <message>
@@ -9,7 +9,7 @@
         <location filename="../src/backend.cpp" line="118"/>
         <location filename="../src/backend.cpp" line="314"/>
         <source>Error</source>
-        <translation type="unfinished">Erro</translation>
+        <translation type="unfinished">에러</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="74"/>
@@ -49,7 +49,7 @@
     <message>
         <location filename="../src/backend.cpp" line="197"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
-        <translation type="unfinished">O nome &quot;MX Linux&quot; está cuberto pola sublicenza da Linux Foundation No. 20140605-0483. Desenvolvemos software que está cuberto por unha licenza libre que pode ser examinada na lista da Wiki. Tamén incluímos software desenvolvido por outros que está baixo unha licenza libre.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="208"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../src/backend.cpp" line="262"/>
         <source>Install MX Linux</source>
-        <translation type="unfinished">Instalar MX Linux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="262"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../src/backend.cpp" line="263"/>
         <source>FAQ</source>
-        <translation type="unfinished">Preguntas e Respostas</translation>
+        <translation type="unfinished">FAQ</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="263"/>
@@ -84,7 +84,7 @@
     <message>
         <location filename="../src/backend.cpp" line="264"/>
         <source>Forums</source>
-        <translation type="unfinished">Forums</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="264"/>
@@ -94,7 +94,7 @@
     <message>
         <location filename="../src/backend.cpp" line="265"/>
         <source>Users Manual</source>
-        <translation type="unfinished">Manual do usuario</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="265"/>
@@ -104,7 +104,7 @@
     <message>
         <location filename="../src/backend.cpp" line="266"/>
         <source>Videos</source>
-        <translation type="unfinished">Vídeos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="266"/>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../src/backend.cpp" line="267"/>
         <source>Wiki</source>
-        <translation type="unfinished">Wiki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="267"/>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../src/backend.cpp" line="268"/>
         <source>Contribute</source>
-        <translation type="unfinished">Contribuír</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="268"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Tools</source>
-        <translation type="unfinished">Ferramentas</translation>
+        <translation type="unfinished">도구</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
@@ -144,7 +144,7 @@
     <message>
         <location filename="../src/backend.cpp" line="270"/>
         <source>Popular Apps</source>
-        <translation type="unfinished">Aplicativos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="270"/>
@@ -154,7 +154,7 @@
     <message>
         <location filename="../src/backend.cpp" line="271"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation type="unfinished">Axustes (Panel, etc...)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="271"/>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../src/backend.cpp" line="272"/>
         <source>Tour</source>
-        <translation type="unfinished">Visita</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="272"/>
@@ -184,7 +184,18 @@
         <location filename="../qml/Main.qml" line="103"/>
         <location filename="../qml/Main.qml" line="455"/>
         <source>MX Welcome</source>
-        <translation type="unfinished">MX Dámosche a benvida</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="119"/>
+        <location filename="../qml/Main.qml" line="293"/>
+        <source>About this system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="119"/>
+        <source>Welcome</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="136"/>
@@ -194,17 +205,6 @@
     <message>
         <location filename="../qml/Main.qml" line="146"/>
         <source>About</source>
-        <translation type="unfinished">Sobre</translation>
-    </message>
-    <message>
-        <location filename="../qml/Main.qml" line="119"/>
-        <source>Welcome</source>
-        <translation type="unfinished">Benvido</translation>
-    </message>
-    <message>
-        <location filename="../qml/Main.qml" line="119"/>
-        <location filename="../qml/Main.qml" line="293"/>
-        <source>About this system</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -215,7 +215,7 @@
     <message>
         <location filename="../qml/Main.qml" line="268"/>
         <source>Show this dialog at start up</source>
-        <translation type="unfinished">Amosar esta lapela ao iniciar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="310"/>
@@ -256,18 +256,18 @@
     <message>
         <location filename="../qml/Main.qml" line="378"/>
         <source>Quick-System-Info Full Report</source>
-        <translation type="unfinished">Informe completo de Quick-System-Info</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="387"/>
         <location filename="../qml/Main.qml" line="396"/>
         <source>Terms of Use</source>
-        <translation type="unfinished">Termos de uso</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="422"/>
         <source>About MX Welcome</source>
-        <translation type="unfinished">Sobre MX Dámosche a benvida</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="463"/>
@@ -277,17 +277,17 @@
     <message>
         <location filename="../qml/Main.qml" line="469"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation type="unfinished">Programa para amosar unha pantalla de benvida no MX Linux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="476"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Copyright (c) MX Linux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="483"/>
         <source>License</source>
-        <translation type="unfinished">Licenza</translation>
+        <translation type="unfinished">라이센스</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="489"/>
@@ -298,7 +298,7 @@
         <location filename="../qml/Main.qml" line="492"/>
         <location filename="../qml/Main.qml" line="498"/>
         <source>Changelog</source>
-        <translation type="unfinished">Rexistro dos cambios</translation>
+        <translation type="unfinished">변경 로그</translation>
     </message>
 </context>
 <context>
@@ -306,32 +306,32 @@
     <message>
         <location filename="../src/ui_mainwindow.h" line="573"/>
         <source>MX Welcome</source>
-        <translation>MX Dámosche a benvida</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="576"/>
         <source>Quit application</source>
-        <translation>Saír do aplicativo</translation>
+        <translation>종료</translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="578"/>
         <source>Close</source>
-        <translation>Cerrar</translation>
+        <translation>닫기</translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="580"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="583"/>
         <source>About this application</source>
-        <translation>Sobre esta aplicación</translation>
+        <translation>이 애플리케이션 정보</translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="585"/>
         <source>About...</source>
-        <translation>Sobre...</translation>
+        <translation>About...</translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="587"/>
@@ -341,62 +341,62 @@
     <message>
         <location filename="../src/ui_mainwindow.h" line="600"/>
         <source>Welcome</source>
-        <translation>Benvido</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="589"/>
         <source>Install MX Linux</source>
-        <translation>Instalar MX Linux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="590"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation>Axustes (Panel, etc...)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="591"/>
         <source>Tools</source>
-        <translation>Ferramentas</translation>
+        <translation>도구</translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="592"/>
         <source>Wiki</source>
-        <translation>Wiki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="593"/>
         <source>Users Manual</source>
-        <translation>Manual do usuario</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="594"/>
         <source>FAQ</source>
-        <translation>Preguntas e Respostas</translation>
+        <translation>FAQ</translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="595"/>
         <source>Tour</source>
-        <translation>Visita</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="596"/>
         <source>Popular Apps</source>
-        <translation>Aplicativos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="597"/>
         <source>Contribute</source>
-        <translation>Contribuír</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="598"/>
         <source>Videos</source>
-        <translation>Vídeos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="599"/>
         <source>Forums</source>
-        <translation>Forums</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="611"/>
@@ -413,115 +413,87 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../src/ui_mainwindow.h" line="621"/>
         <source>About</source>
-        <translation>Sobre</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="620"/>
         <source>SHORT SYSTEM REPORT:</source>
-        <translation>INFORME CURTO DO SISTEMA:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="601"/>
         <source>DESKTOP</source>
-        <translation>ESCRITORIO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="603"/>
         <source>Quick-System-Info Full Report</source>
-        <translation>Informe completo de Quick-System-Info</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="604"/>
         <source>Terms of Use</source>
-        <translation>Termos de uso</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="606"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
-        <translation>O nome &quot;MX Linux&quot; está cuberto pola sublicenza da Linux Foundation No. 20140605-0483. Desenvolvemos software que está cuberto por unha licenza libre que pode ser examinada na lista da Wiki. Tamén incluímos software desenvolvido por outros que está baixo unha licenza libre.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="607"/>
         <source>MX VERSION</source>
-        <translation>Versión MX</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="608"/>
         <source>DEBIAN VERSION:</source>
-        <translation>DEBIAN VERSIÓN:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="609"/>
         <source>SUPPORTED UNTIL:</source>
-        <translation>SOPORTADO ATÉ:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="622"/>
         <source>Show this dialog at start up</source>
-        <translation>Amosar esta lapela ao iniciar</translation>
-    </message>
-    <message>
-        <source>User demo, password:</source>
-        <translation type="vanished">Usuario demo, contrasinal:</translation>
-    </message>
-    <message>
-        <source>Superuser root, password:</source>
-        <translation type="vanished">Superusuario, contrasinal:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">Erro</translation>
-    </message>
-    <message>
-        <source>About MX Welcome</source>
-        <translation type="vanished">Sobre MX Dámosche a benvida</translation>
+        <translation type="vanished">에러</translation>
     </message>
     <message>
         <source>Version: </source>
-        <translation type="vanished">Versión</translation>
-    </message>
-    <message>
-        <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation type="vanished">Programa para amosar unha pantalla de benvida no MX Linux</translation>
-    </message>
-    <message>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Copyright (c) MX Linux</translation>
+        <translation type="vanished">버전:</translation>
     </message>
     <message>
         <source>License</source>
-        <translation type="vanished">Licenza</translation>
+        <translation type="vanished">라이센스</translation>
     </message>
     <message>
         <source>Changelog</source>
-        <translation type="vanished">Rexistro dos cambios</translation>
+        <translation type="vanished">변경 로그</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation type="vanished">취소</translation>
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation type="vanished">&amp;Cerrar</translation>
+        <translation type="vanished">닫기(&amp;C)</translation>
     </message>
 </context>
 <context>
     <name>QApplication</name>
     <message>
         <source>You must run this program as normal user.</source>
-        <translation type="vanished">Dbeeb executar este programa como usuario normal.</translation>
+        <translation type="vanished">이 프로그램은 일반 사용자로 실행해야 합니다.</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
-    <message>
-        <source>This tool displays a welcome screen with two tabs.</source>
-        <translation type="vanished">Esta ferramenta mostra unha pantalla de benvida con dúas lapelas.</translation>
-    </message>
-    <message>
-        <source>Start with About tab selected. The About tab provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
-        <translation type="vanished">Comeza coa lapela &quot;Sobre&quot; seleccionada. A lapela &quot;Sobre&quot; proporciona información básica sobre a versión actual de MX Linux, o hardware do usuario e acceso a un informe completo do sistema.</translation>
-    </message>
     <message>
         <location filename="../src/main.cpp" line="66"/>
         <source>This tool displays the MX Linux welcome screen.</source>
@@ -535,17 +507,17 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../src/main.cpp" line="72"/>
         <source>Run a test mode.</source>
-        <translation>Executar un modo de proba.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="93"/>
         <source>Error</source>
-        <translation>Erro</translation>
+        <translation>에러</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="94"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished">Dbeeb executar este programa como usuario normal.</translation>
+        <translation type="unfinished">이 프로그램은 일반 사용자로 실행해야 합니다.</translation>
     </message>
 </context>
 <context>
