@@ -15,6 +15,7 @@
 #include <QMessageBox>
 #include <QQmlApplicationEngine>
 #include <QQuickImageProvider>
+#include <QQuickStyle>
 #include <QTranslator>
 #include <QUrl>
 #include <QtGlobal>
@@ -93,6 +94,15 @@ int main(int argc, char *argv[])
         QMessageBox::critical(nullptr, QObject::tr("Error"),
                               QObject::tr("You must run this program as normal user."));
         return EXIT_FAILURE;
+    }
+
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")
+        && qgetenv("QT_STYLE_OVERRIDE").toLower() == "gtk2") {
+        // QT_STYLE_OVERRIDE=gtk2 is a widget-only style name with no corresponding Qt Quick
+        // Controls style module. Left alone, the platform theme's style hint propagates it to
+        // Quick Controls, which then fails to load. Only override in that specific case, so
+        // every other environment still gets its native platform style (see README.md).
+        QQuickStyle::setStyle(QStringLiteral("Fusion"));
     }
 
     Backend backend(parser);
