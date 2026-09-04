@@ -1,4 +1,4 @@
-mx-welcome (26.09mx25) mx; urgency=medium
+mx-welcome (26.09.1mx25) mx; urgency=medium
 
   * replace the old tabbed interface with a responsive dashboard that supports searching, category filtering, and compact layouts
   * prevent system-information checks from leaving the application unresponsive when a command stalls
