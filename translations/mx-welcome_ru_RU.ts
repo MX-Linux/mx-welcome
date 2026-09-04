@@ -523,27 +523,27 @@ li.checked::marker { content: &quot;\2612&quot;; }
         <translation type="vanished">Начните с выбора вкладки «О системе». В ней представлены основная информация о текущей версии MX Linux и оборудовании пользователя, а также доступ к полному системному отчёту.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="66"/>
+        <location filename="../src/main.cpp" line="67"/>
         <source>This tool displays the MX Linux welcome screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="70"/>
+        <location filename="../src/main.cpp" line="71"/>
         <source>Start with About selected. The About page provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="72"/>
+        <location filename="../src/main.cpp" line="73"/>
         <source>Run a test mode.</source>
         <translation>Запустить тестовый режим.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="93"/>
+        <location filename="../src/main.cpp" line="94"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="94"/>
+        <location filename="../src/main.cpp" line="95"/>
         <source>You must run this program as normal user.</source>
         <translation type="unfinished">Вы должны запустить эту программу как обычный пользователь.</translation>
     </message>

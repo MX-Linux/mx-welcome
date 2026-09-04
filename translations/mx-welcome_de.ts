@@ -523,27 +523,27 @@ li.checked::marker { content: &quot;\2612&quot;; }
         <translation type="vanished">Beginnen Sie damit, die Registerkarte &apos;Über&apos; (About-Tab) auszuwählen. Der About-Tab liefert erste Informationen über die aktuelle MX-Linux-Version, die Hardware des Anwenders, und Zugang zu einem vollständigen Systembericht.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="66"/>
+        <location filename="../src/main.cpp" line="67"/>
         <source>This tool displays the MX Linux welcome screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="70"/>
+        <location filename="../src/main.cpp" line="71"/>
         <source>Start with About selected. The About page provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="72"/>
+        <location filename="../src/main.cpp" line="73"/>
         <source>Run a test mode.</source>
         <translation>Einen Testmodus starten.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="93"/>
+        <location filename="../src/main.cpp" line="94"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="94"/>
+        <location filename="../src/main.cpp" line="95"/>
         <source>You must run this program as normal user.</source>
         <translation type="unfinished">Diese Anwendung muss als normaler Benutzer (nicht: root) ausgeführt werden.</translation>
     </message>

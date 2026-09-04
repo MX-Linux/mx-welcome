@@ -1,3 +1,9 @@
+mx-welcome (26.09.2mx25) mx; urgency=medium
+
+  * prevent the application from failing to start when the desktop is configured to use the GTK2 style
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 04 Sep 2026 17:27:04 -0400
+
 mx-welcome (26.09.1mx25) mx; urgency=medium
 
   * replace the old tabbed interface with a responsive dashboard that supports searching, category filtering, and compact layouts
