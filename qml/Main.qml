@@ -362,6 +362,7 @@ ApplicationWindow {
                             Layout.rightMargin: 24
                             Layout.preferredHeight: Math.max(81, contentHeight + topPadding + bottomPadding)
                             text: root.backend.systemInfo.length > 0 ? root.backend.systemInfo : qsTr("Loading system information…")
+                            color: root.primaryTextColor
                             readOnly: true
                             selectByMouse: true
                             wrapMode: TextEdit.Wrap
@@ -530,6 +531,7 @@ ApplicationWindow {
             anchors.fill: parent
             TextArea {
                 id: documentText
+                color: root.primaryTextColor
                 readOnly: true
                 selectByMouse: true
                 wrapMode: TextEdit.Wrap
