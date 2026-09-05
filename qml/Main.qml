@@ -269,6 +269,8 @@ ApplicationWindow {
                             palette.windowText: root.primaryTextColor
                             checked: root.backend.autoStartup
                             onToggled: root.backend.autoStartup = checked
+
+                            HoverHandler { cursorShape: Qt.PointingHandCursor }
                         }
                     }
                 }

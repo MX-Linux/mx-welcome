@@ -16,6 +16,8 @@ Button {
     topPadding: 8
     bottomPadding: 8
 
+    HoverHandler { cursorShape: Qt.PointingHandCursor }
+
     contentItem: Text {
         text: control.text
         color: control.textColor

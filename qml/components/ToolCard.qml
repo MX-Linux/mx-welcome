@@ -19,6 +19,8 @@ AbstractButton {
     hoverEnabled: true
     focusPolicy: Qt.StrongFocus
 
+    HoverHandler { cursorShape: Qt.PointingHandCursor }
+
     background: Rectangle {
         radius: 6
         color: card.down ? Qt.alpha(card.accentColor, 0.18)
