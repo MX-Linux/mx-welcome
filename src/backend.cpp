@@ -276,10 +276,11 @@ void Backend::loadConfiguration(bool testMode)
         const QString prefix = QString::number(seed.configIndex);
         const QString configuredTitle = configuredValue(system, defaults, prefix + QStringLiteral("text"));
         const QString configuredIcon = configuredValue(system, defaults, prefix + QStringLiteral("icon"));
+        const QString configuredDescription = configuredValue(system, defaults, prefix + QStringLiteral("description"));
         ActionDefinition definition;
         definition.action.identifier = QString::fromLatin1(seed.identifier);
         definition.action.title = configuredTitle.isEmpty() ? seed.title : configuredTitle;
-        definition.action.description = seed.description;
+        definition.action.description = configuredDescription.isEmpty() ? seed.description : configuredDescription;
         definition.action.iconSource = localSource(configuredIcon);
         if (definition.action.iconSource.isEmpty()) {
             definition.action.iconSource = QUrl(QStringLiteral("image://icons/") + QString::fromLatin1(seed.themeIcon));
