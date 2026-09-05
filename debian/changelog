@@ -1,3 +1,10 @@
+mx-welcome (26.09.3mx25) mx; urgency=medium
+
+  * allow action descriptions to be customized through the configuration
+  * make system reports and documents readable with dark desktop themes
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 05 Sep 2026 08:24:22 -0400
+
 mx-welcome (26.09.2mx25) mx; urgency=medium
 
   * prevent the application from failing to start when the desktop is configured to use the GTK2 style

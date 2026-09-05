@@ -7,7 +7,7 @@
         <location filename="../src/backend.cpp" line="74"/>
         <location filename="../src/backend.cpp" line="95"/>
         <location filename="../src/backend.cpp" line="118"/>
-        <location filename="../src/backend.cpp" line="314"/>
+        <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
         <translation type="unfinished">Erro</translation>
     </message>
@@ -172,7 +172,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="314"/>
+        <location filename="../src/backend.cpp" line="315"/>
         <source>Could not start the requested action.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -182,7 +182,7 @@
     <message>
         <location filename="../qml/Main.qml" line="17"/>
         <location filename="../qml/Main.qml" line="103"/>
-        <location filename="../qml/Main.qml" line="455"/>
+        <location filename="../qml/Main.qml" line="456"/>
         <source>MX Welcome</source>
         <translation type="unfinished">Bem-vindo (a) ao MX Linux</translation>
     </message>
@@ -244,7 +244,7 @@
     </message>
     <message>
         <location filename="../qml/Main.qml" line="353"/>
-        <location filename="../qml/Main.qml" line="368"/>
+        <location filename="../qml/Main.qml" line="369"/>
         <source>Short system report</source>
         <translation type="unfinished"></translation>
     </message>
@@ -254,49 +254,49 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="378"/>
+        <location filename="../qml/Main.qml" line="379"/>
         <source>Quick-System-Info Full Report</source>
         <translation type="unfinished">Relatório Completo de Informações Rápidas do Sistema Operacional</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="387"/>
-        <location filename="../qml/Main.qml" line="396"/>
+        <location filename="../qml/Main.qml" line="388"/>
+        <location filename="../qml/Main.qml" line="397"/>
         <source>Terms of Use</source>
         <translation type="unfinished">Termos de Uso</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="422"/>
+        <location filename="../qml/Main.qml" line="423"/>
         <source>About MX Welcome</source>
         <translation type="unfinished">Sobre as Boas-Vindas do MX</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="463"/>
+        <location filename="../qml/Main.qml" line="464"/>
         <source>Version: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="469"/>
+        <location filename="../qml/Main.qml" line="470"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
         <translation type="unfinished">Programa para exibir uma tela de boas-vindas no MX Linux</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="476"/>
+        <location filename="../qml/Main.qml" line="477"/>
         <source>Copyright (c) MX Linux</source>
         <translation type="unfinished">Direitos de Autor (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="483"/>
+        <location filename="../qml/Main.qml" line="484"/>
         <source>License</source>
         <translation type="unfinished">Licença</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="489"/>
+        <location filename="../qml/Main.qml" line="490"/>
         <source>MX Welcome License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="492"/>
-        <location filename="../qml/Main.qml" line="498"/>
+        <location filename="../qml/Main.qml" line="493"/>
+        <location filename="../qml/Main.qml" line="499"/>
         <source>Changelog</source>
         <translation type="unfinished">Relatório de alterações</translation>
     </message>
