@@ -9,7 +9,7 @@
         <location filename="../src/backend.cpp" line="118"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
-        <translation type="unfinished">ข้อผิดพลาด</translation>
+        <translation>ข้อผิดพลาด</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="74"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../src/backend.cpp" line="263"/>
         <source>FAQ</source>
-        <translation type="unfinished">คำถามที่พบบ่อย</translation>
+        <translation>คำถามที่พบบ่อย</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="263"/>
@@ -84,7 +84,7 @@
     <message>
         <location filename="../src/backend.cpp" line="264"/>
         <source>Forums</source>
-        <translation type="unfinished">ฟอรัม</translation>
+        <translation>ฟอรัม</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="264"/>
@@ -94,7 +94,7 @@
     <message>
         <location filename="../src/backend.cpp" line="265"/>
         <source>Users Manual</source>
-        <translation type="unfinished">คู่มือสำหรับผู้ใช้</translation>
+        <translation>คู่มือสำหรับผู้ใช้</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="265"/>
@@ -104,7 +104,7 @@
     <message>
         <location filename="../src/backend.cpp" line="266"/>
         <source>Videos</source>
-        <translation type="unfinished">วิดีโอ</translation>
+        <translation>วิดีโอ</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="266"/>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../src/backend.cpp" line="267"/>
         <source>Wiki</source>
-        <translation type="unfinished">วิกิ</translation>
+        <translation>วิกิ</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="267"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Tools</source>
-        <translation type="unfinished">เครื่องมือ</translation>
+        <translation>เครื่องมือ</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
@@ -144,7 +144,7 @@
     <message>
         <location filename="../src/backend.cpp" line="270"/>
         <source>Popular Apps</source>
-        <translation type="unfinished">แอปพลิเคชันยอดนิยม</translation>
+        <translation>แอปพลิเคชันยอดนิยม</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="270"/>
@@ -184,7 +184,7 @@
         <location filename="../qml/Main.qml" line="103"/>
         <location filename="../qml/Main.qml" line="456"/>
         <source>MX Welcome</source>
-        <translation type="unfinished">หน้าต้อนรับของ MX</translation>
+        <translation>หน้าต้อนรับของ MX</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="136"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../qml/Main.qml" line="146"/>
         <source>About</source>
-        <translation type="unfinished">เกี่ยวกับ</translation>
+        <translation>เกี่ยวกับ</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
@@ -262,12 +262,12 @@
         <location filename="../qml/Main.qml" line="388"/>
         <location filename="../qml/Main.qml" line="397"/>
         <source>Terms of Use</source>
-        <translation type="unfinished">ข้อกำหนดการใช้งาน</translation>
+        <translation>ข้อกำหนดการใช้งาน</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="423"/>
         <source>About MX Welcome</source>
-        <translation type="unfinished">เกี่ยวกับหน้าต้อนรับของ MX</translation>
+        <translation>เกี่ยวกับหน้าต้อนรับของ MX</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="464"/>
@@ -277,17 +277,17 @@
     <message>
         <location filename="../qml/Main.qml" line="470"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation type="unfinished">โปรแแกรมสำหรับแสดงหน้าจอต้อนรับใน MX Linux</translation>
+        <translation>โปรแแกรมสำหรับแสดงหน้าจอต้อนรับใน MX Linux</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="477"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">สงวนลิขสิทธิ์ (c) MX Linux</translation>
+        <translation>สงวนลิขสิทธิ์ (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="484"/>
         <source>License</source>
-        <translation type="unfinished">สัญญาอนุญาต</translation>
+        <translation>สัญญาอนุญาต</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="490"/>
@@ -298,7 +298,7 @@
         <location filename="../qml/Main.qml" line="493"/>
         <location filename="../qml/Main.qml" line="499"/>
         <source>Changelog</source>
-        <translation type="unfinished">Changelog</translation>
+        <translation>Changelog</translation>
     </message>
 </context>
 <context>

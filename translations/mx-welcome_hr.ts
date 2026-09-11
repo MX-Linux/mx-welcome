@@ -9,7 +9,7 @@
         <location filename="../src/backend.cpp" line="118"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
-        <translation type="unfinished">Greška</translation>
+        <translation>Greška</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="74"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Tools</source>
-        <translation type="unfinished">Alati</translation>
+        <translation>Alati</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../qml/Main.qml" line="146"/>
         <source>About</source>
-        <translation type="unfinished">O programu</translation>
+        <translation>O programu</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
@@ -282,12 +282,12 @@
     <message>
         <location filename="../qml/Main.qml" line="477"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Autorska prava (c) MX Linux</translation>
+        <translation>Autorska prava (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="484"/>
         <source>License</source>
-        <translation type="unfinished">Licenca</translation>
+        <translation>Licenca</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="490"/>
@@ -517,7 +517,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../src/main.cpp" line="95"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished">Morate pokrenuti ovaj program kao normalni korisnik.</translation>
+        <translation>Morate pokrenuti ovaj program kao normalni korisnik.</translation>
     </message>
 </context>
 <context>

@@ -9,7 +9,7 @@
         <location filename="../src/backend.cpp" line="118"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
-        <translation type="unfinished">May error</translation>
+        <translation>May error</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="74"/>
@@ -104,7 +104,7 @@
     <message>
         <location filename="../src/backend.cpp" line="266"/>
         <source>Videos</source>
-        <translation type="unfinished">Videos</translation>
+        <translation>Videos</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="266"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../qml/Main.qml" line="146"/>
         <source>About</source>
-        <translation type="unfinished">Patungkol sa</translation>
+        <translation>Patungkol sa</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
@@ -282,12 +282,12 @@
     <message>
         <location filename="../qml/Main.qml" line="477"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Karapatan (c) MX Linux</translation>
+        <translation>Karapatan (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="484"/>
         <source>License</source>
-        <translation type="unfinished">Lisensya</translation>
+        <translation>Lisensya</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="490"/>
@@ -298,7 +298,7 @@
         <location filename="../qml/Main.qml" line="493"/>
         <location filename="../qml/Main.qml" line="499"/>
         <source>Changelog</source>
-        <translation type="unfinished">Ulat na mga pagbabago</translation>
+        <translation>Ulat na mga pagbabago</translation>
     </message>
 </context>
 <context>

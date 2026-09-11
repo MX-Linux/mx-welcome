@@ -9,7 +9,7 @@
         <location filename="../src/backend.cpp" line="118"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
-        <translation type="unfinished">Feil</translation>
+        <translation>Feil</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="74"/>
@@ -184,7 +184,7 @@
         <location filename="../qml/Main.qml" line="103"/>
         <location filename="../qml/Main.qml" line="456"/>
         <source>MX Welcome</source>
-        <translation type="unfinished">MX Velkommen</translation>
+        <translation>MX Velkommen</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="136"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../qml/Main.qml" line="146"/>
         <source>About</source>
-        <translation type="unfinished">Om</translation>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
@@ -267,7 +267,7 @@
     <message>
         <location filename="../qml/Main.qml" line="423"/>
         <source>About MX Welcome</source>
-        <translation type="unfinished">Om MX Velkommen</translation>
+        <translation>Om MX Velkommen</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="464"/>

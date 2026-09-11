@@ -9,7 +9,7 @@
         <location filename="../src/backend.cpp" line="118"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
-        <translation type="unfinished">ስህተት</translation>
+        <translation>ስህተት</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="74"/>
@@ -104,7 +104,7 @@
     <message>
         <location filename="../src/backend.cpp" line="266"/>
         <source>Videos</source>
-        <translation type="unfinished">ቪዲዮ</translation>
+        <translation>ቪዲዮ</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="266"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Tools</source>
-        <translation type="unfinished">መሳሪያዎች</translation>
+        <translation>መሳሪያዎች</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
@@ -184,7 +184,7 @@
         <location filename="../qml/Main.qml" line="103"/>
         <location filename="../qml/Main.qml" line="456"/>
         <source>MX Welcome</source>
-        <translation type="unfinished">MX እንኳን ደህና መጡ</translation>
+        <translation>MX እንኳን ደህና መጡ</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="136"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../qml/Main.qml" line="146"/>
         <source>About</source>
-        <translation type="unfinished">ስለ</translation>
+        <translation>ስለ</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
@@ -262,7 +262,7 @@
         <location filename="../qml/Main.qml" line="388"/>
         <location filename="../qml/Main.qml" line="397"/>
         <source>Terms of Use</source>
-        <translation type="unfinished">የ አጠቃቀም ደንብ</translation>
+        <translation>የ አጠቃቀም ደንብ</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="423"/>
@@ -282,12 +282,12 @@
     <message>
         <location filename="../qml/Main.qml" line="477"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">የ ቅጂ መብት (c) MX Linux</translation>
+        <translation>የ ቅጂ መብት (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="484"/>
         <source>License</source>
-        <translation type="unfinished">ፍቃድ</translation>
+        <translation>ፍቃድ</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="490"/>
@@ -517,7 +517,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../src/main.cpp" line="95"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished">እርስዎ ይህን ፕሮግራም እንደ መደበኛ ተጠቃሚ ማስኬድ አለብዎት</translation>
+        <translation>እርስዎ ይህን ፕሮግራም እንደ መደበኛ ተጠቃሚ ማስኬድ አለብዎት</translation>
     </message>
 </context>
 <context>

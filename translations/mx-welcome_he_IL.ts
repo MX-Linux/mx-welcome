@@ -9,7 +9,7 @@
         <location filename="../src/backend.cpp" line="118"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
-        <translation type="unfinished">שגיאה</translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="74"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../src/backend.cpp" line="262"/>
         <source>Install MX Linux</source>
-        <translation type="unfinished">התקנת לינוקס MX</translation>
+        <translation>התקנת לינוקס MX</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="262"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../src/backend.cpp" line="263"/>
         <source>FAQ</source>
-        <translation type="unfinished">שו״ת</translation>
+        <translation>שו״ת</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="263"/>
@@ -84,7 +84,7 @@
     <message>
         <location filename="../src/backend.cpp" line="264"/>
         <source>Forums</source>
-        <translation type="unfinished">פורומים</translation>
+        <translation>פורומים</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="264"/>
@@ -94,7 +94,7 @@
     <message>
         <location filename="../src/backend.cpp" line="265"/>
         <source>Users Manual</source>
-        <translation type="unfinished">מדריך למשתמשים</translation>
+        <translation>מדריך למשתמשים</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="265"/>
@@ -104,7 +104,7 @@
     <message>
         <location filename="../src/backend.cpp" line="266"/>
         <source>Videos</source>
-        <translation type="unfinished">סרטונים</translation>
+        <translation>סרטונים</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="266"/>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../src/backend.cpp" line="267"/>
         <source>Wiki</source>
-        <translation type="unfinished">ויקי</translation>
+        <translation>ויקי</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="267"/>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../src/backend.cpp" line="268"/>
         <source>Contribute</source>
-        <translation type="unfinished">תרומה</translation>
+        <translation>תרומה</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="268"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Tools</source>
-        <translation type="unfinished">כלים</translation>
+        <translation>כלים</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
@@ -144,7 +144,7 @@
     <message>
         <location filename="../src/backend.cpp" line="270"/>
         <source>Popular Apps</source>
-        <translation type="unfinished">יישומים נפוצים</translation>
+        <translation>יישומים נפוצים</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="270"/>
@@ -154,7 +154,7 @@
     <message>
         <location filename="../src/backend.cpp" line="271"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation type="unfinished">התאמות (לוח, ועוד…)</translation>
+        <translation>התאמות (לוח, ועוד…)</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="271"/>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../src/backend.cpp" line="272"/>
         <source>Tour</source>
-        <translation type="unfinished">סיור</translation>
+        <translation>סיור</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="272"/>
@@ -184,7 +184,7 @@
         <location filename="../qml/Main.qml" line="103"/>
         <location filename="../qml/Main.qml" line="456"/>
         <source>MX Welcome</source>
-        <translation type="unfinished">תכנית קבלת הפנים של MX</translation>
+        <translation>תכנית קבלת הפנים של MX</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="136"/>
@@ -194,12 +194,12 @@
     <message>
         <location filename="../qml/Main.qml" line="146"/>
         <source>About</source>
-        <translation type="unfinished">על אודות</translation>
+        <translation>על אודות</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
         <source>Welcome</source>
-        <translation type="unfinished">ברוך בואך</translation>
+        <translation>ברוך בואך</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
@@ -215,7 +215,7 @@
     <message>
         <location filename="../qml/Main.qml" line="268"/>
         <source>Show this dialog at start up</source>
-        <translation type="unfinished">הצגת החלונית הזאת בפתיחה</translation>
+        <translation>הצגת החלונית הזאת בפתיחה</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="310"/>
@@ -256,18 +256,18 @@
     <message>
         <location filename="../qml/Main.qml" line="379"/>
         <source>Quick-System-Info Full Report</source>
-        <translation type="unfinished">דוח מלא מידע מערכת מלא</translation>
+        <translation>דוח מלא מידע מערכת מלא</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="388"/>
         <location filename="../qml/Main.qml" line="397"/>
         <source>Terms of Use</source>
-        <translation type="unfinished">תנאי שימוש</translation>
+        <translation>תנאי שימוש</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="423"/>
         <source>About MX Welcome</source>
-        <translation type="unfinished">על תכנית קבלת הפנים של MX</translation>
+        <translation>על תכנית קבלת הפנים של MX</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="464"/>
@@ -277,17 +277,17 @@
     <message>
         <location filename="../qml/Main.qml" line="470"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation type="unfinished">תכנית להצגת מסך קבלת פנים ב־MX Linux</translation>
+        <translation>תכנית להצגת מסך קבלת פנים ב־MX Linux</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="477"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">זכויות היוצרים (c) שמורות ל־MX Linux</translation>
+        <translation>זכויות היוצרים (c) שמורות ל־MX Linux</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="484"/>
         <source>License</source>
-        <translation type="unfinished">רשיון</translation>
+        <translation>רשיון</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="490"/>
@@ -298,7 +298,7 @@
         <location filename="../qml/Main.qml" line="493"/>
         <location filename="../qml/Main.qml" line="499"/>
         <source>Changelog</source>
-        <translation type="unfinished">יומן שינויים</translation>
+        <translation>יומן שינויים</translation>
     </message>
 </context>
 <context>
@@ -541,7 +541,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../src/main.cpp" line="95"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished">יש להריץ את התכנית הזו כמשתמש רגיל.</translation>
+        <translation>יש להריץ את התכנית הזו כמשתמש רגיל.</translation>
     </message>
 </context>
 <context>

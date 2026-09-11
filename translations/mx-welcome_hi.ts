@@ -9,7 +9,7 @@
         <location filename="../src/backend.cpp" line="118"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
-        <translation type="unfinished">त्रुटि</translation>
+        <translation>त्रुटि</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="74"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../src/backend.cpp" line="263"/>
         <source>FAQ</source>
-        <translation type="unfinished">सामान्य प्रश्न</translation>
+        <translation>सामान्य प्रश्न</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="263"/>
@@ -84,7 +84,7 @@
     <message>
         <location filename="../src/backend.cpp" line="264"/>
         <source>Forums</source>
-        <translation type="unfinished">चर्चा-मंच</translation>
+        <translation>चर्चा-मंच</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="264"/>
@@ -94,7 +94,7 @@
     <message>
         <location filename="../src/backend.cpp" line="265"/>
         <source>Users Manual</source>
-        <translation type="unfinished">उपयोक्ता गाइड</translation>
+        <translation>उपयोक्ता गाइड</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="265"/>
@@ -104,7 +104,7 @@
     <message>
         <location filename="../src/backend.cpp" line="266"/>
         <source>Videos</source>
-        <translation type="unfinished">वीडियो</translation>
+        <translation>वीडियो</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="266"/>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../src/backend.cpp" line="267"/>
         <source>Wiki</source>
-        <translation type="unfinished">विकी</translation>
+        <translation>विकी</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="267"/>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../src/backend.cpp" line="268"/>
         <source>Contribute</source>
-        <translation type="unfinished">योगदान करें</translation>
+        <translation>योगदान करें</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="268"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Tools</source>
-        <translation type="unfinished">साधन</translation>
+        <translation>साधन</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
@@ -144,7 +144,7 @@
     <message>
         <location filename="../src/backend.cpp" line="270"/>
         <source>Popular Apps</source>
-        <translation type="unfinished">प्रचलित अनुप्रयोग</translation>
+        <translation>प्रचलित अनुप्रयोग</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="270"/>
@@ -154,7 +154,7 @@
     <message>
         <location filename="../src/backend.cpp" line="271"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation type="unfinished">अनुकूलन (पैनल इत्यादि...)</translation>
+        <translation>अनुकूलन (पैनल इत्यादि...)</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="271"/>
@@ -184,7 +184,7 @@
         <location filename="../qml/Main.qml" line="103"/>
         <location filename="../qml/Main.qml" line="456"/>
         <source>MX Welcome</source>
-        <translation type="unfinished">एमएक्स स्वागत स्क्रीन</translation>
+        <translation>एमएक्स स्वागत स्क्रीन</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="136"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../qml/Main.qml" line="146"/>
         <source>About</source>
-        <translation type="unfinished">बारे में</translation>
+        <translation>बारे में</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
@@ -215,7 +215,7 @@
     <message>
         <location filename="../qml/Main.qml" line="268"/>
         <source>Show this dialog at start up</source>
-        <translation type="unfinished">आरंभ होने पर यह विंडो दिखाएँ</translation>
+        <translation>आरंभ होने पर यह विंडो दिखाएँ</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="310"/>
@@ -262,12 +262,12 @@
         <location filename="../qml/Main.qml" line="388"/>
         <location filename="../qml/Main.qml" line="397"/>
         <source>Terms of Use</source>
-        <translation type="unfinished">उपयोग की शर्तें</translation>
+        <translation>उपयोग की शर्तें</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="423"/>
         <source>About MX Welcome</source>
-        <translation type="unfinished">एमएक्स स्वागत स्क्रीन के बारे में</translation>
+        <translation>एमएक्स स्वागत स्क्रीन के बारे में</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="464"/>
@@ -277,17 +277,17 @@
     <message>
         <location filename="../qml/Main.qml" line="470"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation type="unfinished">एमएक्स लिनक्स में स्वागत स्क्रीन दिखने हेतु प्रोग्राम</translation>
+        <translation>एमएक्स लिनक्स में स्वागत स्क्रीन दिखने हेतु प्रोग्राम</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="477"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">कॉपीराइट (c) एमएक्स लिनक्स</translation>
+        <translation>कॉपीराइट (c) एमएक्स लिनक्स</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="484"/>
         <source>License</source>
-        <translation type="unfinished">लाइसेंस</translation>
+        <translation>लाइसेंस</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="490"/>
@@ -298,7 +298,7 @@
         <location filename="../qml/Main.qml" line="493"/>
         <location filename="../qml/Main.qml" line="499"/>
         <source>Changelog</source>
-        <translation type="unfinished">परिवर्तन सूची</translation>
+        <translation>परिवर्तन सूची</translation>
     </message>
 </context>
 <context>
@@ -537,7 +537,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../src/main.cpp" line="95"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished">प्रोग्राम निष्पादन हेतु आपका रुट उपयोक्ता होना आवश्यक है।</translation>
+        <translation>प्रोग्राम निष्पादन हेतु आपका रुट उपयोक्ता होना आवश्यक है।</translation>
     </message>
 </context>
 <context>

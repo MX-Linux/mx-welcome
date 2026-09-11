@@ -9,7 +9,7 @@
         <location filename="../src/backend.cpp" line="118"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
-        <translation type="unfinished">خطأ</translation>
+        <translation>خطأ</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="74"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../src/backend.cpp" line="263"/>
         <source>FAQ</source>
-        <translation type="unfinished">الأسئلة والإجابات المتداولة</translation>
+        <translation>الأسئلة والإجابات المتداولة</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="263"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Tools</source>
-        <translation type="unfinished">أدوات مدير النظام</translation>
+        <translation>أدوات مدير النظام</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
@@ -184,7 +184,7 @@
         <location filename="../qml/Main.qml" line="103"/>
         <location filename="../qml/Main.qml" line="456"/>
         <source>MX Welcome</source>
-        <translation type="unfinished">ترحيب ام اكس</translation>
+        <translation>ترحيب ام اكس</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="136"/>
@@ -282,12 +282,12 @@
     <message>
         <location filename="../qml/Main.qml" line="477"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">حقوق النشر  (MX linux (c</translation>
+        <translation>حقوق النشر  (MX linux (c</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="484"/>
         <source>License</source>
-        <translation type="unfinished">رخصة</translation>
+        <translation>رخصة</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="490"/>
@@ -298,7 +298,7 @@
         <location filename="../qml/Main.qml" line="493"/>
         <location filename="../qml/Main.qml" line="499"/>
         <source>Changelog</source>
-        <translation type="unfinished">التغيرات</translation>
+        <translation>التغيرات</translation>
     </message>
 </context>
 <context>

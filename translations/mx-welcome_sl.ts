@@ -9,7 +9,7 @@
         <location filename="../src/backend.cpp" line="118"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
-        <translation type="unfinished">Napaka</translation>
+        <translation>Napaka</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="74"/>
@@ -49,7 +49,7 @@
     <message>
         <location filename="../src/backend.cpp" line="197"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
-        <translation type="unfinished">Ime “MX Linux” je pokrito po podlicenci Linux fundacije št. 20140605-0483. Razvijamo programsko opremo, ki je pokrita z brezplačno licenco, ki se jo da preveriti na Wiki seznamu. Dodajamo tudi programsko opremo, ki  jo razvijajo drugi po brezplačni licenci.</translation>
+        <translation>Ime “MX Linux” je pokrito po podlicenci Linux fundacije št. 20140605-0483. Razvijamo programsko opremo, ki je pokrita z brezplačno licenco, ki se jo da preveriti na Wiki seznamu. Dodajamo tudi programsko opremo, ki  jo razvijajo drugi po brezplačni licenci.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="208"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../src/backend.cpp" line="262"/>
         <source>Install MX Linux</source>
-        <translation type="unfinished">Namestitev MX Linux-a</translation>
+        <translation>Namestitev MX Linux-a</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="262"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../src/backend.cpp" line="263"/>
         <source>FAQ</source>
-        <translation type="unfinished">Pogosta vprašanja</translation>
+        <translation>Pogosta vprašanja</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="263"/>
@@ -84,7 +84,7 @@
     <message>
         <location filename="../src/backend.cpp" line="264"/>
         <source>Forums</source>
-        <translation type="unfinished">Forumi</translation>
+        <translation>Forumi</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="264"/>
@@ -94,7 +94,7 @@
     <message>
         <location filename="../src/backend.cpp" line="265"/>
         <source>Users Manual</source>
-        <translation type="unfinished">Uporabniški priročnik</translation>
+        <translation>Uporabniški priročnik</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="265"/>
@@ -104,7 +104,7 @@
     <message>
         <location filename="../src/backend.cpp" line="266"/>
         <source>Videos</source>
-        <translation type="unfinished">Video</translation>
+        <translation>Video</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="266"/>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../src/backend.cpp" line="267"/>
         <source>Wiki</source>
-        <translation type="unfinished">Wiki</translation>
+        <translation>Wiki</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="267"/>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../src/backend.cpp" line="268"/>
         <source>Contribute</source>
-        <translation type="unfinished">Prispevaj</translation>
+        <translation>Prispevaj</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="268"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Tools</source>
-        <translation type="unfinished">Orodja</translation>
+        <translation>Orodja</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
@@ -144,7 +144,7 @@
     <message>
         <location filename="../src/backend.cpp" line="270"/>
         <source>Popular Apps</source>
-        <translation type="unfinished">Priljubljene aplikacije</translation>
+        <translation>Priljubljene aplikacije</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="270"/>
@@ -154,7 +154,7 @@
     <message>
         <location filename="../src/backend.cpp" line="271"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation type="unfinished">Prilagajanje (pano, itd...)</translation>
+        <translation>Prilagajanje (pano, itd...)</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="271"/>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../src/backend.cpp" line="272"/>
         <source>Tour</source>
-        <translation type="unfinished">Predstavitev</translation>
+        <translation>Predstavitev</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="272"/>
@@ -184,7 +184,7 @@
         <location filename="../qml/Main.qml" line="103"/>
         <location filename="../qml/Main.qml" line="456"/>
         <source>MX Welcome</source>
-        <translation type="unfinished">MX pozdrav</translation>
+        <translation>MX pozdrav</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="136"/>
@@ -194,12 +194,12 @@
     <message>
         <location filename="../qml/Main.qml" line="146"/>
         <source>About</source>
-        <translation type="unfinished">O programu</translation>
+        <translation>O programu</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
         <source>Welcome</source>
-        <translation type="unfinished">Pozdravljeni</translation>
+        <translation>Pozdravljeni</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
@@ -215,7 +215,7 @@
     <message>
         <location filename="../qml/Main.qml" line="268"/>
         <source>Show this dialog at start up</source>
-        <translation type="unfinished">Ob zagonu prikaži ta dialog</translation>
+        <translation>Ob zagonu prikaži ta dialog</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="310"/>
@@ -256,18 +256,18 @@
     <message>
         <location filename="../qml/Main.qml" line="379"/>
         <source>Quick-System-Info Full Report</source>
-        <translation type="unfinished">Hitri-sistemski-info polno poročilo</translation>
+        <translation>Hitri-sistemski-info polno poročilo</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="388"/>
         <location filename="../qml/Main.qml" line="397"/>
         <source>Terms of Use</source>
-        <translation type="unfinished">Pogoji uporabe</translation>
+        <translation>Pogoji uporabe</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="423"/>
         <source>About MX Welcome</source>
-        <translation type="unfinished">O MX pozdrav</translation>
+        <translation>O MX pozdrav</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="464"/>
@@ -277,17 +277,17 @@
     <message>
         <location filename="../qml/Main.qml" line="470"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation type="unfinished">Program za prikaz dobrodošlice v MX Linuxu</translation>
+        <translation>Program za prikaz dobrodošlice v MX Linuxu</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="477"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Copyright (c) MX Linux</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="484"/>
         <source>License</source>
-        <translation type="unfinished">Licenca</translation>
+        <translation>Licenca</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="490"/>
@@ -298,7 +298,7 @@
         <location filename="../qml/Main.qml" line="493"/>
         <location filename="../qml/Main.qml" line="499"/>
         <source>Changelog</source>
-        <translation type="unfinished">Dnevnik sprememb</translation>
+        <translation>Dnevnik sprememb</translation>
     </message>
 </context>
 <context>
@@ -545,7 +545,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../src/main.cpp" line="95"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished">Ta program morate zagnati kor navaden uporabnik.</translation>
+        <translation>Ta program morate zagnati kor navaden uporabnik.</translation>
     </message>
 </context>
 <context>

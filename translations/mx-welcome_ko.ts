@@ -9,7 +9,7 @@
         <location filename="../src/backend.cpp" line="118"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
-        <translation type="unfinished">에러</translation>
+        <translation>에러</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="74"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../src/backend.cpp" line="263"/>
         <source>FAQ</source>
-        <translation type="unfinished">FAQ</translation>
+        <translation>FAQ</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="263"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Tools</source>
-        <translation type="unfinished">도구</translation>
+        <translation>도구</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
@@ -287,7 +287,7 @@
     <message>
         <location filename="../qml/Main.qml" line="484"/>
         <source>License</source>
-        <translation type="unfinished">라이센스</translation>
+        <translation>라이센스</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="490"/>
@@ -298,7 +298,7 @@
         <location filename="../qml/Main.qml" line="493"/>
         <location filename="../qml/Main.qml" line="499"/>
         <source>Changelog</source>
-        <translation type="unfinished">변경 로그</translation>
+        <translation>변경 로그</translation>
     </message>
 </context>
 <context>
@@ -517,7 +517,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../src/main.cpp" line="95"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished">이 프로그램은 일반 사용자로 실행해야 합니다.</translation>
+        <translation>이 프로그램은 일반 사용자로 실행해야 합니다.</translation>
     </message>
 </context>
 <context>

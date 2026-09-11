@@ -9,7 +9,7 @@
         <location filename="../src/backend.cpp" line="118"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
-        <translation type="unfinished">Hata</translation>
+        <translation>Hata</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="74"/>
@@ -49,7 +49,7 @@
     <message>
         <location filename="../src/backend.cpp" line="197"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
-        <translation type="unfinished">“MX Linux” adı, 20140605-0483 sayılı Linux Vakfı Alt Lisansı kapsamındadır. Wiki listesinde incelenebilen ücretsiz bir lisans kapsamındaki yazılımlar geliştiriyoruz. Ayrıca başkaları tarafından geliştirilen ve ücretsiz lisans kapsamında olan yazılımları da dahil ediyoruz.</translation>
+        <translation>“MX Linux” adı, 20140605-0483 sayılı Linux Vakfı Alt Lisansı kapsamındadır. Wiki listesinde incelenebilen ücretsiz bir lisans kapsamındaki yazılımlar geliştiriyoruz. Ayrıca başkaları tarafından geliştirilen ve ücretsiz lisans kapsamında olan yazılımları da dahil ediyoruz.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="208"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../src/backend.cpp" line="262"/>
         <source>Install MX Linux</source>
-        <translation type="unfinished">MX Linux’u Yükle</translation>
+        <translation>MX Linux’u Yükle</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="262"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../src/backend.cpp" line="263"/>
         <source>FAQ</source>
-        <translation type="unfinished">SSS</translation>
+        <translation>SSS</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="263"/>
@@ -84,7 +84,7 @@
     <message>
         <location filename="../src/backend.cpp" line="264"/>
         <source>Forums</source>
-        <translation type="unfinished">Forumlar</translation>
+        <translation>Forumlar</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="264"/>
@@ -94,7 +94,7 @@
     <message>
         <location filename="../src/backend.cpp" line="265"/>
         <source>Users Manual</source>
-        <translation type="unfinished">Kullanma Kılavuzu</translation>
+        <translation>Kullanma Kılavuzu</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="265"/>
@@ -104,7 +104,7 @@
     <message>
         <location filename="../src/backend.cpp" line="266"/>
         <source>Videos</source>
-        <translation type="unfinished">Videolar</translation>
+        <translation>Videolar</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="266"/>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../src/backend.cpp" line="267"/>
         <source>Wiki</source>
-        <translation type="unfinished">Wiki</translation>
+        <translation>Wiki</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="267"/>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../src/backend.cpp" line="268"/>
         <source>Contribute</source>
-        <translation type="unfinished">Katkıda bulun</translation>
+        <translation>Katkıda bulun</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="268"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Tools</source>
-        <translation type="unfinished">Araçlar</translation>
+        <translation>Araçlar</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
@@ -144,7 +144,7 @@
     <message>
         <location filename="../src/backend.cpp" line="270"/>
         <source>Popular Apps</source>
-        <translation type="unfinished">Gözde Uygulamalar</translation>
+        <translation>Gözde Uygulamalar</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="270"/>
@@ -154,7 +154,7 @@
     <message>
         <location filename="../src/backend.cpp" line="271"/>
         <source>Tweak (Panel, etc...)</source>
-        <translation type="unfinished">İnce Ayar (Panel. vs...)</translation>
+        <translation>İnce Ayar (Panel. vs...)</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="271"/>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../src/backend.cpp" line="272"/>
         <source>Tour</source>
-        <translation type="unfinished">Tur</translation>
+        <translation>Tur</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="272"/>
@@ -184,7 +184,7 @@
         <location filename="../qml/Main.qml" line="103"/>
         <location filename="../qml/Main.qml" line="456"/>
         <source>MX Welcome</source>
-        <translation type="unfinished">MX Karşılama</translation>
+        <translation>MX Karşılama</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="136"/>
@@ -194,12 +194,12 @@
     <message>
         <location filename="../qml/Main.qml" line="146"/>
         <source>About</source>
-        <translation type="unfinished">Hakkında</translation>
+        <translation>Hakkında</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
         <source>Welcome</source>
-        <translation type="unfinished">Hoşgeldiniz</translation>
+        <translation>Hoşgeldiniz</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
@@ -215,7 +215,7 @@
     <message>
         <location filename="../qml/Main.qml" line="268"/>
         <source>Show this dialog at start up</source>
-        <translation type="unfinished">Bu pencereyi her açılışta göster</translation>
+        <translation>Bu pencereyi her açılışta göster</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="310"/>
@@ -256,18 +256,18 @@
     <message>
         <location filename="../qml/Main.qml" line="379"/>
         <source>Quick-System-Info Full Report</source>
-        <translation type="unfinished">Hızlı Sistem Bilgisi Tam Rapor</translation>
+        <translation>Hızlı Sistem Bilgisi Tam Rapor</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="388"/>
         <location filename="../qml/Main.qml" line="397"/>
         <source>Terms of Use</source>
-        <translation type="unfinished">Kullanım Koşulları</translation>
+        <translation>Kullanım Koşulları</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="423"/>
         <source>About MX Welcome</source>
-        <translation type="unfinished">MX Karşılama Hakkında</translation>
+        <translation>MX Karşılama Hakkında</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="464"/>
@@ -277,17 +277,17 @@
     <message>
         <location filename="../qml/Main.qml" line="470"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation type="unfinished">MX Linux için hoşgeldiniz ekranı</translation>
+        <translation>MX Linux için hoşgeldiniz ekranı</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="477"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Telif Hakkı (c) MX Linux</translation>
+        <translation>Telif Hakkı (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="484"/>
         <source>License</source>
-        <translation type="unfinished">Lisans</translation>
+        <translation>Lisans</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="490"/>
@@ -298,7 +298,7 @@
         <location filename="../qml/Main.qml" line="493"/>
         <location filename="../qml/Main.qml" line="499"/>
         <source>Changelog</source>
-        <translation type="unfinished">Değişim günlüğü</translation>
+        <translation>Değişim günlüğü</translation>
     </message>
 </context>
 <context>
@@ -545,7 +545,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../src/main.cpp" line="95"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished">Bu programı normal kullanıcı olarak çalıştırmalısınız.</translation>
+        <translation>Bu programı normal kullanıcı olarak çalıştırmalısınız.</translation>
     </message>
 </context>
 <context>
