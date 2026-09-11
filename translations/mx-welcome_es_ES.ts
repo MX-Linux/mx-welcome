@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="es_ES">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="es_ES">
 <context>
     <name>Backend</name>
     <message>
@@ -14,37 +12,37 @@
     <message>
         <location filename="../src/backend.cpp" line="74"/>
         <source>Could not update the login startup setting.</source>
-        <translation type="unfinished"></translation>
+        <translation>No se pudo actualizar la configuración de inicio de sesión.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="95"/>
         <source>Could not open %1</source>
-        <translation type="unfinished"></translation>
+        <translation>No se pudo abrir %1</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="106"/>
         <source>System information is unavailable.</source>
-        <translation type="unfinished"></translation>
+        <translation>No hay información del sistema disponible.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="118"/>
         <source>Could not start Quick System Info.</source>
-        <translation type="unfinished"></translation>
+        <translation>No se pudo iniciar Información rápida del sistema.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="129"/>
         <source>Could not load the Terms of Use.</source>
-        <translation type="unfinished"></translation>
+        <translation>No se pudieron cargar las condiciones de uso.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="136"/>
         <source>Could not load %1</source>
-        <translation type="unfinished"></translation>
+        <translation>No se pudo cargar %1</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="146"/>
         <source>Could not load changelog.</source>
-        <translation type="unfinished"></translation>
+        <translation>No se pudo cargar el registro de cambios.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="197"/>
@@ -54,12 +52,12 @@
     <message>
         <location filename="../src/backend.cpp" line="208"/>
         <source>User demo, password: demo. Superuser root, password: root.</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuario demo, contraseña: demo. Superusuario root, contraseña: root.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="228"/>
         <source>%1 “%2”</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 “%2”</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="262"/>
@@ -69,7 +67,7 @@
     <message>
         <location filename="../src/backend.cpp" line="262"/>
         <source>Install MX Linux on this computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalar MX Linux en este ordenador.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="263"/>
@@ -79,7 +77,7 @@
     <message>
         <location filename="../src/backend.cpp" line="263"/>
         <source>Find answers to frequently asked questions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Encuentre respuestas a las preguntas más frecuentes.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="264"/>
@@ -89,7 +87,7 @@
     <message>
         <location filename="../src/backend.cpp" line="264"/>
         <source>Ask questions and join the MX Linux community.</source>
-        <translation type="unfinished"></translation>
+        <translation>Haga preguntas y únase a la comunidad de MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="265"/>
@@ -99,7 +97,7 @@
     <message>
         <location filename="../src/backend.cpp" line="265"/>
         <source>Read the documentation for your MX Linux release.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lea la documentación correspondiente a su versión de MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="266"/>
@@ -109,7 +107,7 @@
     <message>
         <location filename="../src/backend.cpp" line="266"/>
         <source>Watch MX Linux tutorials and demonstrations.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vea tutoriales y presentaciones de MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="267"/>
@@ -119,7 +117,7 @@
     <message>
         <location filename="../src/backend.cpp" line="267"/>
         <source>Browse community-maintained guides and reference material.</source>
-        <translation type="unfinished"></translation>
+        <translation>Explore las guías y el material de referencia que mantiene la comunidad.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="268"/>
@@ -129,7 +127,7 @@
     <message>
         <location filename="../src/backend.cpp" line="268"/>
         <source>Learn how to support and contribute to MX Linux.</source>
-        <translation type="unfinished"></translation>
+        <translation>Descubra cómo apoyar y colaborar con MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
@@ -139,7 +137,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Open the collection of MX system utilities.</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir la colección de utilidades del sistema MX.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="270"/>
@@ -149,7 +147,7 @@
     <message>
         <location filename="../src/backend.cpp" line="270"/>
         <source>Discover and install popular applications.</source>
-        <translation type="unfinished"></translation>
+        <translation>Descubra e instale aplicaciones populares.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="271"/>
@@ -159,7 +157,7 @@
     <message>
         <location filename="../src/backend.cpp" line="271"/>
         <source>Adjust desktop, panel, and system preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajuste las preferencias del escritorio, del panel y del sistema.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="272"/>
@@ -169,12 +167,12 @@
     <message>
         <location filename="../src/backend.cpp" line="272"/>
         <source>Take a guided tour of MX Linux.</source>
-        <translation type="unfinished"></translation>
+        <translation>Haga una visita guiada por MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Could not start the requested action.</source>
-        <translation type="unfinished"></translation>
+        <translation>No se pudo iniciar la acción solicitada.</translation>
     </message>
 </context>
 <context>
@@ -189,7 +187,7 @@
     <message>
         <location filename="../qml/Main.qml" line="136"/>
         <source>Manual</source>
-        <translation type="unfinished"></translation>
+        <translation>Manual</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="146"/>
@@ -205,12 +203,12 @@
         <location filename="../qml/Main.qml" line="119"/>
         <location filename="../qml/Main.qml" line="293"/>
         <source>About this system</source>
-        <translation type="unfinished"></translation>
+        <translation>Acerca de este sistema</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="258"/>
         <source>No actions are available.</source>
-        <translation type="unfinished"></translation>
+        <translation>No hay acciones disponibles.</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="268"/>
@@ -220,38 +218,38 @@
     <message>
         <location filename="../qml/Main.qml" line="310"/>
         <source>MX version</source>
-        <translation type="unfinished"></translation>
+        <translation>Versión de MX</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="311"/>
         <source>Debian version</source>
-        <translation type="unfinished"></translation>
+        <translation>Versión de Debian</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="312"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Escritorio</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="313"/>
         <source>Supported until</source>
-        <translation type="unfinished"></translation>
+        <translation>Compatible hasta </translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="339"/>
         <source>Unavailable</source>
-        <translation type="unfinished"></translation>
+        <translation>No disponible</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="353"/>
         <location filename="../qml/Main.qml" line="369"/>
         <source>Short system report</source>
-        <translation type="unfinished"></translation>
+        <translation>Breve informe sobre el sistema</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="364"/>
         <source>Loading system information…</source>
-        <translation type="unfinished"></translation>
+        <translation>Cargando la información del sistema…</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="379"/>
@@ -272,7 +270,7 @@
     <message>
         <location filename="../qml/Main.qml" line="464"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Versión: %1</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="470"/>
@@ -282,7 +280,7 @@
     <message>
         <location filename="../qml/Main.qml" line="477"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>Derechos de Autor (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="484"/>
@@ -292,13 +290,13 @@
     <message>
         <location filename="../qml/Main.qml" line="490"/>
         <source>MX Welcome License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licencia de Bienvenido a MX</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="493"/>
         <location filename="../qml/Main.qml" line="499"/>
         <source>Changelog</source>
-        <translation>Registro de cambios</translation>
+        <translation>Cambios de Registro</translation>
     </message>
 </context>
 <context>
@@ -337,11 +335,6 @@
         <location filename="../src/ui_mainwindow.h" line="587"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
-    </message>
-    <message>
-        <location filename="../src/ui_mainwindow.h" line="600"/>
-        <source>Welcome</source>
-        <translation>¡Bienvenido!</translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="589"/>
@@ -399,26 +392,9 @@
         <translation>Foros</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="611"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/ui_mainwindow.h" line="621"/>
-        <source>About</source>
-        <translation>Acerca de</translation>
-    </message>
-    <message>
-        <location filename="../src/ui_mainwindow.h" line="620"/>
-        <source>SHORT SYSTEM REPORT:</source>
-        <translation>INFORME CORTO DEL SISTEMA:</translation>
+        <location filename="../src/ui_mainwindow.h" line="600"/>
+        <source>Welcome</source>
+        <translation>¡Bienvenido!</translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="601"/>
@@ -456,81 +432,51 @@ li.checked::marker { content: &quot;\2612&quot;; }
         <translation>CON SOPORTE HASTA:</translation>
     </message>
     <message>
+        <location filename="../src/ui_mainwindow.h" line="611"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/ui_mainwindow.h" line="620"/>
+        <source>SHORT SYSTEM REPORT:</source>
+        <translation>INFORME CORTO DEL SISTEMA:</translation>
+    </message>
+    <message>
+        <location filename="../src/ui_mainwindow.h" line="621"/>
+        <source>About</source>
+        <translation>Acerca de</translation>
+    </message>
+    <message>
         <location filename="../src/ui_mainwindow.h" line="622"/>
         <source>Show this dialog at start up</source>
         <translation>Mostrar esta ventana al inicio</translation>
-    </message>
-    <message>
-        <source>User demo, password:</source>
-        <translation type="vanished">Usuario demo, contraseña:</translation>
-    </message>
-    <message>
-        <source>Superuser root, password:</source>
-        <translation type="vanished">Superusuario root, contraseña:</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">Error</translation>
-    </message>
-    <message>
-        <source>About MX Welcome</source>
-        <translation type="vanished">Acerca de Bienvenido a MX</translation>
-    </message>
-    <message>
-        <source>Version: </source>
-        <translation type="vanished">Versión: </translation>
-    </message>
-    <message>
-        <source>Program for displaying a welcome screen in MX Linux</source>
-        <translation type="vanished">Programa para mostrar una pantalla de bienvenida en MX Linux</translation>
-    </message>
-    <message>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Copyright (c) MX Linux</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Licencia</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Registro de cambios</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Cerrar</translation>
-    </message>
-</context>
-<context>
-    <name>QApplication</name>
-    <message>
-        <source>You must run this program as normal user.</source>
-        <translation type="vanished">Debe ejecutar este programa como usuario normal.</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <source>This tool displays a welcome screen with two tabs.</source>
-        <translation type="vanished">Esta herramienta muestra una pantalla de bienvenida con dos pestañas.</translation>
-    </message>
-    <message>
-        <source>Start with About tab selected. The About tab provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
-        <translation type="vanished">Comience con la pestaña &quot;Acerca de&quot; seleccionada. La pestaña &quot;Acerca de&quot; proporciona información básica sobre la versión actual de MX Linux, el hardware del usuario y el acceso a un informe completo del sistema.</translation>
-    </message>
-    <message>
         <location filename="../src/main.cpp" line="67"/>
         <source>This tool displays the MX Linux welcome screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Esta herramienta muestra la pantalla de bienvenida de MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="71"/>
         <source>Start with About selected. The About page provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
-        <translation type="unfinished"></translation>
+        <translation>Empiece por seleccionar &quot;Acerca de&quot;. La página &quot;Acerca de&quot; ofrece información básica sobre la versión actual de MX Linux, el hardware del usuario y acceso a un informe completo del sistema.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="73"/>
@@ -553,7 +499,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../qml/components/ToolCard.qml" line="67"/>
         <source>Open this tool</source>
-        <translation type="unfinished"></translation>
+        <translation>Abre esta herramienta</translation>
     </message>
 </context>
 </TS>
