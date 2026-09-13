@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="fr">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="fr">
 <context>
     <name>Backend</name>
     <message>
@@ -27,7 +29,7 @@
     <message>
         <location filename="../src/backend.cpp" line="118"/>
         <source>Could not start Quick System Info.</source>
-        <translation>Impossible de lancer « Informations rapides sur le système - Quick System Info ».</translation>
+        <translation>Impossible de lancer «&#xa0;Informations rapides sur le système - Quick System Info&#xa0;».</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="129"/>
@@ -52,12 +54,12 @@
     <message>
         <location filename="../src/backend.cpp" line="208"/>
         <source>User demo, password: demo. Superuser root, password: root.</source>
-        <translation>Utilisateur : demo, mot de passe : demo. Superutilisateur : root, mot de passe : root.</translation>
+        <translation>Utilisateur&#xa0;: demo, mot de passe&#xa0;: demo. Superutilisateur&#xa0;: root, mot de passe&#xa0;: root.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="228"/>
         <source>%1 “%2”</source>
-        <translation>%1 « %2 »</translation>
+        <translation>%1 «&#xa0;%2&#xa0;»</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="262"/>
@@ -180,7 +182,7 @@
     <message>
         <location filename="../qml/Main.qml" line="17"/>
         <location filename="../qml/Main.qml" line="103"/>
-        <location filename="../qml/Main.qml" line="456"/>
+        <location filename="../qml/Main.qml" line="458"/>
         <source>MX Welcome</source>
         <translation>MX Centre d’accueil - MX Welcome</translation>
     </message>
@@ -201,7 +203,7 @@
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
-        <location filename="../qml/Main.qml" line="293"/>
+        <location filename="../qml/Main.qml" line="295"/>
         <source>About this system</source>
         <translation>À propos de ce système</translation>
     </message>
@@ -216,85 +218,85 @@
         <translation>Afficher cette fenêtre au démarrage</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="310"/>
+        <location filename="../qml/Main.qml" line="312"/>
         <source>MX version</source>
         <translation>Version de MX</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="311"/>
+        <location filename="../qml/Main.qml" line="313"/>
         <source>Debian version</source>
         <translation>Version de Debian</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="312"/>
+        <location filename="../qml/Main.qml" line="314"/>
         <source>Desktop</source>
         <translation>Bureau</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="313"/>
+        <location filename="../qml/Main.qml" line="315"/>
         <source>Supported until</source>
         <translation>Pris en charge jusqu’au</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="339"/>
+        <location filename="../qml/Main.qml" line="341"/>
         <source>Unavailable</source>
         <translation>Indisponible</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="353"/>
-        <location filename="../qml/Main.qml" line="369"/>
+        <location filename="../qml/Main.qml" line="355"/>
+        <location filename="../qml/Main.qml" line="371"/>
         <source>Short system report</source>
         <translation>Rapport système succinct</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="364"/>
+        <location filename="../qml/Main.qml" line="366"/>
         <source>Loading system information…</source>
         <translation>Chargement des informations système…</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="379"/>
+        <location filename="../qml/Main.qml" line="381"/>
         <source>Quick-System-Info Full Report</source>
         <translation>Quick-System-Info rapport complet</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="388"/>
-        <location filename="../qml/Main.qml" line="397"/>
+        <location filename="../qml/Main.qml" line="390"/>
+        <location filename="../qml/Main.qml" line="399"/>
         <source>Terms of Use</source>
         <translation>Conditions d’utilisation</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="423"/>
+        <location filename="../qml/Main.qml" line="425"/>
         <source>About MX Welcome</source>
         <translation>À propos de MX Centre d’accueil</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="464"/>
+        <location filename="../qml/Main.qml" line="466"/>
         <source>Version: %1</source>
-        <translation>Version : %1</translation>
+        <translation>Version&#xa0;: %1</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="470"/>
+        <location filename="../qml/Main.qml" line="472"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
         <translation>Programme affichant un écran d’accueil pour MX Linux</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="477"/>
+        <location filename="../qml/Main.qml" line="479"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="484"/>
+        <location filename="../qml/Main.qml" line="486"/>
         <source>License</source>
         <translation>Licence</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="490"/>
+        <location filename="../qml/Main.qml" line="492"/>
         <source>MX Welcome License</source>
         <translation>Licence de MX Centre d’accueil - MX Welcome</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="493"/>
-        <location filename="../qml/Main.qml" line="499"/>
+        <location filename="../qml/Main.qml" line="495"/>
+        <location filename="../qml/Main.qml" line="501"/>
         <source>Changelog</source>
         <translation>Journal des modifications</translation>
     </message>
@@ -439,7 +441,7 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -469,27 +471,27 @@ li.checked::marker { content: &quot;\2612&quot;; }
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/main.cpp" line="67"/>
+        <location filename="../src/main.cpp" line="74"/>
         <source>This tool displays the MX Linux welcome screen.</source>
         <translation>Cet outil affiche l’écran d’accueil de MX Linux.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="71"/>
+        <location filename="../src/main.cpp" line="78"/>
         <source>Start with About selected. The About page provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
         <translation>Démarrer avec la fenêtre « À propos » ouverte. La fenêtre « À propos » fournit des informations de base sur la version actuelle de MX Linux, le matériel de l’utilisateur, ainsi qu’un accès à un rapport système complet.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="73"/>
+        <location filename="../src/main.cpp" line="80"/>
         <source>Run a test mode.</source>
         <translation>Exécuter en mode test.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="94"/>
+        <location filename="../src/main.cpp" line="101"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="95"/>
+        <location filename="../src/main.cpp" line="102"/>
         <source>You must run this program as normal user.</source>
         <translation>Vous devez exécuter cette application en tant qu’utilisateur normal.</translation>
     </message>
@@ -497,7 +499,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 <context>
     <name>ToolCard</name>
     <message>
-        <location filename="../qml/components/ToolCard.qml" line="67"/>
+        <location filename="../qml/components/ToolCard.qml" line="69"/>
         <source>Open this tool</source>
         <translation>Ouvrir cet outil</translation>
     </message>

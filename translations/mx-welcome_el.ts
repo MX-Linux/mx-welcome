@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="el">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="el">
 <context>
     <name>Backend</name>
     <message>
@@ -180,7 +182,7 @@
     <message>
         <location filename="../qml/Main.qml" line="17"/>
         <location filename="../qml/Main.qml" line="103"/>
-        <location filename="../qml/Main.qml" line="456"/>
+        <location filename="../qml/Main.qml" line="458"/>
         <source>MX Welcome</source>
         <translation>MX Οθόνη υποδοχής</translation>
     </message>
@@ -201,7 +203,7 @@
     </message>
     <message>
         <location filename="../qml/Main.qml" line="119"/>
-        <location filename="../qml/Main.qml" line="293"/>
+        <location filename="../qml/Main.qml" line="295"/>
         <source>About this system</source>
         <translation>Σχετικά με αυτό το σύστημα</translation>
     </message>
@@ -216,85 +218,85 @@
         <translation>Εμφάνιση αυτού του παραθύρου στην εκκίνηση</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="310"/>
+        <location filename="../qml/Main.qml" line="312"/>
         <source>MX version</source>
         <translation>Έκδοση MX</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="311"/>
+        <location filename="../qml/Main.qml" line="313"/>
         <source>Debian version</source>
         <translation>Έκδοση Debian</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="312"/>
+        <location filename="../qml/Main.qml" line="314"/>
         <source>Desktop</source>
         <translation>Επιφάνεια εργασίας</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="313"/>
+        <location filename="../qml/Main.qml" line="315"/>
         <source>Supported until</source>
         <translation>Υποστηρίζεται έως</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="339"/>
+        <location filename="../qml/Main.qml" line="341"/>
         <source>Unavailable</source>
         <translation>Μη διαθέσιμο</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="353"/>
-        <location filename="../qml/Main.qml" line="369"/>
+        <location filename="../qml/Main.qml" line="355"/>
+        <location filename="../qml/Main.qml" line="371"/>
         <source>Short system report</source>
         <translation>Σύντομη αναφορά συστήματος</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="364"/>
+        <location filename="../qml/Main.qml" line="366"/>
         <source>Loading system information…</source>
         <translation>Λήψη πληροφοριών συστήματος…</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="379"/>
+        <location filename="../qml/Main.qml" line="381"/>
         <source>Quick-System-Info Full Report</source>
         <translation>Πλήρης αναφορά του - Συνοπτικές πληροφορίες συστήματος</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="388"/>
-        <location filename="../qml/Main.qml" line="397"/>
+        <location filename="../qml/Main.qml" line="390"/>
+        <location filename="../qml/Main.qml" line="399"/>
         <source>Terms of Use</source>
         <translation>Όροι χρήσης</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="423"/>
+        <location filename="../qml/Main.qml" line="425"/>
         <source>About MX Welcome</source>
         <translation>Περί του MX Οθόνη υποδοχής</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="464"/>
+        <location filename="../qml/Main.qml" line="466"/>
         <source>Version: %1</source>
         <translation>Έκδοση: %1</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="470"/>
+        <location filename="../qml/Main.qml" line="472"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
         <translation>Πρόγραμμα για την εμφάνιση της οθόνης υποδοχής του MX Linux</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="477"/>
+        <location filename="../qml/Main.qml" line="479"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Πνευματικά δικαιώματα (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="484"/>
+        <location filename="../qml/Main.qml" line="486"/>
         <source>License</source>
         <translation>Άδεια</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="490"/>
+        <location filename="../qml/Main.qml" line="492"/>
         <source>MX Welcome License</source>
         <translation>Άδεια του MX Οθόνη υποδοχής</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="493"/>
-        <location filename="../qml/Main.qml" line="499"/>
+        <location filename="../qml/Main.qml" line="495"/>
+        <location filename="../qml/Main.qml" line="501"/>
         <source>Changelog</source>
         <translation>Αρχείο αλλαγών</translation>
     </message>
@@ -439,9 +441,9 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="620"/>
@@ -462,27 +464,27 @@ li.checked::marker { content: &quot;\2612&quot;; }
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/main.cpp" line="67"/>
+        <location filename="../src/main.cpp" line="74"/>
         <source>This tool displays the MX Linux welcome screen.</source>
         <translation>Αυτό το εργαλείο εμφανίζει την οθόνη υποδοχής του MX Linux.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="71"/>
+        <location filename="../src/main.cpp" line="78"/>
         <source>Start with About selected. The About page provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
         <translation>Εκκίνηση με την επιλογή Περί. Αυτή η σελίδα παρέχει βασικές πληροφορίες για τη τρέχουσα έκδοση του MX Linux, το υλικό καθώς και μια πλήρη αναφορά του συστήματος.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="73"/>
+        <location filename="../src/main.cpp" line="80"/>
         <source>Run a test mode.</source>
         <translation>Δοκιμή.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="94"/>
+        <location filename="../src/main.cpp" line="101"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="95"/>
+        <location filename="../src/main.cpp" line="102"/>
         <source>You must run this program as normal user.</source>
         <translation>Πρέπει να τρέξετε αυτή την εφαρμογή ως απλός χρήστης.</translation>
     </message>
@@ -490,7 +492,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 <context>
     <name>ToolCard</name>
     <message>
-        <location filename="../qml/components/ToolCard.qml" line="67"/>
+        <location filename="../qml/components/ToolCard.qml" line="69"/>
         <source>Open this tool</source>
         <translation>Άνοιγμα του εργαλείου</translation>
     </message>
