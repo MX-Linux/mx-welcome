@@ -251,7 +251,7 @@
     <message>
         <location filename="../qml/Main.qml" line="366"/>
         <source>Loading system information…</source>
-        <translation>Chargement des informations système…</translation>
+        <translation>Chargement des informations système&#xa0;…</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="381"/>

@@ -14,7 +14,7 @@
     <message>
         <location filename="../src/backend.cpp" line="74"/>
         <source>Could not update the login startup setting.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось обновить параметры автозапуска при входе в систему.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="95"/>
@@ -24,7 +24,7 @@
     <message>
         <location filename="../src/backend.cpp" line="106"/>
         <source>System information is unavailable.</source>
-        <translation type="unfinished"></translation>
+        <translation>Информация о системе недоступна.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="118"/>
@@ -34,7 +34,7 @@
     <message>
         <location filename="../src/backend.cpp" line="129"/>
         <source>Could not load the Terms of Use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось загрузить &quot;Условия использования&quot;.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="136"/>
@@ -54,12 +54,12 @@
     <message>
         <location filename="../src/backend.cpp" line="208"/>
         <source>User demo, password: demo. Superuser root, password: root.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пользователь demo, пароль: demo. Суперпользователь root, пароль: root.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="228"/>
         <source>%1 “%2”</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 “%2”</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="262"/>
@@ -69,7 +69,7 @@
     <message>
         <location filename="../src/backend.cpp" line="262"/>
         <source>Install MX Linux on this computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Установите MX Linux на этот компьютер.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="263"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../src/backend.cpp" line="263"/>
         <source>Find answers to frequently asked questions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Найдите ответы на часто задаваемые вопросы.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="264"/>
@@ -89,7 +89,7 @@
     <message>
         <location filename="../src/backend.cpp" line="264"/>
         <source>Ask questions and join the MX Linux community.</source>
-        <translation type="unfinished"></translation>
+        <translation>Задавайте вопросы и присоединяйтесь к сообществу MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="265"/>
@@ -99,7 +99,7 @@
     <message>
         <location filename="../src/backend.cpp" line="265"/>
         <source>Read the documentation for your MX Linux release.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ознакомьтесь с документацией к вашей версии MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="266"/>
@@ -109,7 +109,7 @@
     <message>
         <location filename="../src/backend.cpp" line="266"/>
         <source>Watch MX Linux tutorials and demonstrations.</source>
-        <translation type="unfinished"></translation>
+        <translation>Смотрите обучающие и демонстрационные ролики по MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="267"/>
@@ -119,7 +119,7 @@
     <message>
         <location filename="../src/backend.cpp" line="267"/>
         <source>Browse community-maintained guides and reference material.</source>
-        <translation type="unfinished"></translation>
+        <translation>Просмотрите созданные сообществом руководства и справочные материалы.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="268"/>
@@ -129,7 +129,7 @@
     <message>
         <location filename="../src/backend.cpp" line="268"/>
         <source>Learn how to support and contribute to MX Linux.</source>
-        <translation type="unfinished"></translation>
+        <translation>Узнайте, как поддерживать и вносить свой вклад в развитие MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
