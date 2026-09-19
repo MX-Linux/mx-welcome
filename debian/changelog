@@ -1,3 +1,9 @@
+mx-welcome (26.09.6mx25) mx; urgency=medium
+
+  * restore autostart entry for newly created user accounts
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 19 Sep 2026 14:20:28 -0400
+
 mx-welcome (26.09.5mx25) mx; urgency=medium
 
   * darken secondary text so descriptions are easier to read on light themes
