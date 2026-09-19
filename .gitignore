@@ -1,5 +1,6 @@
 mx-welcome
 /src/version.h
+/autostart/mx-welcome.desktop
 
 # C++ objects and libs
 
