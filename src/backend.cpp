@@ -23,8 +23,7 @@ QString configuredValue(const QSettings &system, const QSettings &defaults, cons
 }
 
 Backend::Backend(const QCommandLineParser &parser, QObject *parent)
-    : QObject(parent),
-      m_userSettings()
+    : QObject(parent)
 {
     m_startOnAbout = parser.isSet(QStringLiteral("about"));
     loadConfiguration(parser.isSet(QStringLiteral("test")));
@@ -76,7 +75,6 @@ void Backend::setAutoStartup(bool enabled)
     }
 
     m_autoStartup = enabled;
-    m_userSettings.setValue(QStringLiteral("AutoStartup"), enabled);
     emit autoStartupChanged();
 }
 
@@ -175,16 +173,15 @@ void Backend::loadConfiguration(bool testMode)
 {
     const QString oldConfig = QDir::homePath() + QStringLiteral("/.config/")
                               + QCoreApplication::applicationName() + QStringLiteral(".conf");
-    if (QFileInfo::exists(oldConfig)) {
-        QSettings oldSettings(QCoreApplication::applicationName());
-        m_userSettings.setValue(QStringLiteral("AutoStartup"),
-                                oldSettings.value(QStringLiteral("AutoStartup"), false).toBool());
-        QFile::remove(oldConfig);
-    }
-    m_autoStartup = m_userSettings.value(QStringLiteral("AutoStartup"), false).toBool();
-    if (!m_autoStartup) {
-        QFile::remove(QDir::homePath() + QStringLiteral("/.config/autostart/mx-welcome.desktop"));
-    }
+    QFile::remove(oldConfig);
+
+    const QString autostartDir = QDir::homePath() + QStringLiteral("/.config/autostart/");
+    // /etc/skel seeds this marker so new accounts see the welcome dialog once on
+    // first login; remove it after that single launch without touching the
+    // user's own autostart entry, which may have been enabled independently
+    // (e.g. via the desktop environment's session settings).
+    QFile::remove(autostartDir + QStringLiteral("mx-welcome-first-run.desktop"));
+    m_autoStartup = QFileInfo::exists(autostartDir + QStringLiteral("mx-welcome.desktop"));
 
     QSettings defaults(QStringLiteral("/usr/share/mx-welcome/mx-welcome.conf"), QSettings::NativeFormat);
     QSettings system(QStringLiteral("/etc/mx-welcome/mx-welcome.conf"), QSettings::NativeFormat);

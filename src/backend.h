@@ -79,7 +79,6 @@ private:
 
     ActionModel m_actions;
     QVector<ActionDefinition> m_definitions;
-    QSettings m_userSettings;
     QString m_distroTitle;
     QString m_distroVersion;
     QString m_debianVersion;
