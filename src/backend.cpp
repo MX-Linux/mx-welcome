@@ -211,9 +211,9 @@ void Backend::loadConfiguration(bool testMode)
                                        : fileSystems.last().section(QLatin1Char(' '), 1, 1,
                                                                     QString::SectionSkipEmpty).trimmed();
     m_liveSession = rootFileSystem == QLatin1String("aufs") || rootFileSystem == QLatin1String("overlay");
-    //hide password information when using root persistence or new-passwords is present
+    //hide password information when using root persistence or force-passwd is present
     const bool persistRoot = QFileInfo::exists(QStringLiteral("/live/config/persist-root"));
-    const bool newPasswords = QFileInfo::exists(QStringLiteral("/live/config/new-passwords"));
+    const bool newPasswords = QFileInfo::exists(QStringLiteral("/live/config/force-passwd"));
     m_showLiveUserInfo = testMode || (m_liveSession && !newPasswords && !persistRoot && showLive != QLatin1String("false"));
 
     const QString checkRelease = configuredValue(system, defaults, QStringLiteral("CHECKLSB_RELEASE"),
