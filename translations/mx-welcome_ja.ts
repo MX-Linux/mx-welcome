@@ -4,55 +4,55 @@
 <context>
     <name>Backend</name>
     <message>
-        <location filename="../src/backend.cpp" line="74"/>
-        <location filename="../src/backend.cpp" line="95"/>
-        <location filename="../src/backend.cpp" line="118"/>
+        <location filename="../src/backend.cpp" line="73"/>
+        <location filename="../src/backend.cpp" line="93"/>
+        <location filename="../src/backend.cpp" line="116"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="74"/>
+        <location filename="../src/backend.cpp" line="73"/>
         <source>Could not update the login startup setting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="95"/>
+        <location filename="../src/backend.cpp" line="93"/>
         <source>Could not open %1</source>
         <translation>%1 を開くことができません</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="106"/>
+        <location filename="../src/backend.cpp" line="104"/>
         <source>System information is unavailable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="118"/>
+        <location filename="../src/backend.cpp" line="116"/>
         <source>Could not start Quick System Info.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="129"/>
+        <location filename="../src/backend.cpp" line="127"/>
         <source>Could not load the Terms of Use.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="136"/>
+        <location filename="../src/backend.cpp" line="134"/>
         <source>Could not load %1</source>
         <translation>%1 を読み込めませんでした</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="146"/>
+        <location filename="../src/backend.cpp" line="144"/>
         <source>Could not load changelog.</source>
         <translation>更新履歴を読み込めませんでした。</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="197"/>
+        <location filename="../src/backend.cpp" line="194"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
         <translation>「MX Linux」という名前は、Linux Foundation Sublicense No.20140605-0483 に含まれています。私たちは、Wiki リストで検証可能な自由ライセンスの対象となるソフトウェアを開発しています。また、他の人々が開発した自由ライセンスの対象となるソフトウェアも含まれています。</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="208"/>
+        <location filename="../src/backend.cpp" line="205"/>
         <source>User demo, password: demo. Superuser root, password: root.</source>
         <translation type="unfinished"></translation>
     </message>

@@ -4,55 +4,55 @@
 <context>
     <name>Backend</name>
     <message>
-        <location filename="../src/backend.cpp" line="74"/>
-        <location filename="../src/backend.cpp" line="95"/>
-        <location filename="../src/backend.cpp" line="118"/>
+        <location filename="../src/backend.cpp" line="73"/>
+        <location filename="../src/backend.cpp" line="93"/>
+        <location filename="../src/backend.cpp" line="116"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="74"/>
+        <location filename="../src/backend.cpp" line="73"/>
         <source>Could not update the login startup setting.</source>
         <translation>Не удалось обновить параметры автозапуска при входе в систему.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="95"/>
+        <location filename="../src/backend.cpp" line="93"/>
         <source>Could not open %1</source>
         <translation>Не удалось открыть %1</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="106"/>
+        <location filename="../src/backend.cpp" line="104"/>
         <source>System information is unavailable.</source>
         <translation>Информация о системе недоступна.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="118"/>
+        <location filename="../src/backend.cpp" line="116"/>
         <source>Could not start Quick System Info.</source>
         <translation>Не удалось запустить Quick System Info.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="129"/>
+        <location filename="../src/backend.cpp" line="127"/>
         <source>Could not load the Terms of Use.</source>
         <translation>Не удалось загрузить &quot;Условия использования&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="136"/>
+        <location filename="../src/backend.cpp" line="134"/>
         <source>Could not load %1</source>
         <translation>Не удалось загрузить %1</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="146"/>
+        <location filename="../src/backend.cpp" line="144"/>
         <source>Could not load changelog.</source>
         <translation>Не удалось загрузить список изменений.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="197"/>
+        <location filename="../src/backend.cpp" line="194"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
         <translation>Название «MX Linux» подпадает под Linux Foundation Sublicense No. 20140605-0483. Мы разрабатываем программное обеспечение, на которое распространяется бесплатная лицензия, доступная в списке Вики. Мы также включаем программное обеспечение, разработанное другими, которое находится под бесплатной лицензией.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="208"/>
+        <location filename="../src/backend.cpp" line="205"/>
         <source>User demo, password: demo. Superuser root, password: root.</source>
         <translation>Пользователь demo, пароль: demo. Суперпользователь root, пароль: root.</translation>
     </message>
@@ -246,7 +246,7 @@
         <location filename="../qml/Main.qml" line="355"/>
         <location filename="../qml/Main.qml" line="371"/>
         <source>Short system report</source>
-        <translation>Краткий отчет о системе</translation>
+        <translation>Краткий отчёт о системе</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="366"/>

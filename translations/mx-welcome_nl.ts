@@ -4,55 +4,55 @@
 <context>
     <name>Backend</name>
     <message>
-        <location filename="../src/backend.cpp" line="74"/>
-        <location filename="../src/backend.cpp" line="95"/>
-        <location filename="../src/backend.cpp" line="118"/>
+        <location filename="../src/backend.cpp" line="73"/>
+        <location filename="../src/backend.cpp" line="93"/>
+        <location filename="../src/backend.cpp" line="116"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="74"/>
+        <location filename="../src/backend.cpp" line="73"/>
         <source>Could not update the login startup setting.</source>
         <translation>De instelling voor het opstarten van de aanmelding kon niet worden bijgewerkt.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="95"/>
+        <location filename="../src/backend.cpp" line="93"/>
         <source>Could not open %1</source>
         <translation>Kon %1 niet openen</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="106"/>
+        <location filename="../src/backend.cpp" line="104"/>
         <source>System information is unavailable.</source>
         <translation>Systeeminformatie is niet beschikbaar.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="118"/>
+        <location filename="../src/backend.cpp" line="116"/>
         <source>Could not start Quick System Info.</source>
         <translation>Quick System Info kon niet worden gestart.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="129"/>
+        <location filename="../src/backend.cpp" line="127"/>
         <source>Could not load the Terms of Use.</source>
         <translation>De gebruiksvoorwaarden konden niet worden geladen.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="136"/>
+        <location filename="../src/backend.cpp" line="134"/>
         <source>Could not load %1</source>
         <translation>%1 kon niet worden geladen</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="146"/>
+        <location filename="../src/backend.cpp" line="144"/>
         <source>Could not load changelog.</source>
         <translation>De changelog kon niet worden geladen.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="197"/>
+        <location filename="../src/backend.cpp" line="194"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
         <translation>De naam &quot;MX Linux&quot; valt onder Linux Foundation Sublicense No. 20140605-0483. We ontwikkelen software die onder een vrije licentie valt die je kunt bekijken in de Wiki-lijst. We nemen ook software op die door anderen is ontwikkeld en onder een vrije licentie valt.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="208"/>
+        <location filename="../src/backend.cpp" line="205"/>
         <source>User demo, password: demo. Superuser root, password: root.</source>
         <translation>Gebruiker demo, wachtwoord: demo. Superuser root, wachtwoord: root.</translation>
     </message>

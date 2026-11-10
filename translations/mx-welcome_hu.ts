@@ -4,55 +4,55 @@
 <context>
     <name>Backend</name>
     <message>
-        <location filename="../src/backend.cpp" line="74"/>
-        <location filename="../src/backend.cpp" line="95"/>
-        <location filename="../src/backend.cpp" line="118"/>
+        <location filename="../src/backend.cpp" line="73"/>
+        <location filename="../src/backend.cpp" line="93"/>
+        <location filename="../src/backend.cpp" line="116"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="74"/>
+        <location filename="../src/backend.cpp" line="73"/>
         <source>Could not update the login startup setting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="95"/>
+        <location filename="../src/backend.cpp" line="93"/>
         <source>Could not open %1</source>
         <translation>Megnyitás nem sikerült: %1</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="106"/>
+        <location filename="../src/backend.cpp" line="104"/>
         <source>System information is unavailable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="118"/>
+        <location filename="../src/backend.cpp" line="116"/>
         <source>Could not start Quick System Info.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="129"/>
+        <location filename="../src/backend.cpp" line="127"/>
         <source>Could not load the Terms of Use.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="136"/>
+        <location filename="../src/backend.cpp" line="134"/>
         <source>Could not load %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="146"/>
+        <location filename="../src/backend.cpp" line="144"/>
         <source>Could not load changelog.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="197"/>
+        <location filename="../src/backend.cpp" line="194"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
         <translation>Az &quot;MX Linux&quot; név a Linux Foundation 20140605-0483 számú allicencének hatálya alá tartozik. Erre a szoftverre szabad licenc vonatkozik, amely a Wikiben megtekinthető. Mások által fejlesztett, szabad licenc alá tartozó szoftvereket is tartalmaz.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="208"/>
+        <location filename="../src/backend.cpp" line="205"/>
         <source>User demo, password: demo. Superuser root, password: root.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -205,12 +205,12 @@
         <location filename="../qml/Main.qml" line="119"/>
         <location filename="../qml/Main.qml" line="295"/>
         <source>About this system</source>
-        <translation type="unfinished"></translation>
+        <translation>Rendszerinformáció</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="258"/>
         <source>No actions are available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nincsenek elérhető műveletek.</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="268"/>
@@ -220,12 +220,12 @@
     <message>
         <location filename="../qml/Main.qml" line="312"/>
         <source>MX version</source>
-        <translation type="unfinished"></translation>
+        <translation>MX verzió</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="313"/>
         <source>Debian version</source>
-        <translation type="unfinished"></translation>
+        <translation>Debian verzió</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="314"/>
@@ -235,7 +235,7 @@
     <message>
         <location filename="../qml/Main.qml" line="315"/>
         <source>Supported until</source>
-        <translation type="unfinished"></translation>
+        <translation>Támogatás vége</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="341"/>
@@ -246,7 +246,7 @@
         <location filename="../qml/Main.qml" line="355"/>
         <location filename="../qml/Main.qml" line="371"/>
         <source>Short system report</source>
-        <translation type="unfinished"></translation>
+        <translation>Rövid rendszerjelentés</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="366"/>
@@ -267,7 +267,7 @@
     <message>
         <location filename="../qml/Main.qml" line="425"/>
         <source>About MX Welcome</source>
-        <translation>Az MX üdvözlőprogramról</translation>
+        <translation>Az MX Üdvözlőprogramról</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="466"/>

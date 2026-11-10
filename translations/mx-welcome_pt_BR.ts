@@ -4,62 +4,63 @@
 <context>
     <name>Backend</name>
     <message>
-        <location filename="../src/backend.cpp" line="74"/>
-        <location filename="../src/backend.cpp" line="95"/>
-        <location filename="../src/backend.cpp" line="118"/>
+        <location filename="../src/backend.cpp" line="73"/>
+        <location filename="../src/backend.cpp" line="93"/>
+        <location filename="../src/backend.cpp" line="116"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
         <translation>Ocorreu um erro</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="74"/>
+        <location filename="../src/backend.cpp" line="73"/>
         <source>Could not update the login startup setting.</source>
-        <translation type="unfinished"></translation>
+        <translation>Não foi possível salvar os ajustes de login.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="95"/>
+        <location filename="../src/backend.cpp" line="93"/>
         <source>Could not open %1</source>
         <translation>Não foi possível abrir %1</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="106"/>
+        <location filename="../src/backend.cpp" line="104"/>
         <source>System information is unavailable.</source>
-        <translation type="unfinished"></translation>
+        <translation>As informações do sistema não estão disponíveis.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="118"/>
+        <location filename="../src/backend.cpp" line="116"/>
         <source>Could not start Quick System Info.</source>
-        <translation type="unfinished"></translation>
+        <translation>Não foi possível abrir as Informações do Computador e do Sistema Operacional.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="129"/>
+        <location filename="../src/backend.cpp" line="127"/>
         <source>Could not load the Terms of Use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Não foi possível abrir os Termos de Uso.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="136"/>
+        <location filename="../src/backend.cpp" line="134"/>
         <source>Could not load %1</source>
         <translation>Não foi possível carregar o %1</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="146"/>
+        <location filename="../src/backend.cpp" line="144"/>
         <source>Could not load changelog.</source>
         <translation>Não foi possível carregar o registro das alterações.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="197"/>
+        <location filename="../src/backend.cpp" line="194"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
         <translation>O nome “MX Linux” é coberto pela Sublicença da Fundação Linux (Linux Foundation Sublicense) Número 20140605-0483. Nós desenvolvemos programas (software) que são cobertos por licença livre que podem ser examinadas na lista da Wiki. Também incluímos programas (software) desenvolvidos por terceiros que estão sob licença livre.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="208"/>
+        <location filename="../src/backend.cpp" line="205"/>
         <source>User demo, password: demo. Superuser root, password: root.</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuário: ‘demo’, senha: ‘demo’.
+Superusuário: ‘root’, senha: ‘root’.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="228"/>
         <source>%1 “%2”</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 ‘%2’</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="262"/>
@@ -69,7 +70,7 @@
     <message>
         <location filename="../src/backend.cpp" line="262"/>
         <source>Install MX Linux on this computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalar o MX Linux neste computador.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="263"/>
@@ -79,7 +80,7 @@
     <message>
         <location filename="../src/backend.cpp" line="263"/>
         <source>Find answers to frequently asked questions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Encontre respostas para perguntas comuns.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="264"/>
@@ -89,7 +90,7 @@
     <message>
         <location filename="../src/backend.cpp" line="264"/>
         <source>Ask questions and join the MX Linux community.</source>
-        <translation type="unfinished"></translation>
+        <translation>Faça perguntas e junte-se à comunidade do MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="265"/>
@@ -99,7 +100,7 @@
     <message>
         <location filename="../src/backend.cpp" line="265"/>
         <source>Read the documentation for your MX Linux release.</source>
-        <translation type="unfinished"></translation>
+        <translation>Leia a documentação da sua versão do MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="266"/>
@@ -109,7 +110,7 @@
     <message>
         <location filename="../src/backend.cpp" line="266"/>
         <source>Watch MX Linux tutorials and demonstrations.</source>
-        <translation type="unfinished"></translation>
+        <translation>Assista às demonstrações e tutoriais sobre o MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="267"/>
@@ -119,7 +120,7 @@
     <message>
         <location filename="../src/backend.cpp" line="267"/>
         <source>Browse community-maintained guides and reference material.</source>
-        <translation type="unfinished"></translation>
+        <translation>Navegue por guias e materiais de referência mantidos por usuários.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="268"/>
@@ -129,7 +130,7 @@
     <message>
         <location filename="../src/backend.cpp" line="268"/>
         <source>Learn how to support and contribute to MX Linux.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprenda a como apoiar e contribuir com o MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="269"/>
@@ -139,7 +140,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Open the collection of MX system utilities.</source>
-        <translation type="unfinished"></translation>
+        <translation>Abra a coleção de ferramentas do MX.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="270"/>
@@ -149,7 +150,7 @@
     <message>
         <location filename="../src/backend.cpp" line="270"/>
         <source>Discover and install popular applications.</source>
-        <translation type="unfinished"></translation>
+        <translation>Descubra e instale programas famosos.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="271"/>
@@ -159,7 +160,7 @@
     <message>
         <location filename="../src/backend.cpp" line="271"/>
         <source>Adjust desktop, panel, and system preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajuste o painel, a área de trabalho e o sistema de acordo com a sua preferência.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="272"/>
@@ -169,12 +170,12 @@
     <message>
         <location filename="../src/backend.cpp" line="272"/>
         <source>Take a guided tour of MX Linux.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uma apresentação guiada do MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Could not start the requested action.</source>
-        <translation type="unfinished"></translation>
+        <translation>Não foi possível começar a ação solicitada.</translation>
     </message>
 </context>
 <context>
@@ -205,12 +206,12 @@
         <location filename="../qml/Main.qml" line="119"/>
         <location filename="../qml/Main.qml" line="295"/>
         <source>About this system</source>
-        <translation type="unfinished"></translation>
+        <translation>Sobre este sistema</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="258"/>
         <source>No actions are available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nenhuma ação disponível.</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="268"/>
@@ -220,12 +221,12 @@
     <message>
         <location filename="../qml/Main.qml" line="312"/>
         <source>MX version</source>
-        <translation type="unfinished"></translation>
+        <translation>Versão do MX</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="313"/>
         <source>Debian version</source>
-        <translation type="unfinished"></translation>
+        <translation>Versão do Debian</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="314"/>
@@ -235,23 +236,23 @@
     <message>
         <location filename="../qml/Main.qml" line="315"/>
         <source>Supported until</source>
-        <translation type="unfinished"></translation>
+        <translation>Suportado até</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="341"/>
         <source>Unavailable</source>
-        <translation type="unfinished"></translation>
+        <translation>Indisponível</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="355"/>
         <location filename="../qml/Main.qml" line="371"/>
         <source>Short system report</source>
-        <translation type="unfinished"></translation>
+        <translation>Relatório resumido do sistema</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="366"/>
         <source>Loading system information…</source>
-        <translation type="unfinished"></translation>
+        <translation>Carregando informações do sistema...</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="381"/>
@@ -292,7 +293,7 @@
     <message>
         <location filename="../qml/Main.qml" line="492"/>
         <source>MX Welcome License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licença das Boas-vindas do MX</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="495"/>
@@ -443,7 +444,14 @@ li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="620"/>
@@ -466,12 +474,12 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../src/main.cpp" line="74"/>
         <source>This tool displays the MX Linux welcome screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Este recurso mostra a Tela de Boas-vindas do MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="78"/>
         <source>Start with About selected. The About page provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
-        <translation type="unfinished"></translation>
+        <translation>Comece com o ‘Sobre’ selecionado. A página ‘Sobre’ contêm informações úteis sobre a versão atual do MX Linux, o computador do usuário e acesso a relatórios completos sobre o sistema.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="80"/>
@@ -494,7 +502,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../qml/components/ToolCard.qml" line="69"/>
         <source>Open this tool</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir esta ferramenta</translation>
     </message>
 </context>
 </TS>

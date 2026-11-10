@@ -4,55 +4,55 @@
 <context>
     <name>Backend</name>
     <message>
-        <location filename="../src/backend.cpp" line="74"/>
-        <location filename="../src/backend.cpp" line="95"/>
-        <location filename="../src/backend.cpp" line="118"/>
+        <location filename="../src/backend.cpp" line="73"/>
+        <location filename="../src/backend.cpp" line="93"/>
+        <location filename="../src/backend.cpp" line="116"/>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="74"/>
+        <location filename="../src/backend.cpp" line="73"/>
         <source>Could not update the login startup setting.</source>
         <translation>Не удалось обновить параметры автозапуска при входе в систему.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="95"/>
+        <location filename="../src/backend.cpp" line="93"/>
         <source>Could not open %1</source>
         <translation>Не удалось открыть %1</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="106"/>
+        <location filename="../src/backend.cpp" line="104"/>
         <source>System information is unavailable.</source>
         <translation>Информация о системе недоступна.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="118"/>
+        <location filename="../src/backend.cpp" line="116"/>
         <source>Could not start Quick System Info.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось запустить Quick System Info.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="129"/>
+        <location filename="../src/backend.cpp" line="127"/>
         <source>Could not load the Terms of Use.</source>
         <translation>Не удалось загрузить &quot;Условия использования&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="136"/>
+        <location filename="../src/backend.cpp" line="134"/>
         <source>Could not load %1</source>
         <translation>Не удалось загрузить %1</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="146"/>
+        <location filename="../src/backend.cpp" line="144"/>
         <source>Could not load changelog.</source>
         <translation>Не удалось загрузить список изменений.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="197"/>
+        <location filename="../src/backend.cpp" line="194"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
         <translation>Название «MX Linux» подпадает под сублицензию Linux Foundation No. 20140605-0483. Мы разрабатываем программное обеспечение, на которое распространяется бесплатная лицензия, доступная в списке Вики. Мы также включаем программное обеспечение, разработанное другими, которое также имеет бесплатную лицензию.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="208"/>
+        <location filename="../src/backend.cpp" line="205"/>
         <source>User demo, password: demo. Superuser root, password: root.</source>
         <translation>Пользователь demo, пароль: demo. Суперпользователь root, пароль: root.</translation>
     </message>
@@ -139,7 +139,7 @@
     <message>
         <location filename="../src/backend.cpp" line="269"/>
         <source>Open the collection of MX system utilities.</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть набор системных утилит MX.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="270"/>
@@ -149,7 +149,7 @@
     <message>
         <location filename="../src/backend.cpp" line="270"/>
         <source>Discover and install popular applications.</source>
-        <translation type="unfinished"></translation>
+        <translation>Обнаруживать и устанавливать популярные приложения.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="271"/>
@@ -159,7 +159,7 @@
     <message>
         <location filename="../src/backend.cpp" line="271"/>
         <source>Adjust desktop, panel, and system preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Настроить параметры рабочего стола, панели и системы.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="272"/>
@@ -169,12 +169,12 @@
     <message>
         <location filename="../src/backend.cpp" line="272"/>
         <source>Take a guided tour of MX Linux.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пройти ознакомительный тур по MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/backend.cpp" line="315"/>
         <source>Could not start the requested action.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось запустить запрошенное действие.</translation>
     </message>
 </context>
 <context>
@@ -205,12 +205,12 @@
         <location filename="../qml/Main.qml" line="119"/>
         <location filename="../qml/Main.qml" line="295"/>
         <source>About this system</source>
-        <translation type="unfinished"></translation>
+        <translation>Об этой системе</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="258"/>
         <source>No actions are available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нет доступных действий.</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="268"/>
@@ -220,12 +220,12 @@
     <message>
         <location filename="../qml/Main.qml" line="312"/>
         <source>MX version</source>
-        <translation type="unfinished"></translation>
+        <translation>Версия MX</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="313"/>
         <source>Debian version</source>
-        <translation type="unfinished"></translation>
+        <translation>Версия Debian</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="314"/>
@@ -235,23 +235,23 @@
     <message>
         <location filename="../qml/Main.qml" line="315"/>
         <source>Supported until</source>
-        <translation type="unfinished"></translation>
+        <translation>Поддерживается до</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="341"/>
         <source>Unavailable</source>
-        <translation type="unfinished"></translation>
+        <translation>Недоступно</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="355"/>
         <location filename="../qml/Main.qml" line="371"/>
         <source>Short system report</source>
-        <translation type="unfinished"></translation>
+        <translation>Краткий отчёт о системе</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="366"/>
         <source>Loading system information…</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузка сведений о системе…</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="381"/>
@@ -292,7 +292,7 @@
     <message>
         <location filename="../qml/Main.qml" line="492"/>
         <source>MX Welcome License</source>
-        <translation type="unfinished"></translation>
+        <translation>Лицензия MX Welcome</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="495"/>
@@ -443,7 +443,14 @@ li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/ui_mainwindow.h" line="620"/>
@@ -466,12 +473,12 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../src/main.cpp" line="74"/>
         <source>This tool displays the MX Linux welcome screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Этот инструмент отображает приветственный экран MX Linux.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="78"/>
         <source>Start with About selected. The About page provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
-        <translation type="unfinished"></translation>
+        <translation>Запускать с выбранной вкладкой «О системе». Вкладка «О системе» содержит основные сведения о текущей версии MX Linux, оборудовании пользователя и доступ к полному отчёту о системе.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="80"/>
@@ -494,7 +501,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <message>
         <location filename="../qml/components/ToolCard.qml" line="69"/>
         <source>Open this tool</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть этот инструмент</translation>
     </message>
 </context>
 </TS>

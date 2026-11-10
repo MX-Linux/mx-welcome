@@ -1,3 +1,13 @@
+mx-welcome (26.11mx25) mx; urgency=medium
+
+  * preserve automatic startup enabled through the desktop session settings
+  * keep translations for the automatic startup entry in sync with the
+    application menu entry
+  * hide default live-session passwords when root persistence is enabled or
+    password changes are required at startup
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 10 Nov 2026 08:42:17 -0500
+
 mx-welcome (26.09.6mx25) mx; urgency=medium
 
   * restore autostart entry for newly created user accounts
