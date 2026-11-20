@@ -180,7 +180,7 @@ void Backend::loadConfiguration(bool testMode)
     // first login; remove it after that single launch without touching the
     // user's own autostart entry, which may have been enabled independently
     // (e.g. via the desktop environment's session settings).
-    QFile::remove(autostartDir + QStringLiteral("mx-welcome-first-run.desktop"));
+    QFile::remove(autostartDir + QStringLiteral("mx-welcome-once.desktop"));
     m_autoStartup = QFileInfo::exists(autostartDir + QStringLiteral("mx-welcome.desktop"));
 
     QSettings defaults(QStringLiteral("/usr/share/mx-welcome/mx-welcome.conf"), QSettings::NativeFormat);
