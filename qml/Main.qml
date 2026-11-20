@@ -9,8 +9,6 @@ ApplicationWindow {
     required property var backend
 
     visible: false
-    width: Math.min(root.backend.initialWindowSize.width, 760)
-    height: root.backend.initialWindowSize.height
     minimumWidth: 680
     minimumHeight: 560
     title: qsTr("MX Welcome")
@@ -565,6 +563,8 @@ ApplicationWindow {
     }
 
     Component.onCompleted: {
+        root.width = Math.max(minimumWidth, Math.min(backend.initialWindowSize.width, Screen.desktopAvailableWidth, Screen.width))
+        root.height = Math.max(minimumHeight, Math.min(backend.initialWindowSize.height, Screen.desktopAvailableHeight, Screen.height))
         root.x = Screen.virtualX + Math.round((Screen.desktopAvailableWidth - root.width) / 2)
         root.y = Screen.virtualY + Math.round((Screen.desktopAvailableHeight - root.height) / 2)
         root.visible = true
