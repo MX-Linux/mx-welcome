@@ -255,7 +255,10 @@ ApplicationWindow {
                             text: qsTr("Show this dialog at start up")
                             palette.windowText: root.primaryTextColor
                             checked: root.backend.autoStartup
-                            onToggled: root.backend.autoStartup = checked
+                            nextCheckState: function() {
+                                root.backend.autoStartup = !checked
+                                return root.backend.autoStartup ? Qt.Checked : Qt.Unchecked
+                            }
 
                             HoverHandler { cursorShape: Qt.PointingHandCursor }
                         }
