@@ -169,7 +169,9 @@ void Backend::activate(const QString &identifier)
     if (!definition->command.isEmpty()) {
         launchCommand(definition->command);
     } else if (!definition->defaultCommand.isEmpty()) {
-        launchCommand(definition->defaultCommand);
+        if (!QProcess::startDetached(definition->defaultCommand)) {
+            emit errorOccurred(tr("Error"), tr("Could not start the requested action."));
+        }
     } else if (definition->defaultUrl.isValid() && !QDesktopServices::openUrl(definition->defaultUrl)) {
         emit errorOccurred(tr("Error"), tr("Could not open %1").arg(definition->defaultUrl.toString()));
     }
