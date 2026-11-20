@@ -10,8 +10,11 @@
 #include <QFileInfo>
 #include <QProcess>
 #include <QRegularExpression>
+#include <QSaveFile>
 #include <QSettings>
 #include <QTextStream>
+
+#include <optional>
 
 namespace
 {
@@ -19,6 +22,69 @@ QString configuredValue(const QSettings &system, const QSettings &defaults, cons
                         const QVariant &fallback = {})
 {
     return system.value(key, defaults.value(key, fallback)).toString();
+}
+
+// Preserve desktop-entry escapes, localized keys and unrelated groups verbatim.
+struct LoginEntry {
+    QByteArray contents;
+    bool disabled = false;
+    bool hasLaunchCommand = false;
+};
+
+std::optional<LoginEntry> readLoginEntry(const QString &path)
+{
+    QFile file(path);
+    if (!file.open(QIODevice::ReadOnly)) {
+        return {};
+    }
+    LoginEntry entry;
+    bool desktopGroup = false;
+    while (!file.atEnd()) {
+        const QByteArray line = file.readLine();
+        const QByteArray trimmed = line.trimmed();
+        if (trimmed.startsWith('[')) {
+            desktopGroup = trimmed == "[Desktop Entry]";
+        } else if (desktopGroup) {
+            const auto separator = trimmed.indexOf('=');
+            const QByteArray key = trimmed.left(separator).trimmed();
+            const QByteArray value = trimmed.mid(separator + 1).trimmed();
+            if ((key == "Hidden" && value == "true") || (key == "X-GNOME-Autostart-enabled" && value == "false")) {
+                entry.disabled = true;
+                continue;
+            }
+            if ((key == "Exec" && !value.isEmpty()) || (key == "DBusActivatable" && value == "true")) {
+                entry.hasLaunchCommand = true;
+            }
+        }
+        entry.contents += line;
+    }
+    if (file.error() != QFileDevice::NoError) {
+        return std::nullopt;
+    }
+    return entry;
+}
+
+bool enableLoginEntry(const QString &target)
+{
+    const QString source = QStringLiteral("/usr/share/mx-welcome/mx-welcome.desktop");
+    if (!QFileInfo::exists(target)) {
+        return QFile::copy(source, target);
+    }
+    auto entry = readLoginEntry(target);
+    if (!entry) {
+        return false;
+    }
+    if (!entry->hasLaunchCommand) {
+        // A desktop session can leave just a Hidden=true mask behind.
+        entry = readLoginEntry(source);
+        if (!entry || !entry->hasLaunchCommand) {
+            return false;
+        }
+    } else if (!entry->disabled) {
+        return true;
+    }
+    QSaveFile file(target);
+    return file.open(QIODevice::WriteOnly) && file.write(entry->contents) == entry->contents.size() && file.commit();
 }
 
 }
@@ -73,10 +139,7 @@ void Backend::setAutoStartup(bool enabled)
     const QString target = targetDir + QStringLiteral("/mx-welcome.desktop");
     bool succeeded = true;
     if (enabled) {
-        succeeded = QDir().mkpath(targetDir);
-        if (succeeded && !QFileInfo::exists(target)) {
-            succeeded = QFile::copy(QStringLiteral("/usr/share/mx-welcome/mx-welcome.desktop"), target);
-        }
+        succeeded = QDir().mkpath(targetDir) && enableLoginEntry(target);
     } else {
         succeeded = !QFileInfo::exists(target) || QFile::remove(target);
     }
@@ -193,7 +256,8 @@ void Backend::loadConfiguration(bool testMode)
     // user's own autostart entry, which may have been enabled independently
     // (e.g. via the desktop environment's session settings).
     QFile::remove(autostartDir + QStringLiteral("mx-welcome-once.desktop"));
-    m_autoStartup = QFileInfo::exists(autostartDir + QStringLiteral("mx-welcome.desktop"));
+    const auto loginEntry = readLoginEntry(autostartDir + QStringLiteral("mx-welcome.desktop"));
+    m_autoStartup = loginEntry && loginEntry->hasLaunchCommand && !loginEntry->disabled;
 
     QSettings defaults(QStringLiteral("/usr/share/mx-welcome/mx-welcome.conf"), QSettings::NativeFormat);
     QSettings system(QStringLiteral("/etc/mx-welcome/mx-welcome.conf"), QSettings::NativeFormat);
