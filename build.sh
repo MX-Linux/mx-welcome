@@ -70,7 +70,11 @@ done
 # Build Debian package
 if [ "$DEBIAN_BUILD" = true ]; then
     echo "Building Debian package..."
-    debuild -us -uc
+    if [ "$USE_CLANG" = true ]; then
+        debuild -eCXX=clang++ -us -uc
+    else
+        debuild -us -uc
+    fi
 
     echo "Creating debs directory and moving debian artifacts..."
     mkdir -p debs
@@ -95,6 +99,10 @@ if [ "$DEBIAN_BUILD" = true ]; then
 fi
 
 # Clean build directory if requested
+if [ "$USE_CLANG" = true ]; then
+    BUILD_DIR="build-clang"
+fi
+
 if [ "$CLEAN" = true ]; then
     echo "Cleaning build directory and debian artifacts..."
     rm -rf "$BUILD_DIR"
@@ -116,7 +124,7 @@ CMAKE_ARGS=(
 )
 
 if [ "$USE_CLANG" = true ]; then
-    CMAKE_ARGS+=(-DUSE_CLANG=ON)
+    CMAKE_ARGS+=(-DCMAKE_CXX_COMPILER=clang++)
     echo "Using clang compiler"
 fi
 
