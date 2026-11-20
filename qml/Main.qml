@@ -1,7 +1,6 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
-import QtCore
 import "components"
 
 ApplicationWindow {
@@ -10,8 +9,8 @@ ApplicationWindow {
     required property var backend
 
     visible: false
-    width: Math.min(windowSettings.windowWidth, 760)
-    height: windowSettings.windowHeight
+    width: Math.min(root.backend.initialWindowSize.width, 760)
+    height: root.backend.initialWindowSize.height
     minimumWidth: 680
     minimumHeight: 560
     title: qsTr("MX Welcome")
@@ -34,17 +33,7 @@ ApplicationWindow {
 
     property int currentPage: root.backend.startOnAbout ? 1 : 0
 
-    Settings {
-        id: windowSettings
-        category: "Window"
-        property int windowWidth: 760
-        property int windowHeight: 720
-    }
-
-    onClosing: function(close) {
-        windowSettings.windowWidth = width
-        windowSettings.windowHeight = height
-    }
+    onClosing: root.backend.saveWindowSize(Qt.size(width, height))
 
     function showDocument(title, text, richText) {
         documentDialog.title = title

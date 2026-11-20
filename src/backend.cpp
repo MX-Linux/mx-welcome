@@ -10,6 +10,7 @@
 #include <QFileInfo>
 #include <QProcess>
 #include <QRegularExpression>
+#include <QSettings>
 #include <QTextStream>
 
 namespace
@@ -26,6 +27,9 @@ Backend::Backend(const QCommandLineParser &parser, QObject *parent)
     : QObject(parent)
 {
     m_startOnAbout = parser.isSet(QStringLiteral("about"));
+    QSettings settings;
+    m_initialWindowSize = QSize(settings.value(QStringLiteral("Window/windowWidth"), 760).toInt(),
+                                settings.value(QStringLiteral("Window/windowHeight"), 720).toInt());
     loadConfiguration(parser.isSet(QStringLiteral("test")));
     rebuildActions();
 }
@@ -49,7 +53,15 @@ bool Backend::autoStartup() const { return m_autoStartup; }
 bool Backend::liveSession() const { return m_liveSession; }
 bool Backend::showLiveUserInfo() const { return m_showLiveUserInfo; }
 bool Backend::startOnAbout() const { return m_startOnAbout; }
+QSize Backend::initialWindowSize() const { return m_initialWindowSize; }
 QString Backend::version() const { return QStringLiteral(VERSION); }
+
+void Backend::saveWindowSize(const QSize &size)
+{
+    QSettings settings;
+    settings.setValue(QStringLiteral("Window/windowWidth"), size.width());
+    settings.setValue(QStringLiteral("Window/windowHeight"), size.height());
+}
 
 void Backend::setAutoStartup(bool enabled)
 {

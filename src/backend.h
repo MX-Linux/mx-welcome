@@ -2,7 +2,7 @@
 
 #include "actionmodel.h"
 
-#include <QSettings>
+#include <QSize>
 
 class QCommandLineParser;
 
@@ -24,6 +24,7 @@ class Backend final : public QObject
     Q_PROPERTY(bool liveSession READ liveSession CONSTANT)
     Q_PROPERTY(bool showLiveUserInfo READ showLiveUserInfo CONSTANT)
     Q_PROPERTY(bool startOnAbout READ startOnAbout CONSTANT)
+    Q_PROPERTY(QSize initialWindowSize READ initialWindowSize CONSTANT)
     Q_PROPERTY(QString version READ version CONSTANT)
 
 public:
@@ -44,11 +45,13 @@ public:
     [[nodiscard]] bool liveSession() const;
     [[nodiscard]] bool showLiveUserInfo() const;
     [[nodiscard]] bool startOnAbout() const;
+    [[nodiscard]] QSize initialWindowSize() const;
     [[nodiscard]] QString version() const;
 
     void setAutoStartup(bool enabled);
 
     Q_INVOKABLE void activate(const QString &identifier);
+    Q_INVOKABLE void saveWindowSize(const QSize &size);
     Q_INVOKABLE void requestSystemInfo();
     Q_INVOKABLE void openFullSystemReport();
     Q_INVOKABLE QString termsText();
@@ -78,6 +81,7 @@ private:
     [[nodiscard]] const ActionDefinition *findAction(const QString &identifier) const;
 
     ActionModel m_actions;
+    QSize m_initialWindowSize;
     QVector<ActionDefinition> m_definitions;
     QString m_distroTitle;
     QString m_distroVersion;

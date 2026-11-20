@@ -10,7 +10,6 @@ Homepage: https://github.com/AdrianTM/mx-welcome
 Package: mx-welcome
 Architecture: any
 Depends: mx-welcome-data (>= 22.02.01),
-         qml6-module-qtcore,
          qml6-module-qtquick,
          qml6-module-qtquick-controls,
          qml6-module-qtquick-layouts,
