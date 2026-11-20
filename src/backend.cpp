@@ -9,12 +9,16 @@
 #include <QFile>
 #include <QFileInfo>
 #include <QProcess>
+#include <QProcessEnvironment>
 #include <QRegularExpression>
 #include <QSaveFile>
 #include <QSettings>
 #include <QStandardPaths>
+#include <QStorageInfo>
+#include <QTimer>
 #include <QTextStream>
 
+#include <functional>
 #include <optional>
 
 namespace
@@ -23,6 +27,29 @@ QString configuredValue(const QSettings &system, const QSettings &defaults, cons
                         const QVariant &fallback = {})
 {
     return system.value(key, defaults.value(key, fallback)).toString();
+}
+
+void runInxi(QObject *owner, const QStringList &arguments, const std::function<void(const QString &)> &onResult)
+{
+    auto *process = new QProcess(owner);
+    auto environment = QProcessEnvironment::systemEnvironment();
+    environment.insert(QStringLiteral("LC_ALL"), QStringLiteral("C"));
+    process->setProcessEnvironment(environment);
+    const auto finish = [process, onResult](const QString &output) {
+        process->deleteLater();
+        onResult(output);
+    };
+    QObject::connect(process, &QProcess::errorOccurred, owner, [finish](QProcess::ProcessError error) {
+        if (error == QProcess::FailedToStart) {
+            finish({});
+        }
+    });
+    QObject::connect(process, &QProcess::finished, owner, [process, finish](int code, QProcess::ExitStatus status) {
+        finish(status == QProcess::NormalExit && code == 0
+                   ? QString::fromUtf8(process->readAllStandardOutput()).trimmed() : QString());
+    });
+    QTimer::singleShot(10000, process, &QProcess::kill);
+    process->start(QStringLiteral("inxi"), arguments);
 }
 
 QString autostartDirectory()
@@ -104,6 +131,8 @@ Backend::Backend(const QCommandLineParser &parser, QObject *parent)
                                 settings.value(QStringLiteral("Window/windowHeight"), 720).toInt());
     loadConfiguration(parser.isSet(QStringLiteral("test")));
     rebuildActions();
+    runInxi(this, {QStringLiteral("-c"), QStringLiteral("0"), QStringLiteral("-S")},
+            [this](const QString &output) { updateDesktopVersion(output); });
 }
 
 ActionModel *Backend::actions()
@@ -169,7 +198,13 @@ void Backend::activate(const QString &identifier)
     if (!definition->command.isEmpty()) {
         launchCommand(definition->command);
     } else if (!definition->defaultCommand.isEmpty()) {
-        if (!QProcess::startDetached(definition->defaultCommand)) {
+        const bool manual = identifier == QLatin1String("manual");
+        if (manual && m_desktopProbePending) {
+            m_manualRequested = true;
+            return;
+        }
+        const QString program = manual && m_isFluxbox ? QStringLiteral("mxfb-help") : definition->defaultCommand;
+        if (!QProcess::startDetached(program)) {
             emit errorOccurred(tr("Error"), tr("Could not start the requested action."));
         }
     } else if (definition->defaultUrl.isValid() && !QDesktopServices::openUrl(definition->defaultUrl)) {
@@ -179,14 +214,14 @@ void Backend::activate(const QString &identifier)
 
 void Backend::requestSystemInfo()
 {
-    if (!m_systemInfo.isEmpty()) {
+    if (m_reportRequested) {
         return;
     }
-    m_systemInfo = commandOutput(QStringLiteral("LANG=C inxi -c 0"));
-    if (m_systemInfo.isEmpty()) {
-        m_systemInfo = tr("System information is unavailable.");
-    }
-    emit systemInfoChanged();
+    m_reportRequested = true;
+    runInxi(this, {QStringLiteral("-c"), QStringLiteral("0")}, [this](const QString &output) {
+        m_systemInfo = output.isEmpty() ? tr("System information is unavailable.") : output;
+        emit systemInfoChanged();
+    });
 }
 
 void Backend::openFullSystemReport()
@@ -245,11 +280,6 @@ QString Backend::runCommand(const QString &program, const QStringList &arguments
     return QString::fromUtf8(process.readAllStandardOutput()).trimmed();
 }
 
-QString Backend::commandOutput(const QString &command)
-{
-    return runCommand(QStringLiteral("/bin/bash"), {QStringLiteral("-c"), command});
-}
-
 QUrl Backend::localSource(const QString &path)
 {
     return QFileInfo::exists(path) ? QUrl::fromLocalFile(path) : QUrl();
@@ -292,12 +322,8 @@ void Backend::loadConfiguration(bool testMode)
         m_liveUserInfo = tr("User demo, password: demo. Superuser root, password: root.");
     }
 
-    const QStringList fileSystems = commandOutput(QStringLiteral("df -T /")).split(QLatin1Char('\n'), Qt::SkipEmptyParts);
-    const QString rootFileSystem = fileSystems.isEmpty()
-                                       ? QString()
-                                       : fileSystems.last().section(QLatin1Char(' '), 1, 1,
-                                                                    QString::SectionSkipEmpty).trimmed();
-    m_liveSession = rootFileSystem == QLatin1String("aufs") || rootFileSystem == QLatin1String("overlay");
+    const QByteArray rootFileSystem = QStorageInfo::root().fileSystemType();
+    m_liveSession = rootFileSystem == "aufs" || rootFileSystem == "overlay";
     //hide password information when using root persistence or force-passwd is present
     const bool persistRoot = QFileInfo::exists(QStringLiteral("/live/config/persist-root"));
     const bool newPasswords = QFileInfo::exists(QStringLiteral("/live/config/force-passwd"));
@@ -319,23 +345,6 @@ void Backend::loadConfiguration(bool testMode)
         m_debianVersion = QString::fromUtf8(debianFile.readLine()).trimmed();
     }
 
-    const QString sessionInfo = commandOutput(QStringLiteral("LANG=C.UTF-8 inxi -c 0 -S"));
-    const QRegularExpression desktopPattern(QStringLiteral(R"(Desktop:\s*(.+?)\s+v:\s*([\d\.]+))"));
-    const auto match = desktopPattern.match(sessionInfo);
-    if (match.hasMatch()) {
-        m_desktopVersion = match.captured(1) + QLatin1Char(' ') + match.captured(2);
-    }
-    m_isFluxbox = m_desktopVersion.contains(QStringLiteral("Fluxbox"));
-    if (m_isFluxbox) {
-        QFile fluxboxFile(QStringLiteral("/etc/mxfb_version"));
-        if (fluxboxFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
-            const QString fluxboxVersion = QString::fromUtf8(fluxboxFile.readLine()).trimmed();
-            if (!fluxboxVersion.isEmpty()) {
-                m_desktopVersion += QLatin1Char(' ') + fluxboxVersion;
-            }
-        }
-    }
-
     struct Seed {
         const char *identifier;
         int configIndex;
@@ -349,7 +358,7 @@ void Backend::loadConfiguration(bool testMode)
         {"setup", 1, tr("Install MX Linux"), tr("Install MX Linux on this computer."), "system-software-install", QStringLiteral("minstall-launcher"), nullptr},
         {"faq", 2, tr("FAQ"), tr("Find answers to frequently asked questions."), "help-faq", QStringLiteral("mx-faq"), nullptr},
         {"forum", 3, tr("Forums"), tr("Ask questions and join the MX Linux community."), "system-users", {}, "http://forum.mxlinux.org/index.php"},
-        {"manual", 4, tr("Users Manual"), tr("Read the documentation for your MX Linux release."), "help-contents", m_isFluxbox ? QStringLiteral("mxfb-help") : QStringLiteral("mx-manual"), nullptr},
+        {"manual", 4, tr("Users Manual"), tr("Read the documentation for your MX Linux release."), "help-contents", QStringLiteral("mx-manual"), nullptr},
         {"video", 5, tr("Videos"), tr("Watch MX Linux tutorials and demonstrations."), "video-x-generic", {}, "http://www.mxlinux.org/videos/"},
         {"wiki", 6, tr("Wiki"), tr("Browse community-maintained guides and reference material."), "internet-web-browser", {}, "http://www.mxlinux.org/wiki"},
         {"contribute", 7, tr("Contribute"), tr("Learn how to support and contribute to MX Linux."), "help-donate", {}, "http://www.mxlinux.org/donate"},
@@ -381,6 +390,30 @@ void Backend::loadConfiguration(bool testMode)
             definition.visible = !configuredTitle.isEmpty() || QFileInfo::exists(QStringLiteral("/usr/bin/mx-tour"));
         }
         m_definitions.append(std::move(definition));
+    }
+}
+
+void Backend::updateDesktopVersion(const QString &sessionInfo)
+{
+    m_desktopProbePending = false;
+    const QRegularExpression desktopPattern(QStringLiteral(R"(Desktop:\s*(.+?)\s+v:\s*([\d\.]+))"));
+    const auto match = desktopPattern.match(sessionInfo);
+    if (match.hasMatch()) {
+        m_desktopVersion = match.captured(1) + QLatin1Char(' ') + match.captured(2);
+        m_isFluxbox = m_desktopVersion.contains(QStringLiteral("Fluxbox"));
+        if (m_isFluxbox) {
+            QFile file(QStringLiteral("/etc/mxfb_version"));
+            if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+                const QString version = QString::fromUtf8(file.readLine()).trimmed();
+                if (!version.isEmpty()) {
+                    m_desktopVersion += QLatin1Char(' ') + version;
+                }
+            }
+        }
+        emit desktopVersionChanged();
+    }
+    if (m_manualRequested) {
+        activate(QStringLiteral("manual"));
     }
 }
 

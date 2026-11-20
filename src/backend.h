@@ -13,7 +13,7 @@ class Backend final : public QObject
     Q_PROPERTY(QString distroTitle READ distroTitle CONSTANT)
     Q_PROPERTY(QString distroVersion READ distroVersion CONSTANT)
     Q_PROPERTY(QString debianVersion READ debianVersion CONSTANT)
-    Q_PROPERTY(QString desktopVersion READ desktopVersion CONSTANT)
+    Q_PROPERTY(QString desktopVersion READ desktopVersion NOTIFY desktopVersionChanged)
     Q_PROPERTY(QString supportedUntil READ supportedUntil CONSTANT)
     Q_PROPERTY(QString termsSummary READ termsSummary CONSTANT)
     Q_PROPERTY(QString liveUserInfo READ liveUserInfo CONSTANT)
@@ -59,6 +59,7 @@ public:
     Q_INVOKABLE QString changelogText() const;
 
 signals:
+    void desktopVersionChanged();
     void systemInfoChanged();
     void autoStartupChanged();
     void errorOccurred(const QString &title, const QString &message);
@@ -73,9 +74,9 @@ private:
     };
 
     static QString runCommand(const QString &program, const QStringList &arguments, int timeoutMs = 10000);
-    static QString commandOutput(const QString &command);
     static QUrl localSource(const QString &path);
     void loadConfiguration(bool testMode);
+    void updateDesktopVersion(const QString &sessionInfo);
     void rebuildActions();
     void launchCommand(const QString &command);
     [[nodiscard]] const ActionDefinition *findAction(const QString &identifier) const;
@@ -99,4 +100,7 @@ private:
     bool m_showLiveUserInfo = false;
     bool m_startOnAbout = false;
     bool m_isFluxbox = false;
+    bool m_desktopProbePending = true;
+    bool m_manualRequested = false;
+    bool m_reportRequested = false;
 };
