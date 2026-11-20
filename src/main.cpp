@@ -70,16 +70,6 @@ int main(int argc, char *argv[])
     QApplication::setWindowIcon(
         QIcon::fromTheme(QStringLiteral("mx-welcome"), QIcon(bundledIconPath())));
 
-    QCommandLineParser parser;
-    parser.setApplicationDescription(QObject::tr("This tool displays the MX Linux welcome screen."));
-    parser.addHelpOption();
-    parser.addVersionOption();
-    parser.addOption({{"a", "about"},
-                      QObject::tr("Start with About selected. The About page provides basic information about the "
-                                  "current MX Linux version, the user's hardware, and access to a full system report.")});
-    parser.addOption({{"t", "test"}, QObject::tr("Run a test mode.")});
-    parser.process(app);
-
     QTranslator qtTranslator;
     if (qtTranslator.load(QStringLiteral("qt_") + QLocale().name(),
                           QLibraryInfo::path(QLibraryInfo::TranslationsPath))) {
@@ -95,6 +85,16 @@ int main(int argc, char *argv[])
                            QStringLiteral("/usr/share/mx-welcome/locale"))) {
         QApplication::installTranslator(&appTranslator);
     }
+
+    QCommandLineParser parser;
+    parser.setApplicationDescription(QObject::tr("This tool displays the MX Linux welcome screen."));
+    parser.addHelpOption();
+    parser.addVersionOption();
+    parser.addOption({{"a", "about"},
+                      QObject::tr("Start with About selected. The About page provides basic information about the "
+                                  "current MX Linux version, the user's hardware, and access to a full system report.")});
+    parser.addOption({{"t", "test"}, QObject::tr("Run a test mode.")});
+    parser.process(app);
 
     if (getuid() == 0) {
         QApplication::beep();
