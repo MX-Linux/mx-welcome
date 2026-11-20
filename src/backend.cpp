@@ -12,6 +12,7 @@
 #include <QRegularExpression>
 #include <QSaveFile>
 #include <QSettings>
+#include <QStandardPaths>
 #include <QTextStream>
 
 #include <optional>
@@ -22,6 +23,11 @@ QString configuredValue(const QSettings &system, const QSettings &defaults, cons
                         const QVariant &fallback = {})
 {
     return system.value(key, defaults.value(key, fallback)).toString();
+}
+
+QString autostartDirectory()
+{
+    return QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + QStringLiteral("/autostart");
 }
 
 // Preserve desktop-entry escapes, localized keys and unrelated groups verbatim.
@@ -135,7 +141,7 @@ void Backend::setAutoStartup(bool enabled)
         return;
     }
 
-    const QString targetDir = QDir::homePath() + QStringLiteral("/.config/autostart");
+    const QString targetDir = autostartDirectory();
     const QString target = targetDir + QStringLiteral("/mx-welcome.desktop");
     bool succeeded = true;
     if (enabled) {
@@ -250,13 +256,13 @@ void Backend::loadConfiguration(bool testMode)
                               + QCoreApplication::applicationName() + QStringLiteral(".conf");
     QFile::remove(oldConfig);
 
-    const QString autostartDir = QDir::homePath() + QStringLiteral("/.config/autostart/");
+    const QDir autostartDir(autostartDirectory());
     // /etc/skel seeds this marker so new accounts see the welcome dialog once on
     // first login; remove it after that single launch without touching the
     // user's own autostart entry, which may have been enabled independently
     // (e.g. via the desktop environment's session settings).
-    QFile::remove(autostartDir + QStringLiteral("mx-welcome-once.desktop"));
-    const auto loginEntry = readLoginEntry(autostartDir + QStringLiteral("mx-welcome.desktop"));
+    QFile::remove(autostartDir.filePath(QStringLiteral("mx-welcome-once.desktop")));
+    const auto loginEntry = readLoginEntry(autostartDir.filePath(QStringLiteral("mx-welcome.desktop")));
     m_autoStartup = loginEntry && loginEntry->hasLaunchCommand && !loginEntry->disabled;
 
     QSettings defaults(QStringLiteral("/usr/share/mx-welcome/mx-welcome.conf"), QSettings::NativeFormat);
