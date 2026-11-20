@@ -228,7 +228,6 @@ QString Backend::changelogText() const
 QString Backend::runCommand(const QString &program, const QStringList &arguments, int timeoutMs)
 {
     QProcess process;
-    process.setProcessChannelMode(QProcess::MergedChannels);
     process.start(program, arguments);
     if (!process.waitForStarted(timeoutMs)) {
         return {};
@@ -236,8 +235,12 @@ QString Backend::runCommand(const QString &program, const QStringList &arguments
     if (!process.waitForFinished(timeoutMs)) {
         process.kill();
         process.waitForFinished();
+        return {};
     }
-    return QString::fromUtf8(process.readAll()).trimmed();
+    if (process.exitStatus() != QProcess::NormalExit || process.exitCode() != 0) {
+        return {};
+    }
+    return QString::fromUtf8(process.readAllStandardOutput()).trimmed();
 }
 
 QString Backend::commandOutput(const QString &command)
