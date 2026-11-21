@@ -235,7 +235,10 @@ ApplicationWindow {
                                 }
                             }
 
-                            ScrollBar.vertical: ScrollBar { policy: ScrollBar.AsNeeded }
+                            ScrollBar.vertical: ScrollBar {
+                                policy: actionGrid.contentHeight > actionGrid.height
+                                        ? ScrollBar.AlwaysOn : ScrollBar.AlwaysOff
+                            }
                         }
 
                         Text {
