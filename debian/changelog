@@ -1,3 +1,19 @@
+mx-welcome (26.11.1mx25) mx; urgency=medium
+
+  * show MX Welcome once at first login for new accounts, including those
+    created after an upgrade
+  * keep the startup checkbox in sync with the desktop's login settings,
+    even when a change cannot be saved
+  * restore startup on Debian 12 (Bookworm) systems using Qt 6.4
+  * reopen the window at its saved size and fit it to the current screen
+  * keep the dashboard responsive while it gathers system information and
+    show a message if the report is unavailable
+  * show an error when a built-in dashboard tool cannot be started
+  * make command-line help and version information available without a
+    graphical session and show help in the user's language when available
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 20 Nov 2026 14:54:21 -0500
+
 mx-welcome (26.11mx25) mx; urgency=medium
 
   * preserve automatic startup enabled through the desktop session settings
