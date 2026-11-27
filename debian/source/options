@@ -2,3 +2,7 @@
 # giving only patterns would replace them and pull the whole git history in.
 tar-ignore
 tar-ignore = src/version.h
+
+# CMake build trees and locally built Arch packages.
+tar-ignore = build
+tar-ignore = build-*
