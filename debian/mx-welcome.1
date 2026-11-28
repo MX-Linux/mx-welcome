@@ -24,6 +24,20 @@ Display command-line help and exit.
 .TP
 .BR \-v ", " \-\-version
 Display version information and exit.
+.SH RENDERING
+On X11, MX Welcome uses Qt Quick's software renderer by default so the dashboard
+can open even when OpenGL initialization fails. This default applies only to
+the dashboard. To request OpenGL, run
+.PP
+.EX
+QSG_RHI_BACKEND=opengl mx-welcome
+.EE
+.PP
+To request software rendering explicitly on any platform, run
+.PP
+.EX
+QT_QUICK_BACKEND=software mx-welcome
+.EE
 .SH FILES
 .TP
 .I /usr/share/mx-welcome/mx-welcome.desktop

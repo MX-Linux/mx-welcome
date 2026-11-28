@@ -16,6 +16,7 @@
 #include <QQmlApplicationEngine>
 #include <QQuickImageProvider>
 #include <QQuickStyle>
+#include <QQuickWindow>
 #include <QTranslator>
 #include <QUrl>
 #include <QtGlobal>
@@ -102,6 +103,14 @@ int main(int argc, char *argv[])
                                   "current MX Linux version, the user's hardware, and access to a full system report.")});
     parser.addOption({{"t", "test"}, QObject::tr("Run a test mode.")});
     parser.process(*app);
+
+    // The dashboard uses only 2D controls. On X11 it can draw without a working
+    // GLX or EGL configuration. Keep the renderer choice local to this application.
+    if (QApplication::platformName() == QLatin1String("xcb")
+        && qEnvironmentVariableIsEmpty("QT_QUICK_BACKEND") && qEnvironmentVariableIsEmpty("QMLSCENE_DEVICE")
+        && qEnvironmentVariableIsEmpty("QSG_RHI_BACKEND")) {
+        QQuickWindow::setGraphicsApi(QSGRendererInterface::Software);
+    }
 
     QApplication::setWindowIcon(
         QIcon::fromTheme(QStringLiteral("mx-welcome"), QIcon(bundledIconPath())));
