@@ -1,3 +1,9 @@
+mx-welcome (26.11.2mx25) mx; urgency=medium
+
+  * open MX Welcome on X11 even when the graphics driver cannot start OpenGL
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 28 Nov 2026 12:39:15 -0500
+
 mx-welcome (26.11.1mx25) mx; urgency=medium
 
   * show MX Welcome once at first login for new accounts, including those
