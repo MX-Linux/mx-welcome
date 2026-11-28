@@ -4,177 +4,177 @@
 <context>
     <name>Backend</name>
     <message>
-        <location filename="../src/backend.cpp" line="183"/>
-        <location filename="../src/backend.cpp" line="208"/>
-        <location filename="../src/backend.cpp" line="211"/>
-        <location filename="../src/backend.cpp" line="234"/>
-        <location filename="../src/backend.cpp" line="435"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="183"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="208"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="211"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="234"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="435"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="183"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="183"/>
         <source>Could not update the login startup setting.</source>
         <translation>Impossible de mettre à jour le réglage de lancement à l’ouverture de session.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="211"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="211"/>
         <source>Could not open %1</source>
         <translation>Impossible d’ouvrir %1</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="222"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="222"/>
         <source>System information is unavailable.</source>
         <translation>Les informations système ne sont pas disponibles.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="234"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="234"/>
         <source>Could not start Quick System Info.</source>
         <translation>Impossible de lancer «&#xa0;Informations rapides sur le système - Quick System Info&#xa0;».</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="245"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="245"/>
         <source>Could not load the Terms of Use.</source>
         <translation>Impossible de charger les Conditions d’utilisation.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="252"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="252"/>
         <source>Could not load %1</source>
         <translation>Impossible de charger %1</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="262"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="262"/>
         <source>Could not load changelog.</source>
         <translation>Impossible de charger le journal des modifications.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="311"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="311"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
         <translation>Le nom « MX Linux » est couvert par la sous-licence de la Fondation Linux n° 20140605-0483. Nous développons des logiciels qui sont couverts par une licence libre qui peut être examinée dans la liste Wiki. Nous incluons également des logiciels développés par d’autres qui sont sous une licence libre.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="322"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="322"/>
         <source>User demo, password: demo. Superuser root, password: root.</source>
         <translation>Utilisateur: demo, mot de passe: demo. Superutilisateur: root, mot de passe: root.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="341"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="341"/>
         <source>%1 “%2”</source>
         <translation>%1 «&#xa0;%2&#xa0;»</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="358"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="358"/>
         <source>Install MX Linux</source>
         <translation>Installer MX Linux</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="358"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="358"/>
         <source>Install MX Linux on this computer.</source>
         <translation>Installer MX Linux sur cet ordinateur.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="359"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="359"/>
         <source>FAQ</source>
         <translation>FAQ</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="359"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="359"/>
         <source>Find answers to frequently asked questions.</source>
         <translation>Trouver des réponses aux questions fréquentes.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="360"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="360"/>
         <source>Forums</source>
         <translation>Forums</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="360"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="360"/>
         <source>Ask questions and join the MX Linux community.</source>
         <translation>Poser des questions et rejoindre la communauté MX Linux.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="361"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="361"/>
         <source>Users Manual</source>
         <translation>Manuel de l’utilisateur•rice</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="361"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="361"/>
         <source>Read the documentation for your MX Linux release.</source>
         <translation>Lire la documentation de votre version de MX Linux.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="362"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="362"/>
         <source>Videos</source>
         <translation>Vidéos</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="362"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="362"/>
         <source>Watch MX Linux tutorials and demonstrations.</source>
         <translation>Regarder des tutoriels et démonstrations MX Linux.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="363"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="363"/>
         <source>Wiki</source>
         <translation>Wiki</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="363"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="363"/>
         <source>Browse community-maintained guides and reference material.</source>
         <translation>Parcourir les guides et documents de référence maintenus par la communauté.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="364"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="364"/>
         <source>Contribute</source>
         <translation>Contribuer</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="364"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="364"/>
         <source>Learn how to support and contribute to MX Linux.</source>
         <translation>Apprendre à soutenir et à contribuer à MX Linux.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="365"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="365"/>
         <source>Tools</source>
         <translation>Outils </translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="365"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="365"/>
         <source>Open the collection of MX system utilities.</source>
         <translation>Ouvrir la collection d’utilitaires système MX.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="366"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="366"/>
         <source>Popular Apps</source>
         <translation>Applications populaires</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="366"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="366"/>
         <source>Discover and install popular applications.</source>
         <translation>Découvrir et installer des applications populaires.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="367"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="367"/>
         <source>Tweak (Panel, etc...)</source>
         <translation>Ajustements (Tableau de bord, etc.&#xa0;…)</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="367"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="367"/>
         <source>Adjust desktop, panel, and system preferences.</source>
         <translation>Ajuster les préférences du bureau, du tableau de bord et du système.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="368"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="368"/>
         <source>Tour</source>
         <translation>Tour</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="368"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="368"/>
         <source>Take a guided tour of MX Linux.</source>
         <translation>Faire une visite guidée de MX Linux.</translation>
     </message>
     <message>
-        <location filename="../src/backend.cpp" line="208"/>
-        <location filename="../src/backend.cpp" line="435"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="208"/>
+        <location filename="../../../../../mx-welcome/src/backend.cpp" line="435"/>
         <source>Could not start the requested action.</source>
         <translation>Impossible de démarrer l’action demandée.</translation>
     </message>
@@ -182,123 +182,123 @@
 <context>
     <name>Main</name>
     <message>
-        <location filename="../qml/Main.qml" line="14"/>
-        <location filename="../qml/Main.qml" line="90"/>
-        <location filename="../qml/Main.qml" line="451"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="14"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="90"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="451"/>
         <source>MX Welcome</source>
         <translation>MX Centre d’accueil - MX Welcome</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="123"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="123"/>
         <source>Manual</source>
         <translation>Manuel</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="133"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="133"/>
         <source>About</source>
         <translation>À propos</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="106"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="106"/>
         <source>Welcome</source>
         <translation>Centre d’accueil - Welcome</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="106"/>
-        <location filename="../qml/Main.qml" line="288"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="106"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="288"/>
         <source>About this system</source>
         <translation>À propos de ce système</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="248"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="248"/>
         <source>No actions are available.</source>
         <translation>Pas d’action disponible.</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="258"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="258"/>
         <source>Show this dialog at start up</source>
         <translation>Afficher cette fenêtre au démarrage</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="305"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="305"/>
         <source>MX version</source>
         <translation>Version de MX</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="306"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="306"/>
         <source>Debian version</source>
         <translation>Version de Debian</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="307"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="307"/>
         <source>Desktop</source>
         <translation>Bureau</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="308"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="308"/>
         <source>Supported until</source>
         <translation>Pris en charge jusqu’au</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="334"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="334"/>
         <source>Unavailable</source>
         <translation>Indisponible</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="348"/>
-        <location filename="../qml/Main.qml" line="364"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="348"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="364"/>
         <source>Short system report</source>
         <translation>Rapport système succinct</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="359"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="359"/>
         <source>Loading system information…</source>
         <translation>Chargement des informations système&#xa0;…</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="374"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="374"/>
         <source>Quick-System-Info Full Report</source>
         <translation>Quick-System-Info rapport complet</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="383"/>
-        <location filename="../qml/Main.qml" line="392"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="383"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="392"/>
         <source>Terms of Use</source>
         <translation>Conditions d’utilisation</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="418"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="418"/>
         <source>About MX Welcome</source>
         <translation>À propos de MX Centre d’accueil</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="459"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="459"/>
         <source>Version: %1</source>
         <translation>Version: %1</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="465"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="465"/>
         <source>Program for displaying a welcome screen in MX Linux</source>
         <translation>Programme affichant un écran d’accueil pour MX Linux</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="472"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="472"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="479"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="479"/>
         <source>License</source>
         <translation>Licence</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="485"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="485"/>
         <source>MX Welcome License</source>
         <translation>Licence de MX Centre d’accueil - MX Welcome</translation>
     </message>
     <message>
-        <location filename="../qml/Main.qml" line="488"/>
-        <location filename="../qml/Main.qml" line="494"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="488"/>
+        <location filename="../../../../../mx-welcome/qml/Main.qml" line="494"/>
         <source>Changelog</source>
         <translation>Journal des modifications</translation>
     </message>
@@ -306,137 +306,137 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="573"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="573"/>
         <source>MX Welcome</source>
         <translation>MX Centre d’accueil - MX Welcome</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="576"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="576"/>
         <source>Quit application</source>
         <translation>Quitter l’application</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="578"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="578"/>
         <source>Close</source>
         <translation>Quitter</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="580"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="580"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="583"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="583"/>
         <source>About this application</source>
         <translation>À propos de cette application</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="585"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="585"/>
         <source>About...</source>
         <translation>À propos&#xa0;…</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="587"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="587"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="589"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="589"/>
         <source>Install MX Linux</source>
         <translation>Installer MX Linux</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="590"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="590"/>
         <source>Tweak (Panel, etc...)</source>
         <translation>Ajustements (Tableau de bord, etc.&#xa0;…)</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="591"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="591"/>
         <source>Tools</source>
         <translation>Outils </translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="592"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="592"/>
         <source>Wiki</source>
         <translation>Wiki</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="593"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="593"/>
         <source>Users Manual</source>
         <translation>Manuel de l’utilisateur</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="594"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="594"/>
         <source>FAQ</source>
         <translation>FAQ</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="595"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="595"/>
         <source>Tour</source>
         <translation>Tour</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="596"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="596"/>
         <source>Popular Apps</source>
         <translation>Applications populaires</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="597"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="597"/>
         <source>Contribute</source>
         <translation>Contribuer</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="598"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="598"/>
         <source>Videos</source>
         <translation>Vidéos</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="599"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="599"/>
         <source>Forums</source>
         <translation>Forums</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="600"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="600"/>
         <source>Welcome</source>
         <translation>Centre d’accueil - Welcome</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="601"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="601"/>
         <source>DESKTOP</source>
         <translation>BUREAU</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="603"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="603"/>
         <source>Quick-System-Info Full Report</source>
         <translation>Quick-System-Info rapport complet</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="604"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="604"/>
         <source>Terms of Use</source>
         <translation>Conditions d’utilisation</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="606"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="606"/>
         <source>The name “MX Linux” is covered by Linux Foundation Sublicense No. 20140605-0483. We develop software that is covered by a free license that can be examined in the Wiki list. We also include software developed by others that is under a free license.</source>
         <translation>Le nom « MX Linux » est couvert par la sous-licence de la Fondation Linux n° 20140605-0483. Nous développons des logiciels qui sont couverts par une licence libre qui peut être examinée dans la liste Wiki. Nous incluons également des logiciels développés par d’autres qui sont sous une licence libre.</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="607"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="607"/>
         <source>MX VERSION</source>
         <translation>VERSION MX</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="608"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="608"/>
         <source>DEBIAN VERSION:</source>
         <translation>VERSION DEBIAN:</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="609"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="609"/>
         <source>SUPPORTED UNTIL:</source>
         <translation>PRIS EN CHARGE JUSQU’EN:</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="611"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="611"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -455,17 +455,17 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="620"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="620"/>
         <source>SHORT SYSTEM REPORT:</source>
         <translation>RAPPORT SUCCINCT DU SYSTÈME:</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="621"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="621"/>
         <source>About</source>
         <translation>À propos</translation>
     </message>
     <message>
-        <location filename="../src/ui_mainwindow.h" line="622"/>
+        <location filename="../../../../../mx-welcome/src/ui_mainwindow.h" line="622"/>
         <source>Show this dialog at start up</source>
         <translation>Afficher cette fenêtre au démarrage</translation>
     </message>
@@ -473,27 +473,27 @@ li.checked::marker { content: &quot;\2612&quot;; }
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/main.cpp" line="97"/>
+        <location filename="../../../../../mx-welcome/src/main.cpp" line="98"/>
         <source>This tool displays the MX Linux welcome screen.</source>
         <translation>Cet outil affiche l’écran d’accueil de MX Linux.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="101"/>
+        <location filename="../../../../../mx-welcome/src/main.cpp" line="102"/>
         <source>Start with About selected. The About page provides basic information about the current MX Linux version, the user&apos;s hardware, and access to a full system report.</source>
         <translation>Démarrer avec la fenêtre « À propos » ouverte. La fenêtre « À propos » fournit des informations de base sur la version actuelle de MX Linux, le matériel de l’utilisateur, ainsi qu’un accès à un rapport système complet.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="103"/>
+        <location filename="../../../../../mx-welcome/src/main.cpp" line="104"/>
         <source>Run a test mode.</source>
         <translation>Exécuter en mode test.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="111"/>
+        <location filename="../../../../../mx-welcome/src/main.cpp" line="120"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="112"/>
+        <location filename="../../../../../mx-welcome/src/main.cpp" line="121"/>
         <source>You must run this program as normal user.</source>
         <translation>Vous devez exécuter cette application en tant qu’utilisateur•rice normal•e.</translation>
     </message>
@@ -501,7 +501,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 <context>
     <name>ToolCard</name>
     <message>
-        <location filename="../qml/components/ToolCard.qml" line="69"/>
+        <location filename="../../../../../mx-welcome/qml/components/ToolCard.qml" line="69"/>
         <source>Open this tool</source>
         <translation>Ouvrir cet outil</translation>
     </message>
